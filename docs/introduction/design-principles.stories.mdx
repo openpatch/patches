@@ -1,0 +1,61 @@
+import { Meta, Palette } from "../../.storybook/components";
+import theme from "../../src/shared/theme";
+
+<Meta title="Introduction/Design Principles" />
+
+# Design Principles
+
+We are closely following the Refactoring UI Guide (v1.0.2). Everything in our
+Design System is present in our theme file. You should rely on it and prevent
+to use custom CSS. If you want to use CSS styles which are currently not
+covered by the ones in the theme file, please do a pull request and we will
+examine if they fit the overall style or how your design can be implemented
+more coherent.
+
+## Color
+
+```
+theme.palette[name][intensity]
+```
+
+### Primary
+
+<Palette palette={theme.palette.primary} />
+
+### Neutrals
+
+<Palette palette={theme.palette.neutrals} />
+
+### Supporting
+
+### Accent
+
+<Palette palette={theme.palette.supporting.accent} />
+
+#### Info
+
+<Palette palette={theme.palette.supporting.info} />
+
+#### Warning
+
+<Palette palette={theme.palette.supporting.warning} />
+
+#### Error
+
+<Palette palette={theme.palette.supporting.error} />
+
+## Screens
+
+## Spacing
+
+## FontFamily
+
+## BoxShadow
+
+## BorderRadius
+
+## BorderWidth
+
+## FontSize
+
+## FontWeight

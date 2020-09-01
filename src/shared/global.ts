@@ -1,12 +1,12 @@
-import { createGlobalStyle, css } from 'styled-components';
-import { color, typography } from './styles';
+import { createGlobalStyle, css } from "styled-components";
 
-export const fontUrl = 'https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,800,900';
+export const fontUrl =
+  "https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,800,900";
 
 export const bodyStyles = css`
-  font-family: ${typography.type.primary};
-  font-size: ${typography.size.s3}px;
-  color: ${color.darkest};
+  font-family: ${({ theme }) => theme.fontFamily.body};
+  font-size: ${({ theme }) => theme.fontFamily[1]};
+  color: ${({ theme }) => theme.palette.neutrals[900]};
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -24,7 +24,7 @@ export const bodyStyles = css`
   h4,
   h5,
   h6 {
-    font-weight: ${typography.weight.regular};
+    font-weight: ${({ theme }) => theme.fontWeight[2]};
     margin: 0;
     padding: 0;
   }
@@ -34,7 +34,7 @@ export const bodyStyles = css`
   textarea,
   select {
     outline: none;
-    font-family: ${typography.type.primary};
+    font-family: ${({ theme }) => theme.fontFamily.body};
   }
 
   sub,
@@ -52,20 +52,21 @@ export const bodyStyles = css`
 
   b,
   em {
-    font-weight: ${typography.weight.bold};
+    font-weight: ${({ theme }) => theme.fontWeight[2]};
   }
 
   hr {
     border: none;
-    border-top: 1px solid ${color.border};
+    border-top: 1px solid;
+    border-color: ${({ theme }) => theme.palette.neutrals[300]};
     clear: both;
     margin-bottom: 1.25rem;
   }
 
   code,
   pre {
-    font-family: ${typography.type.code};
-    font-size: ${typography.size.s2 - 1}px;
+    font-family: ${({ theme }) => theme.fontFamily.code};
+    font-size: ${({ theme }) => theme.fontSize[1]};
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -76,7 +77,7 @@ export const bodyStyles = css`
     padding-right: 2px;
     vertical-align: baseline;
 
-    color: ${color.secondary};
+    color: ${({ theme }) => theme.palette.neutrals[500]};
   }
 
   pre {
@@ -85,7 +86,7 @@ export const bodyStyles = css`
     white-space: pre-wrap;
 
     background: rgba(0, 0, 0, 0.05);
-    color: ${color.darkest};
+    color: ${({ theme }) => theme.palette.neutrals[900]};
     border-radius: 3px;
     margin: 1rem 0;
   }
