@@ -2,9 +2,9 @@ import React from "react";
 import { addDecorator } from "@storybook/react";
 import { withA11y } from "@storybook/addon-a11y";
 
-import { GlobalStyle } from "../src/shared/global";
+import "../src/styles.css";
 import { sortStories } from "./utils/story-helpers";
-import ThemeProvider from "../src/components/ThemeProvider";
+import ThemeProvider from "../src/ThemeProvider";
 
 // Add group and story names to the sort order to explicitly order them.
 // Items that are not included in the list are shown below the sorted items.
@@ -31,9 +31,4 @@ export const parameters = {
 };
 
 addDecorator(withA11y);
-addDecorator((story) => (
-  <ThemeProvider>
-    <GlobalStyle />
-    {story()}
-  </ThemeProvider>
-));
+addDecorator((story) => <ThemeProvider>{story()}</ThemeProvider>);
