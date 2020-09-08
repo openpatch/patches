@@ -1,0 +1,14 @@
+import React from "react";
+import { Story, Meta } from "@storybook/react/types-6-0";
+
+import { {{ properCase name }}, {{ properCase name }}Props } from "./{{ properCase name }}";
+
+export default {
+  title: "Components/{{ properCase name }}",
+  component: {{ properCase name }},
+  argTypes: {},
+} as Meta;
+
+const Template: Story<{{ properCase name}}Props> = (args) => <{{ properCase name }} {...args} />;
+
+export const Default = Template.bind({});

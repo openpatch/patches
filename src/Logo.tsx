@@ -1,14 +1,15 @@
-import React from "react";
-import tw from "twin.macro";
+/** @jsx jsx */
+import { jsx, css } from "@emotion/core";
+import { Theme } from "./themes";
 
 export interface LogoProps {
   /**
    * Color of the Logo. Defaults to the primary color of the theme.
    */
-  color?: string;
+  color?: keyof Theme["colors"];
 }
 
-export const Logo: React.FC<LogoProps> = ({ color }) => {
+export const Logo = ({ color = "primary" }: LogoProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +25,9 @@ export const Logo: React.FC<LogoProps> = ({ color }) => {
       </defs>
       <path
         fillOpacity="0"
-        stroke={color}
+        css={(theme) => ({
+          stroke: theme.colors[color][500],
+        })}
         strokeDasharray="none"
         strokeLinejoin="miter"
         strokeMiterlimit="4"
@@ -34,7 +37,9 @@ export const Logo: React.FC<LogoProps> = ({ color }) => {
         opacity="1"
       ></path>
       <path
-        fill={color}
+        css={(theme) => ({
+          fill: theme.colors[color][500],
+        })}
         fillOpacity="1"
         fillRule="nonzero"
         stroke="none"

@@ -5,6 +5,7 @@
     "rootDir": "./src",
     "declaration": true,
     "declarationDir": "./dist",
+    "outDir": "./dist",
     "module": "esnext",
     "sourceMap": true,
     "jsx": "react",
@@ -12,8 +13,7 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "strict": true,
-    "plugins": [{ "name": "typescript-plugin-tw-template" }]
+    "strict": true
   },
   "include": ["src/**/*", "types"],
   "exclude": [
