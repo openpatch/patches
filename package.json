@@ -22,6 +22,7 @@
     "react-dom": "^16.13.1"
   },
   "scripts": {
+    "commit": "cz",
     "clean": "rm -rf dist",
     "build": "yarn clean && tsc --project tsconfig.json",
     "test": "jest --watch",
@@ -72,6 +73,7 @@
     "babel-loader": "^8.1.0",
     "chromatic": "^5.1.0",
     "csstype": "^3.0.3",
+    "cz-conventional-changelog": "3.3.0",
     "fork-ts-checker-webpack-plugin": "^5.1.0",
     "husky": "^4.2.5",
     "jest": "^26.4.2",
@@ -89,7 +91,13 @@
   },
   "husky": {
     "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
       "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
   }
 }
