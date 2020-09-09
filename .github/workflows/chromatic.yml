@@ -15,10 +15,11 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0 # Required to retrieve git history
-      - run: yarn
+      - run: yarn --pure-lockfile
       #- run: yarn build-storybook
       - uses: chromaui/action@v1
         # options required to the GitHub chromatic action
         with:
           projectToken: ydqymrvnuxs
           token: ${{ secrets.GITHUB_TOKEN }}
+          buildScriptName: storybook:build

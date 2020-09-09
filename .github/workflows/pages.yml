@@ -27,7 +27,7 @@ jobs:
             yarn-deps-${{ hashFiles('yarn.lock') }}
 
       - name: Install dependencies
-        run: yarn
+        run: yarn --pure-lockfile
 
       - name: Build docs
         run: yarn storybook:build:docs

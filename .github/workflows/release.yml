@@ -34,7 +34,7 @@ jobs:
             yarn-deps-${{ hashFiles('yarn.lock') }}
 
       - name: Install dependencies
-        run: yarn
+        run: yarn --pure-lockfile
 
       - name: Test
         run: yarn test:ci
@@ -49,6 +49,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          yarn install --frozen-lockfile
           yarn build
           yarn release
