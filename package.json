@@ -36,8 +36,8 @@
     "test:coverage": "jest --collect-coverage",
     "release": "auto shipit",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public",
-    "build-storybook-docs": "build-storybook -s public --docs"
+    "storybook:build": "build-storybook -s public",
+    "storybook:build:docs": "build-storybook -s public --docs"
   },
   "eslintConfig": {
     "extends": "react-app"

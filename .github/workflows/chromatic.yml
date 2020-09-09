@@ -16,7 +16,6 @@ jobs:
         with:
           fetch-depth: 0 # Required to retrieve git history
       - run: yarn
-      - run: yarn test:ci
       #- run: yarn build-storybook
       - uses: chromaui/action@v1
         # options required to the GitHub chromatic action

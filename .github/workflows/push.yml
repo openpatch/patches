@@ -16,12 +16,15 @@ jobs:
     # the list of steps that the action will go through
     steps:
       - uses: actions/checkout@v2
+
       - name: Prepare repository
         run: git fetch --unshallow --tags
+
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
+
       - name: Cache node modules
         uses: actions/cache@v1
         with:
@@ -29,6 +32,17 @@ jobs:
           key: yarn-deps-${{ hashFiles('yarn.lock') }}
           restore-keys: |
             yarn-deps-${{ hashFiles('yarn.lock') }}
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Test
+        run: yarn test:ci
+
+      - name: Codecov
+        uses: codecov/codecov-action@v1.0.3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
 
       - name: Create Release
         env:
