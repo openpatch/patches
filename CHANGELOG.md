@@ -1,3 +1,16 @@
+# v0.1.2 (Wed Sep 09 2020)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:openpatch/patches ([@mikebarkmin](https://github.com/mikebarkmin))
+- ci: fix chromatic ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v0.1.1 (Wed Sep 09 2020)
 
 #### ⚠️ Pushed to `master`
