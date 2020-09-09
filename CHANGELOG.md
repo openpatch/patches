@@ -1,3 +1,20 @@
+# (Wed Sep 09 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin)), for all your work!
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:openpatch/patches ([@mikebarkmin](https://github.com/mikebarkmin))
+- chore: auto use conventional release ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v0.1.3 (Wed Sep 09 2020)
 
 #### ⚠️ Pushed to `master`
