@@ -55,6 +55,9 @@
     ]
   },
   "devDependencies": {
+    "@auto-it/all-contributors": "^9.53.1",
+    "@auto-it/conventional-commits": "^9.53.1",
+    "@auto-it/first-time-contributor": "^9.53.1",
     "@babel/core": "^7.11.6",
     "@storybook/addon-a11y": "^6.0.21",
     "@storybook/addon-actions": "^6.0.21",
@@ -104,5 +107,13 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "auto": {
+    "plugins": [
+      "npm",
+      "all-contributors",
+      "conventional-commits",
+      "first-time-contributor"
+    ]
   }
 }
