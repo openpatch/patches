@@ -1,0 +1,14 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Hooks/useClickOutsideListener" />
+
+# Usage
+
+```ts
+import { useClickOutsideListener } from "@openpatch/patches/hooks";
+
+const [profileOpen, setProfileOpen] = useState(false);
+const profileMenuRef = useRef<HTMLElement>();
+// will be called if you click somewhere outside of the ref element
+useClickOutsideListener(profileMenuRef, () => setProfileOpen(false));
+```

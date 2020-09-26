@@ -1,12 +1,11 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import { Badge, BadgeProps } from "./Badge";
-import ThemeProvider from "./themes/ThemeProvider";
-import base from "./themes/base";
+import { ThemeProvider } from "./ThemeProvider";
 
 const renderWithTheme = (props?: BadgeProps) =>
   render(
-    <ThemeProvider theme={base}>
+    <ThemeProvider>
       <Badge {...props} />
     </ThemeProvider>
   );

@@ -1,17 +1,17 @@
 /** @jsx jsx */
 import { ReactNode } from "react";
 import { jsx, css } from "@emotion/core";
-import { Theme } from "./themes";
+import { Theme } from "./themes/types";
 
 export type ButtonGroupProps = {
   attached?: boolean;
-  spacing?: keyof Theme["spacing"];
+  space?: keyof Theme["space"];
   children: ReactNode;
 };
 
 export const ButtonGroup = ({
   attached = false,
-  spacing,
+  space,
   children,
 }: ButtonGroupProps) => {
   return (
@@ -41,7 +41,7 @@ export const ButtonGroup = ({
             `
           : css`
               > *:not(style) ~ *:not(style) {
-                margin-left: ${spacing && theme.spacing[spacing]};
+                margin-left: ${space && theme.space[space]};
               }
             `,
       ]}

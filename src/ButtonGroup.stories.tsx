@@ -2,7 +2,9 @@ import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
 
 import { ButtonGroup, ButtonGroupProps } from "./ButtonGroup";
-import { Button } from "./Button";
+import { ButtonPrimary } from "./ButtonPrimary";
+import { ButtonSecondary } from "./ButtonSecondary";
+import { ButtonOutline } from "./ButtonOutline";
 
 export default {
   title: "Components/Button Group",
@@ -11,28 +13,42 @@ export default {
 } as Meta;
 
 const TemplatePrimary: Story<ButtonGroupProps> = (args) => (
-  <ButtonGroup attached={true} {...args}>
-    <Button>A Button</Button>
-    <Button>A Button</Button>
-    <Button>A Button</Button>
-    <Button>A Button</Button>
+  <ButtonGroup {...args}>
+    <ButtonPrimary>A Button</ButtonPrimary>
+    <ButtonPrimary>A Button</ButtonPrimary>
+    <ButtonPrimary>A Button</ButtonPrimary>
+    <ButtonPrimary>A Button</ButtonPrimary>
   </ButtonGroup>
 );
-export const Default = TemplatePrimary.bind({});
+export const Primary = TemplatePrimary.bind({});
+Primary.args = {
+  attached: true,
+};
 
 export const WithSpacing = TemplatePrimary.bind({});
 WithSpacing.args = {
   attached: false,
-  spacing: "8",
+  space: "standard",
 };
 
 const TemplateSecondary: Story<ButtonGroupProps> = (args) => (
   <ButtonGroup attached={true} {...args}>
-    <Button variant="secondary">A Button</Button>
-    <Button variant="secondary">A Button</Button>
-    <Button variant="secondary">A Button</Button>
-    <Button variant="secondary">A Button</Button>
+    <ButtonSecondary>A Button</ButtonSecondary>
+    <ButtonSecondary>A Button</ButtonSecondary>
+    <ButtonSecondary>A Button</ButtonSecondary>
+    <ButtonSecondary>A Button</ButtonSecondary>
   </ButtonGroup>
 );
 
 export const Secondary = TemplateSecondary.bind({});
+
+const TemplateOutline: Story<ButtonGroupProps> = (args) => (
+  <ButtonGroup attached={true} {...args}>
+    <ButtonOutline>A Button</ButtonOutline>
+    <ButtonOutline>A Button</ButtonOutline>
+    <ButtonOutline>A Button</ButtonOutline>
+    <ButtonOutline>A Button</ButtonOutline>
+  </ButtonGroup>
+);
+
+export const Outline = TemplateOutline.bind({});

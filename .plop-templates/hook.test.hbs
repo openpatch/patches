@@ -1,0 +1,20 @@
+import React, { ReactNode } from "react";
+import { renderHook, act } from "@testing-library/react-hooks";
+import { ThemeProvider } from "../ThemeProvider";
+import { {{ camelCase name }} } from "./{{ camelCase name }}";
+
+const wrapper = ({ children }: { children: ReactNode }) => (
+  <ThemeProvider>{children}</ThemeProvider>
+);
+
+test("base", () => {
+  const { result } = renderHook(() => {{ camelCase name }}(), {
+    wrapper,
+  });
+
+  act(() => {
+    result.current[1]("test");
+  })
+
+  expect(result.current[0]).toEqual("test");
+})

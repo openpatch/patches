@@ -4,10 +4,134 @@ import { Meta } from "@storybook/addon-docs/blocks";
 
 # Getting Started
 
-## Installation
+## Adding Patches to an existing NextJS app
 
-hallo
+```bash
+yarn add @openpatch/patches
+```
+
+You will need to set up a custom app. Create a file `_app.tsx` in your `pages` folder.
+
+```tsx
+import type { AppProps } from "next/app";
+import { CacheProvider } from "@emotion/core";
+import { cache } from "emotion";
+import { ThemeProvider } from "@openpatch/patches";
+
+function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <CacheProvider value={cache}>
+      <ThemeProvider>
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </CacheProvider>
+  );
+}
+
+export default MyApp;
+```
+
+You will also need a custon document and `emotion-server`. Install `emotion-server` and create a file `_document.tsx` in your `pages` folder.
+
+```bash
+yarn add emotion-server
+```
+
+```tsx
+import Document, { Head, Main, NextScript } from "next/document";
+import { extractCritical } from "emotion-server";
+
+export default class MyDocument extends Document {
+  static async getInitialProps(ctx) {
+    const initialProps = await Document.getInitialProps(ctx);
+    const styles = extractCritical(initialProps.html);
+    return {
+      ...initialProps,
+      styles: (
+        <>
+          {initialProps.styles}
+          <style
+            data-emotion-css={styles.ids.join(" ")}
+            dangerouslySetInnerHTML={{ __html: styles.css }}
+          />
+        </>
+      ),
+    };
+  }
+
+  render() {
+    return (
+      <html>
+        <Head />
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </html>
+    );
+  }
+}
+```
 
 ## Theming
 
-has
+You can override everything defined in the `base` theme. If you provide a custom to the `ThemeProvider`, everything you defined will be merge deeply with the `base` theme. For example
+
+```tsx
+const customTheme = { fonts: { body: "Roboto" } };
+
+const App = () => <ThemeProvider theme={customTheme}></ThemeProvider>;
+```
+
+will only override the body property of the `base` theme resulting in this merged theme:
+
+```json
+{
+  //...
+  "fonts": {
+    "heading": "BaseFont",
+    "body": "Roboto",
+    "code": "BaseFont"
+  }
+  //...
+}
+```
+
+### Fonts
+
+Install [typefaces](https://github.com/KyleAMathews/typefaces) for body, heading and code.
+
+```bash
+yarn add typeface-montserrat
+yarn add typeface-proza-libre
+yarn add typeface-ubuntu-mono
+```
+
+Create or modify your theme to use the installed typefaces:
+
+```ts
+export default {
+  fonts: {
+    body:
+      'Montserrat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
+    heading: "Proza Libre, Montserrat, system-ui",
+    monospace: "Ubuntu Mono, Menlo, monospace",
+  },
+};
+```
+
+Import the fonts in your applications. For nextjs create a [custom app](https://nextjs.org/docs/advanced-features/custom-app) and import the desired fonts.
+
+```tsx
+import type { AppProps } from "next/app";
+
+import "typeface-montserrat";
+import "typeface-proza-libre";
+import "typeface-ubuntu-mono";
+
+function MyApp({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />;
+}
+
+export default MyApp;
+```

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+.emotion-0 {
+  margin: 0 auto;
+  max-width: 940px;
+}
+
+<div>
+  <div
+    class="emotion-0"
+  />
+</div>
+`;

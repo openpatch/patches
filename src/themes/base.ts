@@ -1,56 +1,47 @@
-import { Theme } from "./";
+import { Theme } from "./types";
 import { blueGrey, red, yellow, blue, teal, purple } from "./colors";
 
 const base: Theme = {
-  breakpoints: {
-    sm: "640px",
-    md: "768px",
-    lg: "1024px",
-    xl: "1280px",
+  breakpoints: ["768px", "1024px"],
+  space: {
+    xxsmall: "4px",
+    xsmall: "8px",
+    small: "16px",
+    medium: "24px",
+    large: "32px",
+    xlarge: "48px",
+    xxlarge: "64px",
+    standard: "16px",
+    none: "0px",
+    gutter: "8px",
+    auto: "auto",
   },
-  mq: function (bq) {
-    return `@media (min-width: ${this.breakpoints[bq]})`;
-  },
-  spacing: {
-    "4": "4px",
-    "8": "8px",
-    "16": "16px",
-    "24": "24px",
-    "32": "32px",
-    "48": "48px",
-    "64": "64px",
-    "96": "96px",
-    "128": "128px",
-    "256": "256px",
-    "384": "384px",
-    "512": "512px",
-    "640": "640px",
-    "768": "768px",
-    default: "16px",
+  sizes: {
+    xsmall: "400px",
+    small: "600px",
+    medium: "940px",
+    large: "1280px",
   },
   fonts: {
     body:
-      'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    heading: "inherit",
-    monospace: "Menlo, monospace",
+      'Montserrat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
+    heading: '"Proza Libre", Montserrat, system-ui',
+    monospace: '"Ubuntu Mono", Menlo, monospace',
   },
   fontSizes: {
-    "12": "12px",
-    "14": "14px",
-    "16": "16px",
-    "20": "20px",
-    "24": "24px",
-    "32": "32px",
-    "48": "48px",
-    "64": "64px",
-    "96": "96px",
-    default: "16px",
+    xsmall: "12px",
+    small: "14px",
+    medium: "16px",
+    large: "20px",
+    xlarge: "24px",
+    xxlarge: "32px",
+    standard: "16px",
   },
   fontWeights: {
     hairline: 100,
     thin: 200,
     light: 300,
-    normal: 400,
+    standard: 400,
     medium: 500,
     semibold: 600,
     bold: 700,
@@ -61,17 +52,23 @@ const base: Theme = {
     none: "1",
     tight: "1.25",
     snug: "1.375",
-    normal: "1.5",
+    standard: "1.5",
     relaxed: "1.625",
     loose: "2",
   },
-  baseColors: {
+  letterSpacings: {
+    tighter: "-0.05em",
+    tight: "-0.025em",
+    standard: "0",
+    wide: "0.025em",
+    wider: "0.05em",
+    widest: "0.1em",
+  },
+  colors: {
     transparent: "transparent",
     text: blueGrey[900],
     background: blueGrey[50],
     card: "#fff",
-  },
-  colors: {
     primary: teal,
     accent: purple,
     neutral: blueGrey,
@@ -81,30 +78,31 @@ const base: Theme = {
     info: blue,
   },
   borderWidths: {
-    default: "1px",
-    "0": "0",
-    "2": "2px",
-    "4": "4px",
-    "8": "8px",
-  },
-  borderRadius: {
+    standard: "1px",
     none: "0",
-    sm: "4px",
-    default: "8px",
-    md: "10px",
-    lg: "12px",
+    light: "2px",
+    medium: "4px",
+    semibold: "8px",
+  },
+  radii: {
+    none: "0",
+    small: "4px",
+    standard: "8px",
+    medium: "10px",
+    large: "12px",
     full: "9999px",
   },
-  boxShadows: {
-    xs: "0 0 0 1px rgba(0, 0, 0, 0.05)",
-    sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
-    default: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
-    md: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
-    lg:
+  shadows: {
+    xsmall: "0 0 0 1px rgba(0, 0, 0, 0.05)",
+    small: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+    standard: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+    medium:
+      "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+    large:
       "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-    xl:
+    xlarge:
       "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-    "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+    xxlarge: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
     inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
     outline: "0 0 0 3px rgba(66, 153, 225, 0.5)",
     none: "none",
@@ -126,38 +124,6 @@ const base: Theme = {
     text: "text",
     move: "move",
     "not-allowed": "not-allowed",
-  },
-  styles: {
-    pairs: {
-      primary: {
-        bg: "50",
-        fg: "700",
-      },
-      accent: {
-        bg: "50",
-        fg: "600",
-      },
-      neutral: {
-        bg: "50",
-        fg: "600",
-      },
-      success: {
-        bg: "50",
-        fg: "700",
-      },
-      warning: {
-        bg: "50",
-        fg: "800",
-      },
-      error: {
-        bg: "50",
-        fg: "600",
-      },
-      info: {
-        bg: "50",
-        fg: "600",
-      },
-    },
   },
 };
 

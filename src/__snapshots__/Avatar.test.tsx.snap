@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+.emotion-0 {
+  border-radius: 9999px;
+}
+
+<div>
+  <img
+    alt="undefined avatar"
+    class="emotion-0"
+    height="60px"
+    title="undefined avatar"
+    width="60px"
+  />
+</div>
+`;

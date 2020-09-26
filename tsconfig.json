@@ -17,9 +17,12 @@
   },
   "include": ["src/**/*", "types"],
   "exclude": [
+    "src/private",
     "src/**/*.stories.tsx",
-    "src/**/*.tests.tsx",
+    "src/**/*.test.tsx",
+    "src/**/*.test.ts",
     "src/setupTests.ts",
+    ".storybook",
     "dist",
     "node_modules"
   ]
