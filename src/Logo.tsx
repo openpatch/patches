@@ -1,20 +1,27 @@
 /** @jsx jsx */
 import { jsx, css } from "@emotion/core";
-import { Theme } from "./themes";
+import { CSSProperties } from "@styled-system/css";
+import { Theme } from "./themes/types";
 
 export interface LogoProps {
   /**
    * Color of the Logo. Defaults to the primary color of the theme.
    */
-  color?: keyof Theme["colors"];
+  color?: keyof Theme["colors"] | "currentColor";
+  width?: CSSProperties["width"];
+  height?: CSSProperties["height"];
 }
 
-export const Logo = ({ color = "primary" }: LogoProps) => {
+export const Logo = ({
+  color = "primary",
+  height = "1em",
+  width = "1em",
+}: LogoProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="311.592"
-      height="311.592"
+      width={width}
+      height={height}
       version="1.1"
       viewBox="0 0 82.442 82.442"
     >
@@ -26,7 +33,7 @@ export const Logo = ({ color = "primary" }: LogoProps) => {
       <path
         fillOpacity="0"
         css={(theme) => ({
-          stroke: theme.colors[color][500],
+          stroke: color === "currentColor" ? color : theme.colors[color][500],
         })}
         strokeDasharray="none"
         strokeLinejoin="miter"
@@ -38,7 +45,7 @@ export const Logo = ({ color = "primary" }: LogoProps) => {
       ></path>
       <path
         css={(theme) => ({
-          fill: theme.colors[color][500],
+          fill: color === "currentColor" ? color : theme.colors[color][500],
         })}
         fillOpacity="1"
         fillRule="nonzero"

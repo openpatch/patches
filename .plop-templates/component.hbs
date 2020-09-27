@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { ReactNode } from "react";
 import { jsx, css } from '@emotion/core';
+import { Box } from "./Box"
 
 export type {{properCase name}}Props = {
     children?: ReactNode;
@@ -8,8 +9,8 @@ export type {{properCase name}}Props = {
 
 export const {{properCase name}} = ({ children }: {{properCase name}}Props) => {
    return (
-     <div>
+     <Box>
         {children}
-     </div>
+     </Box>
    );
-}
+};

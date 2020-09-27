@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+.emotion-0 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  position: initial;
+  top: 10px;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #D9E2EC;
+}
+
+.emotion-0::selection,
+.emotion-0::marker {
+  background: #27AB83;
+  color: #102A43;
+}
+
+.emotion-0 li {
+  border-top: 1px solid #D9E2EC;
+  margin-top: -1px;
+  position: relative;
+  z-index: 1;
+}
+
+.emotion-0 .top a {
+  border-left: 2px solid transparent;
+  color: #334E68;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+  padding: 8px 16px;
+  -webkit-transition: background-color 0.05s ease;
+  transition: background-color 0.05s ease;
+}
+
+.emotion-0 .top ul a {
+  font-size: 14px;
+  padding-left: 24px;
+}
+
+.emotion-0 a:hover {
+  background-color: rgba(14,30,37,0.03);
+  color: #102A43;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-0 ul {
+  background: rgba(14,30,37,0.02);
+  margin: 0;
+  padding: 0;
+  display: block;
+  list-style: none;
+}
+
+.emotion-0 .active > a {
+  border-left-color: #27AB83;
+  color: #102A43;
+  font-weight: 700;
+}
+
+.emotion-0 .current > a {
+  color: #102A43;
+}
+
+<div>
+  <nav
+    aria-label="page-menu"
+    class="emotion-0"
+  >
+    <ul
+      class="top"
+    >
+      <li
+        class="active"
+      >
+        <a
+          href="#"
+        >
+          Section 1
+        </a>
+        <ul>
+          <li
+            class="current"
+          >
+            <a
+              href="#"
+            >
+              bal1
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+            >
+              bal2
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Section 2
+        </a>
+        <ul />
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          Link 1
+        </a>
+        <ul />
+      </li>
+    </ul>
+  </nav>
+</div>
+`;

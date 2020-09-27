@@ -1,42 +1,27 @@
 /** @jsx jsx */
-import { ReactNode } from "react";
+import { ReactNode, Ref } from "react";
 import { jsx, css } from "@emotion/core";
-import { Theme } from "./themes";
+import { Box, BoxProps } from "./Box";
 
 export type CardProps = {
-  boxShadow?: keyof Theme["boxShadows"];
-  borderRadius?: keyof Theme["borderRadius"];
+  boxShadow?: BoxProps["boxShadow"];
+  borderRadius?: BoxProps["borderRadius"];
   children?: ReactNode;
 };
-
-export type CardContentProps = {
-  children?: ReactNode;
-};
-
-export const CardContent = ({ children }: CardContentProps) => (
-  <div
-    css={(theme) => css`
-      padding: ${theme.spacing[16]};
-    `}
-  >
-    {children}
-  </div>
-);
 
 export const Card = ({
-  boxShadow = "default",
-  borderRadius = "default",
+  boxShadow = "standard",
+  borderRadius = "standard",
   children,
 }: CardProps) => {
   return (
-    <div
-      css={(theme: Theme) => css`
-        box-shadow: ${theme.boxShadows[boxShadow]};
-        border-radius: ${theme.borderRadius[borderRadius]};
-        background-color: ${theme.baseColors.card};
-      `}
+    <Box
+      boxShadow={boxShadow}
+      borderRadius={borderRadius}
+      overflow="hidden"
+      backgroundColor="card"
     >
       {children}
-    </div>
+    </Box>
   );
 };

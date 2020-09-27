@@ -1,0 +1,22 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Hooks/useMedia" />
+
+# Usage
+
+This hook needs to have a `<ThemeProvider />` as its parent.
+
+```ts
+import { useMedia } from "@openpatch/patches/hooks";
+
+const columnCount = useMedia<number>({
+  // Media queries
+  breakpoints: {
+    sm: 3,
+    lg: 4,
+    xl: 6,
+  },
+  // Default column count
+  defaultValue: 2,
+});
+```

@@ -1,46 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should match snapshot 1`] = `
-.emotion-2 {
-  display: block;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.4);
-}
+exports[`should match snapshot when closed 1`] = `<div />`;
 
-.emotion-1 {
-  position: relative;
-  margin: auto;
-  padding: 0;
-  width: 80%;
-  -webkit-animation-name: animatetop;
-  animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-duration: 0.4s;
-}
-
-.emotion-0 {
-  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1),0 10px 10px -5px rgba(0,0,0,0.04);
-  border-radius: 8px;
-  background-color: #fff;
-}
-
-<div>
-  <div
-    class="emotion-2"
-  >
-    <div
-      class="emotion-1"
-    >
-      <div
-        class="emotion-0"
-      />
-    </div>
-  </div>
-</div>
-`;
+exports[`should match snapshot when open 1`] = `<div />`;

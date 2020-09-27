@@ -1,5 +1,11 @@
-import { Theme } from "./";
+import { Theme } from "./types";
+import { bahamaBlue as primary } from "./colors";
+import { PartialDeep } from "type-fest";
 
-const bahamaBlue: Partial<Theme> = {};
+const theme: PartialDeep<Theme> = {
+  colors: {
+    primary,
+  },
+};
 
-export default bahamaBlue;
+export default theme;

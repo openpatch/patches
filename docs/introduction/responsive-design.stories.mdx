@@ -1,0 +1,46 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Introduction/Responsive Design" />
+
+# Responsive Design
+
+Unlike other design systems Patches does not use responsive props. If you
+would like to design a responsive component you should use the `useMedia`
+hook.
+
+```tsx
+const columns = useMedia({
+  breakpoints: {
+    sm: 1,
+    lg: 5,
+  },
+  defaultValue: 3,
+});
+
+return (
+  <AutoGrid columns={columns}>
+    <Card>Box 1</Card>
+    <Card>Box 2</Card>
+    <Card>Box 3</Card>
+    <Card>Box 4</Card>
+    <Card>Box 5</Card>
+    <Card>Box 6</Card>
+    <Card>Box 7</Card>
+  </AutoGrid>
+);
+```
+
+This makes is also possible to easily use media queries for other purposes,
+like selecting different components based on the width of the viewport.
+
+```tsx
+const Icon = useMedia({
+  breakpoints: {
+    sm: IconLowDetail,
+    lg: IconHighDetail,
+  },
+  defaultValue: IconNormalDetail,
+});
+
+return <Icon />;
+```

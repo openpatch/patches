@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
+import { action } from "@storybook/addon-actions";
 
 import { Modal, ModalProps } from "./Modal";
+import { CardContent } from "./CardContent";
+import { ButtonBase } from "./ButtonBase";
 
 export default {
   title: "Components/Modal",
@@ -9,8 +12,20 @@ export default {
   argTypes: {},
 } as Meta;
 
-const Template: Story<ModalProps> = (args) => (
-  <Modal {...args}>this is a modal</Modal>
-);
+const Template: Story<ModalProps> = (args) => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <>
+      <ButtonBase onClick={() => setOpen(true)}>Open Modal</ButtonBase>
+      <Modal {...args} open={open} onClose={() => setOpen(false)}>
+        <CardContent>this is a modal</CardContent>
+      </Modal>
+    </>
+  );
+};
 
 export const Default = Template.bind({});
+Default.args = {
+  onClose: action("onClose"),
+};

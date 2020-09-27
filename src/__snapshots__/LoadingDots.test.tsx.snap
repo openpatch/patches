@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+.emotion-3 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-3 > span {
+  -webkit-animation-name: blink;
+  animation-name: blink;
+  -webkit-animation-duration: 1.4s;
+  animation-duration: 1.4s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.emotion-3 > span:nth-of-type(2) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.emotion-3 > span:nth-of-type(3) {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.emotion-0 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-color: #102A43;
+  border-radius: 9999px;
+  width: 4px;
+  margin-right: 4px;
+  height: 4px;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-color: #102A43;
+  border-radius: 9999px;
+  margin-right: 4px;
+  width: 4px;
+  height: 4px;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-color: #102A43;
+  border-radius: 9999px;
+  width: 4px;
+  height: 4px;
+}
+
+<div>
+  <div
+    class="emotion-3"
+    display="inline-flex"
+  >
+    <span
+      class="emotion-0"
+      height="4px"
+      width="4px"
+    />
+    <span
+      class="emotion-1"
+      height="4px"
+      width="4px"
+    />
+    <span
+      class="emotion-2"
+      height="4px"
+      width="4px"
+    />
+  </div>
+</div>
+`;

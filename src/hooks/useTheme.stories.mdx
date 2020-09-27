@@ -1,0 +1,20 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Hooks/useTheme" />
+
+# Usage
+
+This hook needs to have a `<ThemeProvider />` as its parent.
+
+```ts
+import { useTheme } from "@openpatch/patches/hooks";
+
+const [theme, setTheme] = useTheme();
+
+// a partial theme, which will be merged with the base theme
+setTheme({
+    colors: {
+        background: '#FF0';
+    }
+})
+```

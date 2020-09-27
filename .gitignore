@@ -1,3 +1,4 @@
+storybook-static
 *.log
 .vscode
 .env

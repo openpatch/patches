@@ -1,12 +1,11 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import { {{ properCase name }}, {{ properCase name }}Props } from "./{{ properCase name }}";
-import ThemeProvider from "./themes/ThemeProvider";
-import base from "./themes/base";
+import { ThemeProvider } from "./ThemeProvider";
 
 const renderWithTheme = (props?: {{ properCase name }}Props) =>
 render(
-    <ThemeProvider theme={base}>
+    <ThemeProvider>
         <{{ properCase name }} {...props} />
     </ThemeProvider>
 );
