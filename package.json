@@ -1,6 +1,6 @@
 {
   "name": "@openpatch/patches",
-  "version": "0.1.3",
+  "version": "0.1.5-canary.6499f65.0",
   "description": "OpenPatch Design System",
   "author": {
     "name": "Mike Barkmin",
