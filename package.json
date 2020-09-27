@@ -34,7 +34,6 @@
     "styled-system": "^5.1.5"
   },
   "scripts": {
-    "commit": "cz",
     "clean": "rm -rf dist",
     "build": "yarn clean && tsc --project tsconfig.json",
     "test": "jest --watch",
