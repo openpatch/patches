@@ -246,6 +246,7 @@ exports[`should match snapshot 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  color: currentColor;
   width: 24px;
   height: 24px;
 }
@@ -253,6 +254,14 @@ exports[`should match snapshot 1`] = `
 .emotion-9 svg {
   width: 24px;
   height: 24px;
+}
+
+.emotion-9 svg .primary {
+  fill: currentColor;
+}
+
+.emotion-9 svg .secondary {
+  fill: currentColor;
 }
 
 .emotion-8 {
