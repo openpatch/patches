@@ -65,6 +65,7 @@ const base: Theme = {
     widest: "0.1em",
   },
   colors: {
+    currentColor: "currentColor",
     transparent: "transparent",
     text: blueGrey[900],
     background: blueGrey[50],
