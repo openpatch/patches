@@ -5,7 +5,7 @@ export const theme = create({
   base: "light",
   brandTitle: "Patches",
   brandUrl: "https://github.com/openpatch/patches",
-  brandImage: "/patches_title.svg",
+  brandImage: "patches_title.svg",
   fontBase: base.fonts.body,
   fontCode: base.fonts.monospace,
   colorPrimary: base.colors.primary[500],
