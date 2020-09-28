@@ -37,7 +37,7 @@
   "scripts": {
     "clean": "rm -rf dist",
     "build": "yarn clean && yarn build:es && yarn build:cjs",
-    "build:es": "tsc --project tsconfig.json --module es2019 --target es2019 --outDir dist/es",
+    "build:es": "tsc --project tsconfig.json --module esnext --target es2015 --outDir dist/es",
     "build:cjs": "tsc --project tsconfig.json --module commonjs --target es5 --outDir dist/cjs",
     "test": "jest --watch",
     "test:ci": "jest --ci",
