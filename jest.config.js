@@ -4,6 +4,9 @@ module.exports = {
   snapshotSerializers: ["jest-emotion"],
   testPathIgnorePatterns: ["<rootDir>/dist/", "<rootDir>/node_modules/"],
   setupFilesAfterEnv: ["<rootDir>/src/setupTests.ts"],
+  transform: {
+    "^.+\\.(ts|tsx)$": "ts-jest",
+  },
   collectCoverageFrom: [
     "src/**/*.{tsx, ts, js, jsx}",
     "!src/icons/**/*.{tsx, ts, js, jsx}",
