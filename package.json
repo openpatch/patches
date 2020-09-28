@@ -9,10 +9,11 @@
   },
   "license": "MIT",
   "private": false,
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "module": "dist/es/index.js",
+  "main": "dist/cjs/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "./dist",
+    "dist",
     "README.md"
   ],
   "repository": {
@@ -35,7 +36,9 @@
   },
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "yarn clean && tsc --project tsconfig.json",
+    "build": "yarn clean && yarn build:es && yarn build:cjs",
+    "build:es": "tsc --project tsconfig.json --module es2020 --target es2020 --outDir dist/es",
+    "build:cjs": "tsc --project tsconfig.json --module commonjs --target es5 --outDir dist/cjs",
     "test": "jest --watch",
     "test:ci": "jest --ci",
     "test:coverage": "jest --collect-coverage",
