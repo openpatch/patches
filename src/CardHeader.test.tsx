@@ -1,12 +1,12 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import { CardHeader, CardHeaderProps } from "./CardHeader";
 import { ThemeProvider } from "./ThemeProvider";
+import { Default } from "./CardHeader.stories";
 
-const renderWithTheme = (props?: CardHeaderProps) =>
+const renderWithTheme = () =>
   render(
     <ThemeProvider>
-      <CardHeader {...props} />
+      <Default>Header</Default>
     </ThemeProvider>
   );
 

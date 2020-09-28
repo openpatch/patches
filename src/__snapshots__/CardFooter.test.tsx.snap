@@ -14,7 +14,7 @@ exports[`should match snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #D9E2EC;
+  background-color: #F0F4F8;
   padding: 16px;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
