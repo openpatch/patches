@@ -98,11 +98,18 @@ export const OverlapLayout = () => (
             ]}
           />
         </Box>
-        <Card>
-          <CardContent>
-            <Placeholder height="1200px" />
-          </CardContent>
-        </Card>
+        <Grid gridGap="standard">
+          <Card>
+            <CardContent>
+              <Placeholder height="400px" />
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent>
+              <Placeholder height="400px" />
+            </CardContent>
+          </Card>
+        </Grid>
       </Grid>
     </Main>
     <Footer

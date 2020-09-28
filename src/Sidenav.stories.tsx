@@ -23,7 +23,7 @@ export const Default = () => (
             active: true,
           },
           {
-            label: "bal2",
+            label: "bal",
             href: "#",
           },
         ],

@@ -39,6 +39,7 @@
     "test": "jest --watch",
     "test:ci": "jest --ci",
     "test:coverage": "jest --collect-coverage",
+    "prepare": "yarn build",
     "release": "auto shipit",
     "docs:build": "yarn storybook:build:docs && yarn playroom:build",
     "storybook": "start-storybook -p 6006 -s .storybook/public",

@@ -59,7 +59,7 @@ export const Avatar = ({
           width={width}
           height={width}
           borderStyle="solid"
-          borderColor="neutral.300"
+          borderColor="neutral.200"
         />
       )}
     </Fragment>

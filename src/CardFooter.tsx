@@ -19,7 +19,7 @@ export const CardFooter = ({
     <Box
       display="flex"
       alignItems="center"
-      backgroundColor="neutral.100"
+      backgroundColor="neutral.50"
       p="standard"
       css={(theme: Theme) => [
         css`

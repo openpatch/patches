@@ -9,6 +9,8 @@ export default {
   argTypes: {},
 } as Meta;
 
-const Template: Story<CardMediaProps> = (args) => <CardMedia {...args} />;
+const Template: Story<CardMediaProps> = (args) => (
+  <CardMedia {...args}></CardMedia>
+);
 
 export const Default = Template.bind({});

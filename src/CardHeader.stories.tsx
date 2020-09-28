@@ -9,6 +9,8 @@ export default {
   argTypes: {},
 } as Meta;
 
-const Template: Story<CardHeaderProps> = (args) => <CardHeader {...args} />;
+const Template: Story<CardHeaderProps> = (args) => (
+  <CardHeader {...args}>Card Header</CardHeader>
+);
 
 export const Default = Template.bind({});
