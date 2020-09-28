@@ -5,3 +5,19 @@
 [![Stars](https://img.shields.io/github/stars/openpatch/patches?style=social)](https://github.com/openpatch/patches/) [![Version](https://img.shields.io/npm/v/@openpatch/patches)](https://www.npmjs.com/package/@openpatch/patches) [![Coverage](https://img.shields.io/codecov/c/github/openpatch/patches)](https://codecov.io/gh/openpatch/patches) [![License](https://img.shields.io/github/license/openpatch/patches)](https://github.com/openpatch/patches/blob/main/LICENSE) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 </div>
+
+# Patches
+
+Patches is the Design System for OpenPatch.
+
+## Changelog
+
+Patches follows semantic versioning. In short, this means we use patch
+versions for bugfixes, minor versions for new features, and major versions
+for breaking changes. You can read [our changelog on
+GitHub](https://github.com/openpatch/patches/releases).
+
+## Related Projects
+
+- ** [Circuit UI](https://github.com/sumup-oss/circuit-ui/) ** the project structure is inspired by this design system
+- ** [Chakra UI](https://chakra-ui.com) ** some components are inspired by this design system

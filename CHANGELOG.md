@@ -1,3 +1,23 @@
+# v0.2.0 (Sun Sep 27 2020)
+
+#### 🚀 Enhancement
+
+- feat: more components [#1](https://github.com/openpatch/patches/pull/1) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🐛 Bug Fix
+
+- docs: fix storybook path [#2](https://github.com/openpatch/patches/pull/2) ([@mikebarkmin](https://github.com/mikebarkmin))
+- test: correct Nav snapshot test [#1](https://github.com/openpatch/patches/pull/1) ([@mikebarkmin](https://github.com/mikebarkmin))
+- chore: remove commit script [#1](https://github.com/openpatch/patches/pull/1) ([@mikebarkmin](https://github.com/mikebarkmin))
+- chore: make typescript more strict [#1](https://github.com/openpatch/patches/pull/1) ([@mikebarkmin](https://github.com/mikebarkmin))
+- fix: base theme missing currentColor [#1](https://github.com/openpatch/patches/pull/1) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # (Wed Sep 09 2020)
 
 :tada: This release contains work from a new contributor! :tada:
