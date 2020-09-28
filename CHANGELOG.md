@@ -1,3 +1,20 @@
+# v0.2.1 (Mon Sep 28 2020)
+
+#### 🐛 Bug Fix
+
+- fix: improve card header and footer ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:openpatch/patches ([@mikebarkmin](https://github.com/mikebarkmin))
+- test: update snapshots ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v0.2.0 (Sun Sep 27 2020)
 
 #### 🚀 Enhancement
