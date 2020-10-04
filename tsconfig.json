@@ -4,6 +4,7 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "rootDir": "./src",
     "declaration": true,
+    "declarationDir": "./dist/types",
     "outDir": "./dist/es",
     "module": "esnext",
     "sourceMap": true,
