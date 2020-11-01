@@ -63,7 +63,7 @@ export type NavProps = {
   tray?: TrayIconProps[];
   links?: NavLinkProps[];
   profileLinks?: ProfileLinkProps[];
-  profile: {
+  profile?: {
     image?: string;
     name: string;
     email: string;
@@ -280,7 +280,7 @@ export const Nav = ({ logo, tray, profile, links, profileLinks }: NavProps) => {
                     label={label}
                   />
                 ))}
-                {
+                {profile && (
                   <Box position="relative" display={responsiveDisplay}>
                     <Box
                       display="flex"
@@ -340,7 +340,7 @@ export const Nav = ({ logo, tray, profile, links, profileLinks }: NavProps) => {
                       </Box>
                     )}
                   </Box>
-                }
+                )}
               </Box>
             </Box>
             <Box display={["block", "none"]}>
@@ -379,46 +379,48 @@ export const Nav = ({ logo, tray, profile, links, profileLinks }: NavProps) => {
                 </NavItem>
               ))}
             </Box>
-            <Box
-              borderTopColor="primary.600"
-              borderTopStyle="solid"
-              borderTopWidth="light"
-              paddingY="small"
-            >
-              <Box display="flex" paddingLeft="small" mb="xxsmall">
-                <Box mr="xsmall">
-                  <Avatar
-                    src={profile.image}
-                    placeholder={profile.image === undefined}
-                    size="40px"
-                  />
-                </Box>
-                <Box>
-                  <Text>{profile.name}</Text>
-                  <Text fontSize="xsmall" textColor="primary.200">
-                    {profile.email}
-                  </Text>
-                </Box>
-              </Box>
+            {profile && (
               <Box
-                css={css`
-                  & > * {
-                    display: block !important;
-                  }
-                `}
+                borderTopColor="primary.600"
+                borderTopStyle="solid"
+                borderTopWidth="light"
+                paddingY="small"
               >
-                {profileLinks?.map((profileLink) => (
-                  <NavItem
-                    variant="secondary"
-                    key={profileLink.label}
-                    onClick={profileLink.onClick}
-                    href={profileLink.href}
-                  >
-                    {profileLink.label}
-                  </NavItem>
-                ))}
+                <Box display="flex" paddingLeft="small" mb="xxsmall">
+                  <Box mr="xsmall">
+                    <Avatar
+                      src={profile.image}
+                      placeholder={profile.image === undefined}
+                      size="40px"
+                    />
+                  </Box>
+                  <Box>
+                    <Text>{profile.name}</Text>
+                    <Text fontSize="xsmall" textColor="primary.200">
+                      {profile.email}
+                    </Text>
+                  </Box>
+                </Box>
+                <Box
+                  css={css`
+                    & > * {
+                      display: block !important;
+                    }
+                  `}
+                >
+                  {profileLinks?.map((profileLink) => (
+                    <NavItem
+                      variant="secondary"
+                      key={profileLink.label}
+                      onClick={profileLink.onClick}
+                      href={profileLink.href}
+                    >
+                      {profileLink.label}
+                    </NavItem>
+                  ))}
+                </Box>
               </Box>
-            </Box>
+            )}
           </Box>
         </Box>
       </Box>
