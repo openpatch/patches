@@ -2,6 +2,7 @@
 import { ReactNode } from "react";
 import { jsx, css } from "@emotion/core";
 import { Box, BoxProps } from "./Box";
+import { useTheme } from "./hooks/useTheme";
 
 const circuit = (
   backgroundColor: string,
@@ -29,8 +30,17 @@ export const Pattern = ({
   opacity = 0.7,
   ...props
 }: PatternProps) => {
+  const [theme] = useTheme();
+
   return (
-    <Box css={circuit(backgroundColor, foregroundColor, opacity)} {...props}>
+    <Box
+      css={circuit(
+        backgroundColor || theme.colors.primary[900],
+        foregroundColor || theme.colors.primary[400],
+        opacity
+      )}
+      {...props}
+    >
       {children}
     </Box>
   );
