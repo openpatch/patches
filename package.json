@@ -46,7 +46,7 @@
     "release": "auto shipit",
     "docs:build": "yarn storybook:build:docs && yarn playroom:build",
     "storybook": "start-storybook --no-dll -p 6006 -s .storybook/public",
-    "storybook:build": "NODE_OPTIONS=--max_old_space_size=4096  build-storybook -s .storybook/public",
+    "storybook:build": "NODE_OPTIONS=--max_old_space_size=4096  build-storybook --no-dll -s .storybook/public",
     "storybook:build:docs": "build-storybook -s .storybook/public --docs"
   },
   "eslintConfig": {
