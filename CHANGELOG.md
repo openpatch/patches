@@ -1,3 +1,15 @@
+# v0.3.1 (Tue Nov 10 2020)
+
+#### ⚠️ Pushed to `master`
+
+- Update release.yml ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v0.3.0 (Tue Nov 10 2020)
 
 #### 🚀 Enhancement
