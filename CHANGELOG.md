@@ -1,3 +1,24 @@
+# v0.3.0 (Tue Nov 10 2020)
+
+#### 🚀 Enhancement
+
+- Feature preview [#3](https://github.com/openpatch/patches/pull/3) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### ⚠️ Pushed to `master`
+
+- docs: convert font to path ([@mikebarkmin](https://github.com/mikebarkmin))
+- build: move types to separate folder ([@mikebarkmin](https://github.com/mikebarkmin))
+- build: fix es build ([@mikebarkmin](https://github.com/mikebarkmin))
+- Merge branch 'master' of github.com:openpatch/patches ([@mikebarkmin](https://github.com/mikebarkmin))
+- build: use es2019 instead of es2020 to prevent node 12 warning ([@mikebarkmin](https://github.com/mikebarkmin))
+- build: provide es and cjs files ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v0.2.1 (Mon Sep 28 2020)
 
 #### 🐛 Bug Fix
