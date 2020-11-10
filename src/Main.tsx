@@ -23,7 +23,7 @@ const StyledMain = styled(Box)(
           backgroundColor: "primary.900",
           content: "''",
           display: "block",
-          height: "234px",
+          height: ["190px", "210px"],
           left: 0,
           position: "absolute",
           top: 0,

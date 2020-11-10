@@ -242,6 +242,7 @@ export type SystemTypographyElements =
   | "h6"
   | "code"
   | "blockquote"
+  | "span"
   | "p";
 
 export type SystemElements = SystemTypographyElements | SystemLayoutElements;

@@ -2,21 +2,14 @@ import React from "react";
 import { Nav } from "../../Nav";
 import { PageHeader } from "../../PageHeader";
 import { Main } from "../../Main";
-import { Card } from "../../Card";
-import { CardContent } from "../../CardContent";
-import { Placeholder } from "../Placeholder";
 import { Footer } from "../../Footer";
 import { ButtonPrimary } from "../../ButtonPrimary";
 import { Bell, Support } from "../../icons/solid";
-import { Sidenav } from "../../Sidenav";
-import { Grid } from "../../Grid";
-import { Box } from "../../Box";
+import { Placeholder } from "../Placeholder";
+import { Card } from "../../Card";
+import { CardContent } from "../../CardContent";
 
-export default {
-  title: "Recipes/Layouts",
-};
-
-export const OverlapLayout = () => (
+export const Layout = ({ children }) => (
   <div>
     <Nav
       tray={[
@@ -74,44 +67,55 @@ export const OverlapLayout = () => (
       Stacked Layout With Overlap
     </PageHeader>
     <Main variant="overlap">
-      <Grid gridGap="standard" gridTemplateColumns={["1fr", "240px 1fr"]}>
-        <Box>
-          <Sidenav
-            position={["initial", "sticky"]}
-            sections={[
-              {
-                label: "Section 1",
-                href: "#",
-                active: true,
-                links: [
-                  {
-                    label: "Subsection 1.1",
-                    href: "#",
-                    active: true,
-                  },
-                ],
-              },
-              {
-                label: "Section 2",
-                href: "#",
-              },
-            ]}
-          />
-        </Box>
-        <Grid gridGap="standard">
-          <Card>
-            <CardContent>
-              <Placeholder height="400px" />
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent>
-              <Placeholder height="400px" />
-            </CardContent>
-          </Card>
-        </Grid>
-      </Grid>
+      {children ? (
+        children
+      ) : (
+        <Card>
+          <CardContent>
+            <Placeholder height="400px" />
+          </CardContent>
+        </Card>
+      )}
     </Main>
+    <Footer
+      links={[
+        {
+          href: "#",
+          label: "Contact",
+        },
+        {
+          href: "#",
+          label: "Terms",
+        },
+      ]}
+    />
+  </div>
+);
+
+export const Landing = ({ children }) => (
+  <div>
+    <Nav
+      links={[
+        {
+          label: "Features",
+          href: "#",
+          active: true,
+        },
+        {
+          label: "Pricing",
+          href: "#",
+        },
+        {
+          label: "Docs",
+          href: "#",
+        },
+        {
+          label: "Blog",
+          href: "#",
+        },
+      ]}
+    ></Nav>
+    {children}
     <Footer
       links={[
         {
