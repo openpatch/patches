@@ -6,7 +6,7 @@ import { ThemeProvider } from "./ThemeProvider";
 const renderWithTheme = (props?: CodeProps) =>
   render(
     <ThemeProvider>
-      <Code {...props} />
+      <Code {...props}>public static void;</Code>
     </ThemeProvider>
   );
 
