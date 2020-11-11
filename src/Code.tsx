@@ -8,7 +8,7 @@ import {
 import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 export type CodeProps = {
-  children?: ReactNode;
+  children: ReactNode;
 } & SyntaxHighlighterProps;
 
 export const Code = ({ children, ...props }: CodeProps) => {

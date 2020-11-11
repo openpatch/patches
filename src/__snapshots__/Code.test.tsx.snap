@@ -7,7 +7,11 @@ exports[`should match snapshot 1`] = `
   >
     <code
       style="color: rgb(197, 200, 198); text-shadow: 0 1px rgba(0, 0, 0, 0.3); font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none;"
-    />
+    >
+      <span>
+        public static void;
+      </span>
+    </code>
   </pre>
 </div>
 `;
