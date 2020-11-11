@@ -1,3 +1,23 @@
+# v0.4.0 (Wed Nov 11 2020)
+
+#### 🚀 Enhancement
+
+- feat: add markdown [#4](https://github.com/openpatch/patches/pull/4) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🐛 Bug Fix
+
+- fix: require children in Code component ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'feature/markdown' ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # (Tue Nov 10 2020)
 
 #### ⚠️ Pushed to `master`
