@@ -33,3 +33,6 @@ export const Code = forwardRef(
 );
 
 export const Default = Template.bind({});
+Default.args = {
+  language: "typescript",
+};

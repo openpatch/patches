@@ -8,6 +8,7 @@
     "outDir": "./dist/es",
     "module": "esnext",
     "sourceMap": true,
+    "typeRoots": ["./types", "./node_modules/@types"],
     "jsx": "react",
     "allowJs": true,
     "moduleResolution": "node",
@@ -17,7 +18,7 @@
     "esModuleInterop": true,
     "strict": true
   },
-  "include": ["src/**/*", "types"],
+  "include": ["src/**/*"],
   "exclude": [
     "src/private",
     "src/**/*.stories.tsx",
@@ -26,6 +27,7 @@
     "src/setupTests.ts",
     ".storybook",
     "dist",
-    "node_modules"
+    "node_modules",
+    "./types"
   ]
 }

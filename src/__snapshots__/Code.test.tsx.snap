@@ -1,24 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should match snapshot 1`] = `
-.emotion-0 {
-  box-sizing: border-box;
-  min-width: 0;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  border-radius: 8px;
-  box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.06);
-  font-family: "Ubuntu Mono",Menlo,monospace;
-  padding: 16px;
-  word-wrap: break-word;
-  display: block;
-  white-space: pre-wrap;
-}
-
 <div>
-  <code
-    class="emotion-0"
-    font-family="monospace"
-  />
+  <pre
+    style="color: rgb(197, 200, 198); text-shadow: 0 1px rgba(0, 0, 0, 0.3); font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none; padding: 1em; margin: .5em 0px; overflow: auto; border-radius: 0.3em; background: rgb(29, 31, 33);"
+  >
+    <code
+      style="color: rgb(197, 200, 198); text-shadow: 0 1px rgba(0, 0, 0, 0.3); font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none;"
+    />
+  </pre>
 </div>
 `;

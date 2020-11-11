@@ -26,7 +26,10 @@
     "@emotion/styled": "^10.0.27",
     "emotion-theming": "^10.0.27",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-markdown": "^5.0.2",
+    "react-syntax-highlighter": "^15.3.0",
+    "remark-gfm": "^1.0.0"
   },
   "dependencies": {
     "lodash": "^4.17.20",
