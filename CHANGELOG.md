@@ -1,3 +1,16 @@
+# v0.4.1 (Thu Nov 12 2020)
+
+#### 🐛 Bug Fix
+
+- Configure Renovate [#5](https://github.com/openpatch/patches/pull/5) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 2
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v0.4.0 (Wed Nov 11 2020)
 
 #### 🚀 Enhancement
