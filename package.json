@@ -67,6 +67,9 @@
       "last 1 safari version"
     ]
   },
+  "resolutions": {
+    "@types/react": "16.14.0"
+  },
   "devDependencies": {
     "@auto-it/all-contributors": "10.4.0",
     "@auto-it/conventional-commits": "10.4.0",
