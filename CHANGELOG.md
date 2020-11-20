@@ -1,3 +1,50 @@
+# v0.4.2 (Fri Nov 20 2020)
+
+#### 🐛 Bug Fix
+
+- chore(deps): update react monorepo to v16.14.0 [#42](https://github.com/openpatch/patches/pull/42) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- chore(deps): update dependency @types/node to v14.14.9 [#38](https://github.com/openpatch/patches/pull/38) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- chore(deps): update dependency typescript to v4.1.2 [#39](https://github.com/openpatch/patches/pull/39) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- chore(deps): update dependency prettier to v2.2.0 [#40](https://github.com/openpatch/patches/pull/40) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- chore(deps): update dependency @testing-library/react to v11.2.0 [#30](https://github.com/openpatch/patches/pull/30) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.5.1 [#28](https://github.com/openpatch/patches/pull/28) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/dom to v7.27.0 [#27](https://github.com/openpatch/patches/pull/27) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/node to v14.14.8 [#26](https://github.com/openpatch/patches/pull/26) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/dom to v7.26.7 [#24](https://github.com/openpatch/patches/pull/24) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.5.0 [#23](https://github.com/openpatch/patches/pull/23) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency chromatic to v5.4.0 [#22](https://github.com/openpatch/patches/pull/22) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update codecov/codecov-action action to v1.0.15 [#21](https://github.com/openpatch/patches/pull/21) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency type-fest to v0.19.0 [#20](https://github.com/openpatch/patches/pull/20) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency fork-ts-checker-webpack-plugin to v6.0.2 [#19](https://github.com/openpatch/patches/pull/19) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/jest-dom to v5.11.6 [#18](https://github.com/openpatch/patches/pull/18) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency csstype to v3.0.5 [#17](https://github.com/openpatch/patches/pull/17) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/user-event to v12.2.2 [#14](https://github.com/openpatch/patches/pull/14) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- chore(deps): update dependency babel-loader to v8.2.1 [#15](https://github.com/openpatch/patches/pull/15) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- chore(deps): update dependency type-fest to v0.18.1 [#16](https://github.com/openpatch/patches/pull/16) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- chore(deps): update dependency @testing-library/react to v11.1.2 [#13](https://github.com/openpatch/patches/pull/13) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/dom to v7.26.6 [#12](https://github.com/openpatch/patches/pull/12) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): pin dependencies [#6](https://github.com/openpatch/patches/pull/6) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- chore(deps): update actions/cache action to v2 [#9](https://github.com/openpatch/patches/pull/9) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- chore(deps): update codecov/codecov-action action to v1.0.14 [#7](https://github.com/openpatch/patches/pull/7) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- chore(deps): update dependency @types/node to v14.14.7 [#8](https://github.com/openpatch/patches/pull/8) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### ⚠️ Pushed to `master`
+
+- Revert "chore(deps): update react monorepo to v16.14.0 (#42)" ([@mikebarkmin](https://github.com/mikebarkmin))
+- chore: downgrade react ([@mikebarkmin](https://github.com/mikebarkmin))
+- chore: add resolution for react types ([@mikebarkmin](https://github.com/mikebarkmin))
+- chore: upgrade dependencies ([@mikebarkmin](https://github.com/mikebarkmin))
+- Update chromatic.yml ([@mikebarkmin](https://github.com/mikebarkmin))
+- chore: automerge renovate ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v0.4.1 (Thu Nov 12 2020)
 
 #### 🐛 Bug Fix
