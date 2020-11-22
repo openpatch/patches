@@ -1,10 +1,7 @@
 /** @jsx jsx */
 import { ReactNode, useEffect } from "react";
-import { jsx, Global, css } from "@emotion/core";
-import { ThemeProvider as ETP } from "emotion-theming";
-
+import { jsx, Global, css, ThemeProvider as ETP, Theme } from "@emotion/react";
 import { useTheme } from "./hooks";
-import { Theme } from "./themes/types";
 import { PartialDeep } from "type-fest";
 
 export type ThemeProviderProps = {

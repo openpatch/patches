@@ -1,4 +1,4 @@
-import { Theme } from "./types";
+import { Theme } from "@emotion/react";
 import { blueGrey, red, yellow, blue, teal, purple } from "./colors";
 
 const base: Theme = {

@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Global, jsx, css } from "@emotion/core";
+import { Global, jsx, css } from "@emotion/react";
 import { Heading } from "@storybook/addon-docs/blocks";
 import _merge from "lodash/merge";
 import { Colors } from "./Colors";

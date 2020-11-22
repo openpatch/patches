@@ -72,6 +72,7 @@ export const Box = styled.div<BoxProps>(
     transition: "all 0.2s ease",
   },
   compose(
+    console.log,
     color,
     cursor,
     space,

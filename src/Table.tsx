@@ -1,8 +1,7 @@
 /** @jsx jsx */
 import { ReactNode } from "react";
-import { jsx, css } from "@emotion/core";
+import { jsx, css } from "@emotion/react";
 import { Box } from "./Box";
-import { Theme } from "./themes/types";
 
 export type TableProps = {
   children?: ReactNode;
@@ -13,7 +12,7 @@ export const Table = ({ children }: TableProps) => {
     <Box
       as="table"
       minWidth="100%"
-      css={(theme: Theme) => css`
+      css={(theme) => css`
         border-collapse: collapse;
         border-width: 1px;
         border-color: ${theme.colors.neutral["100"]};

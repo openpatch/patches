@@ -1,7 +1,7 @@
 import { useState, Dispatch, SetStateAction, useEffect } from "react";
+import { Theme } from "@emotion/react";
 import { PartialDeep } from "type-fest";
 import { base } from "../themes";
-import { Theme } from "../themes/types";
 import _merge from "lodash/merge";
 
 export const useTheme = (

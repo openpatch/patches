@@ -1,8 +1,7 @@
 /** @jsx jsx */
 import { ReactNode } from "react";
-import { jsx, css } from "@emotion/core";
+import { jsx, css } from "@emotion/react";
 import { Box, BoxProps } from "./Box";
-import { Theme } from "./themes/types";
 
 export type TableCellProps = {
   children?: ReactNode;
@@ -21,7 +20,7 @@ export const TableCell = ({
       px="small"
       py="xsmall"
       textAlign={align}
-      css={(theme: Theme) => [
+      css={(theme) => [
         isHeader &&
           css`
             font-size: ${theme.fontSizes.small};

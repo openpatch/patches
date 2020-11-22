@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { ReactNode } from "react";
-import { jsx, css } from "@emotion/core";
+import { jsx, css } from "@emotion/react";
 import { Box, BoxProps } from "./Box";
 
 export type CenterProps = {

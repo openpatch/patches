@@ -1,4 +1,4 @@
-import { Theme } from "./types";
+import { Theme } from "@emotion/react";
 import { bahamaBlue as primary } from "./colors";
 import { PartialDeep } from "type-fest";
 

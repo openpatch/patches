@@ -1,8 +1,7 @@
 /** @jsx jsx */
 import { Fragment, useState } from "react";
-import { jsx, css } from "@emotion/core";
+import { jsx, css } from "@emotion/react";
 import { Box, BoxProps } from "./Box";
-import { Theme } from "./themes/types";
 
 type SectionProps = {
   label: string;
@@ -49,7 +48,7 @@ export const Sidenav = ({ sections, position = "initial" }: SidenavProps) => {
   return (
     <Box
       position={position}
-      css={(theme: Theme) => [
+      css={(theme) => [
         css`
           top: 10px;
           background-color: ${theme.colors.card};

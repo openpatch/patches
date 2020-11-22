@@ -1,7 +1,7 @@
 module.exports = {
   preset: "ts-jest",
   testEnvironment: "jsdom",
-  snapshotSerializers: ["jest-emotion"],
+  snapshotSerializers: ["@emotion/jest"],
   testPathIgnorePatterns: ["<rootDir>/dist/", "<rootDir>/node_modules/"],
   setupFilesAfterEnv: ["<rootDir>/src/setupTests.ts"],
   transform: {

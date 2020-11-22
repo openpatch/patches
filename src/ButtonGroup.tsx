@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { ReactNode } from "react";
-import { jsx, css } from "@emotion/core";
-import { Theme } from "./themes/types";
+import { jsx, css, Theme } from "@emotion/react";
 
 export type ButtonGroupProps = {
   attached?: boolean;

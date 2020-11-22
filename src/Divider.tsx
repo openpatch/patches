@@ -1,7 +1,6 @@
 /** @jsx jsx */
-import { jsx, css } from "@emotion/core";
+import { jsx, css } from "@emotion/react";
 import { Box, BoxProps } from "./Box";
-import { Theme, ThemeColor } from "./themes/types";
 
 export type DividerProps = {
   color?: BoxProps["backgroundColor"];

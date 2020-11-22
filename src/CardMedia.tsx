@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { ReactNode, forwardRef, Ref, CSSProperties } from "react";
-import { jsx, css } from "@emotion/core";
+import { jsx, css } from "@emotion/react";
 import { Properties } from "csstype";
 
 export type CardMediaProps = {

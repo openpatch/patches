@@ -12,7 +12,7 @@ export default {
 const Template: Story<CodeProps> = (args) => (
   <Code {...args}>
     {`import { ReactNode, forwardRef, Ref } from "react";
-import { jsx, css } from "@emotion/core";
+import { jsx, css } from "@emotion/react";
 import { TextProps, textStyle } from "./Text";
 
 export type CodeProps = {
