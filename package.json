@@ -73,7 +73,7 @@
   "devDependencies": {
     "@auto-it/all-contributors": "10.4.0",
     "@auto-it/conventional-commits": "10.4.0",
-    "@auto-it/first-time-contributor": "10.4.0",
+    "@auto-it/first-time-contributor": "10.4.2",
     "@babel/core": "7.12.7",
     "@emotion/cache": "10.0.29",
     "@emotion/core": "10.1.1",
