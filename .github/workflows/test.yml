@@ -4,7 +4,8 @@ name: Test
 # the event that will trigger the action
 on:
   push:
-    branches: "!master"
+    branches:
+      -  'renovate/**'
 
 # what the action will do
 jobs:
