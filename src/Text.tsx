@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, css } from "@emotion/core";
+import { jsx, css } from "@emotion/react";
 import { Properties } from "csstype";
 import { ReactNode } from "react";
 import { Box } from "./Box";
@@ -11,6 +11,7 @@ export type TextProps = {
   truncate?: Properties["width"];
   children?: ReactNode;
   href?: string;
+  className?: string;
 } & TypographyProps &
   SpaceProps &
   Pick<ColorProps, "textColor">;

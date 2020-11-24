@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { ReactNode, forwardRef, Ref } from "react";
-import { jsx, css } from "@emotion/core";
-import { Theme } from "./themes/types";
+import { jsx, css } from "@emotion/react";
 import { Box } from "./Box";
 
 export type CardFooterProps = {
@@ -21,7 +20,7 @@ export const CardFooter = ({
       alignItems="center"
       backgroundColor="neutral.50"
       p="standard"
-      css={(theme: Theme) => [
+      css={(theme) => [
         css`
           justify-content: ${align === "right" && `flex-end`};
           justify-content: ${align === "left" && `flex-start`};

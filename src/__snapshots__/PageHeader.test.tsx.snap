@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should match snapshot 1`] = `
-.emotion-4 {
+.emotion-0 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   background-color: #fff;
-  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1),0 1px 2px 0 rgba(0,0,0,0.06);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
-.emotion-3 {
+.emotion-1 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -27,7 +27,6 @@ exports[`should match snapshot 1`] = `
   align-items: center;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -35,8 +34,8 @@ exports[`should match snapshot 1`] = `
   padding-right: 16px;
 }
 
-@media screen and (min-width:768px) {
-  .emotion-3 {
+@media screen and (min-width: 768px) {
+  .emotion-1 {
     padding-top: 16px;
     padding-bottom: 16px;
     padding-left: 24px;
@@ -44,8 +43,8 @@ exports[`should match snapshot 1`] = `
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-3 {
+@media screen and (min-width: 1024px) {
+  .emotion-1 {
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -65,7 +64,7 @@ exports[`should match snapshot 1`] = `
   flex-direction: column;
 }
 
-.emotion-1 {
+.emotion-3 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -73,19 +72,19 @@ exports[`should match snapshot 1`] = `
   margin-right: 16px;
 }
 
-@media screen and (min-width:768px) {
-  .emotion-1 {
+@media screen and (min-width: 768px) {
+  .emotion-3 {
     margin-right: 24px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-1 {
+@media screen and (min-width: 1024px) {
+  .emotion-3 {
     margin-right: 24px;
   }
 }
 
-.emotion-0 {
+.emotion-4 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -97,10 +96,10 @@ exports[`should match snapshot 1`] = `
 
 <div>
   <header
-    class="emotion-4"
+    class="emotion-0"
   >
     <div
-      class="emotion-3"
+      class="emotion-1"
       display="flex"
     >
       <div
@@ -108,10 +107,10 @@ exports[`should match snapshot 1`] = `
         display="flex"
       >
         <div
-          class="emotion-1"
+          class="emotion-3"
         >
           <h1
-            class="emotion-0"
+            class="emotion-4"
             font-size="xlarge"
           />
         </div>

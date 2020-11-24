@@ -45,27 +45,27 @@ exports[`should match snapshot 1`] = `
 }
 
 .emotion-0 a:hover {
-  background-color: rgba(14,30,37,0.03);
+  background-color: rgba(14, 30, 37, 0.03);
   color: #102A43;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
 .emotion-0 ul {
-  background: rgba(14,30,37,0.02);
+  background: rgba(14, 30, 37, 0.02);
   margin: 0;
   padding: 0;
   display: block;
   list-style: none;
 }
 
-.emotion-0 .active > a {
+.emotion-0 .active>a {
   border-left-color: #27AB83;
   color: #102A43;
   font-weight: 700;
 }
 
-.emotion-0 .current > a {
+.emotion-0 .current>a {
   color: #102A43;
 }
 

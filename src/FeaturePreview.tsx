@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { ReactNode } from "react";
-import { jsx, css } from "@emotion/core";
+import { jsx, css } from "@emotion/react";
 import { Grid } from "./Grid";
 import { Heading } from "./Heading";
 import { Text } from "./Text";

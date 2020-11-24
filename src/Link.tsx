@@ -1,10 +1,9 @@
 /** @jsx jsx */
 import { ReactNode } from "react";
-import { jsx, css } from "@emotion/core";
+import { jsx, css, Theme } from "@emotion/react";
 import { TextProps, Text } from "./Text";
 import { ExternalWindow } from "./icons/shade";
 import { Icon } from "./Icon";
-import { Theme } from "./themes/types";
 
 export type LinkProps = {
   children?: ReactNode;
@@ -25,7 +24,7 @@ export const Link = ({
       {...props}
       as="a"
       href={href}
-      css={(theme: Theme) => [
+      css={(theme) => [
         css`
           display: inline-flex;
           align-items: center;

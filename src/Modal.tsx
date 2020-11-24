@@ -1,11 +1,9 @@
 /** @jsx jsx */
 import { ReactNode, MouseEvent, KeyboardEvent } from "react";
-import { jsx, css } from "@emotion/core";
+import { jsx, css, Theme } from "@emotion/react";
 import ReactModal, { Props } from "react-modal";
-import { ClassNames } from "@emotion/core";
+import { ClassNames } from "@emotion/react";
 import { darken, transparentize } from "polished";
-
-import { Theme } from "./themes/types";
 
 import { Card } from "./Card";
 import { useBreakpoints, useTheme } from "./hooks";

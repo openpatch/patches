@@ -1,9 +1,8 @@
 /** @jsx jsx */
 import * as CSS from "csstype";
-import { jsx, css } from "@emotion/core";
+import { jsx, css, Theme } from "@emotion/react";
 import { ReactNode } from "react";
 import { Box } from "../Box";
-import { Theme } from "../themes/types";
 
 export type PlaceholderProps = {
   label?: ReactNode;
@@ -41,7 +40,7 @@ export const Placeholder = ({
         </Box>
       ) : (
         <svg
-          css={(theme: Theme) => css`
+          css={(theme) => css`
             position: absolute;
             width: 100%;
             height: 100%;

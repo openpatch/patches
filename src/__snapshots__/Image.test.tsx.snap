@@ -3,7 +3,7 @@
 exports[`should match snapshot 1`] = `
 <div>
   <img
-    class="css-0"
+    class="emotion-0"
   />
 </div>
 `;

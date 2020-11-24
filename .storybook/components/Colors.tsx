@@ -1,6 +1,5 @@
 /** @jsx jsx */
-import { jsx, css } from "@emotion/core";
-import { Theme } from "../../src/themes/types";
+import { jsx, css, Theme } from "@emotion/react";
 import { Source } from "@storybook/components";
 import { AutoGrid } from "../../src/AutoGrid";
 import { ColorSwatch } from "./ColorSwatch";

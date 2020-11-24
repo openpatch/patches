@@ -3,7 +3,7 @@
 exports[`should match snapshot 1`] = `
 <div>
   <video
-    class="css-0"
+    class="emotion-0"
   >
     <source
       src="https://f002.backblazeb2.com/file/openpatch-static/interactive.mp4"

@@ -1,9 +1,8 @@
 /** @jsx jsx */
 import { ReactNode } from "react";
-import { jsx, css } from "@emotion/core";
-import { Theme } from "./themes/types";
+import { jsx, css, Theme } from "@emotion/react";
 import { SystemColor, SystemColorNames } from "./system/types";
-import styled from "./themes/styled";
+import styled from "@emotion/styled";
 import { variant } from "./system";
 import { Box } from "./Box";
 
@@ -135,7 +134,7 @@ export const Icon = ({
 }: IconProps) => {
   return (
     <span
-      css={(theme: Theme) => [
+      css={(theme) => [
         css`
           position: relative;
           border-radius: ${theme.radii.full};

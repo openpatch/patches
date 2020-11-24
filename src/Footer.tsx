@@ -1,8 +1,7 @@
 /** @jsx jsx */
 import { ReactNode } from "react";
-import { jsx, css } from "@emotion/core";
+import { jsx, css } from "@emotion/react";
 import { Box } from "./Box";
-import { Theme } from "./themes/types";
 
 export type FooterProps = {
   links?: {
@@ -23,7 +22,7 @@ export const Footer = ({ links, copyright = "OpenPatch" }: FooterProps) => {
       {links && (
         <Box as="nav" aria-label="footer-menu">
           <ul
-            css={(theme: Theme) => css`
+            css={(theme) => css`
               list-style: none;
               display: flex;
               align-items: center;
@@ -47,7 +46,7 @@ export const Footer = ({ links, copyright = "OpenPatch" }: FooterProps) => {
                   borderRadius="standard"
                   fontSize="small"
                   padding="xsmall"
-                  css={(theme: Theme) => css`
+                  css={(theme) => css`
                     text-decoration: none;
 
                     :hover {

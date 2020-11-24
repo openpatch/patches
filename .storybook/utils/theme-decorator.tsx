@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
 import { Story, StoryContext } from "@storybook/react";
-import { Global, css } from "@emotion/core";
+import { Global, css, Theme } from "@emotion/react";
 import { ThemeProvider } from "../../src/ThemeProvider";
 import * as themes from "../../src/themes";
-import { Theme } from "../../src/themes/types";
 
 export default (Story: Story, context?: StoryContext) => {
   const selectedTheme = themes[context.globals.theme] as Theme;

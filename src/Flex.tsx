@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { ReactNode } from "react";
-import { jsx, css } from "@emotion/core";
-import styled from "./themes/styled";
+import { jsx, css } from "@emotion/react";
+import styled from "@emotion/styled";
 import { flexbox, FlexboxProps } from "./system";
 
 export type FlexProps = FlexboxProps;

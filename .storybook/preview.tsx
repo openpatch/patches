@@ -1,9 +1,8 @@
-import { addDecorator, addParameters } from "@storybook/react";
+import { addParameters } from "@storybook/react";
 
 import withTheme from "./utils/theme-decorator";
 import { sortStories } from "./utils/story-helpers";
 import * as themes from "../src/themes";
-import ThemeDecorator from "./utils/theme-decorator";
 
 // Add group and story names to the sort order to explicitly order them.
 // Items that are not included in the list are shown below the sorted items.
@@ -44,6 +43,8 @@ export const parameters = {
   },
 };
 
+export const decorators = [withTheme];
+
 addParameters({
   a11y: {},
   viewport: {
@@ -72,4 +73,3 @@ addParameters({
     },
   },
 });
-addDecorator(withTheme);

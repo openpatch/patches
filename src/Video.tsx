@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { HTMLAttributes, ReactNode } from "react";
-import { jsx, css } from "@emotion/core";
+import { jsx, css } from "@emotion/react";
 import {
   border,
   BorderProps,
@@ -9,7 +9,7 @@ import {
   space,
   SpaceProps,
 } from "./system";
-import styled from "./themes/styled";
+import styled from "@emotion/styled";
 
 export type VideoProps = {
   src: string;

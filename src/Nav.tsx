@@ -1,8 +1,7 @@
 /** @jsx jsx */
 import { Fragment, ReactNode, useState, useRef } from "react";
-import { jsx, css } from "@emotion/core";
+import { jsx, css } from "@emotion/react";
 import { Box, BoxProps } from "./Box";
-import { Theme } from "./themes/types";
 import { ButtonBase, ButtonBaseProps } from "./ButtonBase";
 import { Menu } from "./icons/outline";
 import { X } from "./icons/outline";
@@ -40,7 +39,7 @@ export const TrayIcon = ({ icon, badge, label, href }: TrayIconProps) => {
       alignItems="center"
       borderRadius="standard"
       position="relative"
-      css={(theme: Theme) => css`
+      css={(theme) => css`
         :hover {
           background-color: ${theme.colors.primary["800"]};
         }
@@ -112,7 +111,7 @@ export const NavItem = ({
       fontSize="standard"
       fontWeight="semibold"
       borderRadius="medium"
-      css={(theme: Theme) => [
+      css={(theme) => [
         css`
           user-select: none;
         `,
@@ -167,7 +166,7 @@ const NavMenuButton = ({ open, onClick }: NavMenuButtonProps) => {
       onClick={onClick}
       textColor="primary.50"
       backgroundColor="transparent"
-      css={(theme: Theme) => [
+      css={(theme) => [
         css`
           transition: background-color 0.5s ease;
           padding: 6px;

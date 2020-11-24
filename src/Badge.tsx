@@ -1,8 +1,7 @@
 /** @jsx jsx */
 import { ReactNode } from "react";
-import { jsx, css } from "@emotion/core";
-import { Theme } from "./themes/types";
-import styled from "./themes/styled";
+import { jsx, css, Theme } from "@emotion/react";
+import styled from "@emotion/styled";
 import { Box } from "./Box";
 import { variant } from "./system";
 import { SystemColor, SystemColorNames } from "./system/types";

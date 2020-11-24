@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should match snapshot 1`] = `
-.emotion-2 {
+.emotion-0 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -31,7 +31,7 @@ exports[`should match snapshot 1`] = `
   margin-left: 16px;
 }
 
-.emotion-0 {
+.emotion-2 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -42,14 +42,14 @@ exports[`should match snapshot 1`] = `
 
 <div>
   <div
-    class="emotion-2"
+    class="emotion-0"
     display="flex"
   >
     <div
       class="emotion-1"
     >
       <h3
-        class="emotion-0"
+        class="emotion-2"
         font-size="medium"
       >
         Card Header

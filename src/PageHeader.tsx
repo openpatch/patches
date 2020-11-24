@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import { ReactElement, ReactNode } from "react";
-import { jsx, css } from "@emotion/core";
+import { jsx, css } from "@emotion/react";
 import { Box } from "./Box";
 import { Heading } from "./Heading";
 import { ButtonGroup } from "./ButtonGroup";
-import styled from "./themes/styled";
+import styled from "@emotion/styled";
 import {
   SystemColor,
   SystemColorNames,

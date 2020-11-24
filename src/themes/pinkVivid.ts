@@ -1,4 +1,4 @@
-import { Theme } from "./types";
+import { Theme } from "@emotion/react";
 import { pinkVivid as primary } from "./colors";
 import { coolGrey as neutral } from "./colors";
 import { cyanVivid as info } from "./colors";

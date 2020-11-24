@@ -1,7 +1,7 @@
 import { HTMLAttributes } from "react";
 import { border, BorderProps, space, SpaceProps } from "./system";
 /** @jsx jsx */
-import styled from "./themes/styled";
+import styled from "@emotion/styled";
 
 export type ImageProps = BorderProps &
   SpaceProps &

@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should match snapshot 1`] = `
-.emotion-1 {
+.emotion-0 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
-.emotion-0 {
+.emotion-1 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -21,15 +21,15 @@ exports[`should match snapshot 1`] = `
   padding-bottom: 24px;
 }
 
-@media screen and (min-width:768px) {
-  .emotion-0 {
+@media screen and (min-width: 768px) {
+  .emotion-1 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
-@media screen and (min-width:1024px) {
-  .emotion-0 {
+@media screen and (min-width: 1024px) {
+  .emotion-1 {
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -37,10 +37,10 @@ exports[`should match snapshot 1`] = `
 
 <div>
   <main
-    class="emotion-1"
+    class="emotion-0"
   >
     <div
-      class="emotion-0"
+      class="emotion-1"
     />
   </main>
 </div>

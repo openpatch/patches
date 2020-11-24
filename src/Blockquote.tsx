@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { ReactNode, forwardRef, Ref } from "react";
-import { jsx, css } from "@emotion/core";
-import { Theme } from "./themes/types";
+import { jsx, css } from "@emotion/react";
 import { TextProps } from "./Text";
 import { Box } from "./Box";
 
@@ -22,7 +21,7 @@ const Icon = () => {
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 30 30"
-        css={(theme: Theme) => css`
+        css={(theme) => css`
           fill: ${theme.colors.neutral[100]};
           width: 2rem;
           height: 2rem;

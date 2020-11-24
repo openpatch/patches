@@ -27,7 +27,7 @@ import {
   CursorProps,
 } from "./system";
 import { SystemElements } from "./system/types";
-import styled from "./themes/styled";
+import styled from "@emotion/styled";
 
 export type BoxProps = {
   as?: SystemElements;
