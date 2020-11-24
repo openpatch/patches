@@ -104,7 +104,7 @@
     "@types/react-modal": "3.10.6",
     "@types/styled-system": "5.1.10",
     "@types/styled-system__css": "5.0.14",
-    "auto": "10.4.0",
+    "auto": "10.4.2",
     "babel-loader": "8.2.1",
     "chromatic": "5.4.0",
     "csstype": "3.0.5",
