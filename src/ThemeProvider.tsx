@@ -1,25 +1,19 @@
 /** @jsx jsx */
-import { ReactNode, useEffect } from "react";
+import { ReactNode } from "react";
 import { jsx, Global, css, ThemeProvider as ETP, Theme } from "@emotion/react";
-import { useTheme } from "./hooks";
-import { PartialDeep } from "type-fest";
+import { base } from "./themes";
+import _merge from "lodash/merge";
 
 export type ThemeProviderProps = {
   children?: ReactNode;
-  theme?: PartialDeep<Theme>;
+  theme?: Theme;
 };
 
 export const ThemeProvider = ({
   theme: defaultTheme,
   children,
 }: ThemeProviderProps) => {
-  const [theme, setTheme] = useTheme(defaultTheme);
-
-  useEffect(() => {
-    if (defaultTheme) {
-      setTheme(defaultTheme);
-    }
-  }, [defaultTheme]);
+  const theme = _merge({} as Theme, base, defaultTheme) as Theme;
 
   return (
     <ETP theme={theme}>

@@ -9,7 +9,7 @@ import {
   space,
   SpaceProps,
 } from "./system";
-import styled from "./themes/styled";
+import styled from "@emotion/styled";
 
 export type VideoProps = {
   src: string;

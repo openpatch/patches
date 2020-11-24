@@ -2,7 +2,7 @@
 import { ReactNode } from "react";
 import { jsx, css } from "@emotion/react";
 import { maxWidth, MaxWidthProps } from "styled-system";
-import styled from "./themes/styled";
+import styled from "@emotion/styled";
 
 export type ContainerProps = MaxWidthProps;
 

@@ -27,7 +27,7 @@ import {
   CursorProps,
 } from "./system";
 import { SystemElements } from "./system/types";
-import styled from "./themes/styled";
+import styled from "@emotion/styled";
 
 export type BoxProps = {
   as?: SystemElements;
@@ -72,7 +72,6 @@ export const Box = styled.div<BoxProps>(
     transition: "all 0.2s ease",
   },
   compose(
-    console.log,
     color,
     cursor,
     space,

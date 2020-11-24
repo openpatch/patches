@@ -3,10 +3,13 @@
 exports[`should match snapshot 1`] = `
 .emotion-0 {
   display: block;
+  -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-background-position: center;
   background-position: center;
   background-image: url();
+  height: ;
 }
 
 <div>

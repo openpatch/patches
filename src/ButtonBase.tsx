@@ -8,7 +8,7 @@ import {
 } from "react";
 import { jsx, css, Theme } from "@emotion/react";
 
-import styled from "./themes/styled";
+import styled from "@emotion/styled";
 import {
   color,
   ColorProps,
