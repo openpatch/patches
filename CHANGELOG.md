@@ -1,3 +1,17 @@
+# (Tue Nov 24 2020)
+
+#### ⚠️ Pushed to `master`
+
+- Update test.yml ([@mikebarkmin](https://github.com/mikebarkmin))
+- chore: upgrade dependencies ([@mikebarkmin](https://github.com/mikebarkmin))
+- ci: test even if not master ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v0.4.2 (Fri Nov 20 2020)
 
 #### 🐛 Bug Fix
