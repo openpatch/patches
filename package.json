@@ -44,11 +44,10 @@
     "test": "jest --watch",
     "test:ci": "jest --ci",
     "test:coverage": "jest --collect-coverage",
-    "prepare": "yarn build",
     "release": "auto shipit",
     "docs:build": "yarn storybook:build:docs && yarn playroom:build",
-    "storybook": "start-storybook --no-dll -p 6006 -s .storybook/public",
-    "storybook:build": "NODE_OPTIONS=--max_old_space_size=4096  build-storybook --no-dll -s .storybook/public",
+    "storybook": "start-storybook -s .storybook/public",
+    "storybook:build": "build-storybook -s .storybook/public",
     "storybook:build:docs": "build-storybook -s .storybook/public --docs"
   },
   "eslintConfig": {
@@ -74,6 +73,7 @@
     "@auto-it/conventional-commits": "10.4.2",
     "@auto-it/first-time-contributor": "10.4.2",
     "@babel/core": "7.12.9",
+    "@babel/plugin-transform-runtime": "^7.12.1",
     "@babel/preset-env": "^7.12.7",
     "@babel/preset-react": "^7.12.7",
     "@babel/preset-typescript": "^7.12.7",
