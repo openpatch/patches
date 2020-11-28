@@ -5,7 +5,7 @@ name: Test
 on:
   push:
     branches:
-      -  'renovate/**'
+      - "!master"
 
 # what the action will do
 jobs:
@@ -26,13 +26,11 @@ jobs:
       - name: Install dependencies
         run: yarn --pure-lockfile
 
-      - name: Test
+      - name: Test Build
+        run: yarn build
+
+      - name: Test Coverage
         run: yarn test:coverage
 
-      - name: Codecov
-        uses: codecov/codecov-action@v1.0.15
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-
-      - name: Build
-        run: yarn build
+      - name: Test Storybook
+        run: yarn storybook:build:docs
