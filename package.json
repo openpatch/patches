@@ -66,7 +66,7 @@
     ]
   },
   "resolutions": {
-    "@types/react": "16.14.0"
+    "@types/react": "16.14.2"
   },
   "devDependencies": {
     "@auto-it/all-contributors": "10.4.2",
@@ -103,7 +103,7 @@
     "@types/jest": "26.0.15",
     "@types/lodash": "4.14.165",
     "@types/node": "14.14.10",
-    "@types/react": "16.14.0",
+    "@types/react": "16.14.2",
     "@types/react-dom": "16.9.9",
     "@types/react-modal": "3.10.6",
     "@types/styled-system": "5.1.10",
