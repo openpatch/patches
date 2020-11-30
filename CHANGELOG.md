@@ -1,3 +1,37 @@
+# v0.5.0 (Mon Nov 30 2020)
+
+#### 🚀 Enhancement
+
+- feat: upgrade to react 17 [#68](https://github.com/openpatch/patches/pull/68) ([@mikebarkmin](https://github.com/mikebarkmin))
+- Upgrade to Emotion 11 [#57](https://github.com/openpatch/patches/pull/57) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🐛 Bug Fix
+
+- chore(deps): update storybook monorepo to v6.1.9 [#67](https://github.com/openpatch/patches/pull/67) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/react-dom to v16.9.10 [#45](https://github.com/openpatch/patches/pull/45) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.9.0 [#66](https://github.com/openpatch/patches/pull/66) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/react to v16.14.2 [#44](https://github.com/openpatch/patches/pull/44) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): pin dependencies [#58](https://github.com/openpatch/patches/pull/58) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- chore(deps): update dependency type-fest to v0.20.2 [#62](https://github.com/openpatch/patches/pull/62) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- fix: add classNames to Box PropTypes ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### ⚠️ Pushed to `master`
+
+- chore(renovate): tag with label dependencies ([@mikebarkmin](https://github.com/mikebarkmin))
+- ci: run ci on pull request ([@mikebarkmin](https://github.com/mikebarkmin))
+- build: add babel transform runtime ([@mikebarkmin](https://github.com/mikebarkmin))
+- ci: test types separately from logic ([@mikebarkmin](https://github.com/mikebarkmin))
+- chore: better jest config for coverage ([@mikebarkmin](https://github.com/mikebarkmin))
+- chore: remove test setup ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # (Tue Nov 24 2020)
 
 #### ⚠️ Pushed to `master`
