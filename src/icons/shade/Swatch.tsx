@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function SwatchIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-swatch" viewBox="0 0 24 24" {...props}>

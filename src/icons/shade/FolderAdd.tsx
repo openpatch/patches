@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function FolderAddIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-folder-add" viewBox="0 0 24 24" {...props}>

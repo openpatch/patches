@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function ArrowsExpandIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 19 20" fill="currentColor" {...props}>

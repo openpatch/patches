@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function DoorEnterIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-door-enter" viewBox="0 0 24 24" {...props}>

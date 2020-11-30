@@ -29,7 +29,7 @@ exports[`should match snapshot 1`] = `
   }
 }
 
-.emotion-1 {
+.emotion-2 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -41,10 +41,10 @@ exports[`should match snapshot 1`] = `
 
 <div>
   <footer
-    class="emotion-0"
+    class="emotion-0 emotion-1"
   >
     <div
-      class="emotion-1"
+      class="emotion-2 emotion-1"
       font-size="small"
       font-weight="semibold"
     >

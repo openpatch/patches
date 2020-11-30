@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx, css } from "@emotion/react";
+import { css } from "@emotion/react";
 import { Properties } from "csstype";
 import { ReactNode } from "react";
 import { Box } from "./Box";

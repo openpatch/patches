@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function WidgetAddIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-widget-add" viewBox="0 0 24 24" {...props}>

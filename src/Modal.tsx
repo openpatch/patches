@@ -1,12 +1,9 @@
-/** @jsx jsx */
-import { ReactNode, MouseEvent, KeyboardEvent } from "react";
-import { jsx, css, Theme } from "@emotion/react";
-import ReactModal, { Props } from "react-modal";
 import { ClassNames } from "@emotion/react";
 import { darken, transparentize } from "polished";
-
+import { KeyboardEvent, MouseEvent, ReactNode } from "react";
+import ReactModal, { Props } from "react-modal";
 import { Card } from "./Card";
-import { useBreakpoints, useTheme } from "./hooks";
+import { useTheme } from "./hooks";
 
 export type ModalProps = {
   /**

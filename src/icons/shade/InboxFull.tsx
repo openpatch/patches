@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function InboxFullIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-inbox-full" viewBox="0 0 24 24" {...props}>

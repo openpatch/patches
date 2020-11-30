@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function BoxIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-box" viewBox="0 0 24 24" {...props}>

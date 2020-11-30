@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function LocationPinIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-location-pin" viewBox="0 0 24 24" {...props}>

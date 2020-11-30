@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function AirplaneIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-airplane" viewBox="0 0 24 24" {...props}>

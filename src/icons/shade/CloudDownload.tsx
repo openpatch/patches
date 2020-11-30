@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function CloudDownloadIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-cloud-download" viewBox="0 0 24 24" {...props}>

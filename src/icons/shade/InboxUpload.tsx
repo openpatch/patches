@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function InboxUploadIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-inbox-upload" viewBox="0 0 24 24" {...props}>

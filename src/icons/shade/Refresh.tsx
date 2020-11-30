@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function RefreshIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-refresh" viewBox="0 0 24 24" {...props}>

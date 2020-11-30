@@ -1,9 +1,8 @@
-/** @jsx jsx */
+import { css, Theme } from "@emotion/react";
 import { ReactNode } from "react";
-import { jsx, css, Theme } from "@emotion/react";
-import { TextProps, Text } from "./Text";
-import { ExternalWindow } from "./icons/shade";
 import { Icon } from "./Icon";
+import { ExternalWindow } from "./icons/shade";
+import { Text, TextProps } from "./Text";
 
 export type LinkProps = {
   children?: ReactNode;

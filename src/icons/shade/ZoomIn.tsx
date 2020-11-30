@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function ZoomInIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-zoom-in" viewBox="0 0 24 24" {...props}>

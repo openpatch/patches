@@ -1,6 +1,4 @@
-/** @jsx jsx */
 import { ReactNode } from "react";
-import { jsx, css } from "@emotion/react";
 import { Text, TextProps } from "./Text";
 
 export type HeadingProps = {

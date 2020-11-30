@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function MailIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-mail" viewBox="0 0 24 24" {...props}>

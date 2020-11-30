@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function OrderVerticalIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-order-vertical" viewBox="0 0 24 24" {...props}>

@@ -1,6 +1,4 @@
-/** @jsx jsx */
 import { ReactNode } from "react";
-import { jsx } from "@emotion/react";
 import {
   Prism as SyntaxHighlighter,
   SyntaxHighlighterProps,

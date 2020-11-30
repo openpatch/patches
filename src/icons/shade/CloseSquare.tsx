@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function CloseSquareIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-close-square" viewBox="0 0 24 24" {...props}>

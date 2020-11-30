@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function TicketIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-ticket" viewBox="0 0 24 24" {...props}>

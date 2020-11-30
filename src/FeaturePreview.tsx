@@ -1,11 +1,8 @@
-/** @jsx jsx */
-import { ReactNode } from "react";
-import { jsx, css } from "@emotion/react";
+import { Center } from "./Center";
 import { Grid } from "./Grid";
 import { Heading } from "./Heading";
 import { Text } from "./Text";
 import { Video } from "./Video";
-import { Center } from "./Center";
 
 export type FeaturePreviewProps = {
   src: string;

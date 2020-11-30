@@ -1,7 +1,5 @@
-/** @jsx jsx */
 import * as CSS from "csstype";
 import { ReactNode } from "react";
-import { jsx, css } from "@emotion/react";
 import { Grid, GridProps } from "./Grid";
 import { ResponsiveProp } from "./system/types";
 

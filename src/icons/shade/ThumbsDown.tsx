@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function ThumbsDownIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-thumbs-down" viewBox="0 0 24 24" {...props}>

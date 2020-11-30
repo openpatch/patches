@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function VolumeMuteIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-volume-mute" viewBox="0 0 24 24" {...props}>

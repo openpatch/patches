@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function OfficeIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-office" viewBox="0 0 24 24" {...props}>

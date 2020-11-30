@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function TrendingDownIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-trending-down" viewBox="0 0 24 24" {...props}>

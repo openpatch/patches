@@ -1,4 +1,3 @@
-/** @jsx jsx */
 import { jsx, css, Theme } from "@emotion/react";
 import { Text } from "../../src/Text";
 import { useTheme } from "../../src/hooks";

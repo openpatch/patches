@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function FastRewindIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-fast-rewind" viewBox="0 0 24 24" {...props}>

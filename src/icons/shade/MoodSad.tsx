@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function MoodSadIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-mood-sad" viewBox="0 0 24 24" {...props}>

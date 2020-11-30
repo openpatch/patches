@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function BatteryHalfIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-battery-half" viewBox="0 0 24 24" {...props}>

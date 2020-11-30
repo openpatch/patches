@@ -1,33 +1,31 @@
-import { CSSProperties } from "@styled-system/css";
-import { HTMLAttributes, forwardRef, Ref } from "react";
-/** @jsx jsx */
+import styled from "@emotion/styled";
+import { HTMLAttributes, Ref } from "react";
 import {
-  color,
-  ColorProps,
-  space,
-  SpaceProps,
-  typography,
-  TypographyProps,
-  layout,
-  LayoutProps,
-  flexbox,
-  FlexboxProps,
-  grid,
-  GridProps,
   background,
   BackgroundProps,
   border,
   BorderProps,
+  color,
+  ColorProps,
+  compose,
+  cursor,
+  CursorProps,
+  flexbox,
+  FlexboxProps,
+  grid,
+  GridProps,
+  layout,
+  LayoutProps,
   position,
   PositionProps,
   shadow,
   ShadowProps,
-  compose,
-  cursor,
-  CursorProps,
+  space,
+  SpaceProps,
+  typography,
+  TypographyProps,
 } from "./system";
 import { SystemElements } from "./system/types";
-import styled from "@emotion/styled";
 
 export type BoxProps = {
   as?: SystemElements;

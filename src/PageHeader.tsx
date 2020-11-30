@@ -1,20 +1,13 @@
-/** @jsx jsx */
-import { ReactElement, ReactNode } from "react";
-import { jsx, css } from "@emotion/react";
-import { Box } from "./Box";
-import { Heading } from "./Heading";
-import { ButtonGroup } from "./ButtonGroup";
 import styled from "@emotion/styled";
-import {
-  SystemColor,
-  SystemColorNames,
-  SystemShadows,
-  SystemSizes,
-} from "./system/types";
-import { variant } from "./system";
+import { ReactElement, ReactNode } from "react";
+import { Box } from "./Box";
+import { ButtonGroup } from "./ButtonGroup";
+import { ButtonOutlineProps } from "./ButtonOutline";
 import { ButtonPrimaryProps } from "./ButtonPrimary";
 import { ButtonSecondaryProps } from "./ButtonSecondary";
-import { ButtonOutlineProps } from "./ButtonOutline";
+import { Heading } from "./Heading";
+import { variant } from "./system";
+import { SystemColor, SystemShadows, SystemSizes } from "./system/types";
 
 type ActionProps =
   | ButtonPrimaryProps

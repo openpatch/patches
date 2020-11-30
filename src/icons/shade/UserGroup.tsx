@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function UserGroupIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-user-group" viewBox="0 0 24 24" {...props}>

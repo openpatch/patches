@@ -1,7 +1,6 @@
-/** @jsx jsx */
-import { ButtonHTMLAttributes, ReactNode } from "react";
-import { ButtonBase, ButtonBaseProps } from "./ButtonBase";
 import styled from "@emotion/styled";
+import { ButtonHTMLAttributes } from "react";
+import { ButtonBase, ButtonBaseProps } from "./ButtonBase";
 import { variant } from "./system";
 import { SystemColor, SystemColorNames } from "./system/types";
 
@@ -23,7 +22,7 @@ export type ButtonOutlineProps = {
 const StyledButtonOutline: React.FunctionComponent<ButtonOutlineProps> = styled(
   ButtonBase
 )<ButtonOutlineProps>(
-  ({ theme, ...props }) => {
+  ({ theme }) => {
     return {
       borderStyle: "solid",
       borderColor: theme.colors.neutral["200"],

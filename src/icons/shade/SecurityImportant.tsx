@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function SecurityImportantIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-security-important" viewBox="0 0 24 24" {...props}>

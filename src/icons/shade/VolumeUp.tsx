@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function VolumeUpIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-volume-up" viewBox="0 0 24 24" {...props}>

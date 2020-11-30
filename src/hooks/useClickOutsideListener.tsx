@@ -1,4 +1,4 @@
-import { useState, useEffect, RefObject, MutableRefObject, Ref } from "react";
+import { RefObject, useEffect } from "react";
 
 export const useClickOutsideListener = <T extends HTMLElement>(
   ref: RefObject<T>,

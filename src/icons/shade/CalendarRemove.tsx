@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function CalendarRemoveIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-calendar-remove" viewBox="0 0 24 24" {...props}>

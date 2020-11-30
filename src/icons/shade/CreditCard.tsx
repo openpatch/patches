@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function CreditCardIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-credit-card" viewBox="0 0 24 24" {...props}>

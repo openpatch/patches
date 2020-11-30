@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { useMedia } from "./useMedia";
 import { useTheme } from "./useTheme";
 

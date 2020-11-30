@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function ArrowThickLeftCircleIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg

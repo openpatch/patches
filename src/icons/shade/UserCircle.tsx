@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function UserCircleIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-user-circle" viewBox="0 0 24 24" {...props}>
