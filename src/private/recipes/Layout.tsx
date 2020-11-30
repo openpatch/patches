@@ -1,4 +1,3 @@
-import React from "react";
 import { Nav } from "../../Nav";
 import { PageHeader } from "../../PageHeader";
 import { Main } from "../../Main";

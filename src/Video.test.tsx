@@ -1,4 +1,3 @@
-import React from "react";
 import { render } from "@testing-library/react";
 import { Video, VideoProps } from "./Video";
 import { ThemeProvider } from "./ThemeProvider";

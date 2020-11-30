@@ -1,4 +1,3 @@
-import React from "react";
 import { render } from "@testing-library/react";
 import { Markdown, MarkdownProps } from "./Markdown";
 import { ThemeProvider } from "./ThemeProvider";

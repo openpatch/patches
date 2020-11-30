@@ -1,4 +1,3 @@
-import React from "react";
 import { render } from "@testing-library/react";
 import { Blockquote, BlockquoteProps } from "./Blockquote";
 import { ThemeProvider } from "./ThemeProvider";

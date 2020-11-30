@@ -1,4 +1,3 @@
-import React from "react";
 import { render } from "@testing-library/react";
 import { AutoGrid, AutoGridProps } from "./AutoGrid";
 import { ThemeProvider } from "./ThemeProvider";

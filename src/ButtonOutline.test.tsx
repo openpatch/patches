@@ -1,4 +1,3 @@
-import React from "react";
 import { render } from "@testing-library/react";
 import { ButtonOutline, ButtonOutlineProps } from "./ButtonOutline";
 import { ThemeProvider } from "./ThemeProvider";

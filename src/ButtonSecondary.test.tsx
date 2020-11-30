@@ -1,4 +1,3 @@
-import React from "react";
 import { render } from "@testing-library/react";
 import { ButtonSecondary, ButtonSecondaryProps } from "./ButtonSecondary";
 import { ThemeProvider } from "./ThemeProvider";

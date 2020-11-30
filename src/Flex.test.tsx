@@ -1,4 +1,3 @@
-import React from "react";
 import { render } from "@testing-library/react";
 import { Flex, FlexProps } from "./Flex";
 import { ThemeProvider } from "./ThemeProvider";

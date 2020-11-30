@@ -1,4 +1,3 @@
-import React from "react";
 import { render } from "@testing-library/react";
 import { CardContent, CardContentProps } from "./CardContent";
 import { ThemeProvider } from "./ThemeProvider";

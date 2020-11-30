@@ -1,4 +1,3 @@
-import React from "react";
 import { render } from "@testing-library/react";
 import { Link, LinkProps } from "./Link";
 import { ThemeProvider } from "./ThemeProvider";

@@ -1,4 +1,3 @@
-import React from "react";
 import { render } from "@testing-library/react";
 import { Center, CenterProps } from "./Center";
 import { ThemeProvider } from "./ThemeProvider";
