@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function LayersIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-layers" viewBox="0 0 24 24" {...props}>

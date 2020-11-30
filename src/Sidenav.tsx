@@ -1,6 +1,4 @@
-/** @jsx jsx */
-import { Fragment, useState } from "react";
-import { jsx, css } from "@emotion/react";
+import { css } from "@emotion/react";
 import { Box, BoxProps } from "./Box";
 
 type SectionProps = {
@@ -44,7 +42,6 @@ const Section = (props: SectionProps) => {
 };
 
 export const Sidenav = ({ sections, position = "initial" }: SidenavProps) => {
-  const [selected, setSelected] = useState(0);
   return (
     <Box
       position={position}

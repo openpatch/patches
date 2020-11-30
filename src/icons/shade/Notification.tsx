@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function NotificationIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-notification" viewBox="0 0 24 24" {...props}>

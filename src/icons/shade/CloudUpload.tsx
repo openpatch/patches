@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function CloudUploadIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-cloud-upload" viewBox="0 0 24 24" {...props}>

@@ -1,6 +1,4 @@
-/** @jsx jsx */
 import { ReactNode } from "react";
-import { jsx, css } from "@emotion/react";
 import { Box } from "./Box";
 import styled from "@emotion/styled";
 import { variant } from "./system";

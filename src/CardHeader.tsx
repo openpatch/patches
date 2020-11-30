@@ -1,6 +1,4 @@
-/** @jsx jsx */
-import { ReactNode, forwardRef, Ref } from "react";
-import { jsx, css } from "@emotion/react";
+import { ReactNode } from "react";
 import { Box } from "./Box";
 
 export type CardHeaderProps = {

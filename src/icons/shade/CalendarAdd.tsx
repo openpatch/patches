@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function CalendarAddIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-calendar-add" viewBox="0 0 24 24" {...props}>

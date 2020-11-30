@@ -1,15 +1,12 @@
-/** @jsx jsx */
-import { ReactNode } from "react";
-import { jsx, css } from "@emotion/react";
 import ReactMarkdown from "react-markdown";
 import gfm from "remark-gfm";
 import { Blockquote } from "./Blockquote";
 import { Code } from "./Code";
 import { Table } from "./Table";
 import { TableBody } from "./TableBody";
-import { TableRow } from "./TableRow";
 import { TableCell } from "./TableCell";
 import { TableHead } from "./TableHead";
+import { TableRow } from "./TableRow";
 
 export type MarkdownProps = {
   markdown: string;

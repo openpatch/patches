@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function ClickTargetIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-click-target" viewBox="0 0 24 24" {...props}>

@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function MicrophoneIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-microphone" viewBox="0 0 24 24" {...props}>

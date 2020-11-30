@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function CurrencyDollarIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-currency-dollar" viewBox="0 0 24 24" {...props}>

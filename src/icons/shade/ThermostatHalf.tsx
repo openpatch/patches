@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function ThermostatHalfIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-thermostat-half" viewBox="0 0 24 24" {...props}>

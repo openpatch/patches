@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function BookClosedIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-book-closed" viewBox="0 0 24 24" {...props}>

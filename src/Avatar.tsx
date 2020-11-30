@@ -1,10 +1,7 @@
-/** @jsx jsx */
-import { jsx, css } from "@emotion/react";
-import { CSSProperties, Fragment } from "react";
-import { width } from "styled-system";
-import { Box, BoxProps } from "./Box";
+import { Fragment } from "react";
+import { Box } from "./Box";
 import { useBreakpoints } from "./hooks";
-import { Image, ImageProps } from "./Image";
+import { Image } from "./Image";
 import { ResponsiveProp } from "./system/types";
 
 export type AvatarProps = {

@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function DocumentNotesIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-document-notes" viewBox="0 0 24 24" {...props}>

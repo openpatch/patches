@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function PhoneOutgoingCallIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-phone-outgoing-call" viewBox="0 0 24 24" {...props}>

@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function DocumentRemoveIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-document-remove" viewBox="0 0 24 24" {...props}>

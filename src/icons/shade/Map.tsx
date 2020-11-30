@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function MapIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-map" viewBox="0 0 24 24" {...props}>

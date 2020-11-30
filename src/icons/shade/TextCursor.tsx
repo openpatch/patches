@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function TextCursorIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-text-cursor" viewBox="0 0 24 24" {...props}>

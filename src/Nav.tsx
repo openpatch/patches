@@ -1,15 +1,13 @@
-/** @jsx jsx */
-import { Fragment, ReactNode, useState, useRef } from "react";
-import { jsx, css } from "@emotion/react";
+import { css } from "@emotion/react";
+import { Fragment, ReactNode, useRef, useState } from "react";
+import { Avatar } from "./Avatar";
 import { Box, BoxProps } from "./Box";
 import { ButtonBase, ButtonBaseProps } from "./ButtonBase";
-import { Menu } from "./icons/outline";
-import { X } from "./icons/outline";
-import { Text } from "./Text";
-import { Avatar } from "./Avatar";
 import { useClickOutsideListener } from "./hooks";
-import { Logo } from "./Logo";
 import { Icon, IconProps } from "./Icon";
+import { Menu, X } from "./icons/outline";
+import { Logo } from "./Logo";
+import { Text } from "./Text";
 
 type NavLinkProps = {
   active?: boolean;

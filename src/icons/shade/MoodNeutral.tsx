@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function MoodNeutralIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-mood-neutral" viewBox="0 0 24 24" {...props}>

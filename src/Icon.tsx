@@ -1,10 +1,9 @@
-/** @jsx jsx */
-import { ReactNode } from "react";
-import { jsx, css, Theme } from "@emotion/react";
-import { SystemColor, SystemColorNames } from "./system/types";
+import { css, Theme } from "@emotion/react";
 import styled from "@emotion/styled";
-import { variant } from "./system";
+import { ReactNode } from "react";
 import { Box } from "./Box";
+import { variant } from "./system";
+import { SystemColor, SystemColorNames } from "./system/types";
 
 export type IconProps = {
   children?: ReactNode;

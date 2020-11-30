@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, useCallback } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 export type useTimeoutProps = {
   onTimeout: () => void;
@@ -23,6 +23,8 @@ export const useTimeout = ({ onTimeout, duration }: useTimeoutProps) => {
         stopTimeout();
       };
     }
+
+    return () => {};
   }, [onTimeout, activated, duration, stopTimeout]);
 
   const startTimeout = useCallback(() => {

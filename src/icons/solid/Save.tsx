@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function SaveIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 20 20" fill="currentColor" {...props}>

@@ -1,4 +1,3 @@
-/** @jsx jsx */
 import { jsx, css } from "@emotion/react";
 import { CSSProperties } from "react";
 import { Box } from "../../src/Box";

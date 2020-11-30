@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function ZoomOutIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-zoom-out" viewBox="0 0 24 24" {...props}>

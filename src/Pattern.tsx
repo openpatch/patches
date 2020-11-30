@@ -1,6 +1,5 @@
-/** @jsx jsx */
+import { css } from "@emotion/react";
 import { ReactNode } from "react";
-import { jsx, css } from "@emotion/react";
 import { Box, BoxProps } from "./Box";
 import { useTheme } from "./hooks/useTheme";
 

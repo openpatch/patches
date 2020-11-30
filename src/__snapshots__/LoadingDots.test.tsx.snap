@@ -37,18 +37,6 @@ exports[`should match snapshot 1`] = `
   animation-delay: 0.4s;
 }
 
-.emotion-1 {
-  box-sizing: border-box;
-  min-width: 0;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  background-color: #102A43;
-  border-radius: 9999px;
-  width: 4px;
-  margin-right: 4px;
-  height: 4px;
-}
-
 .emotion-2 {
   box-sizing: border-box;
   min-width: 0;
@@ -56,12 +44,24 @@ exports[`should match snapshot 1`] = `
   transition: all 0.2s ease;
   background-color: #102A43;
   border-radius: 9999px;
+  width: 4px;
+  margin-right: 4px;
+  height: 4px;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-color: #102A43;
+  border-radius: 9999px;
   margin-right: 4px;
   width: 4px;
   height: 4px;
 }
 
-.emotion-3 {
+.emotion-6 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -74,21 +74,21 @@ exports[`should match snapshot 1`] = `
 
 <div>
   <div
-    class="emotion-0"
+    class="emotion-0 emotion-1"
     display="inline-flex"
   >
     <span
-      class="emotion-1"
+      class="emotion-2 emotion-1"
       height="4px"
       width="4px"
     />
     <span
-      class="emotion-2"
+      class="emotion-4 emotion-1"
       height="4px"
       width="4px"
     />
     <span
-      class="emotion-3"
+      class="emotion-6 emotion-1"
       height="4px"
       width="4px"
     />

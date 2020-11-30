@@ -1,4 +1,3 @@
-/** @jsx jsx */
 import * as CSS from "csstype";
 import { jsx, css, Theme } from "@emotion/react";
 import { ReactNode } from "react";

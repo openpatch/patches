@@ -1,14 +1,9 @@
-/** @jsx jsx */
-import {
-  ReactNode,
-  ButtonHTMLAttributes,
-  forwardRef,
-  Ref,
-  Fragment,
-} from "react";
-import { jsx, css, Theme } from "@emotion/react";
-
+import { css, Theme } from "@emotion/react";
 import styled from "@emotion/styled";
+import { ButtonHTMLAttributes, ReactNode } from "react";
+import { Box } from "./Box";
+import { useBreakpoints } from "./hooks";
+import { LoadingDots } from "./LoadingDots";
 import {
   color,
   ColorProps,
@@ -19,9 +14,6 @@ import {
   TypographyProps,
 } from "./system";
 import { ResponsiveProp } from "./system/types";
-import { useBreakpoints } from "./hooks";
-import { LoadingDots } from "./LoadingDots";
-import { Box } from "./Box";
 
 export type ButtonBaseProps = {
   children: ReactNode;
@@ -127,6 +119,8 @@ const sizeStyle = (theme: Theme) => (size: ButtonBaseProps["size"]) => {
       }
     `;
   }
+
+  return css``;
 };
 
 const fullWidthStyle = {

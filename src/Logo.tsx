@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx, css, Theme } from "@emotion/react";
+import { Theme } from "@emotion/react";
 import { CSSProperties } from "@styled-system/css";
 
 export interface LogoProps {

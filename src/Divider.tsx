@@ -1,5 +1,3 @@
-/** @jsx jsx */
-import { jsx, css } from "@emotion/react";
 import { Box, BoxProps } from "./Box";
 
 export type DividerProps = {

@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function ChatGroupAltIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-chat-group-alt" viewBox="0 0 24 24" {...props}>

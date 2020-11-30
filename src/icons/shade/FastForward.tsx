@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function FastForwardIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-fast-forward" viewBox="0 0 24 24" {...props}>

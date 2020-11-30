@@ -1,8 +1,7 @@
-/** @jsx jsx */
-import { ReactNode, forwardRef, Ref } from "react";
-import { jsx, css } from "@emotion/react";
-import { TextProps } from "./Text";
+import { css } from "@emotion/react";
+import { ReactNode } from "react";
 import { Box } from "./Box";
+import { TextProps } from "./Text";
 
 export type BlockquoteProps = {
   children?: ReactNode;
@@ -35,7 +34,7 @@ const Icon = () => {
 
 export default Icon;
 
-export const Blockquote = ({ children, ...props }: BlockquoteProps) => {
+export const Blockquote = ({ children }: BlockquoteProps) => {
   return (
     <Box as="blockquote" fontStyle="italic">
       <Icon />

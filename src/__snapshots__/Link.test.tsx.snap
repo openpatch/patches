@@ -26,7 +26,7 @@ exports[`should match snapshot 1`] = `
 
 <div>
   <a
-    class="emotion-0"
+    class="emotion-0 emotion-1"
     href="#"
   />
 </div>

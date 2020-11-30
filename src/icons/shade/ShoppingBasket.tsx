@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function ShoppingBasketIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-shopping-basket" viewBox="0 0 24 24" {...props}>

@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function WifiOffIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-wifi-off" viewBox="0 0 24 24" {...props}>

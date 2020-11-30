@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function PresentationPlayIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-presentation-play" viewBox="0 0 24 24" {...props}>

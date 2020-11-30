@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function FlagIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-flag" viewBox="0 0 24 24" {...props}>

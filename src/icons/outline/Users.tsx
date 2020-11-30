@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function UsersIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" {...props}>

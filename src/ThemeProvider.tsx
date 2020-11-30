@@ -1,8 +1,7 @@
-/** @jsx jsx */
-import { ReactNode } from "react";
-import { jsx, Global, css, ThemeProvider as ETP, Theme } from "@emotion/react";
-import { base } from "./themes";
+import { css, Global, Theme, ThemeProvider as ETP } from "@emotion/react";
 import _merge from "lodash/merge";
+import { ReactNode } from "react";
+import { base } from "./themes";
 
 export type ThemeProviderProps = {
   children?: ReactNode;

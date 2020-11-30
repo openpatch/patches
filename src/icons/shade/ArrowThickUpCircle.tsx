@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function ArrowThickUpCircleIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-arrow-thick-up-circle" viewBox="0 0 24 24" {...props}>

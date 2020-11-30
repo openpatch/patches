@@ -9,7 +9,7 @@ exports[`should match snapshot 1`] = `
   font-style: italic;
 }
 
-.emotion-1 {
+.emotion-2 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -19,13 +19,13 @@ exports[`should match snapshot 1`] = `
   margin-top: -0.5rem;
 }
 
-.emotion-2 {
+.emotion-4 {
   fill: #D9E2EC;
   width: 2rem;
   height: 2rem;
 }
 
-.emotion-3 {
+.emotion-5 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -35,14 +35,14 @@ exports[`should match snapshot 1`] = `
 
 <div>
   <blockquote
-    class="emotion-0"
+    class="emotion-0 emotion-1"
     font-style="italic"
   >
     <div
-      class="emotion-1"
+      class="emotion-2 emotion-1"
     >
       <svg
-        class="emotion-2"
+        class="emotion-4"
         fill="none"
         viewBox="0 0 30 30"
         xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@ exports[`should match snapshot 1`] = `
       </svg>
     </div>
     <div
-      class="emotion-3"
+      class="emotion-5 emotion-1"
     >
       <p />
     </div>

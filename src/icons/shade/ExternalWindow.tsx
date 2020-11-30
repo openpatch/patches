@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function ExternalWindowIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-external-window" viewBox="0 0 24 24" {...props}>

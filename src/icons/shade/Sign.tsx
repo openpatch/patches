@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function SignIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-sign" viewBox="0 0 24 24" {...props}>

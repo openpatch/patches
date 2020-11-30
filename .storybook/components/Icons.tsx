@@ -1,4 +1,3 @@
-/** @jsx jsx */
 import { jsx, css } from "@emotion/react";
 import { Icon, IconProps } from "../../src/Icon";
 import { Card } from "../../src/Card";

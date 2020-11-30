@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function ArrowsSplitIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-arrows-split" viewBox="0 0 24 24" {...props}>

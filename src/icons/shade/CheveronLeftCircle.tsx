@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function CheveronLeftCircleIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-cheveron-left-circle" viewBox="0 0 24 24" {...props}>

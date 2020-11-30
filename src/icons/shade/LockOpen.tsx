@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function LockOpenIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-lock-open" viewBox="0 0 24 24" {...props}>

@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function SurveyIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg className="icon-survey" viewBox="0 0 24 24" {...props}>
