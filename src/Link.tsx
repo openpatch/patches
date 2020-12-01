@@ -9,19 +9,20 @@ export type LinkProps = {
   external?: boolean;
   href: string;
   color?: keyof Theme["colors"];
-} & Omit<TextProps, "as">;
+} & TextProps;
 
 export const Link = ({
   href,
   color,
   children,
   external,
+  as = "a",
   ...props
 }: LinkProps) => {
   return (
     <Text
       {...props}
-      as="a"
+      as={as}
       href={href}
       css={(theme) => [
         css`

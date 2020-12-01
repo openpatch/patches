@@ -1,4 +1,5 @@
 import * as CSS from "csstype";
+import { ElementType } from "react";
 export type ResponsiveProp<T> = T | T[];
 
 export type SystemBreakpoints = [
@@ -245,4 +246,4 @@ export type SystemTypographyElements =
   | "span"
   | "p";
 
-export type SystemElements = SystemTypographyElements | SystemLayoutElements;
+export type SystemElements = ElementType;
