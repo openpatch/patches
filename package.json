@@ -41,7 +41,8 @@
     "build": "yarn clean && yarn build:es && yarn build:cjs",
     "build:es": "tsc --project tsconfig.json --module esnext --target es2015 --outDir dist/es",
     "build:cjs": "tsc --project tsconfig.json --module commonjs --target es5 --outDir dist/cjs",
-    "test": "jest --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "test:ci": "jest --ci",
     "test:coverage": "jest --collect-coverage",
     "release": "auto shipit",
@@ -133,7 +134,7 @@
   "husky": {
     "hooks": {
       "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
-      "pre-commit": "pretty-quick --staged && yarn test:ci"
+      "pre-commit": "pretty-quick --staged && yarn test -o"
     }
   },
   "config": {
