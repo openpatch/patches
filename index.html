@@ -22,12 +22,21 @@
   window.onerror = function onerror(message, source, line, column, err) {
     if (window.CONFIG_TYPE !== 'DEVELOPMENT') return;
     // eslint-disable-next-line no-var, vars-on-top
-    var error = { message: err.message, name: err.name, stack: err.stack };
-    window.fetch('/runtime-error', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message, source, line, column, error, origin: 'manager' }),
-    });
+    var xhr = new window.XMLHttpRequest();
+    xhr.open('POST', '/runtime-error');
+    xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+    xhr.send(
+      JSON.stringify({
+        /* eslint-disable object-shorthand */
+        message: message,
+        source: source,
+        line: line,
+        column: column,
+        error: err && { message: err.message, name: err.name, stack: err.stack },
+        origin: 'manager',
+        /* eslint-enable object-shorthand */
+      })
+    );
   };</script><meta name="description" content="OpenPatch's React UI library"/><link rel="icon" type="image/png" href="/patches_icon.png"/><style>@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");</style><style>#root[hidden],
       #docs-root[hidden] {
         display: none !important;
@@ -43,4 +52,4 @@
             
         
             
-              window['DOCS_MODE'] = true;</script><script src="runtime~main.870e8ee0658e83d05c6b.bundle.js"></script><script src="vendors~main.b365e5ed73c6c47aa6ec.bundle.js"></script><script src="main.607c30415020b099d124.bundle.js"></script></body></html>
+              window['DOCS_MODE'] = true;</script><script src="runtime~main.870e8ee0658e83d05c6b.bundle.js"></script><script src="vendors~main.fd2277b1d6bdc59bd890.bundle.js"></script><script src="main.607c30415020b099d124.bundle.js"></script></body></html>
