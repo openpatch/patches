@@ -36,11 +36,9 @@ export default Icon;
 
 export const Blockquote = ({ children }: BlockquoteProps) => {
   return (
-    <Box as="blockquote" fontStyle="italic">
+    <Box as="blockquote" fontStyle="italic" position="relative">
       <Icon />
-      <Box position="relative">
-        <p>{children}</p>
-      </Box>
+      <Box position="relative">{children}</Box>
     </Box>
   );
 };
