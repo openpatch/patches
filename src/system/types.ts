@@ -131,7 +131,8 @@ export type SystemSpace =
   | "none"
   | "standard"
   | "gutter"
-  | "auto";
+  | "auto"
+  | "full";
 
 export type SystemFonts = "body" | "heading" | "monospace";
 
