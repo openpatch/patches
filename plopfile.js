@@ -51,6 +51,7 @@ module.exports = function (plop) {
         templateFile: ".plop-templates/hook.test.hbs",
       },
       appendToIndex("src/hooks/index.ts", ".plop-templates/hook.index.hbs"),
+      appendToIndex("src/index.ts", ".plop-templates/hook.root.index.hbs"),
     ],
   });
   plop.setGenerator("component", {
