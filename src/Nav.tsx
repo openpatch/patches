@@ -2,7 +2,7 @@ import { css } from "@emotion/react";
 import { Fragment, ReactNode, useRef, useState } from "react";
 import { Avatar } from "./Avatar";
 import { Box, BoxProps } from "./Box";
-import { ButtonBase, ButtonBaseProps } from "./ButtonBase";
+import { Button, ButtonProps } from "./Button";
 import { useClickOutsideListener } from "./hooks";
 import { Icon, IconProps } from "./Icon";
 import { Menu, X } from "./icons/outline";
@@ -155,12 +155,12 @@ export const NavItem = ({
 
 type NavMenuButtonProps = {
   open?: boolean;
-  onClick?: ButtonBaseProps["onClick"];
+  onClick?: ButtonProps["onClick"];
 };
 
 const NavMenuButton = ({ open, onClick }: NavMenuButtonProps) => {
   return (
-    <ButtonBase
+    <Button
       onClick={onClick}
       textColor="primary.50"
       backgroundColor="transparent"
@@ -185,7 +185,7 @@ const NavMenuButton = ({ open, onClick }: NavMenuButtonProps) => {
       ]}
     >
       {open ? <X /> : <Menu />}
-    </ButtonBase>
+    </Button>
   );
 };
 
@@ -225,7 +225,7 @@ export const Nav = ({ logo, tray, profile, links, profileLinks }: NavProps) => {
                 {logo ? (
                   logo
                 ) : (
-                  <Logo color="currentColor" height="40px" width="auto" />
+                  <Logo color="currentColor" height="40px" width="40px" />
                 )}
               </Box>
               <Box display={responsiveDisplay}>
@@ -355,6 +355,7 @@ export const Nav = ({ logo, tray, profile, links, profileLinks }: NavProps) => {
             borderBottomLeftRadius={["standard", "none"]}
             backgroundColor="primary.900"
             borderBottomRightRadius={["standard", "none"]}
+            boxShadow="standard"
             zIndex="40"
             px={["small", "medium", "medium"]}
           >
