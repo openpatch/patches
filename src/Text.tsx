@@ -6,11 +6,14 @@ import { ColorProps, SpaceProps, TypographyProps } from "./system";
 import { SystemElements } from "./system/types";
 
 export type TextProps = {
+  id?: string;
+  htmlFor?: string;
   as?: SystemElements;
   truncate?: Properties["width"];
   children?: ReactNode;
   href?: string;
   className?: string;
+  role?: string;
 } & TypographyProps &
   SpaceProps &
   Pick<ColorProps, "textColor">;
