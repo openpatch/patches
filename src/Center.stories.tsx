@@ -3,7 +3,7 @@ import { Story, Meta } from "@storybook/react/types-6-0";
 import { Center, CenterProps } from "./Center";
 
 export default {
-  title: "Components/Center",
+  title: "Layout/Center",
   component: Center,
   argTypes: {},
 } as Meta;
