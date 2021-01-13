@@ -1,3 +1,79 @@
+# v1.0.0 (Wed Jan 13 2021)
+
+#### 💥 Breaking Change
+
+- Feature/forms [#142](https://github.com/openpatch/patches/pull/142) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🐛 Bug Fix
+
+- chore(deps): update react monorepo to v17 (major) [#11](https://github.com/openpatch/patches/pull/11) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### ⚠️ Pushed to `master`
+
+- refactor: remove React imports ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🔩 Dependency Updates
+
+- chore(deps): update dependency @types/node to v14.14.17 [#123](https://github.com/openpatch/patches/pull/123) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/jest-dom to v5.11.8 [#122](https://github.com/openpatch/patches/pull/122) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/jest-dom to v5.11.7 [#121](https://github.com/openpatch/patches/pull/121) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.11.1 [#120](https://github.com/openpatch/patches/pull/120) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/lodash to v4.14.166 [#119](https://github.com/openpatch/patches/pull/119) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/node to v14.14.16 [#118](https://github.com/openpatch/patches/pull/118) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @emotion/react to v11.1.4 [#117](https://github.com/openpatch/patches/pull/117) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/conventional-commits to v10.5.0 [#114](https://github.com/openpatch/patches/pull/114) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency auto to v10.5.0 [#116](https://github.com/openpatch/patches/pull/116) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/first-time-contributor to v10.5.0 [#115](https://github.com/openpatch/patches/pull/115) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/all-contributors to v10.5.0 [#113](https://github.com/openpatch/patches/pull/113) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update codecov/codecov-action action to v1.1.1 [#112](https://github.com/openpatch/patches/pull/112) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update emotion monorepo to v11.1.3 [#111](https://github.com/openpatch/patches/pull/111) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency fork-ts-checker-webpack-plugin to v6.0.8 [#110](https://github.com/openpatch/patches/pull/110) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update codecov/codecov-action action to v1.1.0 [#109](https://github.com/openpatch/patches/pull/109) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.11.0 [#108](https://github.com/openpatch/patches/pull/108) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.10.3 [#106](https://github.com/openpatch/patches/pull/106) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency chromatic to v5.5.0 [#105](https://github.com/openpatch/patches/pull/105) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/node to v14.14.14 [#104](https://github.com/openpatch/patches/pull/104) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency fork-ts-checker-webpack-plugin to v6.0.7 [#103](https://github.com/openpatch/patches/pull/103) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.10.2 [#102](https://github.com/openpatch/patches/pull/102) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/user-event to v12.6.0 [#101](https://github.com/openpatch/patches/pull/101) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency husky to v4.3.6 [#100](https://github.com/openpatch/patches/pull/100) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/node to v14.14.13 [#99](https://github.com/openpatch/patches/pull/99) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update storybook monorepo to v6.1.11 [#98](https://github.com/openpatch/patches/pull/98) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency typescript to v4.1.3 [#97](https://github.com/openpatch/patches/pull/97) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.10.1 [#96](https://github.com/openpatch/patches/pull/96) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/dom to v7.29.0 [#95](https://github.com/openpatch/patches/pull/95) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency fork-ts-checker-webpack-plugin to v6.0.6 [#94](https://github.com/openpatch/patches/pull/94) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/jest to v26.0.19 [#93](https://github.com/openpatch/patches/pull/93) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/node to v14.14.12 [#92](https://github.com/openpatch/patches/pull/92) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/jest to v26.0.18 [#90](https://github.com/openpatch/patches/pull/90) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/node to v14.14.11 [#89](https://github.com/openpatch/patches/pull/89) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/react-hooks to v3.7.0 [#88](https://github.com/openpatch/patches/pull/88) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/jest to v26.0.17 [#87](https://github.com/openpatch/patches/pull/87) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/react-hooks to v3.6.0 [#86](https://github.com/openpatch/patches/pull/86) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency husky to v4.3.5 [#85](https://github.com/openpatch/patches/pull/85) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/react-hooks to v3.5.0 [#83](https://github.com/openpatch/patches/pull/83) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @emotion/react to v11.1.2 [#82](https://github.com/openpatch/patches/pull/82) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency husky to v4.3.4 [#81](https://github.com/openpatch/patches/pull/81) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.10.0 [#80](https://github.com/openpatch/patches/pull/80) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency fork-ts-checker-webpack-plugin to v6.0.5 [#79](https://github.com/openpatch/patches/pull/79) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update storybook monorepo to v6.1.10 [#78](https://github.com/openpatch/patches/pull/78) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/user-event to v12.5.0 [#77](https://github.com/openpatch/patches/pull/77) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @octokit/core to v3.2.4 [#76](https://github.com/openpatch/patches/pull/76) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/user-event to v12.4.0 [#75](https://github.com/openpatch/patches/pull/75) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @octokit/core to v3.2.3 [#74](https://github.com/openpatch/patches/pull/74) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/jest to v26.0.16 [#73](https://github.com/openpatch/patches/pull/73) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @octokit/core to v3.2.2 [#72](https://github.com/openpatch/patches/pull/72) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/user-event to v12.3.0 [#71](https://github.com/openpatch/patches/pull/71) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): pin dependency @emotion/babel-preset-css-prop to 11.0.0 [#69](https://github.com/openpatch/patches/pull/69) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 3
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v0.5.0 (Mon Nov 30 2020)
 
 #### 🚀 Enhancement
