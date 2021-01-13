@@ -28,6 +28,7 @@ export const Link = ({
         css`
           display: inline-flex;
           align-items: center;
+          color: inherit;
           svg {
             margin-left: ${theme.space.xsmall};
             width: auto;
