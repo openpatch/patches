@@ -7,6 +7,7 @@ exports[`should match snapshot 1`] = `
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   font-style: italic;
+  position: relative;
 }
 
 .emotion-2 {
@@ -20,7 +21,7 @@ exports[`should match snapshot 1`] = `
 }
 
 .emotion-4 {
-  fill: #D9E2EC;
+  fill: #E4E7EB;
   width: 2rem;
   height: 2rem;
 }
@@ -54,9 +55,7 @@ exports[`should match snapshot 1`] = `
     </div>
     <div
       class="emotion-5 emotion-1"
-    >
-      <p />
-    </div>
+    />
   </blockquote>
 </div>
 `;

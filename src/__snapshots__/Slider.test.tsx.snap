@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+.emotion-0 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  margin-right: 8px;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-6 {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  height: 8px;
+  outline: none;
+  border-radius: 4px;
+  background-color: #CBD2D9;
+}
+
+.emotion-6::-moz-range-thumb,
+.emotion-6::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #0C6B58;
+}
+
+.emotion-7 {
+  position: absolute;
+  top: -36px;
+  margin-left: -17px;
+  z-index: 1;
+  font-size: 0.75rem;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scale(1) translateY(-10px);
+  -moz-transform: scale(1) translateY(-10px);
+  -ms-transform: scale(1) translateY(-10px);
+  transform: scale(1) translateY(-10px);
+  pointer-events: none;
+  -webkit-transition: visibility 0.33s linear,opacity 0.33s linear;
+  transition: visibility 0.33s linear,opacity 0.33s linear;
+}
+
+.emotion-8 {
+  width: 32px;
+  height: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50% 50% 50% 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background-color: #0C6B58;
+}
+
+.emotion-9 {
+  color: #EFFCF6;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.emotion-10 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  margin-left: 8px;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    display="flex"
+  >
+    <div
+      class="emotion-2 emotion-1"
+    >
+      0
+    </div>
+    <div
+      class="emotion-4 emotion-1"
+      display="flex"
+    >
+      <input
+        class="emotion-6"
+        max="100"
+        min="0"
+        step="1"
+        type="range"
+        value="0"
+      />
+      <output
+        class="emotion-7"
+      >
+        <span
+          class="emotion-8"
+        >
+          <span
+            class="emotion-9"
+          >
+            0
+          </span>
+        </span>
+      </output>
+    </div>
+    <div
+      class="emotion-10 emotion-1"
+    >
+      100
+    </div>
+  </div>
+</div>
+`;

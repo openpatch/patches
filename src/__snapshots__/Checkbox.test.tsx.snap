@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+.emotion-0 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  display: inline-block;
+  position: relative;
+  padding-left: 1.4em;
+  cursor: default;
+}
+
+.emotion-0::before,
+.emotion-0::after {
+  position: absolute;
+  top: 50%;
+  left: 7px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  content: "";
+}
+
+.emotion-0::before {
+  width: 18px;
+  height: 18px;
+  border: 1px solid hsl(0, 0%, 66%);
+  border-radius: 0.2em;
+}
+
+.emotion-0:active::before {
+  background-image: linear-gradient(
+                to bottom,
+                hsl(300, 3%, 73%),
+                hsl(300, 3%, 93%) 30%
+              );
+}
+
+.emotion-0:focus {
+  outline: none;
+}
+
+.emotion-0:focus::before {
+  width: 20px;
+  height: 20px;
+  box-sizing: content-box;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+<div>
+  <div
+    aria-checked="false"
+    aria-disabled="false"
+    aria-required="false"
+    class="emotion-0 emotion-1"
+    role="checkbox"
+    tabindex="0"
+  />
+</div>
+`;

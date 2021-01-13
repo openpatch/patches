@@ -11,17 +11,17 @@ exports[`should match snapshot 1`] = `
   background-color: #fff;
   border-radius: 6px;
   overflow: hidden;
-  border: 1px solid #D9E2EC;
+  border: 1px solid #E4E7EB;
 }
 
 .emotion-0::selection,
 .emotion-0::marker {
   background: #27AB83;
-  color: #102A43;
+  color: #1F2933;
 }
 
 .emotion-0 li {
-  border-top: 1px solid #D9E2EC;
+  border-top: 1px solid #E4E7EB;
   margin-top: -1px;
   position: relative;
   z-index: 1;
@@ -29,7 +29,7 @@ exports[`should match snapshot 1`] = `
 
 .emotion-0 .top a {
   border-left: 2px solid transparent;
-  color: #334E68;
+  color: #3E4C59;
   -webkit-text-decoration: none;
   text-decoration: none;
   display: block;
@@ -46,7 +46,7 @@ exports[`should match snapshot 1`] = `
 
 .emotion-0 a:hover {
   background-color: rgba(14, 30, 37, 0.03);
-  color: #102A43;
+  color: #1F2933;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -61,12 +61,12 @@ exports[`should match snapshot 1`] = `
 
 .emotion-0 .active>a {
   border-left-color: #27AB83;
-  color: #102A43;
+  color: #1F2933;
   font-weight: 700;
 }
 
 .emotion-0 .current>a {
-  color: #102A43;
+  color: #1F2933;
 }
 
 <div>

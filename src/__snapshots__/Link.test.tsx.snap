@@ -16,6 +16,7 @@ exports[`should match snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  color: inherit;
 }
 
 .emotion-0 svg {

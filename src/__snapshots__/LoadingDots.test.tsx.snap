@@ -42,7 +42,7 @@ exports[`should match snapshot 1`] = `
   min-width: 0;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  background-color: #102A43;
+  background-color: #1F2933;
   border-radius: 9999px;
   width: 4px;
   margin-right: 4px;
@@ -54,7 +54,7 @@ exports[`should match snapshot 1`] = `
   min-width: 0;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  background-color: #102A43;
+  background-color: #1F2933;
   border-radius: 9999px;
   margin-right: 4px;
   width: 4px;
@@ -66,7 +66,7 @@ exports[`should match snapshot 1`] = `
   min-width: 0;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  background-color: #102A43;
+  background-color: #1F2933;
   border-radius: 9999px;
   width: 4px;
   height: 4px;
