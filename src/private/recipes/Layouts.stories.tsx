@@ -1,5 +1,14 @@
+import { useRef } from "react";
+import { FormProvider, useForm } from "react-hook-form";
+import { HookFormController } from "../../HookFormController";
+import { Input } from "../../Input";
+import { PasswordInput } from "../../PasswordInput";
+import { Form } from "../../Form";
+import { Link } from "../../Link";
 import { Card } from "../../Card";
+import { Flex } from "../../Flex";
 import { CardContent } from "../../CardContent";
+import { CardFooter } from "../../CardFooter";
 import { Placeholder } from "../Placeholder";
 import { Sidenav } from "../../Sidenav";
 import { Grid } from "../../Grid";
@@ -13,8 +22,12 @@ import { ButtonGroup } from "../../ButtonGroup";
 import { Center } from "../../Center";
 import { Pattern } from "../../Pattern";
 import { Main } from "../../Main";
-import { Video } from "../../Video";
 import { FeaturePreview } from "../../FeaturePreview";
+import { FormHeader } from "../../FormHeader";
+import { Container } from "../../Container";
+import { PatternCenter } from "../../PatternCenter";
+import { FormFooter } from "../../FormFooter";
+import { FormDescription } from "../../FormDescription";
 
 export default {
   title: "Recipes/Layouts",
@@ -174,3 +187,239 @@ export const LandingLayout = () => (
     </Main>
   </Landing>
 );
+
+type LoginData = {
+  username: string;
+  password: string;
+};
+
+export const LogInLayout = () => {
+  const methods = useForm<LoginData>({
+    mode: "onSubmit",
+    reValidateMode: "onBlur",
+  });
+
+  function handleSubmit(data) {
+    console.log(data);
+  }
+
+  return (
+    <PatternCenter>
+      <Flex flex={1} />
+      <Container maxWidth="small">
+        <Box padding="small" marginTop="standard">
+          <Card>
+            <FormProvider {...methods}>
+              <Form onSubmit={methods.handleSubmit(handleSubmit)}>
+                <CardContent>
+                  <FormHeader>Welcome to OpenPatch!</FormHeader>
+                  <HookFormController
+                    name="username"
+                    control={methods.control}
+                    label="Username or E-Mail"
+                    render={Input}
+                    defaultValue=""
+                  />
+                  <HookFormController
+                    name="password"
+                    control={methods.control}
+                    label="Password"
+                    render={PasswordInput}
+                    defaultValue=""
+                  />
+                  <Link mt="small" href="#">
+                    Forgot your password?
+                  </Link>
+                </CardContent>
+                <CardFooter align="center">
+                  <ButtonPrimary type="submit" fullWidth>
+                    Log In
+                  </ButtonPrimary>
+                </CardFooter>
+              </Form>
+            </FormProvider>
+          </Card>
+          <Text textAlign="center" textColor="card" mt="small">
+            Don't have an account? <Link href="#">Sign up!</Link>
+          </Text>
+        </Box>
+      </Container>
+      <Flex flex={1} />
+      <Text textAlign="center" textColor="neutral.300" mb="small">
+        By signing in to OpenPatch, you agree to our{" "}
+        <Link href="#">terms of service.</Link>
+      </Text>
+    </PatternCenter>
+  );
+};
+
+type SignUpData = {
+  email: string;
+  username: string;
+  password: string;
+};
+
+export const SignUpLayout = () => {
+  const methods = useForm<SignUpData>({
+    mode: "onSubmit",
+    reValidateMode: "onBlur",
+  });
+
+  const password = useRef({});
+  password.current = methods.watch("password", "");
+
+  function handleSubmit(data) {
+    console.log(data);
+  }
+
+  return (
+    <PatternCenter>
+      <Flex flex={1} />
+      <Container maxWidth="small">
+        <Box padding="small" marginTop="standard">
+          <Card>
+            <FormProvider {...methods}>
+              <Form onSubmit={methods.handleSubmit(handleSubmit)}>
+                <CardContent>
+                  <FormHeader>Welcome to OpenPatch!</FormHeader>
+                  <HookFormController
+                    name="username"
+                    control={methods.control}
+                    label="Username"
+                    render={Input}
+                    defaultValue=""
+                    rules={{
+                      required: "Please choose a username",
+                      validate: {
+                        admin: (v) => v !== "admin" || "Nice try!",
+                      },
+                    }}
+                  />
+                  <HookFormController
+                    name="email"
+                    control={methods.control}
+                    label="E-Mail"
+                    render={Input}
+                    defaultValue=""
+                    rules={{
+                      required: "You need to provide an e-mail address",
+                      pattern: {
+                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                        message: "invalid email address",
+                      },
+                    }}
+                  />
+                  <HookFormController
+                    name="password"
+                    control={methods.control}
+                    label="Password"
+                    render={PasswordInput}
+                    defaultValue=""
+                    rules={{
+                      required: "You must specify a password",
+                      minLength: {
+                        value: 8,
+                        message: "Password must have at least 8 characters",
+                      },
+                    }}
+                  />
+                  <HookFormController
+                    name="password_match"
+                    control={methods.control}
+                    label="Repeat Password"
+                    render={PasswordInput}
+                    defaultValue=""
+                    rules={{
+                      validate: {
+                        match: (v) =>
+                          v === password.current ||
+                          "The passwords do not match",
+                      },
+                    }}
+                  />
+                </CardContent>
+                <CardFooter align="center">
+                  <ButtonPrimary type="submit" fullWidth>
+                    Log In
+                  </ButtonPrimary>
+                </CardFooter>
+              </Form>
+            </FormProvider>
+          </Card>
+          <Text textAlign="center" textColor="card" mt="small">
+            Already have an account? <Link href="#">Log In!</Link>
+          </Text>
+        </Box>
+      </Container>
+      <Flex flex={1} />
+      <Text textAlign="center" textColor="neutral.300" mb="small">
+        By signing up to OpenPatch, you agree to our{" "}
+        <Link href="#">terms of service.</Link>
+      </Text>
+    </PatternCenter>
+  );
+};
+
+export const FormLayout = () => {
+  return (
+    <Layout>
+      <Grid gridGap="standard" gridTemplateColumns={["1fr", "240px 1fr"]}>
+        <Box>
+          <Sidenav
+            position={["initial", "sticky"]}
+            sections={[
+              {
+                label: "Section 1",
+                href: "#",
+                active: true,
+                links: [
+                  {
+                    label: "Form 1",
+                    href: "#form-1",
+                  },
+                  {
+                    label: "Form 2",
+                    href: "#form-2",
+                  },
+                ],
+              },
+              {
+                label: "Section 2",
+                href: "#",
+              },
+            ]}
+          />
+        </Box>
+        <Grid gridGap="standard">
+          <Card>
+            <CardContent>
+              <Form>
+                <FormHeader id="form-1">Form 1</FormHeader>
+                <FormDescription>
+                  This is the description of form 1
+                </FormDescription>
+                <FormFooter />
+              </Form>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent>
+              <Placeholder height="600px" />
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent>
+              <Form>
+                <FormHeader id="form-2">Form 2</FormHeader>
+                <FormDescription>
+                  This is the description of form 2
+                </FormDescription>
+                <FormFooter />
+              </Form>
+            </CardContent>
+          </Card>
+        </Grid>
+      </Grid>
+    </Layout>
+  );
+};
