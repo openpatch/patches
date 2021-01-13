@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+.emotion-0 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.emotion-2 ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.emotion-2 li {
+  margin: 8px 0;
+}
+
+.emotion-2 li:last-of-type {
+  margin-bottom: 0;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    font-weight="medium"
+    id="group-1610568607249"
+  />
+  <div
+    aria-labelledby="group-1610568607249"
+    class="emotion-2 emotion-1"
+    role="group"
+  >
+    <ul />
+  </div>
+</div>
+`;

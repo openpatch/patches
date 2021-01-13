@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { create } from "@storybook/theming/create";
 import base from "../../src/themes/base";
 
@@ -10,5 +11,4 @@ export const theme = create({
   fontCode: base.fonts.monospace,
   colorPrimary: base.colors.primary[500],
   colorSecondary: base.colors.accent[500],
-  appBg: base.colors.background,
 });

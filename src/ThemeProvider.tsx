@@ -19,6 +19,7 @@ export const ThemeProvider = ({
       <Global
         styles={css`
           html {
+            scroll-behavior: smooth;
             line-height: ${theme.lineHeights.standard};
             -webkit-text-size-adjust: 100%; /* 2 */
             color: ${theme.colors.text};

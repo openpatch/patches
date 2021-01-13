@@ -3,14 +3,17 @@ import { Properties } from "csstype";
 import { ReactNode } from "react";
 import { Box } from "./Box";
 import { ColorProps, SpaceProps, TypographyProps } from "./system";
-import { SystemTypographyElements } from "./system/types";
+import { SystemElements } from "./system/types";
 
 export type TextProps = {
-  as?: SystemTypographyElements;
+  id?: string;
+  htmlFor?: string;
+  as?: SystemElements;
   truncate?: Properties["width"];
   children?: ReactNode;
   href?: string;
   className?: string;
+  role?: string;
 } & TypographyProps &
   SpaceProps &
   Pick<ColorProps, "textColor">;

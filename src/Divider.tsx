@@ -10,7 +10,7 @@ export const Divider = ({ color = "neutral.300" }: DividerProps) => {
       <Box
         position="absolute"
         width="100%"
-        background={color}
+        backgroundColor={color}
         height="1px"
       ></Box>
     </Box>

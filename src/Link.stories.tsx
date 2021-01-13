@@ -20,3 +20,8 @@ export const External = Template.bind({});
 External.args = {
   external: true,
 };
+
+export const CustomAs = Template.bind({});
+CustomAs.args = {
+  as: (props) => <span {...props}></span>,
+};

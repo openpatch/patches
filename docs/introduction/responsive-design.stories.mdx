@@ -4,18 +4,19 @@ import { Meta } from "@storybook/addon-docs/blocks";
 
 # Responsive Design
 
-Unlike other design systems Patches does not use responsive props. If you
-would like to design a responsive component you should use the `useMedia`
-hook.
+Like many design systems you can use two ways for responsive designs.
+
+## Hook
+
+One way is to use the `useBreakpoint` or `useMedia` hook.
 
 ```tsx
-const columns = useMedia({
-  breakpoints: {
-    sm: 1,
-    lg: 5,
-  },
-  defaultValue: 3,
-});
+const columns = useMedia<number>(
+  [`(min-width 200px)`, `(min-width 400px)`],
+  [1, 5],
+  3
+);
+const moreColumns = useBreakpoint([3, 1, 5]);
 
 return (
   <AutoGrid columns={columns}>
@@ -34,13 +35,22 @@ This makes is also possible to easily use media queries for other purposes,
 like selecting different components based on the width of the viewport.
 
 ```tsx
-const Icon = useMedia({
-  breakpoints: {
-    sm: IconLowDetail,
-    lg: IconHighDetail,
-  },
-  defaultValue: IconNormalDetail,
-});
+const Icon = useBreakpoint([IconLowDetail, IconNormalDetail, IconHighDetail]);
 
 return <Icon />;
 ```
+
+The standard theme provides two breakpoints: 768px and 1024px.
+The useBreakpoint hook gets a list of three elements. The first element is
+returned, when the width of the viewport is below 768px, the second when it
+is between 768px and 1024px and the third when it is above 1024px.
+
+## Props
+
+Another way is to use reponsive props.
+
+```tsx
+<Box width={["100px", "200px", "100%"]} />
+```
+
+Responsive props work exactly like the `useBreakpoint` hook.

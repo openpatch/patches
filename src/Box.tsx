@@ -33,6 +33,7 @@ export type BoxProps = {
   role?: string;
   href?: string;
   className?: string;
+  tabIndex?: number;
   ref?: Ref<HTMLDivElement>;
 } & ColorProps &
   CursorProps &

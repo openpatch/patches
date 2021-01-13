@@ -1,0 +1,272 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+.emotion-0 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  position: relative;
+  border-radius: 4px;
+  padding: 8px 4px;
+  border-color: #E4E7EB;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.emotion-3 {
+  position: relative;
+  border: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #34126F;
+  background-color: #EAE2F8;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 99;
+}
+
+.emotion-3:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.emotion-3:hover:enabled {
+  opacity: 0.8;
+}
+
+.emotion-3:active:enabled {
+  -webkit-filter: brightness(80%);
+  filter: brightness(80%);
+}
+
+.emotion-3:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+.emotion-3 span.icon-left,
+.emotion-3 span.icon-right {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-3 span.icon-left,
+.emotion-3 span.icon-right {
+  width: 14px;
+}
+
+.emotion-3 span.icon-left {
+  margin-right: 8px;
+}
+
+.emotion-3 span.icon-right {
+  margin-left: 8px;
+}
+
+.emotion-5 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border: none;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+.emotion-5:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+.emotion-5 span.icon-left,
+.emotion-5 span.icon-right {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-7 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <button
+      class="emotion-2 emotion-3 emotion-4"
+    >
+      <div
+        class="emotion-5 emotion-1"
+      >
+        Preview
+      </div>
+    </button>
+    <div
+      class="emotion-7 emotion-1"
+    >
+      <div
+        class="react-codemirror2"
+      >
+        <div
+          class="CodeMirror cm-s-default CodeMirror-wrap"
+        >
+          <div
+            style="overflow: hidden; position: relative; width: 3px; height: 0px;"
+          >
+            <textarea
+              autocapitalize="off"
+              autocorrect="off"
+              spellcheck="false"
+              style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"
+              tabindex="0"
+            />
+          </div>
+          <div
+            class="CodeMirror-vscrollbar"
+            cm-not-content="true"
+            tabindex="-1"
+          >
+            <div
+              style="min-width: 1px;"
+            />
+          </div>
+          <div
+            class="CodeMirror-hscrollbar"
+            cm-not-content="true"
+            tabindex="-1"
+          >
+            <div
+              style="height: 100%; min-height: 1px;"
+            />
+          </div>
+          <div
+            class="CodeMirror-scrollbar-filler"
+            cm-not-content="true"
+          />
+          <div
+            class="CodeMirror-gutter-filler"
+            cm-not-content="true"
+          />
+          <div
+            class="CodeMirror-scroll"
+            tabindex="-1"
+          >
+            <div
+              class="CodeMirror-sizer"
+              style="margin-left: 0px;"
+            >
+              <div
+                style="position: relative;"
+              >
+                <div
+                  class="CodeMirror-lines"
+                  role="presentation"
+                >
+                  <div
+                    role="presentation"
+                    style="position: relative; outline: none;"
+                  >
+                    <div
+                      class="CodeMirror-measure"
+                    >
+                      <pre
+                        class="CodeMirror-line-like"
+                      >
+                        <span>
+                          xxxxxxxxxx
+                        </span>
+                      </pre>
+                    </div>
+                    <div
+                      class="CodeMirror-measure"
+                    />
+                    <div
+                      style="position: relative; z-index: 1;"
+                    />
+                    <div
+                      class="CodeMirror-cursors"
+                    />
+                    <div
+                      class="CodeMirror-code"
+                      role="presentation"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="position: absolute; height: 50px; width: 1px;"
+            />
+            <div
+              class="CodeMirror-gutters"
+              style="display: none;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

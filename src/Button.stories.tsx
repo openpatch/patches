@@ -1,19 +1,18 @@
 import { Story, Meta } from "@storybook/react/types-6-0";
 
 import * as icons from "./icons/solid";
-import { ButtonBase, ButtonBaseProps } from "./ButtonBase";
-import { AutoGrid } from "./AutoGrid";
+import { Button, ButtonProps } from "./Button";
 
 export default {
-  title: "Components/ButtonBase",
-  component: ButtonBase,
+  title: "Components/Button",
+  component: Button,
   argTypes: {
     children: { control: "text" },
   },
 } as Meta;
 
-const Template: Story<ButtonBaseProps> = ({ ...args }) => {
-  return <ButtonBase children="A Button" {...args} />;
+const Template: Story<ButtonProps> = ({ ...args }) => {
+  return <Button children="A Button" {...args} />;
 };
 
 export const XSmall = Template.bind({});

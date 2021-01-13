@@ -1,5 +1,5 @@
 import { Theme } from "@emotion/react";
-import { blueGrey, red, yellow, blue, teal, purple } from "./colors";
+import { coolGrey, red, yellow, blue, teal, purple } from "./colors";
 
 const base: Theme = {
   breakpoints: ["768px", "1024px"],
@@ -15,6 +15,7 @@ const base: Theme = {
     none: "0px",
     gutter: "8px",
     auto: "auto",
+    full: "100%",
   },
   sizes: {
     xsmall: "400px",
@@ -24,8 +25,8 @@ const base: Theme = {
   },
   fonts: {
     body:
-      'Montserrat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    heading: '"Proza Libre", Montserrat, system-ui',
+      'Rubik, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
+    heading: "Rubik, system-ui",
     monospace: '"Ubuntu Mono", Menlo, monospace',
   },
   fontSizes: {
@@ -67,12 +68,12 @@ const base: Theme = {
   colors: {
     currentColor: "currentColor",
     transparent: "transparent",
-    text: blueGrey[900],
-    background: blueGrey[50],
+    text: coolGrey[900],
+    background: coolGrey[50],
     card: "#fff",
     primary: teal,
     accent: purple,
-    neutral: blueGrey,
+    neutral: coolGrey,
     success: teal,
     warning: yellow,
     error: red,

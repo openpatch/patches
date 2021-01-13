@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+.emotion-0 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 0;
+  border-color: #C6F7E2;
+}
+
+.emotion-0>div {
+  border-bottom-color: #C6F7E2;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.emotion-0 div:last-of-type {
+  border: none;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  padding: 16px;
+  padding-left: calc(16px * 2 + 14px);
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+}
+
+.emotion-2::before,
+.emotion-2::after {
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  content: "";
+}
+
+.emotion-2::before {
+  top: calc(16px + 3px);
+  left: 16px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #0C6B58;
+}
+
+.emotion-2:focus {
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 500;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  padding: 0px;
+  margin: 0px;
+  color: #52606D;
+}
+
+<div>
+  <div
+    aria-disabled="false"
+    aria-invalid="false"
+    aria-required="false"
+    class="emotion-0 emotion-1"
+    role="radiogroup"
+  >
+    <div
+      aria-checked="false"
+      aria-disabled="false"
+      class="emotion-2 emotion-1"
+      role="radio"
+      tabindex="0"
+    >
+      <div
+        class="emotion-4 emotion-1"
+        font-weight="medium"
+      />
+      <div
+        class="emotion-6 emotion-1"
+      />
+    </div>
+  </div>
+</div>
+`;

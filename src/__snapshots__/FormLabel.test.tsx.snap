@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+.emotion-0 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+<div>
+  <label
+    class="emotion-0 emotion-1"
+    font-weight="medium"
+  >
+     
+  </label>
+</div>
+`;

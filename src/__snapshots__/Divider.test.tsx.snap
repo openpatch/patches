@@ -16,7 +16,7 @@ exports[`should match snapshot 1`] = `
   transition: all 0.2s ease;
   position: absolute;
   width: 100%;
-  background: neutral.300;
+  background-color: #9AA5B1;
   height: 1px;
 }
 

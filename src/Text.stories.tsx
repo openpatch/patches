@@ -1,13 +1,9 @@
 import { Story, Meta } from "@storybook/react/types-6-0";
 
 import { Text, TextProps } from "./Text";
-import { Link } from "./Link";
-import { Blockquote } from "./Blockquote";
-import { Heading } from "./Heading";
-import { Code } from "./Code";
 
 export default {
-  title: "Typography/Text",
+  title: "Components/Text",
   component: Text,
   argTypes: {},
 } as Meta;

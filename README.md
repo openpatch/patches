@@ -8,16 +8,16 @@
 
 # Patches
 
-Patches is the Design System for OpenPatch.
+Patches is the Design System (aka. Component Library) for OpenPatch.
 
 ## Changelog
 
 Patches follows semantic versioning. In short, this means we use patch
-versions for bugfixes, minor versions for new features, and major versions
+versions for bug fixes, minor versions for new features, and major versions
 for breaking changes. You can read [our changelog on
 GitHub](https://github.com/openpatch/patches/releases).
 
 ## Related Projects
 
-- ** [Circuit UI](https://github.com/sumup-oss/circuit-ui/) ** the project structure is inspired by this design system
-- ** [Chakra UI](https://chakra-ui.com) ** some components are inspired by this design system
+- [**Circuit UI**](https://github.com/sumup-oss/circuit-ui/) the project structure is inspired by this design system
+- [**Chakra UI**](https://chakra-ui.com) some components are inspired by this design system

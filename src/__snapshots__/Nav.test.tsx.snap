@@ -490,6 +490,7 @@ exports[`should match snapshot 1`] = `
   border-bottom-left-radius: 8px;
   background-color: #014D40;
   border-bottom-right-radius: 8px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.06);
   z-index: 40;
   padding-left: 16px;
   padding-right: 16px;
@@ -651,7 +652,7 @@ exports[`should match snapshot 1`] = `
               height="40px"
               version="1.1"
               viewBox="0 0 82.442 82.442"
-              width="auto"
+              width="40px"
               xmlns="http://www.w3.org/2000/svg"
             >
               <defs>

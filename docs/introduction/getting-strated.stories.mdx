@@ -113,8 +113,8 @@ Create or modify your theme to use the installed typefaces:
 export default {
   fonts: {
     body:
-      'Montserrat, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    heading: "Proza Libre, Montserrat, system-ui",
+      'Rubik, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
+    heading: "Rubik, system-ui",
     monospace: "Ubuntu Mono, Menlo, monospace",
   },
 };
@@ -125,8 +125,7 @@ Import the fonts in your applications. For nextjs create a [custom app](https://
 ```tsx
 import type { AppProps } from "next/app";
 
-import "typeface-montserrat";
-import "typeface-proza-libre";
+import "typeface-Rubik";
 import "typeface-ubuntu-mono";
 
 function MyApp({ Component, pageProps }: AppProps) {

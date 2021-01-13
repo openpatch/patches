@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+.emotion-0 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.emotion-2 {
+  border-radius: 4px;
+  padding: 8px 4px;
+  border-color: #E4E7EB;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.emotion-2::-webkit-input-placeholder {
+  color: #7B8794;
+}
+
+.emotion-2::-moz-placeholder {
+  color: #7B8794;
+}
+
+.emotion-2:-ms-input-placeholder {
+  color: #7B8794;
+}
+
+.emotion-2::placeholder {
+  color: #7B8794;
+}
+
+.emotion-2:focus {
+  outline-color: transparent;
+  outline-width: 0;
+  border-color: #0C6B58;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  z-index: 1;
+}
+
+.emotion-2:disabled {
+  background-color: #F5F7FA;
+}
+
+.emotion-4 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  z-index: 10;
+  cursor: pointer;
+  position: absolute;
+  border-left-color: #E4E7EB;
+  border-left-style: solid;
+  width: 24px;
+  top: 1px;
+  bottom: 1px;
+  right: 2px;
+  border-left-width: 1px;
+}
+
+.emotion-6 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  height: 50%;
+  width: 24px;
+  text-align: center;
+  top: 0;
+  background-color: #F5F7FA;
+  position: absolute;
+  border-bottom-color: #E4E7EB;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.emotion-8 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  height: 50%;
+  bottom: 0;
+  width: 24px;
+  text-align: center;
+  background-color: #F5F7FA;
+  position: absolute;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <input
+      class="emotion-2 emotion-3"
+      inputmode="decimal"
+      pattern="[0-9]*(.[0-9]+)?"
+      role="spinbutton"
+      type="text"
+      value="0"
+    />
+    <div
+      class="emotion-4 emotion-1"
+      cursor="pointer"
+      width="24px"
+    >
+      <div
+        aria-label="+1"
+        class="emotion-6 emotion-1"
+        height="50%"
+        role="button"
+        tabindex="-1"
+        width="24px"
+      >
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M5 15l7-7 7 7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+      <div
+        aria-label="-1"
+        class="emotion-8 emotion-1"
+        height="50%"
+        role="button"
+        tabindex="-1"
+        width="24px"
+      >
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 9l-7 7-7-7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;

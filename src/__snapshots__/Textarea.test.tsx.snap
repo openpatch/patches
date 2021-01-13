@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+.emotion-0 {
+  border-radius: 4px;
+  padding: 8px 4px;
+  border-color: #E4E7EB;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  width: 100%;
+  resize: vertical;
+}
+
+.emotion-0::-webkit-input-placeholder {
+  color: #7B8794;
+}
+
+.emotion-0::-moz-placeholder {
+  color: #7B8794;
+}
+
+.emotion-0:-ms-input-placeholder {
+  color: #7B8794;
+}
+
+.emotion-0::placeholder {
+  color: #7B8794;
+}
+
+.emotion-0:focus {
+  outline-color: transparent;
+  outline-width: 0;
+  border-color: #0C6B58;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  z-index: 1;
+}
+
+.emotion-0:disabled {
+  background-color: #F5F7FA;
+}
+
+<div>
+  <textarea
+    class="emotion-0 emotion-1"
+  />
+</div>
+`;
