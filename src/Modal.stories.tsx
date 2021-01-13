@@ -4,7 +4,7 @@ import { action } from "@storybook/addon-actions";
 
 import { Modal, ModalProps } from "./Modal";
 import { CardContent } from "./CardContent";
-import { ButtonBase } from "./ButtonBase";
+import { Button } from "./Button";
 
 export default {
   title: "Components/Modal",
@@ -17,7 +17,7 @@ const Template: Story<ModalProps> = (args) => {
 
   return (
     <>
-      <ButtonBase onClick={() => setOpen(true)}>Open Modal</ButtonBase>
+      <Button onClick={() => setOpen(true)}>Open Modal</Button>
       <Modal {...args} open={open} onClose={() => setOpen(false)}>
         <CardContent>this is a modal</CardContent>
       </Modal>
