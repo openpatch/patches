@@ -15,7 +15,7 @@ import {
 } from "./system";
 import { ResponsiveProp } from "./system/types";
 
-export type ButtonBaseProps = {
+export type ButtonProps = {
   children: ReactNode;
   iconLeft?: ReactNode;
   iconRight?: ReactNode;
@@ -29,11 +29,11 @@ export type ButtonBaseProps = {
   ShadowProps &
   ButtonHTMLAttributes<HTMLButtonElement>;
 
-const StyledButtonBase = styled.button<
-  ColorProps & TypographyProps & ShadowProps
->(compose(color, typography, shadow));
+const StyledButton = styled.button<ColorProps & TypographyProps & ShadowProps>(
+  compose(color, typography, shadow)
+);
 
-const sizeStyle = (theme: Theme) => (size: ButtonBaseProps["size"]) => {
+const sizeStyle = (theme: Theme) => (size: ButtonProps["size"]) => {
   if (size === "small") {
     return css`
       font-size: ${theme.fontSizes.small};
@@ -150,7 +150,7 @@ const baseStyle = (theme: Theme) => css`
   }
 `;
 
-export const ButtonBase = ({
+export const Button = ({
   children,
   iconLeft,
   iconRight,
@@ -159,7 +159,7 @@ export const ButtonBase = ({
   loading = false,
   size = ["small"],
   ...props
-}: ButtonBaseProps) => {
+}: ButtonProps) => {
   if (!Array.isArray(size)) {
     size = [size];
   }
@@ -167,7 +167,7 @@ export const ButtonBase = ({
   const responsiveSize = useBreakpoints(size);
 
   return (
-    <StyledButtonBase
+    <StyledButton
       css={(theme) => [
         css`
           position: relative;
@@ -219,6 +219,6 @@ export const ButtonBase = ({
         {children}
         {iconRight && <span className="icon-right">{iconRight}</span>}
       </Box>
-    </StyledButtonBase>
+    </StyledButton>
   );
 };

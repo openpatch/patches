@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { ButtonHTMLAttributes } from "react";
-import { ButtonBase, ButtonBaseProps } from "./ButtonBase";
+import { Button, ButtonProps } from "./Button";
 import { variant } from "./system";
 import { SystemColor, SystemColorNames } from "./system/types";
 
@@ -9,7 +9,7 @@ export type ButtonSecondaryProps = {
   tone?: SystemColorNames;
 } & ButtonHTMLAttributes<HTMLButtonElement> &
   Pick<
-    ButtonBaseProps,
+    ButtonProps,
     | "iconLeft"
     | "iconRight"
     | "size"
@@ -20,7 +20,7 @@ export type ButtonSecondaryProps = {
   >;
 
 const StyledButtonSecondary: React.FunctionComponent<ButtonSecondaryProps> = styled(
-  ButtonBase
+  Button
 )<ButtonSecondaryProps>(
   () => ({}),
   variant<
