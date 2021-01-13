@@ -17,11 +17,14 @@ const SORT_ORDER = {
   Recipes: [],
   Typography: ["Heading", "SubHeading", "Text"],
   Layout: [],
+  Primitives: [],
+  Form: [],
   Components: [],
   Icons: [],
   Hooks: [],
 };
 
+// more toolbar icons can be found here: https://github.com/storybookjs/storybook/blob/next/lib/components/src/icon/icons.tsx
 export const globalTypes = {
   theme: {
     name: "Theme",
@@ -31,6 +34,20 @@ export const globalTypes = {
       icon: "paintbrush",
       // array of plain string values or MenuItem shape (see below)
       items: Object.keys(themes),
+    },
+  },
+  backgrounds: {
+    name: "Background",
+    description: "Background displaying the component on",
+    defaultValue: "none",
+    toolbar: {
+      icon: "photo",
+      items: [
+        { value: "none", title: "None" },
+        { value: "padded", title: "Padded" },
+        { value: "card", title: "Card" },
+        { value: "card-padded", title: "Card Padded" },
+      ],
     },
   },
 };
