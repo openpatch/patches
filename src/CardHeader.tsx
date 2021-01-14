@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import { Box } from "./Box";
 
 export type CardHeaderProps = {
+  as?: "h1" | "h2" | "h3" | "h4";
   action?: ReactNode;
   avatar?: ReactNode;
   children: string;
@@ -9,6 +10,7 @@ export type CardHeaderProps = {
 };
 
 export const CardHeader = ({
+  as = "h1",
   action,
   avatar,
   children,
@@ -26,8 +28,8 @@ export const CardHeader = ({
           {avatar}
         </Box>
       )}
-      <Box flex="1" ml="standard">
-        <Box margin="none" fontSize="medium" as="h3">
+      <Box flex="1" ml={avatar ? "standard" : "none"}>
+        <Box margin="none" fontSize="large" as={as}>
           {children}
         </Box>
         {subtitle && (
