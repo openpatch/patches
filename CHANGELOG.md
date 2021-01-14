@@ -1,3 +1,37 @@
+# v1.1.0 (Thu Jan 14 2021)
+
+#### 🚀 Enhancement
+
+- feat(form): add more form text components ([@mikebarkmin](https://github.com/mikebarkmin))
+- feat(patterncenter): add props for fg and bg ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🐛 Bug Fix
+
+- chore: update yarn lock [#153](https://github.com/openpatch/patches/pull/153) ([@mikebarkmin](https://github.com/mikebarkmin))
+- fix(card): remove margin if no avatar ([@mikebarkmin](https://github.com/mikebarkmin))
+- fix(usemedia): check if window is available ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### ⚠️ Pushed to `main`
+
+- chore(deps): upgrade to latest ([@mikebarkmin](https://github.com/mikebarkmin))
+- chore: prettier ignore index.ts ([@mikebarkmin](https://github.com/mikebarkmin))
+- docs(layouts): fix wording ([@mikebarkmin](https://github.com/mikebarkmin))
+- ci: change master to main for shipping ([@mikebarkmin](https://github.com/mikebarkmin))
+- ci: use main as base for pages ([@mikebarkmin](https://github.com/mikebarkmin))
+- chore: move to main ([@mikebarkmin](https://github.com/mikebarkmin))
+- docs: updated getting started ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🔩 Dependency Updates
+
+- chore(deps): update dependency @auto-it/all-contributors to v10.9.0 [#149](https://github.com/openpatch/patches/pull/149) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.0.2 (Thu Jan 14 2021)
 
 #### 🐛 Bug Fix
