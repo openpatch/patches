@@ -70,7 +70,4 @@ export { useMedia } from "./hooks/useMedia";
 export { usePrefersDarkMode } from "./hooks/usePrefersDarkMode";
 export { useTheme } from "./hooks/useTheme";
 export { useTimeout } from "./hooks/useTimeout";
-export {
-  HookFormController,
-  HookFormControllerProps,
-} from "./HookFormController";
+export { HookFormController, HookFormControllerProps } from "./HookFormController";
