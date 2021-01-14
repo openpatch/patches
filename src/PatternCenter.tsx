@@ -1,12 +1,19 @@
+import { css } from "@emotion/react";
 import { ReactNode } from "react";
-import { Box } from "./Box";
-import { Pattern } from "./Pattern";
+import { Box, BoxProps } from "./Box";
+import { Pattern, PatternProps } from "./Pattern";
 
 export type PatternCenterProps = {
   children?: ReactNode;
+  backgroundColor?: BoxProps["backgroundColor"];
+  foregroundColor?: PatternProps["foregroundColor"];
 };
 
-export const PatternCenter = ({ children }: PatternCenterProps) => {
+export const PatternCenter = ({
+  children,
+  backgroundColor = "primary.900",
+  foregroundColor = "white",
+}: PatternCenterProps) => {
   return (
     <Box
       minHeight="100vh"
@@ -15,21 +22,27 @@ export const PatternCenter = ({ children }: PatternCenterProps) => {
       position="relative"
       overflowY="auto"
       overflowX="hidden"
-      backgroundColor="primary.900"
+      backgroundColor={backgroundColor}
       display="flex"
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
+      css={css`
+        z-index: -2;
+      `}
     >
       <Pattern
         position="fixed"
         backgroundColor="transparent"
-        foregroundColor="white"
+        foregroundColor={foregroundColor}
         opacity={0.05}
         top="0"
         bottom="0"
         right="0"
         left="0"
+        css={css`
+          z-index: -1;
+        `}
       />
       {children}
     </Box>

@@ -28,7 +28,7 @@ exports[`should match snapshot 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  margin-left: 16px;
+  margin-left: 0px;
 }
 
 .emotion-4 {
@@ -37,7 +37,7 @@ exports[`should match snapshot 1`] = `
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   margin: 0px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 <div>
@@ -48,12 +48,12 @@ exports[`should match snapshot 1`] = `
     <div
       class="emotion-2 emotion-1"
     >
-      <h3
+      <h1
         class="emotion-4 emotion-1"
-        font-size="medium"
+        font-size="large"
       >
         Card Header
-      </h3>
+      </h1>
     </div>
   </div>
 </div>
