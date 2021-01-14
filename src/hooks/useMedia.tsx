@@ -7,7 +7,7 @@ export const useMedia = <T,>(
 ) => {
   // Array containing a media query list for each query
   const mediaQueryLists = queries.map((q) =>
-    window?.matchMedia
+    typeof window !== "undefined" && window?.matchMedia
       ? window.matchMedia(q)
       : {
           matches: false,
