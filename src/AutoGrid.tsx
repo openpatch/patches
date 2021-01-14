@@ -29,6 +29,9 @@ export const AutoGrid = ({
     );
   } else if (columns && !Array.isArray(columns)) {
     columns = [columns];
+  }
+
+  if (Array.isArray(columns)) {
     templateColumns = columns.map((c) => `repeat(${c}, 1fr)`);
   }
 

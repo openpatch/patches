@@ -35,6 +35,12 @@ Columns.args = {
   columns: 2,
 };
 
+export const ResponsiveColumns = Template.bind({});
+ResponsiveColumns.args = {
+  gap: "standard",
+  columns: [1, 2],
+};
+
 export const MinChildWidth = Template.bind({});
 MinChildWidth.args = {
   gap: "standard",
