@@ -21,15 +21,19 @@ const languages = {
   typescript: "text/typescript",
 } as const;
 
-require("codemirror/addon/edit/closebrackets.js");
-// require("codemirror/keymap/emacs.js");
-// require("codemirror/keymap/vim.js");
+let modeLoaded = false;
+if (typeof window !== "undefined" && typeof window.navigator !== "undefined") {
+  require("codemirror/addon/edit/closebrackets.js");
+  // require("codemirror/keymap/emacs.js");
+  // require("codemirror/keymap/vim.js");
 
-require("codemirror/mode/markdown/markdown.js");
-require("codemirror/mode/clike/clike.js");
-require("codemirror/mode/sql/sql.js");
-require("codemirror/mode/python/python.js");
-require("codemirror/mode/javascript/javascript.js");
+  require("codemirror/mode/markdown/markdown.js");
+  require("codemirror/mode/clike/clike.js");
+  require("codemirror/mode/sql/sql.js");
+  require("codemirror/mode/python/python.js");
+  require("codemirror/mode/javascript/javascript.js");
+  modeLoaded = true;
+}
 
 export type CodeEditorProps = {
   language?: keyof typeof languages;
@@ -70,6 +74,18 @@ export const CodeEditor = ({
   selection,
   variant = "normal",
 }: CodeEditorProps) => {
+  let options = {};
+  if (modeLoaded) {
+    options = {
+      ...config,
+      theme: theme === "light" ? "default" : "vscode-dark",
+      autoCloseBrackets,
+      readOnly: disabled ? "nocursor" : false,
+      keyMap,
+      lineNumbers,
+      mode: languages[language],
+    } as any;
+  }
   return (
     <Box
       css={(theme) => [
@@ -98,17 +114,7 @@ export const CodeEditor = ({
         value={value}
         selection={selection}
         editorDidMount={editorDidMount}
-        options={
-          {
-            ...config,
-            theme: theme === "light" ? "default" : "vscode-dark",
-            autoCloseBrackets,
-            readOnly: disabled ? "nocursor" : false,
-            keyMap,
-            lineNumbers,
-            mode: languages[language],
-          } as any
-        }
+        options={options}
         onGutterClick={(_, lineNumber, gutter) => {
           onGutterClick(lineNumber, gutter);
         }}
