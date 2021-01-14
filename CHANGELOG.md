@@ -1,3 +1,28 @@
+# v1.0.1 (Thu Jan 14 2021)
+
+#### 🐛 Bug Fix
+
+- fix(codeeditor): only require codemirror packages on the client ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🔩 Dependency Updates
+
+- chore(deps): update dependency @types/codemirror to v0.0.106 [#144](https://github.com/openpatch/patches/pull/144) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/jest-dom to v5.11.9 [#141](https://github.com/openpatch/patches/pull/141) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/first-time-contributor to v10.6.1 [#136](https://github.com/openpatch/patches/pull/136) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/react to v11.2.3 [#131](https://github.com/openpatch/patches/pull/131) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/conventional-commits to v10.6.1 [#135](https://github.com/openpatch/patches/pull/135) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/dom to v7.29.4 [#126](https://github.com/openpatch/patches/pull/126) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/all-contributors to v10.6.1 [#134](https://github.com/openpatch/patches/pull/134) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update codecov/codecov-action action to v1.2.1 [#127](https://github.com/openpatch/patches/pull/127) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): pin dependency @types/codemirror to 0.0.104 [#143](https://github.com/openpatch/patches/pull/143) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.0.0 (Wed Jan 13 2021)
 
 #### 💥 Breaking Change
