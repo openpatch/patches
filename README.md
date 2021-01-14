@@ -10,6 +10,11 @@
 
 Patches is the Design System (aka. Component Library) for OpenPatch.
 
+## Getting Started
+
+Take a look at the [documentation](https://openpatch.github.io/patches/?path=/docs/introduction-getting-started--page).
+If you plan to use [NextJS](https://nextjs.org) for your project you can use the [patches-nextjs-starter](https://github.com/openpatch/patches-nextjs-starter) by running `npx create-next-app -e https://github.com/openpatch/patches-nextjs-starter`.
+
 ## Changelog
 
 Patches follows semantic versioning. In short, this means we use patch

@@ -4,73 +4,10 @@ import { Meta } from "@storybook/addon-docs/blocks";
 
 # Getting Started
 
-## Adding Patches to an existing NextJS app
+## Create a NextJS App with Patches
 
 ```bash
-yarn add @openpatch/patches
-```
-
-You will need to set up a custom app. Create a file `_app.tsx` in your `pages` folder.
-
-```tsx
-import type { AppProps } from "next/app";
-import { CacheProvider } from "@emotion/react";
-import { cache } from "emotion";
-import { ThemeProvider } from "@openpatch/patches";
-
-function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <CacheProvider value={cache}>
-      <ThemeProvider>
-        <Component {...pageProps} />
-      </ThemeProvider>
-    </CacheProvider>
-  );
-}
-
-export default MyApp;
-```
-
-You will also need a custon document and `emotion-server`. Install `emotion-server` and create a file `_document.tsx` in your `pages` folder.
-
-```bash
-yarn add emotion-server
-```
-
-```tsx
-import Document, { Head, Main, NextScript } from "next/document";
-import { extractCritical } from "emotion-server";
-
-export default class MyDocument extends Document {
-  static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx);
-    const styles = extractCritical(initialProps.html);
-    return {
-      ...initialProps,
-      styles: (
-        <>
-          {initialProps.styles}
-          <style
-            data-emotion-css={styles.ids.join(" ")}
-            dangerouslySetInnerHTML={{ __html: styles.css }}
-          />
-        </>
-      ),
-    };
-  }
-
-  render() {
-    return (
-      <html>
-        <Head />
-        <body>
-          <Main />
-          <NextScript />
-        </body>
-      </html>
-    );
-  }
-}
+npx create-next-app -e https://github.com/openpatch/patches-nextjs-starter
 ```
 
 ## Theming
@@ -125,7 +62,7 @@ Import the fonts in your applications. For nextjs create a [custom app](https://
 ```tsx
 import type { AppProps } from "next/app";
 
-import "typeface-Rubik";
+import "typeface-rubik";
 import "typeface-ubuntu-mono";
 
 function MyApp({ Component, pageProps }: AppProps) {
