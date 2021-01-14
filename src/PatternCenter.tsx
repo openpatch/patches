@@ -27,9 +27,6 @@ export const PatternCenter = ({
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
-      css={css`
-        z-index: -2;
-      `}
     >
       <Pattern
         position="fixed"
@@ -40,9 +37,6 @@ export const PatternCenter = ({
         bottom="0"
         right="0"
         left="0"
-        css={css`
-          z-index: -1;
-        `}
       />
       {children}
     </Box>
