@@ -340,7 +340,7 @@ export const SignUpLayout = () => {
                 </CardContent>
                 <CardFooter align="center">
                   <ButtonPrimary type="submit" fullWidth>
-                    Log In
+                    Sign Up
                   </ButtonPrimary>
                 </CardFooter>
               </Form>
