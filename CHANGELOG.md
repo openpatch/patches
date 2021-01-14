@@ -1,3 +1,15 @@
+# v1.0.2 (Thu Jan 14 2021)
+
+#### 🐛 Bug Fix
+
+- fix(autogrid): columns not responsive ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v1.0.1 (Thu Jan 14 2021)
 
 #### 🐛 Bug Fix
