@@ -1,3 +1,16 @@
+# v1.1.1 (Thu Jan 14 2021)
+
+#### 🐛 Bug Fix
+
+- fix(patterncenter): remove unused prop ([@mikebarkmin](https://github.com/mikebarkmin))
+- fix(patterncenter): z-index wrong ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v1.1.0 (Thu Jan 14 2021)
 
 #### 🚀 Enhancement
