@@ -1,15 +1,15 @@
 import { ReactNode } from "react";
 import { css } from "@emotion/react";
 import { Text } from "./Text";
-import { Important } from "./icons/shade";
+import { Information } from "./icons/shade";
 import { Icon } from "./Icon";
 import { Box } from "./Box";
 
-export type FormErrorTextProps = {
+export type FormInfoTextProps = {
   children?: ReactNode;
 };
 
-export const FormErrorText = ({ children }: FormErrorTextProps) => {
+export const FormInfoText = ({ children }: FormInfoTextProps) => {
   return (
     <Box
       display="flex"
@@ -20,10 +20,10 @@ export const FormErrorText = ({ children }: FormErrorTextProps) => {
         }
       `}
     >
-      <Icon color="error" size="small">
-        <Important />
+      <Icon color="info" size="small">
+        <Information />
       </Icon>
-      <Text textColor="error.500" role="alert">
+      <Text textColor="info.800" role="alert">
         {children}
       </Text>
     </Box>

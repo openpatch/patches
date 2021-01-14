@@ -27,14 +27,13 @@ export { FormErrorText, FormErrorTextProps } from "./FormErrorText";
 export { FormFooter, FormFooterProps } from "./FormFooter";
 export { FormHeader, FormHeaderProps } from "./FormHeader";
 export { FormHelperText, FormHelperTextProps } from "./FormHelperText";
+export { FormInfoText, FormInfoTextProps } from "./FormInfoText";
 export { FormLabel, FormLabelProps } from "./FormLabel";
+export { FormSuccessText, FormSuccessTextProps } from "./FormSuccessText";
+export { FormWarningText, FormWarningTextProps } from "./FormWarningText";
 export { Grid, GridProps } from "./Grid";
 export { Group, GroupProps } from "./Group";
 export { Heading, HeadingProps } from "./Heading";
-export {
-  HookFormController,
-  HookFormControllerProps,
-} from "./HookFormController";
 export { Icon, IconProps } from "./Icon";
 export { Image, ImageProps } from "./Image";
 export { Input, InputProps, StyledInput, StyledInputProps } from "./Input";
@@ -71,3 +70,7 @@ export { useMedia } from "./hooks/useMedia";
 export { usePrefersDarkMode } from "./hooks/usePrefersDarkMode";
 export { useTheme } from "./hooks/useTheme";
 export { useTimeout } from "./hooks/useTimeout";
+export {
+  HookFormController,
+  HookFormControllerProps,
+} from "./HookFormController";

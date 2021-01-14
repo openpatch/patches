@@ -9,7 +9,7 @@ export default {
 } as Meta;
 
 const Template: Story<FormErrorTextProps> = (args) => (
-  <FormErrorText {...args} />
+  <FormErrorText {...args}>Error</FormErrorText>
 );
 
 export const Default = Template.bind({});

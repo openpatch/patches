@@ -35,7 +35,7 @@ exports[`should match snapshot 1`] = `
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  color: #A61B1B;
+  color: #C99A2E;
   width: 24px;
   height: 24px;
 }
@@ -46,11 +46,11 @@ exports[`should match snapshot 1`] = `
 }
 
 .emotion-2 svg .primary {
-  fill: #E66A6A;
+  fill: #F9DA8B;
 }
 
 .emotion-2 svg .secondary {
-  fill: #A61B1B;
+  fill: #C99A2E;
 }
 
 .emotion-3 {
@@ -60,7 +60,7 @@ exports[`should match snapshot 1`] = `
   transition: all 0.2s ease;
   padding: 0px;
   margin: 0px;
-  color: #BA2525;
+  color: #513C06;
 }
 
 <div>

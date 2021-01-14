@@ -35,7 +35,7 @@ exports[`should match snapshot 1`] = `
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  color: #A61B1B;
+  color: #199473;
   width: 24px;
   height: 24px;
 }
@@ -46,11 +46,11 @@ exports[`should match snapshot 1`] = `
 }
 
 .emotion-2 svg .primary {
-  fill: #E66A6A;
+  fill: #65D6AD;
 }
 
 .emotion-2 svg .secondary {
-  fill: #A61B1B;
+  fill: #199473;
 }
 
 .emotion-3 {
@@ -60,7 +60,7 @@ exports[`should match snapshot 1`] = `
   transition: all 0.2s ease;
   padding: 0px;
   margin: 0px;
-  color: #BA2525;
+  color: #147D64;
 }
 
 <div>
@@ -72,16 +72,18 @@ exports[`should match snapshot 1`] = `
       class="emotion-2"
     >
       <svg
-        class="icon-important"
+        class="icon-check"
         viewBox="0 0 24 24"
       >
-        <path
+        <circle
           class="primary"
-          d="M12 2a10 10 0 110 20 10 10 0 010-20z"
+          cx="12"
+          cy="12"
+          r="10"
         />
         <path
           class="secondary"
-          d="M12 18a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm1-5.9c-.13 1.2-1.88 1.2-2 0l-.5-5a1 1 0 011-1.1h1a1 1 0 011 1.1l-.5 5z"
+          d="M10 14.59l6.3-6.3a1 1 0 011.4 1.42l-7 7a1 1 0 01-1.4 0l-3-3a1 1 0 011.4-1.42l2.3 2.3z"
         />
       </svg>
     </span>

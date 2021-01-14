@@ -5,11 +5,11 @@ import { Important } from "./icons/shade";
 import { Icon } from "./Icon";
 import { Box } from "./Box";
 
-export type FormErrorTextProps = {
+export type FormWarningTextProps = {
   children?: ReactNode;
 };
 
-export const FormErrorText = ({ children }: FormErrorTextProps) => {
+export const FormWarningText = ({ children }: FormWarningTextProps) => {
   return (
     <Box
       display="flex"
@@ -20,10 +20,10 @@ export const FormErrorText = ({ children }: FormErrorTextProps) => {
         }
       `}
     >
-      <Icon color="error" size="small">
+      <Icon color="warning" size="small">
         <Important />
       </Icon>
-      <Text textColor="error.500" role="alert">
+      <Text textColor="warning.900" role="alert">
         {children}
       </Text>
     </Box>
