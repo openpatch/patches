@@ -1,4 +1,3 @@
-import { css } from "@emotion/react";
 import { ReactNode } from "react";
 import { Box, BoxProps } from "./Box";
 import { Pattern, PatternProps } from "./Pattern";
