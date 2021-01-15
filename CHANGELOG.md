@@ -1,3 +1,15 @@
+# v1.1.3 (Fri Jan 15 2021)
+
+#### 🐛 Bug Fix
+
+- fix(link): pass ref to a tag ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v1.1.2 (Fri Jan 15 2021)
 
 #### 🐛 Bug Fix
