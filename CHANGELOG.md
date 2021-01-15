@@ -1,3 +1,24 @@
+# v1.1.2 (Fri Jan 15 2021)
+
+#### 🐛 Bug Fix
+
+- fix(link): make href optional ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🔩 Dependency Updates
+
+- chore(deps): update dependency auto to v10.9.1 [#158](https://github.com/openpatch/patches/pull/158) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/first-time-contributor to v10.9.1 [#157](https://github.com/openpatch/patches/pull/157) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/conventional-commits to v10.9.1 [#156](https://github.com/openpatch/patches/pull/156) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/node to v14.14.21 [#154](https://github.com/openpatch/patches/pull/154) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/all-contributors to v10.9.1 [#155](https://github.com/openpatch/patches/pull/155) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.1.1 (Thu Jan 14 2021)
 
 #### 🐛 Bug Fix
