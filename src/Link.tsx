@@ -7,7 +7,7 @@ import { Text, TextProps } from "./Text";
 export type LinkProps = {
   children?: ReactNode;
   external?: boolean;
-  href: string;
+  href?: string;
   color?: keyof Theme["colors"];
 } & TextProps;
 
