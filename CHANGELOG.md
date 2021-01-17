@@ -1,3 +1,30 @@
+# v1.2.0 (Sun Jan 17 2021)
+
+#### 🚀 Enhancement
+
+- feat(mail): add a mail template [#165](https://github.com/openpatch/patches/pull/165) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🐛 Bug Fix
+
+- fix: regenerate yarn.lock [#165](https://github.com/openpatch/patches/pull/165) ([@mikebarkmin](https://github.com/mikebarkmin))
+- Merge branch 'main' into email [#165](https://github.com/openpatch/patches/pull/165) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🔩 Dependency Updates
+
+- chore(deps): update dependency @auto-it/conventional-commits to v10.10.0 [#162](https://github.com/openpatch/patches/pull/162) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency auto to v10.10.0 [#164](https://github.com/openpatch/patches/pull/164) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/first-time-contributor to v10.10.0 [#163](https://github.com/openpatch/patches/pull/163) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/all-contributors to v10.10.0 [#161](https://github.com/openpatch/patches/pull/161) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency husky to v4.3.8 [#160](https://github.com/openpatch/patches/pull/160) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.15.0 [#159](https://github.com/openpatch/patches/pull/159) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.1.3 (Fri Jan 15 2021)
 
 #### 🐛 Bug Fix
