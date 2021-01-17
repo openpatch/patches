@@ -1,3 +1,15 @@
+# v1.2.1 (Sun Jan 17 2021)
+
+#### 🐛 Bug Fix
+
+- fix(mail): add MailTemplate to index ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v1.2.0 (Sun Jan 17 2021)
 
 #### 🚀 Enhancement
