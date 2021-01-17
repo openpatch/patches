@@ -1,0 +1,59 @@
+<mjml>
+
+  <mj-head>
+    
+    <mj-title>Title Placeholder</mj-title>
+    
+    <mj-style>
+    h2 {
+    	margin-bottom: 0px;
+    }
+    </mj-style>
+
+    <mj-attributes>
+      <mj-text color="#555" />
+    </mj-attributes>
+
+  </mj-head>
+
+  <mj-body>
+    <mj-wrapper border-bottom="1px solid #eee">
+
+      <mj-section>
+        <mj-column>
+        <mj-image align="left" width="32px" src="https://assets.gitlab-static.net/uploads/-/system/group/avatar/3174248/logo_clean.png?width=64"></mj-image>
+        <mj-text>
+          <h2>Title Placeholder</h2>
+        </mj-text>
+     </mj-column>
+      </mj-section>
+
+      <mj-section>
+      <mj-column>
+       <mj-text line-height="20px">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </mj-text>
+      </mj-column>
+        </mj-section>
+      
+      <mj-section>
+      <mj-column>
+      <mj-button align="left" href="action.html">Action</mj-button>
+      </mj-column>
+
+    </mj-section>
+
+   <mj-section>
+
+  <mj-column>
+    <mj-text align="center">
+      Made by <mj-text text-decoration="none"><a        href="https://openpatch.org">OpenPatch</a></mj-text>
+    </mj-text>
+    <mj-text align="center" padding-top="18px"><a href="blog.openpatch.org">Our Blog</a> - <a href="github.com/openpatch">Source Code</a> - <a href="https://discord.gg/cY5JbMk6">Discord</a></mj-text>
+  </mj-column>
+
+</mj-section>
+
+  </mj-body>
+
+</mjml>

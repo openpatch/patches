@@ -1,2 +1,3 @@
 .storybook/preview-head.html
 src/index.ts
+src/MailTemplate.mjml
