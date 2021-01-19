@@ -26,5 +26,5 @@ test("should match snapshot", () => {
 test("should have ref", () => {
   const ref = createRef<HTMLAnchorElement>();
   renderWithTheme(undefined, ref);
-  expect(ref.current.text).toEqual(title);
+  expect(ref.current.textContent).toEqual(title);
 });

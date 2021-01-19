@@ -1,6 +1,6 @@
 import { css, Theme } from "@emotion/react";
 import styled from "@emotion/styled";
-import { ButtonHTMLAttributes, ReactNode } from "react";
+import { ButtonHTMLAttributes, forwardRef, ReactNode } from "react";
 import { Box } from "./Box";
 import { useBreakpoints } from "./hooks";
 import { LoadingDots } from "./LoadingDots";
@@ -150,75 +150,81 @@ const baseStyle = (theme: Theme) => css`
   }
 `;
 
-export const Button = ({
-  children,
-  iconLeft,
-  iconRight,
-  textColor,
-  fullWidth = false,
-  loading = false,
-  size = ["small"],
-  ...props
-}: ButtonProps) => {
-  if (!Array.isArray(size)) {
-    size = [size];
-  }
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+  (
+    {
+      children,
+      iconLeft,
+      iconRight,
+      textColor,
+      fullWidth = false,
+      loading = false,
+      size = ["small"],
+      ...props
+    },
+    ref
+  ) => {
+    if (!Array.isArray(size)) {
+      size = [size];
+    }
 
-  const responsiveSize = useBreakpoints(size);
+    const responsiveSize = useBreakpoints(size);
 
-  return (
-    <StyledButton
-      css={(theme) => [
-        css`
-          position: relative;
-          &:disabled {
-            cursor: not-allowed;
-            opacity: 0.4;
-          }
-          &:hover:enabled {
-            opacity: 0.8;
-          }
-          &:active:enabled {
-            filter: brightness(80%);
-          }
-        `,
-        baseStyle(theme),
-        sizeStyle(theme)(responsiveSize),
-        fullWidth && fullWidthStyle,
-      ]}
-      textColor={textColor}
-      {...props}
-    >
-      {loading && (
-        <Box
-          position="absolute"
-          display="flex"
-          top="0px"
-          left="0px"
-          right="0px"
-          bottom="0px"
-          justifyContent="center"
-          alignItems="center"
-        >
-          <LoadingDots
-            textColor={textColor}
-            size={responsiveSize === "large" ? "large" : "medium"}
-          />
-        </Box>
-      )}
-      <Box
+    return (
+      <StyledButton
+        ref={ref}
         css={(theme) => [
+          css`
+            position: relative;
+            &:disabled {
+              cursor: not-allowed;
+              opacity: 0.4;
+            }
+            &:hover:enabled {
+              opacity: 0.8;
+            }
+            &:active:enabled {
+              filter: brightness(80%);
+            }
+          `,
           baseStyle(theme),
-          loading &&
-            css`
-              visibility: hidden;
-            `,
+          sizeStyle(theme)(responsiveSize),
+          fullWidth && fullWidthStyle,
         ]}
+        textColor={textColor}
+        {...props}
       >
-        {iconLeft && <span className="icon-left">{iconLeft}</span>}
-        {children}
-        {iconRight && <span className="icon-right">{iconRight}</span>}
-      </Box>
-    </StyledButton>
-  );
-};
+        {loading && (
+          <Box
+            position="absolute"
+            display="flex"
+            top="0px"
+            left="0px"
+            right="0px"
+            bottom="0px"
+            justifyContent="center"
+            alignItems="center"
+          >
+            <LoadingDots
+              textColor={textColor}
+              size={responsiveSize === "large" ? "large" : "medium"}
+            />
+          </Box>
+        )}
+        <Box
+          css={(theme) => [
+            baseStyle(theme),
+            loading &&
+              css`
+                visibility: hidden;
+              `,
+          ]}
+        >
+          {iconLeft && <span className="icon-left">{iconLeft}</span>}
+          {children}
+          {iconRight && <span className="icon-right">{iconRight}</span>}
+        </Box>
+      </StyledButton>
+    );
+  }
+);

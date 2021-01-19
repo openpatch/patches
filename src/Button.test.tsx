@@ -1,17 +1,16 @@
 import { render } from "@testing-library/react";
 import { createRef, Ref } from "react";
-import { ButtonOutline, ButtonOutlineProps } from "./ButtonOutline";
+import { Button, ButtonProps } from "./Button";
 import { ThemeProvider } from "./ThemeProvider";
 
-const renderWithTheme = (
-  props?: ButtonOutlineProps,
-  ref?: Ref<HTMLButtonElement>
-) =>
+const title = "A Link";
+
+const renderWithTheme = (props?: ButtonProps, ref?: Ref<HTMLButtonElement>) =>
   render(
     <ThemeProvider>
-      <ButtonOutline {...props} ref={ref}>
-        Outline
-      </ButtonOutline>
+      <Button {...props} ref={ref}>
+        {title}
+      </Button>
     </ThemeProvider>
   );
 
@@ -27,5 +26,5 @@ test("should match snapshot", () => {
 test("should have ref", () => {
   const ref = createRef<HTMLButtonElement>();
   renderWithTheme(undefined, ref);
-  expect(ref.current.textContent).toEqual("Outline");
+  expect(ref.current.textContent).toEqual(title);
 });
