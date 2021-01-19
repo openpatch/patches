@@ -1,3 +1,24 @@
+# v1.2.2 (Tue Jan 19 2021)
+
+#### 🐛 Bug Fix
+
+- fix(button): add ref to buttons ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### ⚠️ Pushed to `main`
+
+- test(mail): add simple tests ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🔩 Dependency Updates
+
+- chore(deps): update dependency @types/lodash to v4.14.168 [#166](https://github.com/openpatch/patches/pull/166) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.2.1 (Sun Jan 17 2021)
 
 #### 🐛 Bug Fix
