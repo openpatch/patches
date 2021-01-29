@@ -42,11 +42,6 @@
     io-ts "^2.1.2"
     tslib "2.0.3"
 
-"@auto-it/bot-list@10.13.2":
-  version "10.13.2"
-  resolved "https://registry.yarnpkg.com/@auto-it/bot-list/-/bot-list-10.13.2.tgz#41882dfa04ad588b42228435bb6990965493f6eb"
-  integrity sha512-jTm3qTTyshd23OzOzT7Sw1M56LA2O0xJrN11xWjnnvRyMeaIM2zyi2gJcaDZJPKa5pmB4nfL2lxeqwERtLfuLg==
-
 "@auto-it/bot-list@10.13.3":
   version "10.13.3"
   resolved "https://registry.yarnpkg.com/@auto-it/bot-list/-/bot-list-10.13.3.tgz#22abed690e77ad5d29fa3220957e2ccda295eced"
@@ -64,48 +59,6 @@
     fp-ts "^2.5.3"
     io-ts "^2.1.2"
     tslib "2.0.3"
-
-"@auto-it/core@10.13.2":
-  version "10.13.2"
-  resolved "https://registry.yarnpkg.com/@auto-it/core/-/core-10.13.2.tgz#05bec6a7c5f6fff2f5348fd4509386ef564c918d"
-  integrity sha512-bP8GCORCrTm1njUcoIR1bTgH3vQWgPMsp+nab0NaadbNIPddRaIL+SRU/dwO5M9Mz9PQOQcM4YQ9KiO5gjiWZQ==
-  dependencies:
-    "@auto-it/bot-list" "10.13.2"
-    "@octokit/plugin-enterprise-compatibility" "^1.2.2"
-    "@octokit/plugin-retry" "^3.0.1"
-    "@octokit/plugin-throttling" "^3.2.0"
-    "@octokit/rest" "^18.0.0"
-    await-to-js "^2.1.1"
-    chalk "^4.0.0"
-    cosmiconfig "7.0.0"
-    deepmerge "^4.0.0"
-    dotenv "^8.0.0"
-    endent "^2.0.1"
-    enquirer "^2.3.4"
-    env-ci "^5.0.1"
-    fast-glob "^3.1.1"
-    fp-ts "^2.5.3"
-    fromentries "^1.2.0"
-    gitlog "^4.0.3"
-    https-proxy-agent "^5.0.0"
-    import-cwd "^3.0.0"
-    import-from "^3.0.0"
-    io-ts "^2.1.2"
-    lodash.chunk "^4.2.0"
-    log-symbols "^4.0.0"
-    node-fetch "2.6.1"
-    parse-author "^2.0.0"
-    parse-github-url "1.0.2"
-    pretty-ms "^7.0.0"
-    semver "^7.0.0"
-    signale "^1.4.0"
-    tapable "^2.0.0-beta.2"
-    terminal-link "^2.1.1"
-    tinycolor2 "^1.4.1"
-    tslib "2.0.3"
-    type-fest "^0.20.2"
-    typescript-memoize "^1.0.0-alpha.3"
-    url-join "^4.0.0"
 
 "@auto-it/core@10.13.3":
   version "10.13.3"
@@ -149,13 +102,13 @@
     typescript-memoize "^1.0.0-alpha.3"
     url-join "^4.0.0"
 
-"@auto-it/first-time-contributor@10.13.2":
-  version "10.13.2"
-  resolved "https://registry.yarnpkg.com/@auto-it/first-time-contributor/-/first-time-contributor-10.13.2.tgz#7d581b83a1fc92d34b07146f75688f4e8a3737e6"
-  integrity sha512-2f8GApwdDKteWTNJMRKZrMtKTlZO/+OT8Reim76R0VbpqUAP5JncRDPZR5JUe8ekgWHFHG+uPc8HzDyDcuVjww==
+"@auto-it/first-time-contributor@10.13.3":
+  version "10.13.3"
+  resolved "https://registry.yarnpkg.com/@auto-it/first-time-contributor/-/first-time-contributor-10.13.3.tgz#0b75eca2ce2583dae834f874f649384fbc359d16"
+  integrity sha512-n9HfZzud/jwX4zqgxHLeE4v0mN+TSeh6I72ECGd4u3NW++04RDwqRMbKX/T3aF/+nvboIr/6xnOLNB3oAttaaw==
   dependencies:
-    "@auto-it/bot-list" "10.13.2"
-    "@auto-it/core" "10.13.2"
+    "@auto-it/bot-list" "10.13.3"
+    "@auto-it/core" "10.13.3"
     array.prototype.flatmap "^1.2.2"
     endent "^2.0.1"
     tslib "2.0.3"
