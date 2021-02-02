@@ -149,13 +149,13 @@
     typescript-memoize "^1.0.0-alpha.3"
     url-join "^4.0.0"
 
-"@auto-it/first-time-contributor@10.13.3":
-  version "10.13.3"
-  resolved "https://registry.yarnpkg.com/@auto-it/first-time-contributor/-/first-time-contributor-10.13.3.tgz#0b75eca2ce2583dae834f874f649384fbc359d16"
-  integrity sha512-n9HfZzud/jwX4zqgxHLeE4v0mN+TSeh6I72ECGd4u3NW++04RDwqRMbKX/T3aF/+nvboIr/6xnOLNB3oAttaaw==
+"@auto-it/first-time-contributor@10.13.4":
+  version "10.13.4"
+  resolved "https://registry.yarnpkg.com/@auto-it/first-time-contributor/-/first-time-contributor-10.13.4.tgz#e0f3abc6ab46bea5b09a1aa5302391d40995dee1"
+  integrity sha512-9NWJ4ut8xHpO+MuoNaDYeCXTMHWGXLCwuVU6WCzeeHMFKzRuhXJ5JHVgC4ajj5YdpLL5i9rYWhrTC8fvBQIYLA==
   dependencies:
-    "@auto-it/bot-list" "10.13.3"
-    "@auto-it/core" "10.13.3"
+    "@auto-it/bot-list" "10.13.4"
+    "@auto-it/core" "10.13.4"
     array.prototype.flatmap "^1.2.2"
     endent "^2.0.1"
     tslib "2.0.3"
