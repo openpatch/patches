@@ -70,7 +70,7 @@
     ]
   },
   "resolutions": {
-    "@types/react": "17.0.0"
+    "@types/react": "17.0.1"
   },
   "devDependencies": {
     "@auto-it/all-contributors": "10.13.4",
@@ -109,7 +109,7 @@
     "@types/jest": "26.0.20",
     "@types/lodash": "4.14.168",
     "@types/node": "14.14.22",
-    "@types/react": "17.0.0",
+    "@types/react": "17.0.1",
     "@types/react-dom": "17.0.0",
     "@types/react-modal": "3.10.6",
     "@types/styled-system": "5.1.10",
