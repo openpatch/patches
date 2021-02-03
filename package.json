@@ -73,7 +73,7 @@
     "@types/react": "17.0.1"
   },
   "devDependencies": {
-    "@auto-it/all-contributors": "10.13.4",
+    "@auto-it/all-contributors": "10.14.0",
     "@auto-it/conventional-commits": "10.13.4",
     "@auto-it/first-time-contributor": "10.13.4",
     "@babel/core": "7.12.13",
