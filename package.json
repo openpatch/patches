@@ -77,7 +77,7 @@
     "@auto-it/conventional-commits": "10.15.0",
     "@auto-it/first-time-contributor": "10.15.0",
     "@babel/core": "7.12.13",
-    "@babel/plugin-transform-runtime": "7.12.13",
+    "@babel/plugin-transform-runtime": "7.12.15",
     "@babel/preset-env": "7.12.13",
     "@babel/preset-react": "7.12.13",
     "@babel/preset-typescript": "7.12.13",
