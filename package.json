@@ -75,7 +75,7 @@
   "devDependencies": {
     "@auto-it/all-contributors": "10.14.0",
     "@auto-it/conventional-commits": "10.13.4",
-    "@auto-it/first-time-contributor": "10.13.4",
+    "@auto-it/first-time-contributor": "10.15.0",
     "@babel/core": "7.12.13",
     "@babel/plugin-transform-runtime": "7.12.13",
     "@babel/preset-env": "7.12.13",
