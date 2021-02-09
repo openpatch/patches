@@ -1985,7 +1985,7 @@
   dependencies:
     "@babel/plugin-syntax-jsx" "^7.2.0"
 
-"@emotion/babel-plugin@^11.0.0", "@emotion/babel-plugin@^11.1.2":
+"@emotion/babel-plugin@^11.1.2":
   version "11.1.2"
   resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.1.2.tgz#68fe1aa3130099161036858c64ee92056c6730b7"
   integrity sha512-Nz1k7b11dWw8Nw4Z1R99A9mlB6C6rRsCtZnwNUOj4NsoZdrO2f2A/83ST7htJORD5zpOiLKY59aJN23092949w==
@@ -2003,14 +2003,32 @@
     source-map "^0.5.7"
     stylis "^4.0.3"
 
-"@emotion/babel-preset-css-prop@11.0.0":
-  version "11.0.0"
-  resolved "https://registry.yarnpkg.com/@emotion/babel-preset-css-prop/-/babel-preset-css-prop-11.0.0.tgz#25b868affa620b9e97024b67f67ad32c03a0510e"
-  integrity sha512-E7z3jMf1OyThGpp3ngYGxOSGX5AdoSQTuqM9QgJNAHFh3Fi8N5CbWx6g+IdySJ8bjPiMgFQsIeEhkyy+4mDpCQ==
+"@emotion/babel-plugin@^11.2.0":
+  version "11.2.0"
+  resolved "https://registry.yarnpkg.com/@emotion/babel-plugin/-/babel-plugin-11.2.0.tgz#f25c6df8ec045dad5ae6ca63df0791673b98c920"
+  integrity sha512-lsnQBnl3l4wu/FJoyHnYRpHJeIPNkOBMbtDUIXcO8luulwRKZXPvA10zd2eXVN6dABIWNX4E34en/jkejIg/yA==
+  dependencies:
+    "@babel/helper-module-imports" "^7.7.0"
+    "@babel/plugin-syntax-jsx" "^7.12.1"
+    "@babel/runtime" "^7.7.2"
+    "@emotion/hash" "^0.8.0"
+    "@emotion/memoize" "^0.7.5"
+    "@emotion/serialize" "^1.0.0"
+    babel-plugin-macros "^2.6.1"
+    convert-source-map "^1.5.0"
+    escape-string-regexp "^4.0.0"
+    find-root "^1.1.0"
+    source-map "^0.5.7"
+    stylis "^4.0.3"
+
+"@emotion/babel-preset-css-prop@11.2.0":
+  version "11.2.0"
+  resolved "https://registry.yarnpkg.com/@emotion/babel-preset-css-prop/-/babel-preset-css-prop-11.2.0.tgz#c7e945f56b2610b438f0dc8ae5253fc55488de0e"
+  integrity sha512-9XLQm2eLPYTho+Cx1LQTDA1rATjoAaB4O+ds55XDvoAa+Z16Hhg8y5Vihj3C8E6+ilDM8SV5A9Z6z+yj0YIRBg==
   dependencies:
     "@babel/plugin-transform-react-jsx" "^7.12.1"
     "@babel/runtime" "^7.7.2"
-    "@emotion/babel-plugin" "^11.0.0"
+    "@emotion/babel-plugin" "^11.2.0"
     "@emotion/babel-plugin-jsx-pragmatic" "^0.1.5"
 
 "@emotion/cache@11.1.3", "@emotion/cache@^11.1.3":
@@ -2082,10 +2100,10 @@
   dependencies:
     "@emotion/memoize" "^0.7.4"
 
-"@emotion/jest@11.1.0":
-  version "11.1.0"
-  resolved "https://registry.yarnpkg.com/@emotion/jest/-/jest-11.1.0.tgz#ee498838f5f8cfc3c31be38543036372f36ebf4b"
-  integrity sha512-nkJY5U/cM3WjFYoKozy4WSKILmV3Y2P/uMynI9HVoCTNuYHSdu0djQBHL6zqBmpRya0sjVT1Sv7lasYYwVoMFg==
+"@emotion/jest@11.2.0":
+  version "11.2.0"
+  resolved "https://registry.yarnpkg.com/@emotion/jest/-/jest-11.2.0.tgz#c07f0023e17c61c3c67058e4dbd9b69e0de9b034"
+  integrity sha512-/IHfepppnbf5KHOuz5e145oKR2JOV0hz4chy3HHSz/JrIDa9EyQLGIo6ZqLku1XdieMYvnxaCA2ReJRo7EvUIQ==
   dependencies:
     "@babel/runtime" "^7.7.2"
     "@emotion/css-prettifier" "^1.0.0"
