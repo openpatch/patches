@@ -24,13 +24,13 @@
   dependencies:
     tunnel "0.0.6"
 
-"@auto-it/all-contributors@10.16.4":
-  version "10.16.4"
-  resolved "https://registry.yarnpkg.com/@auto-it/all-contributors/-/all-contributors-10.16.4.tgz#d16798f814ffb6ab15dd8682a92be64357b80758"
-  integrity sha512-0ENRYNGfZBOXVMmxA5SRA4+f3f9wiqVYnsy2EeqaobVIq6wJt4LvnNCX5dRkJcdQ5daARL1jkELBHWWv3bpsdg==
+"@auto-it/all-contributors@10.16.5":
+  version "10.16.5"
+  resolved "https://registry.yarnpkg.com/@auto-it/all-contributors/-/all-contributors-10.16.5.tgz#987c7d90b8a3b6e9aa95e0d3f97a66c08ad5a7e7"
+  integrity sha512-1mEhGE63nvYx1FOH4ZoB+DO+Qikdv9tp+ukumxHw8szwtfi7tNjq13JD6tSS6l9d1XFgcYetiV9aQ9xEHuONmg==
   dependencies:
-    "@auto-it/bot-list" "10.16.4"
-    "@auto-it/core" "10.16.4"
+    "@auto-it/bot-list" "10.16.5"
+    "@auto-it/core" "10.16.5"
     "@octokit/rest" "^18.0.0"
     all-contributors-cli "6.19.0"
     anymatch "^3.1.1"
