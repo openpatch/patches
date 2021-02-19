@@ -24,13 +24,13 @@
   dependencies:
     tunnel "0.0.6"
 
-"@auto-it/all-contributors@10.16.5":
-  version "10.16.5"
-  resolved "https://registry.yarnpkg.com/@auto-it/all-contributors/-/all-contributors-10.16.5.tgz#987c7d90b8a3b6e9aa95e0d3f97a66c08ad5a7e7"
-  integrity sha512-1mEhGE63nvYx1FOH4ZoB+DO+Qikdv9tp+ukumxHw8szwtfi7tNjq13JD6tSS6l9d1XFgcYetiV9aQ9xEHuONmg==
+"@auto-it/all-contributors@10.16.6":
+  version "10.16.6"
+  resolved "https://registry.yarnpkg.com/@auto-it/all-contributors/-/all-contributors-10.16.6.tgz#32b63f9abbdfedb456870b7780982f7086087436"
+  integrity sha512-SC/ehoRUepi6NGLS2Xj5ijJgHVW9D56oYtUccQL2LHGr/UhDn+S+QcGlZ5Q9tI+pTeN38bRxQJoA/4Rv+cI+tA==
   dependencies:
-    "@auto-it/bot-list" "10.16.5"
-    "@auto-it/core" "10.16.5"
+    "@auto-it/bot-list" "10.16.6"
+    "@auto-it/core" "10.16.6"
     "@octokit/rest" "^18.0.0"
     all-contributors-cli "6.19.0"
     anymatch "^3.1.1"
@@ -40,12 +40,17 @@
     fp-ts "^2.5.3"
     fromentries "^1.2.0"
     io-ts "^2.1.2"
-    tslib "2.0.3"
+    tslib "2.1.0"
 
 "@auto-it/bot-list@10.16.5":
   version "10.16.5"
   resolved "https://registry.yarnpkg.com/@auto-it/bot-list/-/bot-list-10.16.5.tgz#b016da15c639485451e25cb04050856306e05ded"
   integrity sha512-1jlZoqAAE2uL27WT/jzeu+n5v8pCnY4x4WaLbXrm3iYL7bOrYiXcVhd/CLncC8U0/9nDYHdpNxt6gZppo0+vdQ==
+
+"@auto-it/bot-list@10.16.6":
+  version "10.16.6"
+  resolved "https://registry.yarnpkg.com/@auto-it/bot-list/-/bot-list-10.16.6.tgz#3594aff0a6a107d2db772f4036c94c735fcaa71a"
+  integrity sha512-cnLMvDzLxMAHkSQdCybttViV76fIc6D9zJAQybDbDKLvg59WEzuimhrOqr5A71smkzKXUoFHFgVh0i9318sxSQ==
 
 "@auto-it/conventional-commits@10.16.5":
   version "10.16.5"
@@ -99,6 +104,48 @@
     terminal-link "^2.1.1"
     tinycolor2 "^1.4.1"
     tslib "2.0.3"
+    type-fest "^0.20.2"
+    typescript-memoize "^1.0.0-alpha.3"
+    url-join "^4.0.0"
+
+"@auto-it/core@10.16.6":
+  version "10.16.6"
+  resolved "https://registry.yarnpkg.com/@auto-it/core/-/core-10.16.6.tgz#eff1cb50e0e570c2ab33258a3160c727d7f81633"
+  integrity sha512-gSuChGV14+rVtkLmZtDxIETqMTYnLsbFG1qdVzSX7beMrz7I75tZBDq0XSymEQJoM3QFZdEK2wMi8Ii4NYUtiw==
+  dependencies:
+    "@auto-it/bot-list" "10.16.6"
+    "@octokit/plugin-enterprise-compatibility" "^1.2.2"
+    "@octokit/plugin-retry" "^3.0.1"
+    "@octokit/plugin-throttling" "^3.2.0"
+    "@octokit/rest" "^18.0.0"
+    await-to-js "^2.1.1"
+    chalk "^4.0.0"
+    cosmiconfig "7.0.0"
+    deepmerge "^4.0.0"
+    dotenv "^8.0.0"
+    endent "^2.0.1"
+    enquirer "^2.3.4"
+    env-ci "^5.0.1"
+    fast-glob "^3.1.1"
+    fp-ts "^2.5.3"
+    fromentries "^1.2.0"
+    gitlog "^4.0.3"
+    https-proxy-agent "^5.0.0"
+    import-cwd "^3.0.0"
+    import-from "^3.0.0"
+    io-ts "^2.1.2"
+    lodash.chunk "^4.2.0"
+    log-symbols "^4.0.0"
+    node-fetch "2.6.1"
+    parse-author "^2.0.0"
+    parse-github-url "1.0.2"
+    pretty-ms "^7.0.0"
+    semver "^7.0.0"
+    signale "^1.4.0"
+    tapable "^2.0.0-beta.2"
+    terminal-link "^2.1.1"
+    tinycolor2 "^1.4.1"
+    tslib "2.1.0"
     type-fest "^0.20.2"
     typescript-memoize "^1.0.0-alpha.3"
     url-join "^4.0.0"
@@ -14495,15 +14542,15 @@ tslib@2.0.3:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.0.3.tgz#8e0741ac45fc0c226e58a17bfc3e64b9bc6ca61c"
   integrity sha512-uZtkfKblCEQtZKBF6EBXVZeQNl82yqtDQdv+eck8u7tdPxjLu2/lp5/uPW+um2tpuxINHWy3GhiccY7QgEaVHQ==
 
+tslib@2.1.0, tslib@^2.0.0, tslib@^2.0.1, tslib@^2.0.3:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
+  integrity sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
+
 tslib@^1.14.1, tslib@^1.9.0:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
-
-tslib@^2.0.0, tslib@^2.0.1, tslib@^2.0.3:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
-  integrity sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
 
 tty-browserify@0.0.0:
   version "0.0.0"
