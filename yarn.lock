@@ -52,12 +52,12 @@
   resolved "https://registry.yarnpkg.com/@auto-it/bot-list/-/bot-list-10.16.7.tgz#15afb9cf084daaba244bae77c0defbdefa5b993d"
   integrity sha512-vFIZ8JE3Wz4xYk637heW6mihe7AhBN66CtsczdJBDMemlLzL15dp8v7L9QtpW9n1awfjIjuKMQiP2H6LbZhfDQ==
 
-"@auto-it/conventional-commits@10.16.6":
-  version "10.16.6"
-  resolved "https://registry.yarnpkg.com/@auto-it/conventional-commits/-/conventional-commits-10.16.6.tgz#3e0f379405544bcab8b90bd639e87c22abdf195f"
-  integrity sha512-g6Ah1Z/qjTrQDNTjc00arjQvNYMdLOhGLez1o4q9zDADHvqlzqYdrWYOZAqJszj5i9RH6j8lXCMAb9d3SnYE0A==
+"@auto-it/conventional-commits@10.16.7":
+  version "10.16.7"
+  resolved "https://registry.yarnpkg.com/@auto-it/conventional-commits/-/conventional-commits-10.16.7.tgz#383817879736b2f3c76af148d0e197d057be8d10"
+  integrity sha512-oL/ENjgkJT24MbeOnOI3DSChm+Tp92rIE1o1ONbx2j8pHnRN32zJhBEMLujq5u+BO94jJGMGK8Gy4D91pw0/zg==
   dependencies:
-    "@auto-it/core" "10.16.6"
+    "@auto-it/core" "10.16.7"
     array.prototype.flatmap "^1.2.2"
     conventional-changelog-core "^4.2.0"
     conventional-changelog-preset-loader "^2.3.4"
