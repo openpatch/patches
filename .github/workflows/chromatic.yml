@@ -3,10 +3,10 @@
 # name of our action
 name: "Chromatic"
 # the event that will trigger the action
-on: 
+on:
   push:
-    branches:
-      -  '!renovate/**'
+    branches-ignore:
+      - "renovate/**"
 
 # what the action will do
 jobs:
