@@ -18,8 +18,8 @@ const circuit = (
 
 export type PatternProps = {
   children?: ReactNode;
-  foregroundColor: string;
-  backgroundColor: string;
+  foregroundColor?: string;
+  backgroundColor?: string;
   opacity?: number;
 } & Omit<BoxProps, "backgroundColor">;
 
