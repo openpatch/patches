@@ -9,9 +9,8 @@
   },
   "license": "MIT",
   "private": false,
-  "module": "dist/es/index.js",
-  "main": "dist/cjs/index.js",
-  "types": "dist/types/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist",
     "README.md"
@@ -19,6 +18,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/openpatch/patches.git"
+  },
+  "storybook": {
+    "url": "https://main--5f4d40e9e8268b00224835e2.chromatic.com"
   },
   "peerDependencies": {
     "@emotion/cache": "^11.0.0",
@@ -41,9 +43,8 @@
   },
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "yarn clean && yarn build:es && yarn build:cjs",
-    "build:es": "tsc --project tsconfig.json --module esnext --target es2015 --outDir dist/es",
-    "build:cjs": "tsc --project tsconfig.json --module commonjs --target es5 --outDir dist/cjs",
+    "build": "yarn clean && yarn build:esm",
+    "build:esm": "tsc --build",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:ci": "jest --ci",
