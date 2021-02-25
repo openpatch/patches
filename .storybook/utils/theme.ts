@@ -1,6 +1,6 @@
 // @ts-nocheck
 import { create } from "@storybook/theming/create";
-import base from "../../src/themes/base";
+import { base } from "../../src/themes";
 
 export const theme = create({
   base: "light",

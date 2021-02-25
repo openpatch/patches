@@ -1,8 +1,7 @@
-import { Theme } from "@emotion/react";
 import _merge from "lodash/merge";
 import { useState } from "react";
 import { PartialDeep } from "type-fest";
-import { base } from "../themes";
+import { base, Theme } from "../themes";
 
 export const useTheme = (
   defaultTheme: PartialDeep<Theme> = {}

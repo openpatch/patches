@@ -72,4 +72,5 @@ export { TableRow, TableRowProps } from "./TableRow";
 export { Text, TextProps } from "./Text";
 export { ThemeProvider } from "./ThemeProvider";
 export { Video, VideoProps } from "./Video";
+export * from "./themes";
 
