@@ -1,3 +1,15 @@
+# v1.4.2 (Sat Feb 27 2021)
+
+#### 🐛 Bug Fix
+
+- fix(alert): add alert to index [#291](https://github.com/openpatch/patches/pull/291) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v1.4.1 (Sat Feb 27 2021)
 
 #### 🐛 Bug Fix
