@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import { renderHook, act } from "@testing-library/react-hooks";
-import { base } from "../themes";
+import { baseTheme } from "../themes";
 import { red } from "../themes/colors";
 import { useTheme } from "./useTheme";
 import { ThemeProvider } from "../ThemeProvider";
@@ -21,7 +21,7 @@ test("should return base", () => {
   const { result } = renderHook(() => useTheme(), { wrapper });
 
   expect(result.current.length).toBe(2);
-  expect(result.current[0]).toEqual(base);
+  expect(result.current[0]).toEqual(baseTheme);
 });
 
 test("should change theme", () => {
