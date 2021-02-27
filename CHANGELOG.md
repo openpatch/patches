@@ -1,3 +1,15 @@
+# v1.4.0 (Sat Feb 27 2021)
+
+#### 🚀 Enhancement
+
+- feat(alert): add simple alert component [#289](https://github.com/openpatch/patches/pull/289) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v1.3.0 (Sat Feb 27 2021)
 
 #### 🚀 Enhancement
