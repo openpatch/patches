@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+.emotion-0 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F5F7FA;
+  color: #1F2933;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  padding: 16px;
+  border-color: #1F2933;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px;
+}
+
+.emotion-2 {
+  position: relative;
+  border-radius: 9999px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  color: #52606D;
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-2 svg {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-2 svg .primary {
+  fill: #9AA5B1;
+}
+
+.emotion-2 svg .secondary {
+  fill: #52606D;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  margin-left: 8px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+    display="flex"
+  >
+    <span
+      class="emotion-2"
+    >
+      <svg
+        class="icon-information"
+        viewBox="0 0 24 24"
+      >
+        <path
+          class="primary"
+          d="M12 2a10 10 0 110 20 10 10 0 010-20z"
+        />
+        <path
+          class="secondary"
+          d="M11 12a1 1 0 010-2h2a1 1 0 01.96 1.27L12.33 17H13a1 1 0 010 2h-2a1 1 0 01-.96-1.27L11.67 12H11zm2-4a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"
+        />
+      </svg>
+    </span>
+    <div
+      class="emotion-3 emotion-1"
+    />
+  </div>
+</div>
+`;
