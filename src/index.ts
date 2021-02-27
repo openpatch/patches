@@ -1,3 +1,4 @@
+export { Alert, AlertProps } from "./Alert"
 export { AutoGrid, AutoGridProps } from "./AutoGrid";
 export { Avatar, AvatarProps } from "./Avatar";
 export { Badge, BadgeProps } from "./Badge";
