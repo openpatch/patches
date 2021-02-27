@@ -8,7 +8,7 @@ export type AlertProps = {
   severity?: "neutral" | "warning" | "error" | "success" | "info";
 };
 
-export const Alert = ({ children, severity }: AlertProps) => {
+export const Alert = ({ children, severity = "neutral" }: AlertProps) => {
   let backgroundColor: BoxProps["backgroundColor"] = "neutral.50";
   let textColor: BoxProps["textColor"] = "neutral.900";
   let icon: ReactNode = <Information />;
