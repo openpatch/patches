@@ -28,6 +28,9 @@
     "type": "git",
     "url": "git+https://github.com/openpatch/patches.git"
   },
+  "storybook": {
+    "url": "https://main--5f4d40e9e8268b00224835e2.chromatic.com"
+  },
   "peerDependencies": {
     "@emotion/cache": "^11.0.0",
     "@emotion/react": "^11.1.1",
