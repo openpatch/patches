@@ -1,3 +1,15 @@
+# v1.4.1 (Sat Feb 27 2021)
+
+#### 🐛 Bug Fix
+
+- fix(theme): export theme type [#290](https://github.com/openpatch/patches/pull/290) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v1.4.0 (Sat Feb 27 2021)
 
 #### 🚀 Enhancement
