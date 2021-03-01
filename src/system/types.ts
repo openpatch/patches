@@ -21,6 +21,7 @@ export type SystemColor =
   | "text"
   | "transparent"
   | "background"
+  | "currentColor"
   | "card"
   | "primary.50"
   | "primary.100"
