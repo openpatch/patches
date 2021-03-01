@@ -1,3 +1,29 @@
+# v1.4.3 (Mon Mar 01 2021)
+
+#### 🐛 Bug Fix
+
+- fix(loadingdots): change default color to currentColor [#294](https://github.com/openpatch/patches/pull/294) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### ⚠️ Pushed to `main`
+
+- chore: add storybook url ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🔩 Dependency Updates
+
+- chore(deps): update dependency @testing-library/user-event to v12.8.0 [#293](https://github.com/openpatch/patches/pull/293) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/user-event to v12.7.4 [#292](https://github.com/openpatch/patches/pull/292) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.24.2 [#281](https://github.com/openpatch/patches/pull/281) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update storybook monorepo to v6.1.20 [#282](https://github.com/openpatch/patches/pull/282) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update babel monorepo to v7.13.8 [#283](https://github.com/openpatch/patches/pull/283) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): pin dependencies [#288](https://github.com/openpatch/patches/pull/288) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.4.2 (Sat Feb 27 2021)
 
 #### 🐛 Bug Fix
