@@ -111,7 +111,7 @@ export const LoadingDots = ({
         </Box>
       )}
       <Box
-        backgroundColor={textColor || "text"}
+        backgroundColor={textColor || "currentColor"}
         borderRadius="full"
         width={width}
         marginRight="xxsmall"
@@ -119,7 +119,7 @@ export const LoadingDots = ({
         as="span"
       ></Box>
       <Box
-        backgroundColor={textColor || "text"}
+        backgroundColor={textColor || "currentColor"}
         borderRadius="full"
         marginRight="xxsmall"
         width={width}
@@ -127,7 +127,7 @@ export const LoadingDots = ({
         as="span"
       ></Box>
       <Box
-        backgroundColor={textColor || "text"}
+        backgroundColor={textColor || "currentColor"}
         borderRadius="full"
         width={width}
         height={width}
