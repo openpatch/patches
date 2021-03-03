@@ -1,12 +1,8 @@
-import { Global, css, CSSObject } from "@emotion/react";
+import { Global, css } from "@emotion/react";
 
-type CodeEditorStylesProps = {
-  height?: CSSObject["height"];
-};
+type CodeEditorStylesProps = {};
 
-export const CodeEditorStyles = ({
-  height = "400px",
-}: CodeEditorStylesProps) => {
+export const CodeEditorStyles = ({}: CodeEditorStylesProps) => {
   return (
     <Global
       styles={(theme) => css`
@@ -14,7 +10,6 @@ export const CodeEditorStyles = ({
         .CodeMirror {
           /* Set height, width, borders, and global font properties here */
           font-family: ${theme.fonts.monospace};
-          height: ${height};
           color: black;
           direction: ltr;
         }
@@ -161,6 +156,7 @@ export const CodeEditorStyles = ({
         .cm-strong {
           font-weight: bold;
         }
+
         .cm-em {
           font-style: italic;
         }
