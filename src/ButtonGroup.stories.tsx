@@ -51,3 +51,9 @@ const TemplateOutline: Story<ButtonGroupProps> = (args) => (
 );
 
 export const Outline = TemplateOutline.bind({});
+
+export const Vertical = TemplatePrimary.bind({});
+Primary.args = {
+  attached: true,
+  direction: "vertical",
+};
