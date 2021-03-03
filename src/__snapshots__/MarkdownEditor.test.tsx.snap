@@ -7,11 +7,6 @@ exports[`should match snapshot 1`] = `
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   position: relative;
-  border-radius: 4px;
-  padding: 8px 4px;
-  border-color: #E4E7EB;
-  border-style: solid;
-  border-width: 1px;
 }
 
 .emotion-3 {
@@ -148,6 +143,11 @@ exports[`should match snapshot 1`] = `
   min-width: 0;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+}
+
+.emotion-7 .CodeMirror {
+  height: auto;
+  min-height: 60px;
 }
 
 <div>

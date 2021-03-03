@@ -24,7 +24,7 @@ export const MarkdownEditor = ({
   value = "",
   onChange = () => {},
   onBlur = () => {},
-  height = "400px",
+  height = "auto",
   locale = defaultLocale,
   ...props
 }: MarkdownEditorProps) => {
@@ -37,16 +37,7 @@ export const MarkdownEditor = ({
   }
 
   return (
-    <Box
-      position="relative"
-      css={(theme) => css`
-        border-radius: ${theme.radii.small};
-        padding: ${theme.space.xsmall} ${theme.space.xxsmall};
-        border-color: ${theme.colors.neutral["100"]};
-        border-style: solid;
-        border-width: ${theme.borderWidths.standard};
-      `}
-    >
+    <Box position="relative">
       <ButtonSecondary
         tone="accent"
         onClick={() => setIsPreview((p) => !p)}
@@ -80,7 +71,7 @@ export const MarkdownEditor = ({
             font-size: 90%;
           }
           .cm-strong {
-            font-size: 140%;
+            font-size: 100%;
           }
         `}
       />
