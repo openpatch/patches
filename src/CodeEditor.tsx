@@ -89,11 +89,23 @@ export const CodeEditor = ({
   return (
     <Box
       css={(theme) => [
+        css`
+          .CodeMirror {
+            height: ${height};
+            min-height: 60px;
+          }
+        `,
         variant === "outlined" &&
           css`
             border-style: solid;
+            border-radius: ${theme.radii.small};
             border-width: ${theme.borderWidths.standard};
             border-color: ${theme.colors.neutral["200"]};
+
+            > div,
+            > div > div {
+              border-radius: ${theme.radii.small};
+            }
           `,
         variant === "input" &&
           css`
@@ -109,7 +121,7 @@ export const CodeEditor = ({
           `,
       ]}
     >
-      <CodeEditorStyles height={height} />
+      <CodeEditorStyles />
       <CodeMirror
         value={value}
         selection={selection}

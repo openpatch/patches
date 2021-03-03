@@ -8,6 +8,11 @@ exports[`should match snapshot 1`] = `
   transition: all 0.2s ease;
 }
 
+.emotion-0 .CodeMirror {
+  height: ;
+  min-height: 60px;
+}
+
 <div>
   <div
     class="emotion-0 emotion-1"
