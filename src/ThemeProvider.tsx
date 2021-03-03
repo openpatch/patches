@@ -106,6 +106,7 @@ export const ThemeProvider = ({
           }
 
           img {
+            max-width: 100%;
             border-style: none;
           }
 
