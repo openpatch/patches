@@ -1,3 +1,26 @@
+# v1.4.4 (Wed Mar 03 2021)
+
+#### 🐛 Bug Fix
+
+- fix(themeprovider): add max-width for images [#302](https://github.com/openpatch/patches/pull/302) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🔩 Dependency Updates
+
+- chore(deps): update dependency auto to v10.18.1 [#301](https://github.com/openpatch/patches/pull/301) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/user-event to v12.8.1 [#300](https://github.com/openpatch/patches/pull/300) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/first-time-contributor to v10.18.1 [#299](https://github.com/openpatch/patches/pull/299) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/conventional-commits to v10.18.1 [#298](https://github.com/openpatch/patches/pull/298) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/all-contributors to v10.18.1 [#297](https://github.com/openpatch/patches/pull/297) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/react-hooks to v5.1.0 [#296](https://github.com/openpatch/patches/pull/296) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update babel monorepo to v7.13.9 [#295](https://github.com/openpatch/patches/pull/295) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.4.3 (Mon Mar 01 2021)
 
 #### 🐛 Bug Fix
