@@ -1,3 +1,20 @@
+# v1.5.0 (Wed Mar 03 2021)
+
+#### 🚀 Enhancement
+
+- feat(buttongroup): add vertical variant [#303](https://github.com/openpatch/patches/pull/303) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🐛 Bug Fix
+
+- fix(markdowneditor): fix variant clash with codeeditor [#303](https://github.com/openpatch/patches/pull/303) ([@mikebarkmin](https://github.com/mikebarkmin))
+- fix(codeeditor): allow different heights for editors on one page [#303](https://github.com/openpatch/patches/pull/303) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v1.4.4 (Wed Mar 03 2021)
 
 #### 🐛 Bug Fix
