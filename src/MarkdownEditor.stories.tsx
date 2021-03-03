@@ -1,6 +1,7 @@
 import { Story, Meta } from "@storybook/react/types-6-0";
 import { useState } from "react";
 
+import { AutoGrid } from "./AutoGrid";
 import { MarkdownEditor, MarkdownEditorProps } from "./MarkdownEditor";
 
 export default {
@@ -41,3 +42,11 @@ def test():
   pass
 \`\`\``,
 };
+
+export const MultipleEditorsWithDifferentHeights = () => (
+  <AutoGrid gap="standard">
+    <MarkdownEditor variant="outlined" height="100px" />
+    <MarkdownEditor variant="outlined" height="500px" />
+    <MarkdownEditor variant="outlined" height="auto" />
+  </AutoGrid>
+);
