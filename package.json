@@ -86,7 +86,7 @@
   },
   "devDependencies": {
     "@auto-it/all-contributors": "10.18.3",
-    "@auto-it/conventional-commits": "10.18.1",
+    "@auto-it/conventional-commits": "10.18.3",
     "@auto-it/first-time-contributor": "10.18.1",
     "@babel/core": "7.13.8",
     "@babel/plugin-transform-runtime": "7.13.9",
