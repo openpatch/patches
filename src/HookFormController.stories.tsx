@@ -1,5 +1,10 @@
 import { Story, Meta } from "@storybook/react/types-6-0";
-import { useForm, Controller, FormProvider } from "react-hook-form";
+import {
+  useForm,
+  Controller,
+  FormProvider,
+  useFieldArray,
+} from "react-hook-form";
 import { Form } from "./Form";
 import { FormFooter } from "./FormFooter";
 import { FormHeader } from "./FormHeader";
@@ -11,6 +16,7 @@ import { Input } from "./Input";
 import { Slider } from "./Slider";
 import { MarkdownEditor } from "./MarkdownEditor";
 import { CodeEditor } from "./CodeEditor";
+import { ButtonPrimary } from "./ButtonPrimary";
 
 export default {
   title: "Form/HookFormController",
@@ -29,6 +35,9 @@ type FormData = {
   name: string;
   slider: string;
   markdown: string;
+  fields: {
+    name: string;
+  };
 };
 
 const Template: Story<HookFormControllerProps> = ({ onSubmit, onError }) => {
@@ -40,6 +49,11 @@ const Template: Story<HookFormControllerProps> = ({ onSubmit, onError }) => {
   function handleError(errors) {
     onError(errors);
   }
+
+  const { append, fields } = useFieldArray({
+    control: methods.control,
+    name: "fields",
+  });
 
   return (
     <FormProvider {...methods}>
@@ -66,7 +80,7 @@ const Template: Story<HookFormControllerProps> = ({ onSubmit, onError }) => {
           label="Slide me!"
           defaultValue={4}
           helperText="But not under 5"
-          render={Slider}
+          render={(props) => <Slider {...props} />}
           rules={{
             validate: {
               over5: (v) => v > 5 || "needs to be over 5",
@@ -77,12 +91,29 @@ const Template: Story<HookFormControllerProps> = ({ onSubmit, onError }) => {
           name="markdown"
           control={methods.control}
           label="Markdown with Preview"
+          defaultValue=""
+          rules={{
+            validate: {
+              notEmpty: (v) => {
+                if (v && v.length > 0) {
+                  return true;
+                }
+
+                return "Can not be empty";
+              },
+            },
+          }}
           render={({ value, onChange, onBlur }) => (
-            <MarkdownEditor value={value} onChange={onChange} onBlur={onBlur} />
+            <MarkdownEditor
+              value={value}
+              onChange={(_, v) => onChange(v)}
+              onBlur={onBlur}
+            />
           )}
         />
         <HookFormController
           name="code"
+          defaultValue=""
           control={methods.control}
           label="Code Editor"
           render={({ value, onChange, onBlur }) => (
@@ -94,6 +125,28 @@ const Template: Story<HookFormControllerProps> = ({ onSubmit, onError }) => {
             />
           )}
         />
+        {fields.map((field, index) => (
+          <HookFormController
+            name={`fields[${index}].name`}
+            label={`Field ${index}`}
+            defaultValue=""
+            rules={{
+              validate: {
+                notEmpty: (v) => {
+                  if (v && v.length > 0) {
+                    return true;
+                  }
+
+                  return "Can not be empty";
+                },
+              },
+            }}
+            render={Input}
+          />
+        ))}
+        <ButtonPrimary fullWidth onClick={() => append({ name: "" })}>
+          Add Field
+        </ButtonPrimary>
         <FormFooter
           disabled={
             !methods.formState.isDirty || methods.formState.isSubmitting
