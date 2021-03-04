@@ -1,3 +1,32 @@
+# v1.6.0 (Thu Mar 04 2021)
+
+#### 🚀 Enhancement
+
+- feat(slider): forward ref [#310](https://github.com/openpatch/patches/pull/310) ([@mikebarkmin](https://github.com/mikebarkmin))
+- feat(select): forward ref [#310](https://github.com/openpatch/patches/pull/310) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🐛 Bug Fix
+
+- fix(hookformcontroller): fix errors not working for field arrays [#310](https://github.com/openpatch/patches/pull/310) ([@mikebarkmin](https://github.com/mikebarkmin))
+- fix(markdowneditor): make preview button smaller [#310](https://github.com/openpatch/patches/pull/310) ([@mikebarkmin](https://github.com/mikebarkmin))
+- fix(textarea): add to index [#310](https://github.com/openpatch/patches/pull/310) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🔩 Dependency Updates
+
+- chore(deps): update storybook monorepo to v6.1.21 [#309](https://github.com/openpatch/patches/pull/309) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.24.3 [#308](https://github.com/openpatch/patches/pull/308) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency auto to v10.18.3 [#307](https://github.com/openpatch/patches/pull/307) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/first-time-contributor to v10.18.3 [#306](https://github.com/openpatch/patches/pull/306) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/conventional-commits to v10.18.3 [#305](https://github.com/openpatch/patches/pull/305) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/all-contributors to v10.18.3 [#304](https://github.com/openpatch/patches/pull/304) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.5.0 (Wed Mar 03 2021)
 
 #### 🚀 Enhancement
