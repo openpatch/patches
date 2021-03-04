@@ -37,9 +37,11 @@ exports[`should match snapshot 1`] = `
   color: #34126F;
   background-color: #EAE2F8;
   position: absolute;
-  top: 10px;
-  right: 20px;
+  top: 5px;
+  right: 5px;
+  font-size: 12px;
   z-index: 99;
+  opacity: 0.8;
 }
 
 .emotion-3:disabled {
