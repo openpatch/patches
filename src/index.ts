@@ -71,6 +71,7 @@ export { TableCell, TableCellProps } from "./TableCell";
 export { TableHead, TableHeadProps } from "./TableHead";
 export { TableRow, TableRowProps } from "./TableRow";
 export { Text, TextProps } from "./Text";
+export { Textarea, TextareaProps } from "./Textarea";
 export { ThemeProvider } from "./ThemeProvider";
 export { Video, VideoProps } from "./Video";
 export * from "./themes";
