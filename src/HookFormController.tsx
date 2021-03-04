@@ -5,6 +5,7 @@ import {
   FieldError,
   useFormContext,
   ValidateResult,
+  get,
 } from "react-hook-form";
 import { FormLabel } from "./FormLabel";
 import { FormErrorText } from "./FormErrorText";
@@ -46,9 +47,10 @@ export const HookFormController = ({
   helperText,
   ...props
 }: HookFormControllerProps) => {
-  const { formState } = useFormContext();
+  const methods = useFormContext();
   const required = props.rules?.required ? true : false;
-  const errors: FieldError = formState.errors[name];
+  const errors: FieldError = get(methods.errors, name);
+  console.log(errors);
   return (
     <Fragment>
       <FormLabel required={required} htmlFor={name}>
