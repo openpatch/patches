@@ -1,13 +1,13 @@
 import { css, Global } from "@emotion/react";
 import { EditorChange } from "codemirror";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ButtonSecondary } from "./ButtonSecondary";
 import { CodeEditorProps, CodeEditor } from "./CodeEditor";
 import { Markdown } from "./Markdown";
 import { Box } from "./Box";
 
 export type MarkdownEditorProps = {
-  onBlur?: () => void;
+  onBlur?: (value: string) => void;
   locale?: {
     preview: string;
     edit: string;
@@ -31,6 +31,10 @@ export const MarkdownEditor = ({
   const [isPreview, setIsPreview] = useState(false);
   const [innerValue, setInnerValue] = useState(value);
 
+  useEffect(() => {
+    setInnerValue(value);
+  }, [value]);
+
   function onInnerChange(change: EditorChange, value: string) {
     setInnerValue(value);
     onChange(change, value);
@@ -41,11 +45,13 @@ export const MarkdownEditor = ({
       <ButtonSecondary
         tone="accent"
         onClick={() => setIsPreview((p) => !p)}
-        css={css`
+        css={(theme) => css`
           position: absolute;
-          top: 10px;
-          right: 20px;
+          top: 5px;
+          right: 5px;
+          font-size: ${theme.fontSizes.xsmall};
           z-index: 99;
+          opacity: 0.8;
         `}
       >
         {isPreview ? locale.edit : locale.preview}
