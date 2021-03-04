@@ -1,4 +1,4 @@
-import { ChangeEvent, InputHTMLAttributes } from "react";
+import { ChangeEvent, forwardRef, InputHTMLAttributes, RefObject } from "react";
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 import {
@@ -69,41 +69,48 @@ export type TextareaProps = {
   value?: string;
   onChange?: (v: string) => void;
   onBlur?: () => void;
+  ref?: RefObject<HTMLTextAreaElement>;
   disabled?: boolean;
   required?: boolean;
   error?: boolean;
   resize?: "both" | "horizontal" | "vertical" | "none";
 };
 
-export const Textarea = ({
-  id,
-  value,
-  onChange = () => {},
-  onBlur = () => {},
-  disabled,
-  required,
-  error,
-  resize = "vertical",
-}: TextareaProps) => {
-  function handleChange(
-    e: ChangeEvent<HTMLTextAreaElement> & ChangeEvent<HTMLInputElement>
-  ) {
-    if (!disabled) {
-      const newValue = e.currentTarget.value;
-      onChange(newValue);
+export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
+  (
+    {
+      id,
+      value,
+      onChange = () => {},
+      onBlur = () => {},
+      disabled,
+      required,
+      error,
+      resize = "vertical",
+    },
+    ref
+  ) => {
+    function handleChange(
+      e: ChangeEvent<HTMLTextAreaElement> & ChangeEvent<HTMLInputElement>
+    ) {
+      if (!disabled) {
+        const newValue = e.currentTarget.value;
+        onChange(newValue);
+      }
     }
+    return (
+      <StyledTextarea
+        id={id}
+        ref={ref}
+        value={value}
+        onChange={handleChange}
+        onBlur={onBlur}
+        required={required}
+        disabled={disabled}
+        aria-invalid={error}
+        error={error}
+        resize={resize}
+      />
+    );
   }
-  return (
-    <StyledTextarea
-      id={id}
-      value={value}
-      onChange={handleChange}
-      onBlur={onBlur}
-      required={required}
-      disabled={disabled}
-      aria-invalid={error}
-      error={error}
-      resize={resize}
-    />
-  );
-};
+);
