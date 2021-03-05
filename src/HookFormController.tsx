@@ -53,9 +53,11 @@ export const HookFormController = ({
   console.log(errors);
   return (
     <Fragment>
-      <FormLabel required={required} htmlFor={name}>
-        {label}
-      </FormLabel>
+      {label && (
+        <FormLabel required={required} htmlFor={name}>
+          {label}
+        </FormLabel>
+      )}
       <Controller
         control={control}
         name={name}
