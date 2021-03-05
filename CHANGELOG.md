@@ -1,3 +1,21 @@
+# v1.6.1 (Fri Mar 05 2021)
+
+#### 🐛 Bug Fix
+
+- fix(hookformcontroller): remove formlabel if no label [#313](https://github.com/openpatch/patches/pull/313) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🔩 Dependency Updates
+
+- chore(deps): update dependency typescript to v4.2.3 [#312](https://github.com/openpatch/patches/pull/312) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency fork-ts-checker-webpack-plugin to v6.1.1 [#311](https://github.com/openpatch/patches/pull/311) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.6.0 (Thu Mar 04 2021)
 
 #### 🚀 Enhancement
