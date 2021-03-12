@@ -3,13 +3,13 @@ import {
   Controller,
   ControllerProps,
   FieldError,
+  get,
   useFormContext,
   ValidateResult,
-  get,
 } from "react-hook-form";
-import { FormLabel } from "./FormLabel";
 import { FormErrorText } from "./FormErrorText";
 import { FormHelperText } from "./FormHelperText";
+import { FormLabel } from "./FormLabel";
 
 export type HookFormControllerRenderProps = {
   onChange: (...event: any[]) => void;
@@ -50,7 +50,6 @@ export const HookFormController = ({
   const methods = useFormContext();
   const required = props.rules?.required ? true : false;
   const errors: FieldError = get(methods.errors, name);
-  console.log(errors);
   return (
     <Fragment>
       {label && (
@@ -59,7 +58,7 @@ export const HookFormController = ({
         </FormLabel>
       )}
       <Controller
-        control={control}
+        control={methods.control}
         name={name}
         defaultValue={defaultValue}
         {...props}
