@@ -1,3 +1,38 @@
+# v1.6.2 (Fri Mar 12 2021)
+
+#### 🐛 Bug Fix
+
+- fix(hookformcontroller): use control from form context [#335](https://github.com/openpatch/patches/pull/335) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🔩 Dependency Updates
+
+- chore(deps): update dependency @auto-it/conventional-commits to v10.18.7 [#332](https://github.com/openpatch/patches/pull/332) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/all-contributors to v10.18.7 [#331](https://github.com/openpatch/patches/pull/331) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency chromatic to v5.7.0 [#330](https://github.com/openpatch/patches/pull/330) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency type-fest to v0.21.3 [#329](https://github.com/openpatch/patches/pull/329) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency auto to v10.18.4 [#328](https://github.com/openpatch/patches/pull/328) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/node to v14.14.33 [#327](https://github.com/openpatch/patches/pull/327) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/user-event to v12.8.3 [#326](https://github.com/openpatch/patches/pull/326) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @octokit/core to v3.3.0 [#325](https://github.com/openpatch/patches/pull/325) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/first-time-contributor to v10.18.4 [#324](https://github.com/openpatch/patches/pull/324) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/conventional-commits to v10.18.4 [#323](https://github.com/openpatch/patches/pull/323) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/all-contributors to v10.18.4 [#322](https://github.com/openpatch/patches/pull/322) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update codecov/codecov-action action to v1.2.2 [#321](https://github.com/openpatch/patches/pull/321) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.24.4 [#319](https://github.com/openpatch/patches/pull/319) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update babel monorepo to v7.13.10 [#320](https://github.com/openpatch/patches/pull/320) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/react-dom to v17.0.2 [#318](https://github.com/openpatch/patches/pull/318) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/react to v17.0.3 [#316](https://github.com/openpatch/patches/pull/316) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @emotion/jest to v11.2.1 [#317](https://github.com/openpatch/patches/pull/317) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/node to v14.14.32 [#315](https://github.com/openpatch/patches/pull/315) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/dom to v7.30.0 [#314](https://github.com/openpatch/patches/pull/314) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.6.1 (Fri Mar 05 2021)
 
 #### 🐛 Bug Fix
