@@ -1,3 +1,50 @@
+# v1.6.3 (Sat Mar 27 2021)
+
+#### 🐛 Bug Fix
+
+- fix(package): add react-hook-form to dev [#372](https://github.com/openpatch/patches/pull/372) ([@mikebarkmin](https://github.com/mikebarkmin))
+- fix(package): make react-hook-form a peer dependency [#371](https://github.com/openpatch/patches/pull/371) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🔩 Dependency Updates
+
+- chore(deps): update dependency @types/node to v14.14.37 [#370](https://github.com/openpatch/patches/pull/370) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/node to v14.14.36 [#368](https://github.com/openpatch/patches/pull/368) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/jest to v26.0.22 [#367](https://github.com/openpatch/patches/pull/367) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/jest-dom to v5.11.10 [#366](https://github.com/openpatch/patches/pull/366) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/dom to v7.30.1 [#365](https://github.com/openpatch/patches/pull/365) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.28.0 [#364](https://github.com/openpatch/patches/pull/364) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update react monorepo to v17.0.2 [#362](https://github.com/openpatch/patches/pull/362) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.27.2 [#360](https://github.com/openpatch/patches/pull/360) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/react-dom to v17.0.3 [#361](https://github.com/openpatch/patches/pull/361) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @babel/preset-env to v7.13.12 [#359](https://github.com/openpatch/patches/pull/359) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.27.1 [#358](https://github.com/openpatch/patches/pull/358) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.27.0 [#357](https://github.com/openpatch/patches/pull/357) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency fork-ts-checker-webpack-plugin to v6.2.0 [#356](https://github.com/openpatch/patches/pull/356) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.26.3 [#355](https://github.com/openpatch/patches/pull/355) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/jest to v26.0.21 [#354](https://github.com/openpatch/patches/pull/354) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.26.2 [#352](https://github.com/openpatch/patches/pull/352) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update codecov/codecov-action action to v1.3.1 [#351](https://github.com/openpatch/patches/pull/351) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.26.0 [#350](https://github.com/openpatch/patches/pull/350) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/styled-system__css to v5.0.15 [#349](https://github.com/openpatch/patches/pull/349) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/node to v14.14.35 [#348](https://github.com/openpatch/patches/pull/348) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @octokit/core to v3.3.1 [#347](https://github.com/openpatch/patches/pull/347) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.25.1 [#346](https://github.com/openpatch/patches/pull/346) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.25.0 [#337](https://github.com/openpatch/patches/pull/337) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency auto to v10.18.9 [#341](https://github.com/openpatch/patches/pull/341) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/first-time-contributor to v10.18.9 [#340](https://github.com/openpatch/patches/pull/340) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/conventional-commits to v10.18.9 [#339](https://github.com/openpatch/patches/pull/339) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/all-contributors to v10.18.9 [#338](https://github.com/openpatch/patches/pull/338) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/node to v14.14.34 [#336](https://github.com/openpatch/patches/pull/336) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency auto to v10.18.7 [#334](https://github.com/openpatch/patches/pull/334) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/first-time-contributor to v10.18.7 [#333](https://github.com/openpatch/patches/pull/333) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.6.2 (Fri Mar 12 2021)
 
 #### 🐛 Bug Fix
