@@ -2,7 +2,7 @@ import { css, Theme } from "@emotion/react";
 import styled from "@emotion/styled";
 import { ButtonHTMLAttributes, forwardRef, ReactNode } from "react";
 import { Box } from "./Box";
-import { useBreakpoints } from "./hooks";
+import { useBreakpoints } from "./hooks/useBreakpoints";
 import { LoadingDots } from "./LoadingDots";
 import {
   color,
