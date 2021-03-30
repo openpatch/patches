@@ -1,0 +1,50 @@
+import { Fragment } from "react";
+import { Meta, Canvas } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+import { useConfirm } from "./useConfirm";
+import { ButtonPrimary } from "../ButtonPrimary";
+
+<Meta title="Hooks/useConfirm" />
+
+# Usage
+
+```ts
+import { useConfirm } from "@openpatch/patches/hooks";
+
+const [requestConfirm, modal] = useConfirm({
+  title: "Delete Content",
+  description: "Are you sure you want to delete this content?",
+  onConfirm: () => console.log("deleted"),
+  onCancel: () => console.log("canceled"),
+  severity: "danger",
+});
+
+return (
+  <Fragment>
+    {modal}
+    <ButtonPrimary onClick={requestConfirm}>Delete</ButtonPrimary>
+  </Fragment>
+);
+```
+
+# Example
+
+<Canvas>
+  <Story name="example">
+    {() => {
+      const [requestConfirm, modal] = useConfirm({
+        title: "Delete Content",
+        description: "Are you sure you want to delete this content?",
+        onConfirm: action("confirm"),
+        onCancel: action("cancel"),
+        severity: "danger",
+      });
+      return (
+        <Fragment>
+          {modal}
+          <ButtonPrimary onClick={requestConfirm}>Delete</ButtonPrimary>
+        </Fragment>
+      );
+    }}
+  </Story>
+</Canvas>
