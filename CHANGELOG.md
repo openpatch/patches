@@ -1,3 +1,21 @@
+# v1.7.0 (Tue Mar 30 2021)
+
+#### 🚀 Enhancement
+
+- feat(useconfirm): add use confirm hook [#376](https://github.com/openpatch/patches/pull/376) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🔩 Dependency Updates
+
+- chore(deps): update dependency @testing-library/react-hooks to v5.1.1 [#374](https://github.com/openpatch/patches/pull/374) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency react-hook-form to v6.15.5 [#373](https://github.com/openpatch/patches/pull/373) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.6.3 (Sat Mar 27 2021)
 
 #### 🐛 Bug Fix
