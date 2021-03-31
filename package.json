@@ -98,7 +98,7 @@
     "@emotion/jest": "11.2.1",
     "@emotion/react": "11.1.5",
     "@emotion/styled": "11.1.5",
-    "@octokit/core": "3.3.1",
+    "@octokit/core": "3.3.2",
     "@storybook/addon-a11y": "6.1.21",
     "@storybook/addon-actions": "6.1.21",
     "@storybook/addon-controls": "6.1.21",
