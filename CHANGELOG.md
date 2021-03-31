@@ -1,3 +1,24 @@
+# v1.7.1 (Wed Mar 31 2021)
+
+#### 🐛 Bug Fix
+
+- fix(nav): replace * selector with concrete ones [#382](https://github.com/openpatch/patches/pull/382) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🔩 Dependency Updates
+
+- chore(deps): update babel monorepo [#369](https://github.com/openpatch/patches/pull/369) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update storybook monorepo to v6.2.0 [#380](https://github.com/openpatch/patches/pull/380) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/react to v11.2.6 [#378](https://github.com/openpatch/patches/pull/378) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @octokit/core to v3.3.2 [#379](https://github.com/openpatch/patches/pull/379) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/dom to v7.30.2 [#377](https://github.com/openpatch/patches/pull/377) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.7.0 (Tue Mar 30 2021)
 
 #### 🚀 Enhancement
