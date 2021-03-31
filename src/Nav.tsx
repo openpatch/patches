@@ -1,11 +1,12 @@
 import { css } from "@emotion/react";
 import { Fragment, ReactNode, useRef, useState } from "react";
 import { Avatar } from "./Avatar";
-import { Box, BoxProps } from "./Box";
+import { Box } from "./Box";
 import { Button, ButtonProps } from "./Button";
 import { useClickOutsideListener } from "./hooks";
 import { Icon, IconProps } from "./Icon";
 import { Menu, X } from "./icons/outline";
+import { Link, LinkProps } from "./Link";
 import { Logo } from "./Logo";
 import { Text } from "./Text";
 
@@ -18,7 +19,7 @@ type NavLinkProps = {
 type ProfileLinkProps = {
   label?: string;
   href?: string;
-  onClick?: BoxProps["onClick"];
+  onClick?: LinkProps["onClick"];
 };
 
 type TrayIconProps = {
@@ -30,8 +31,7 @@ type TrayIconProps = {
 
 export const TrayIcon = ({ icon, badge, label, href }: TrayIconProps) => {
   return (
-    <Box
-      as="a"
+    <Link
       p="xxsmall"
       display="flex"
       alignItems="center"
@@ -50,7 +50,7 @@ export const TrayIcon = ({ icon, badge, label, href }: TrayIconProps) => {
       <Icon badge={badge} color="currentColor">
         {icon}
       </Icon>
-    </Box>
+    </Link>
   );
 };
 
@@ -72,7 +72,7 @@ export type NavItemProps = {
   active?: boolean;
   variant?: "primary" | "secondary" | "menu";
   href?: string;
-  onClick?: BoxProps["onClick"];
+  onClick?: LinkProps["onClick"];
 };
 
 const responsiveDisplay = ["none", "block"];
@@ -84,7 +84,7 @@ export const NavItem = ({
   href,
   onClick,
 }: NavItemProps) => {
-  let textColor: BoxProps["textColor"] = "primary.50";
+  let textColor: LinkProps["textColor"] = "primary.50";
   switch (variant) {
     case "primary":
       textColor = "primary.50";
@@ -97,8 +97,7 @@ export const NavItem = ({
       break;
   }
   return (
-    <Box
-      as="a"
+    <Link
       href={href}
       onClick={onClick}
       cursor="pointer"
@@ -112,6 +111,9 @@ export const NavItem = ({
       css={(theme) => [
         css`
           user-select: none;
+          cursor: pointer;
+          display: inline-block;
+          color: ${textColor};
         `,
         active &&
           css`
@@ -149,7 +151,7 @@ export const NavItem = ({
       ]}
     >
       {children}
-    </Box>
+    </Link>
   );
 };
 
@@ -238,7 +240,7 @@ export const Nav = ({ logo, tray, profile, links, profileLinks }: NavProps) => {
                       margin: 0;
                     }
 
-                    & > * {
+                    & > a {
                       display: inline-block;
                       margin-left: 16px;
                     }
@@ -263,7 +265,8 @@ export const Nav = ({ logo, tray, profile, links, profileLinks }: NavProps) => {
                 alignItems="center"
                 marginY="small"
                 css={css`
-                  & > * {
+                  & > a,
+                  & > div {
                     margin-left: 16px;
                   }
                 `}
@@ -318,7 +321,7 @@ export const Nav = ({ logo, tray, profile, links, profileLinks }: NavProps) => {
                           boxShadow="small"
                           overflow="hidden"
                           css={css`
-                            & > * {
+                            & > a {
                               display: block !important;
                             }
                           `}
@@ -365,7 +368,7 @@ export const Nav = ({ logo, tray, profile, links, profileLinks }: NavProps) => {
                 & > :nth-of-type(1) {
                   margin-top: 0;
                 }
-                & > * {
+                & > a {
                   display: block !important;
                   margin-top: 8px;
                 }
@@ -401,7 +404,7 @@ export const Nav = ({ logo, tray, profile, links, profileLinks }: NavProps) => {
                 </Box>
                 <Box
                   css={css`
-                    & > * {
+                    & > a {
                       display: block !important;
                     }
                   `}

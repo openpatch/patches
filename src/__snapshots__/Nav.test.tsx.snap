@@ -128,7 +128,7 @@ exports[`should match snapshot 1`] = `
   margin: 0;
 }
 
-.emotion-14>* {
+.emotion-14>a {
   display: inline-block;
   margin-left: 16px;
 }
@@ -138,6 +138,8 @@ exports[`should match snapshot 1`] = `
   min-width: 0;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  padding: 0;
+  margin: 0;
   cursor: pointer;
   display: inline-block;
   color: #EFFCF6;
@@ -148,12 +150,30 @@ exports[`should match snapshot 1`] = `
   font-size: 16px;
   font-weight: 600;
   border-radius: 10px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: inherit;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  cursor: pointer;
+  display: inline-block;
+  color: primary.50;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-16 svg {
+  margin-left: 8px;
+  width: auto;
+  height: 90%;
 }
 
 .emotion-16:focus {
@@ -203,7 +223,8 @@ exports[`should match snapshot 1`] = `
   }
 }
 
-.emotion-22>* {
+.emotion-22>a,
+.emotion-22>div {
   margin-left: 16px;
 }
 
@@ -212,6 +233,8 @@ exports[`should match snapshot 1`] = `
   min-width: 0;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  padding: 0;
+  margin: 0;
   padding: 4px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -224,6 +247,21 @@ exports[`should match snapshot 1`] = `
   border-radius: 8px;
   position: relative;
   color: #EFFCF6;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: inherit;
+}
+
+.emotion-24 svg {
+  margin-left: 8px;
+  width: auto;
+  height: 90%;
 }
 
 .emotion-24:hover {
@@ -525,7 +563,7 @@ exports[`should match snapshot 1`] = `
   margin-top: 0;
 }
 
-.emotion-43>* {
+.emotion-43>a {
   display: block!important;
   margin-top: 8px;
 }
@@ -590,7 +628,7 @@ exports[`should match snapshot 1`] = `
   transition: all 0.2s ease;
 }
 
-.emotion-63>* {
+.emotion-63>a {
   display: block!important;
 }
 
@@ -599,6 +637,8 @@ exports[`should match snapshot 1`] = `
   min-width: 0;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  padding: 0;
+  margin: 0;
   cursor: pointer;
   display: inline-block;
   color: #8EEDC7;
@@ -609,12 +649,30 @@ exports[`should match snapshot 1`] = `
   font-size: 16px;
   font-weight: 600;
   border-radius: 10px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: inherit;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  cursor: pointer;
+  display: inline-block;
+  color: primary.200;
   -webkit-text-decoration: none;
   text-decoration: none;
+}
+
+.emotion-65 svg {
+  margin-left: 8px;
+  width: auto;
+  height: 90%;
 }
 
 .emotion-65:focus {
@@ -695,7 +753,7 @@ exports[`should match snapshot 1`] = `
               display="flex"
             >
               <a
-                class="emotion-16 emotion-1"
+                class="emotion-16 emotion-17"
                 cursor="pointer"
                 display="inline-block"
                 font-size="standard"
@@ -705,7 +763,7 @@ exports[`should match snapshot 1`] = `
                 Home
               </a>
               <a
-                class="emotion-16 emotion-1"
+                class="emotion-16 emotion-17"
                 cursor="pointer"
                 display="inline-block"
                 font-size="standard"
@@ -726,7 +784,7 @@ exports[`should match snapshot 1`] = `
           >
             <a
               aria-label="Notifications"
-              class="emotion-24 emotion-1"
+              class="emotion-24 emotion-17"
               display="flex"
               href="#"
               title="Notifications"
@@ -808,7 +866,7 @@ exports[`should match snapshot 1`] = `
           class="emotion-43 emotion-1"
         >
           <a
-            class="emotion-16 emotion-1"
+            class="emotion-16 emotion-17"
             cursor="pointer"
             display="inline-block"
             font-size="standard"
@@ -818,7 +876,7 @@ exports[`should match snapshot 1`] = `
             Home
           </a>
           <a
-            class="emotion-16 emotion-1"
+            class="emotion-16 emotion-17"
             cursor="pointer"
             display="inline-block"
             font-size="standard"
@@ -867,7 +925,7 @@ exports[`should match snapshot 1`] = `
             class="emotion-63 emotion-1"
           >
             <a
-              class="emotion-65 emotion-1"
+              class="emotion-65 emotion-17"
               cursor="pointer"
               display="inline-block"
               font-size="standard"
@@ -877,7 +935,7 @@ exports[`should match snapshot 1`] = `
               Profile
             </a>
             <a
-              class="emotion-65 emotion-1"
+              class="emotion-65 emotion-17"
               cursor="pointer"
               display="inline-block"
               font-size="standard"
