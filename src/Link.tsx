@@ -1,34 +1,32 @@
 import { css, Theme } from "@emotion/react";
 import styled from "@emotion/styled";
 import { forwardRef, HTMLAttributes, ReactNode } from "react";
-import {
-  ColorProps,
-  SpaceProps,
-  TypographyProps,
-  LayoutProps,
-  FlexboxProps,
-  GridProps,
-  BackgroundProps,
-  BorderProps,
-  PositionProps,
-  ShadowProps,
-  color,
-} from "styled-system";
 import { Icon } from "./Icon";
 import { ExternalWindow } from "./icons/shade";
 import {
-  CursorProps,
+  background,
+  BackgroundProps,
+  border,
+  BorderProps,
+  color,
+  ColorProps,
   compose,
   cursor,
-  space,
-  typography,
-  layout,
+  CursorProps,
   flexbox,
+  FlexboxProps,
   grid,
-  background,
-  border,
+  GridProps,
+  layout,
+  LayoutProps,
   position,
+  PositionProps,
   shadow,
+  ShadowProps,
+  space,
+  SpaceProps,
+  typography,
+  TypographyProps,
 } from "./system";
 
 export type StyledLinkProps = ColorProps &
