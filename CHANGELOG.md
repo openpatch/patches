@@ -1,3 +1,21 @@
+# v1.7.2 (Thu Apr 01 2021)
+
+#### 🐛 Bug Fix
+
+- fix(markdowneditor): make preview optional [#384](https://github.com/openpatch/patches/pull/384) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🔩 Dependency Updates
+
+- chore(deps): update dependency @testing-library/dom to v7.30.3 [#383](https://github.com/openpatch/patches/pull/383) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update storybook monorepo to v6.2.1 [#381](https://github.com/openpatch/patches/pull/381) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.7.1 (Wed Mar 31 2021)
 
 #### 🐛 Bug Fix
