@@ -1,13 +1,14 @@
 import { css, Global } from "@emotion/react";
 import { EditorChange } from "codemirror";
 import { useEffect, useState } from "react";
-import { ButtonSecondary } from "./ButtonSecondary";
-import { CodeEditorProps, CodeEditor } from "./CodeEditor";
-import { Markdown } from "./Markdown";
 import { Box } from "./Box";
+import { ButtonSecondary } from "./ButtonSecondary";
+import { CodeEditor, CodeEditorProps } from "./CodeEditor";
+import { Markdown } from "./Markdown";
 
 export type MarkdownEditorProps = {
   onBlur?: (value: string) => void;
+  allowPreview?: boolean;
   locale?: {
     preview: string;
     edit: string;
@@ -25,6 +26,7 @@ export const MarkdownEditor = ({
   onChange = () => {},
   onBlur = () => {},
   height = "auto",
+  allowPreview = false,
   locale = defaultLocale,
   ...props
 }: MarkdownEditorProps) => {
@@ -42,20 +44,22 @@ export const MarkdownEditor = ({
 
   return (
     <Box position="relative">
-      <ButtonSecondary
-        tone="accent"
-        onClick={() => setIsPreview((p) => !p)}
-        css={(theme) => css`
-          position: absolute;
-          top: 5px;
-          right: 5px;
-          font-size: ${theme.fontSizes.xsmall};
-          z-index: 99;
-          opacity: 0.8;
-        `}
-      >
-        {isPreview ? locale.edit : locale.preview}
-      </ButtonSecondary>
+      {allowPreview && (
+        <ButtonSecondary
+          tone="accent"
+          onClick={() => setIsPreview((p) => !p)}
+          css={(theme) => css`
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: ${theme.fontSizes.xsmall};
+            z-index: 99;
+            opacity: 0.8;
+          `}
+        >
+          {isPreview ? locale.edit : locale.preview}
+        </ButtonSecondary>
+      )}
       <Global
         styles={css`
           .cm-header-1 {
