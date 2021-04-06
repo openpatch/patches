@@ -1,9 +1,8 @@
-import { Story, Meta } from "@storybook/react/types-6-0";
-
+import { Meta, Story } from "@storybook/react/types-6-0";
 import { Link, LinkProps } from "./Link";
 
 export default {
-  title: "Typography/Link",
+  title: "Typography/Link (deprecated)",
   component: Link,
   argTypes: {},
 } as Meta;

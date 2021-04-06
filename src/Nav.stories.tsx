@@ -1,9 +1,6 @@
-import { action } from "@storybook/addon-actions";
-import { Story, Meta } from "@storybook/react/types-6-0";
-
-import { Nav, NavItem, NavProps } from "./Nav";
-import { Logo } from "./Logo";
+import { Meta } from "@storybook/react/types-6-0";
 import { Bell } from "./icons/solid";
+import { Nav } from "./Nav";
 
 export default {
   title: "Components/Nav",
@@ -41,7 +38,7 @@ export const Default = () => (
       },
       {
         label: "Log out",
-        onClick: action("log out"),
+        href: "#",
       },
     ]}
     profile={{

@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+.emotion-0 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.emotion-0:hover .tooltip {
+  opacity: 1;
+}
+
+.emotion-2 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+}
+
+.emotion-2::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+<div>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <span
+      class="tooltip emotion-2 emotion-1"
+    />
+  </div>
+</div>
+`;

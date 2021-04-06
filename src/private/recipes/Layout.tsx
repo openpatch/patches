@@ -1,12 +1,12 @@
-import { Nav } from "../../Nav";
-import { PageHeader } from "../../PageHeader";
-import { Main } from "../../Main";
-import { Footer } from "../../Footer";
 import { ButtonPrimary } from "../../ButtonPrimary";
-import { Bell, Support } from "../../icons/solid";
-import { Placeholder } from "../Placeholder";
 import { Card } from "../../Card";
 import { CardContent } from "../../CardContent";
+import { Footer } from "../../Footer";
+import { Bell, Support } from "../../icons/solid";
+import { Main } from "../../Main";
+import { Nav } from "../../Nav";
+import { PageHeader } from "../../PageHeader";
+import { Placeholder } from "../Placeholder";
 
 export const Layout = ({ children }) => (
   <div>
@@ -45,6 +45,7 @@ export const Layout = ({ children }) => (
         },
         {
           label: "Log out",
+          href: "#",
         },
       ]}
       profile={{

@@ -134,22 +134,6 @@ exports[`should match snapshot 1`] = `
 }
 
 .emotion-16 {
-  box-sizing: border-box;
-  min-width: 0;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-  display: inline-block;
-  color: #EFFCF6;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 10px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -159,13 +143,17 @@ exports[`should match snapshot 1`] = `
   -ms-flex-align: center;
   align-items: center;
   color: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 8px 16px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
   display: inline-block;
-  color: primary.50;
+  color: #EFFCF6;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
@@ -186,14 +174,14 @@ exports[`should match snapshot 1`] = `
   background-color: #147D64;
 }
 
-.emotion-20 {
+.emotion-18 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
-.emotion-22 {
+.emotion-20 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -212,41 +200,23 @@ exports[`should match snapshot 1`] = `
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-22 {
+  .emotion-20 {
     margin-left: 8px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-22 {
+  .emotion-20 {
     margin-left: 16px;
   }
 }
 
-.emotion-22>a,
-.emotion-22>div {
+.emotion-20>a,
+.emotion-20>div {
   margin-left: 16px;
 }
 
-.emotion-24 {
-  box-sizing: border-box;
-  min-width: 0;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  padding: 0;
-  margin: 0;
-  padding: 4px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 8px;
-  position: relative;
-  color: #EFFCF6;
+.emotion-22 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -256,19 +226,39 @@ exports[`should match snapshot 1`] = `
   -ms-flex-align: center;
   align-items: center;
   color: inherit;
+  position: relative;
+  padding: 4px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: #EFFCF6;
 }
 
-.emotion-24 svg {
+.emotion-22 svg {
   margin-left: 8px;
   width: auto;
   height: 90%;
 }
 
-.emotion-24:hover {
+.emotion-22:hover {
   background-color: #0C6B58;
 }
 
-.emotion-26 {
+.emotion-22 svg {
+  margin-left: 0;
+}
+
+.emotion-23 {
   position: relative;
   border-radius: 9999px;
   display: -webkit-inline-box;
@@ -288,20 +278,20 @@ exports[`should match snapshot 1`] = `
   height: 24px;
 }
 
-.emotion-26 svg {
+.emotion-23 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-26 svg .primary {
+.emotion-23 svg .primary {
   fill: currentColor;
 }
 
-.emotion-26 svg .secondary {
+.emotion-23 svg .secondary {
   fill: currentColor;
 }
 
-.emotion-27 {
+.emotion-24 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -320,7 +310,7 @@ exports[`should match snapshot 1`] = `
   right: -6px;
 }
 
-.emotion-29 {
+.emotion-26 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -330,12 +320,12 @@ exports[`should match snapshot 1`] = `
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-29 {
+  .emotion-26 {
     display: block;
   }
 }
 
-.emotion-31 {
+.emotion-28 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -352,11 +342,11 @@ exports[`should match snapshot 1`] = `
   position: relative;
 }
 
-.emotion-33 {
+.emotion-30 {
   border-radius: 9999px;
 }
 
-.emotion-35 {
+.emotion-32 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -365,12 +355,12 @@ exports[`should match snapshot 1`] = `
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-35 {
+  .emotion-32 {
     display: none;
   }
 }
 
-.emotion-37 {
+.emotion-34 {
   color: #EFFCF6;
   background-color: transparent;
   position: relative;
@@ -402,27 +392,27 @@ exports[`should match snapshot 1`] = `
   padding: 6px;
 }
 
-.emotion-37:disabled {
+.emotion-34:disabled {
   cursor: not-allowed;
   opacity: 0.4;
 }
 
-.emotion-37:hover:enabled {
+.emotion-34:hover:enabled {
   opacity: 0.8;
 }
 
-.emotion-37:active:enabled {
+.emotion-34:active:enabled {
   -webkit-filter: brightness(80%);
   filter: brightness(80%);
 }
 
-.emotion-37:focus {
+.emotion-34:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
 }
 
-.emotion-37 span.icon-left,
-.emotion-37 span.icon-right {
+.emotion-34 span.icon-left,
+.emotion-34 span.icon-right {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -438,35 +428,35 @@ exports[`should match snapshot 1`] = `
   justify-content: center;
 }
 
-.emotion-37 span.icon-left,
-.emotion-37 span.icon-right {
+.emotion-34 span.icon-left,
+.emotion-34 span.icon-right {
   width: 14px;
 }
 
-.emotion-37 span.icon-left {
+.emotion-34 span.icon-left {
   margin-right: 8px;
 }
 
-.emotion-37 span.icon-right {
+.emotion-34 span.icon-right {
   margin-left: 8px;
 }
 
-.emotion-37:focus {
+.emotion-34:focus {
   outline: none;
   color: white;
   background-color: #147D64;
 }
 
-.emotion-37:hover {
+.emotion-34:hover {
   background-color: #147D64;
 }
 
-.emotion-37 svg {
+.emotion-34 svg {
   height: 1.5em;
   width: 1.5em;
 }
 
-.emotion-39 {
+.emotion-36 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -491,13 +481,13 @@ exports[`should match snapshot 1`] = `
   transition: all 0.1s ease-out;
 }
 
-.emotion-39:focus {
+.emotion-36:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
 }
 
-.emotion-39 span.icon-left,
-.emotion-39 span.icon-right {
+.emotion-36 span.icon-left,
+.emotion-36 span.icon-right {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -513,7 +503,7 @@ exports[`should match snapshot 1`] = `
   justify-content: center;
 }
 
-.emotion-41 {
+.emotion-38 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -535,7 +525,7 @@ exports[`should match snapshot 1`] = `
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-41 {
+  .emotion-38 {
     display: none;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -545,13 +535,13 @@ exports[`should match snapshot 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-41 {
+  .emotion-38 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
-.emotion-43 {
+.emotion-40 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -559,16 +549,16 @@ exports[`should match snapshot 1`] = `
   padding-bottom: 8px;
 }
 
-.emotion-43>:nth-of-type(1) {
+.emotion-40>:nth-of-type(1) {
   margin-top: 0;
 }
 
-.emotion-43>a {
+.emotion-40>a {
   display: block!important;
   margin-top: 8px;
 }
 
-.emotion-49 {
+.emotion-44 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -580,7 +570,7 @@ exports[`should match snapshot 1`] = `
   padding-bottom: 16px;
 }
 
-.emotion-51 {
+.emotion-46 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -593,7 +583,7 @@ exports[`should match snapshot 1`] = `
   margin-bottom: 4px;
 }
 
-.emotion-53 {
+.emotion-48 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -601,7 +591,7 @@ exports[`should match snapshot 1`] = `
   margin-right: 8px;
 }
 
-.emotion-59 {
+.emotion-54 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -610,7 +600,7 @@ exports[`should match snapshot 1`] = `
   margin: 0px;
 }
 
-.emotion-61 {
+.emotion-56 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -621,34 +611,18 @@ exports[`should match snapshot 1`] = `
   color: #8EEDC7;
 }
 
-.emotion-63 {
+.emotion-58 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
-.emotion-63>a {
+.emotion-58>a {
   display: block!important;
 }
 
-.emotion-65 {
-  box-sizing: border-box;
-  min-width: 0;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-  display: inline-block;
-  color: #8EEDC7;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: 10px;
+.emotion-60 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -658,30 +632,34 @@ exports[`should match snapshot 1`] = `
   -ms-flex-align: center;
   align-items: center;
   color: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 8px 16px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
   display: inline-block;
-  color: primary.200;
+  color: #8EEDC7;
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.emotion-65 svg {
+.emotion-60 svg {
   margin-left: 8px;
   width: auto;
   height: 90%;
 }
 
-.emotion-65:focus {
+.emotion-60:focus {
   outline: none;
   color: white;
   background-color: #147D64;
 }
 
-.emotion-65:hover {
+.emotion-60:hover {
   background-color: #147D64;
 }
 
@@ -753,21 +731,13 @@ exports[`should match snapshot 1`] = `
               display="flex"
             >
               <a
-                class="emotion-16 emotion-17"
-                cursor="pointer"
-                display="inline-block"
-                font-size="standard"
-                font-weight="semibold"
+                class="emotion-16"
                 href="#"
               >
                 Home
               </a>
               <a
-                class="emotion-16 emotion-17"
-                cursor="pointer"
-                display="inline-block"
-                font-size="standard"
-                font-weight="semibold"
+                class="emotion-16"
                 href="#"
               >
                 Page 1
@@ -776,24 +746,23 @@ exports[`should match snapshot 1`] = `
           </div>
         </div>
         <div
-          class="emotion-20 emotion-1"
+          class="emotion-18 emotion-1"
         >
           <div
-            class="emotion-22 emotion-1"
+            class="emotion-20 emotion-1"
             display="flex"
           >
             <a
               aria-label="Notifications"
-              class="emotion-24 emotion-17"
-              display="flex"
+              class="emotion-22"
               href="#"
               title="Notifications"
             >
               <span
-                class="emotion-26"
+                class="emotion-23"
               >
                 <div
-                  class="emotion-27 emotion-28"
+                  class="emotion-24 emotion-25"
                   font-weight="semibold"
                 >
                   99+
@@ -809,20 +778,20 @@ exports[`should match snapshot 1`] = `
               </span>
             </a>
             <div
-              class="emotion-29 emotion-1"
+              class="emotion-26 emotion-1"
               display="none,block"
             >
               <div
                 aria-haspopup="true"
                 aria-label="Profile Menu"
-                class="emotion-31 emotion-1"
+                class="emotion-28 emotion-1"
                 cursor="pointer"
                 display="flex"
                 id="profile-menu"
               >
                 <img
                   alt="undefined avatar"
-                  class="emotion-33 emotion-34"
+                  class="emotion-30 emotion-31"
                   height="40px"
                   src="https://vignette.wikia.nocookie.net/avatar/images/1/16/Young_Katara_worried.png/revision/latest/scale-to-width-down/200?cb=20090405200515"
                   title="undefined avatar"
@@ -833,14 +802,14 @@ exports[`should match snapshot 1`] = `
           </div>
         </div>
         <div
-          class="emotion-35 emotion-1"
+          class="emotion-32 emotion-1"
           display="block,none"
         >
           <button
-            class="emotion-37 emotion-38"
+            class="emotion-34 emotion-35"
           >
             <div
-              class="emotion-39 emotion-1"
+              class="emotion-36 emotion-1"
             >
               <svg
                 fill="none"
@@ -859,46 +828,38 @@ exports[`should match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="emotion-41 emotion-1"
+        class="emotion-38 emotion-1"
         display="none,none"
       >
         <div
-          class="emotion-43 emotion-1"
+          class="emotion-40 emotion-1"
         >
           <a
-            class="emotion-16 emotion-17"
-            cursor="pointer"
-            display="inline-block"
-            font-size="standard"
-            font-weight="semibold"
+            class="emotion-16"
             href="#"
           >
             Home
           </a>
           <a
-            class="emotion-16 emotion-17"
-            cursor="pointer"
-            display="inline-block"
-            font-size="standard"
-            font-weight="semibold"
+            class="emotion-16"
             href="#"
           >
             Page 1
           </a>
         </div>
         <div
-          class="emotion-49 emotion-1"
+          class="emotion-44 emotion-1"
         >
           <div
-            class="emotion-51 emotion-1"
+            class="emotion-46 emotion-1"
             display="flex"
           >
             <div
-              class="emotion-53 emotion-1"
+              class="emotion-48 emotion-1"
             >
               <img
                 alt="undefined avatar"
-                class="emotion-33 emotion-34"
+                class="emotion-30 emotion-31"
                 height="40px"
                 src="https://vignette.wikia.nocookie.net/avatar/images/1/16/Young_Katara_worried.png/revision/latest/scale-to-width-down/200?cb=20090405200515"
                 title="undefined avatar"
@@ -906,15 +867,15 @@ exports[`should match snapshot 1`] = `
               />
             </div>
             <div
-              class="emotion-20 emotion-1"
+              class="emotion-18 emotion-1"
             >
               <div
-                class="emotion-59 emotion-1"
+                class="emotion-54 emotion-1"
               >
                 Mike Barkmin
               </div>
               <div
-                class="emotion-61 emotion-1"
+                class="emotion-56 emotion-1"
                 font-size="xsmall"
               >
                 mike@openpatch.org
@@ -922,24 +883,17 @@ exports[`should match snapshot 1`] = `
             </div>
           </div>
           <div
-            class="emotion-63 emotion-1"
+            class="emotion-58 emotion-1"
           >
             <a
-              class="emotion-65 emotion-17"
-              cursor="pointer"
-              display="inline-block"
-              font-size="standard"
-              font-weight="semibold"
+              class="emotion-60"
               href="#"
             >
               Profile
             </a>
             <a
-              class="emotion-65 emotion-17"
-              cursor="pointer"
-              display="inline-block"
-              font-size="standard"
-              font-weight="semibold"
+              class="emotion-60"
+              href="#"
             >
               Log out
             </a>

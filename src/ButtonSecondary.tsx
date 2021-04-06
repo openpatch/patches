@@ -1,11 +1,11 @@
 import styled from "@emotion/styled";
-import { ButtonHTMLAttributes, Ref } from "react";
+import { ButtonHTMLAttributes, ReactNode, Ref } from "react";
 import { Button, ButtonProps } from "./Button";
 import { variant } from "./system";
 import { SystemColor, SystemColorNames } from "./system/types";
 
 export type ButtonSecondaryProps = {
-  children: string;
+  children: ReactNode;
   tone?: SystemColorNames;
   ref?: Ref<HTMLButtonElement>;
 } & ButtonHTMLAttributes<HTMLButtonElement> &
