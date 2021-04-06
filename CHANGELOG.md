@@ -1,3 +1,27 @@
+# v1.8.0 (Tue Apr 06 2021)
+
+#### 🚀 Enhancement
+
+- Patches provider [#394](https://github.com/openpatch/patches/pull/394) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🔩 Dependency Updates
+
+- chore(deps): update storybook monorepo to v6.2.3 [#392](https://github.com/openpatch/patches/pull/392) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency concurrently to v6.0.1 [#393](https://github.com/openpatch/patches/pull/393) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update codecov/codecov-action action to v1.3.2 [#391](https://github.com/openpatch/patches/pull/391) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @octokit/core to v3.4.0 [#390](https://github.com/openpatch/patches/pull/390) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update storybook monorepo to v6.2.2 [#388](https://github.com/openpatch/patches/pull/388) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency chromatic to v5.7.1 [#387](https://github.com/openpatch/patches/pull/387) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/styled-system to v5.1.11 [#386](https://github.com/openpatch/patches/pull/386) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.30.0 [#385](https://github.com/openpatch/patches/pull/385) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.7.2 (Thu Apr 01 2021)
 
 #### 🐛 Bug Fix
