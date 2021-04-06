@@ -1,5 +1,5 @@
 const path = require("path");
-const toPath = (_path) => path.join(process.cwd(), _path);
+const toPath = (_path: string) => path.join(process.cwd(), _path);
 
 module.exports = {
   reactOptions: {
@@ -20,19 +20,7 @@ module.exports = {
     "@storybook/addon-toolbars",
     "@storybook/addon-viewport",
   ],
-  webpackFinal: async (config) => {
-    config.module.rules[0].use[0].options.presets = [
-      [
-        require.resolve("@babel/preset-react"),
-        {
-          runtime: "automatic",
-          importSource: "@emotion/react",
-        },
-      ],
-      require.resolve("@babel/preset-env"),
-      require.resolve("@emotion/babel-preset-css-prop"), // <= add this preset
-    ];
-
+  webpackFinal: async (config: any) => {
     return {
       ...config,
       resolve: {

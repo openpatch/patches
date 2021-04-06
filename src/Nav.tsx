@@ -3,23 +3,22 @@ import { Fragment, ReactNode, useRef, useState } from "react";
 import { Avatar } from "./Avatar";
 import { Box } from "./Box";
 import { Button, ButtonProps } from "./Button";
-import { useClickOutsideListener } from "./hooks";
+import { useClickOutsideListener, useTheme } from "./hooks";
 import { Icon, IconProps } from "./Icon";
 import { Menu, X } from "./icons/outline";
-import { Link, LinkProps } from "./Link";
 import { Logo } from "./Logo";
 import { Text } from "./Text";
+import { TextLink } from "./TextLink";
 
 type NavLinkProps = {
   active?: boolean;
   label?: string;
-  href?: string;
+  href: string;
 };
 
 type ProfileLinkProps = {
   label?: string;
-  href?: string;
-  onClick?: LinkProps["onClick"];
+  href: string;
 };
 
 type TrayIconProps = {
@@ -31,18 +30,22 @@ type TrayIconProps = {
 
 export const TrayIcon = ({ icon, badge, label, href }: TrayIconProps) => {
   return (
-    <Link
-      p="xxsmall"
-      display="flex"
-      alignItems="center"
-      borderRadius="standard"
-      position="relative"
+    <TextLink
       css={(theme) => css`
+        position: relative;
+        padding: ${theme.space.xxsmall};
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: ${theme.radii.standard};
+        color: ${theme.colors.primary["50"]};
         :hover {
           background-color: ${theme.colors.primary["800"]};
         }
+        svg {
+          margin-left: 0;
+        }
       `}
-      textColor="primary.50"
       aria-label={label}
       title={label}
       href={href}
@@ -50,7 +53,7 @@ export const TrayIcon = ({ icon, badge, label, href }: TrayIconProps) => {
       <Icon badge={badge} color="currentColor">
         {icon}
       </Icon>
-    </Link>
+    </TextLink>
   );
 };
 
@@ -71,8 +74,7 @@ export type NavItemProps = {
   children?: string;
   active?: boolean;
   variant?: "primary" | "secondary" | "menu";
-  href?: string;
-  onClick?: LinkProps["onClick"];
+  href: string;
 };
 
 const responsiveDisplay = ["none", "block"];
@@ -82,34 +84,29 @@ export const NavItem = ({
   children,
   variant = "primary",
   href,
-  onClick,
 }: NavItemProps) => {
-  let textColor: LinkProps["textColor"] = "primary.50";
+  const [theme] = useTheme();
+  let textColor: string = theme.colors.primary["50"];
   switch (variant) {
     case "primary":
-      textColor = "primary.50";
+      textColor = theme.colors.primary["50"];
       break;
     case "secondary":
-      textColor = "primary.200";
+      textColor = theme.colors.primary["200"];
       break;
     case "menu":
-      textColor = "primary.600";
+      textColor = theme.colors.primary["600"];
       break;
   }
   return (
-    <Link
+    <TextLink
       href={href}
-      onClick={onClick}
-      cursor="pointer"
-      display="inline-block"
-      textColor={textColor}
-      paddingX="small"
-      paddingY="xsmall"
-      fontSize="standard"
-      fontWeight="semibold"
-      borderRadius="medium"
       css={(theme) => [
         css`
+          font-size: ${theme.fontSizes.standard};
+          font-weight: ${theme.fontWeights.semibold};
+          border-radius: ${theme.radii.medium};
+          padding: ${theme.space.xsmall} ${theme.space.small};
           user-select: none;
           cursor: pointer;
           display: inline-block;
@@ -151,7 +148,7 @@ export const NavItem = ({
       ]}
     >
       {children}
-    </Link>
+    </TextLink>
   );
 };
 
@@ -330,7 +327,6 @@ export const Nav = ({ logo, tray, profile, links, profileLinks }: NavProps) => {
                             <NavItem
                               variant="menu"
                               key={profileLink.label}
-                              onClick={profileLink.onClick}
                               href={profileLink.href}
                             >
                               {profileLink.label}
@@ -413,7 +409,6 @@ export const Nav = ({ logo, tray, profile, links, profileLinks }: NavProps) => {
                     <NavItem
                       variant="secondary"
                       key={profileLink.label}
-                      onClick={profileLink.onClick}
                       href={profileLink.href}
                     >
                       {profileLink.label}

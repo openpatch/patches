@@ -1,18 +1,18 @@
-import React, { useEffect } from "react";
+import { css, Global, Theme } from "@emotion/react";
 import { Story, StoryContext } from "@storybook/react";
-import { Global, css, Theme } from "@emotion/react";
-import { ThemeProvider } from "../../src/ThemeProvider";
-import * as themes from "../../src/themes";
+import React from "react";
 import { Box } from "../../src/Box";
 import { Card } from "../../src/Card";
 import { CardContent } from "../../src/CardContent";
+import { PatchesProvider } from "../../src/PatchesProvider";
+import * as themes from "../../src/themes";
 
 export default (Story: Story, context?: StoryContext) => {
-  const selectedTheme = themes[context.globals.theme] as Theme;
-  const background = context.globals.backgrounds;
+  const selectedTheme = themes[context?.globals.theme] as Theme;
+  const background = context?.globals.backgrounds;
 
   return (
-    <ThemeProvider theme={selectedTheme}>
+    <PatchesProvider theme={selectedTheme}>
       <Global
         styles={css`
           @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
@@ -40,6 +40,6 @@ export default (Story: Story, context?: StoryContext) => {
           </Card>
         </Box>
       )}
-    </ThemeProvider>
+    </PatchesProvider>
   );
 };
