@@ -3746,7 +3746,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-tabs@^2.3.2":
+"@types/react-tabs@2.3.2":
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/@types/react-tabs/-/react-tabs-2.3.2.tgz#99fb6866bbc6912d44f7bbc99eca03fbbd217960"
   integrity sha512-QfMelaJSdMcp+CenKhATp12XFFqqUcLXILgwpX3dgWfVYNZPtsLXZDDCRsVn+kwmBOWB+DFPKpQorxbUhnXINw==
