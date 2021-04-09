@@ -1,3 +1,27 @@
+# v1.8.1 (Fri Apr 09 2021)
+
+#### 🐛 Bug Fix
+
+- fix(useconfirm): add missing return types and allow dynamic title and description [#402](https://github.com/openpatch/patches/pull/402) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🔩 Dependency Updates
+
+- chore(deps): update dependency @auto-it/all-contributors to v10.24.3 [#342](https://github.com/openpatch/patches/pull/342) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency auto to v10.24.2 [#345](https://github.com/openpatch/patches/pull/345) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update emotion monorepo to v11.3.0 [#401](https://github.com/openpatch/patches/pull/401) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update storybook monorepo to v6.2.5 [#399](https://github.com/openpatch/patches/pull/399) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.31.0 [#398](https://github.com/openpatch/patches/pull/398) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency typescript to v4.2.4 [#397](https://github.com/openpatch/patches/pull/397) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update storybook monorepo to v6.2.4 [#396](https://github.com/openpatch/patches/pull/396) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): pin dependency @types/react-tabs to 2.3.2 [#395](https://github.com/openpatch/patches/pull/395) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.8.0 (Tue Apr 06 2021)
 
 #### 🚀 Enhancement
