@@ -10,7 +10,7 @@ export type useConfirmProps = {
   title: string;
   description?: ReactNode;
   onConfirm: () => void;
-  onCancel: () => void;
+  onCancel?: () => void;
   labels?: {
     confirm: string;
     cancel: string;
@@ -19,8 +19,8 @@ export type useConfirmProps = {
 };
 
 export const useConfirm = ({
-  title,
-  description,
+  title: defaultTitle,
+  description: defaultDescription,
   onConfirm,
   onCancel,
   labels = {
@@ -28,12 +28,21 @@ export const useConfirm = ({
     cancel: "Cancel",
   },
   severity = "normal",
-}: useConfirmProps) => {
+}: useConfirmProps): [
+  () => void,
+  ReactNode,
+  (title: string) => void,
+  (description: string) => void
+] => {
   const [open, setOpen] = useState(false);
+  const [title, setTitle] = useState(defaultTitle);
+  const [description, setDescription] = useState(defaultDescription);
 
   const handleClose = () => {
     setOpen(false);
-    onCancel();
+    if (onCancel) {
+      onCancel();
+    }
   };
 
   const handleConfirm = () => {
@@ -76,5 +85,5 @@ export const useConfirm = ({
     </Modal>
   );
 
-  return [requestConfirm, modal];
+  return [requestConfirm, modal, setTitle, setDescription];
 };
