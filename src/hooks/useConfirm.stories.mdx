@@ -11,7 +11,7 @@ import { ButtonPrimary } from "../ButtonPrimary";
 ```ts
 import { useConfirm } from "@openpatch/patches/hooks";
 
-const [requestConfirm, modal] = useConfirm({
+const [requestConfirm, modal, setTitle, setDescription] = useConfirm({
   title: "Delete Content",
   description: "Are you sure you want to delete this content?",
   onConfirm: () => console.log("deleted"),
