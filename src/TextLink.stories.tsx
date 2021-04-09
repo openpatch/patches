@@ -30,3 +30,14 @@ export const InText = () => {
     </Text>
   );
 };
+
+export const URLObject = Template.bind({});
+URLObject.args = {
+  href: {
+    pathname: "/this/super",
+    query: {
+      hallo: "test",
+      array: ["hi", "bla"],
+    },
+  },
+};

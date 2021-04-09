@@ -43,6 +43,7 @@
     "codemirror": "^5.60.0",
     "lodash": "^4.17.21",
     "polished": "^4.1.1",
+    "querystring": "^0.2.1",
     "react-codemirror2": "^7.2.1",
     "react-markdown": "^5.0.3",
     "react-modal": "^3.12.1",
