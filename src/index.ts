@@ -6,6 +6,7 @@ export { Badge, BadgeProps } from "./Badge";
 export { Blockquote, BlockquoteProps } from "./Blockquote";
 export { Box, BoxProps } from "./Box";
 export { ButtonGroup, ButtonGroupProps } from "./ButtonGroup";
+export { ButtonLink, ButtonLinkProps } from "./ButtonLink";
 export { ButtonOutline, ButtonOutlineProps } from "./ButtonOutline";
 export { ButtonOutlineLink, ButtonOutlineLinkProps } from "./ButtonOutlineLink";
 export { ButtonPrimary, ButtonPrimaryProps } from "./ButtonPrimary";

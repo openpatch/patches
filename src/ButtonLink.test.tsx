@@ -1,14 +1,11 @@
 import { render } from "@testing-library/react";
-import {
-  ButtonSecondaryLink,
-  ButtonSecondaryLinkProps,
-} from "./ButtonSecondaryLink";
+import { ButtonLink, ButtonLinkProps } from "./ButtonLink";
 import { PatchesProvider } from "./PatchesProvider";
 
-const renderWithTheme = (props?: ButtonSecondaryLinkProps) =>
+const renderWithTheme = (props?: ButtonLinkProps) =>
   render(
     <PatchesProvider>
-      <ButtonSecondaryLink {...props}>Link</ButtonSecondaryLink>
+      <ButtonLink {...props}>Link</ButtonLink>
     </PatchesProvider>
   );
 

@@ -1,12 +1,12 @@
 import { render } from "@testing-library/react";
 import { ButtonPrimaryLink, ButtonPrimaryLinkProps } from "./ButtonPrimaryLink";
-import { ThemeProvider } from "./ThemeProvider";
+import { PatchesProvider } from "./PatchesProvider";
 
 const renderWithTheme = (props?: ButtonPrimaryLinkProps) =>
   render(
-    <ThemeProvider>
-      <ButtonPrimaryLink {...props} />
-    </ThemeProvider>
+    <PatchesProvider>
+      <ButtonPrimaryLink {...props}>Link</ButtonPrimaryLink>
+    </PatchesProvider>
   );
 
 test("should render", () => {
