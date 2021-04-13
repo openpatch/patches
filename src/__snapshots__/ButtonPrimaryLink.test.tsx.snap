@@ -2,6 +2,9 @@
 
 exports[`should match snapshot 1`] = `
 .emotion-1 {
+  line-height: 1.15;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   position: relative;
   border: none;
   display: -webkit-inline-box;
@@ -28,11 +31,6 @@ exports[`should match snapshot 1`] = `
   padding-bottom: 8px;
   background-color: #0C6B58;
   color: #EFFCF6;
-}
-
-.emotion-1:disabled {
-  cursor: not-allowed;
-  opacity: 0.4;
 }
 
 .emotion-1:hover:enabled {
@@ -79,7 +77,7 @@ exports[`should match snapshot 1`] = `
   margin-left: 8px;
 }
 
-.emotion-3 {
+.emotion-2 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -104,13 +102,13 @@ exports[`should match snapshot 1`] = `
   transition: all 0.1s ease-out;
 }
 
-.emotion-3:focus {
+.emotion-2:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
 }
 
-.emotion-3 span.icon-left,
-.emotion-3 span.icon-right {
+.emotion-2 span.icon-left,
+.emotion-2 span.icon-right {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -126,33 +124,17 @@ exports[`should match snapshot 1`] = `
   justify-content: center;
 }
 
-.emotion-5,
-.emotion-5:visited,
-.emotion-5:hover,
-.emotion-5:active {
-  font-style: inherit;
-  color: inherit;
-  background-color: transparent;
-  font-size: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-variant: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  font-family: inherit;
-}
-
 <div>
-  <button
-    class="emotion-0 emotion-1 emotion-2"
+  <a
+    class="emotion-0 emotion-1"
+    href="#"
+    tone="primary"
   >
     <div
-      class="emotion-3 emotion-4"
+      class="emotion-2 emotion-3"
     >
-      <a
-        class="emotion-5"
-      />
+      Link
     </div>
-  </button>
+  </a>
 </div>
 `;

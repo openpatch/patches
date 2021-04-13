@@ -1,12 +1,12 @@
 import { render } from "@testing-library/react";
 import { ButtonOutlineLink, ButtonOutlineLinkProps } from "./ButtonOutlineLink";
-import { ThemeProvider } from "./ThemeProvider";
+import { PatchesProvider } from "./PatchesProvider";
 
 const renderWithTheme = (props?: ButtonOutlineLinkProps) =>
   render(
-    <ThemeProvider>
-      <ButtonOutlineLink {...props} />
-    </ThemeProvider>
+    <PatchesProvider>
+      <ButtonOutlineLink {...props}>Link</ButtonOutlineLink>
+    </PatchesProvider>
   );
 
 test("should render", () => {

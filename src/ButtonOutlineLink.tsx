@@ -1,68 +1,71 @@
-import { css } from "@emotion/react";
-import { forwardRef, ReactNode } from "react";
-import { ButtonOutline, ButtonOutlineProps } from "./ButtonOutline";
-import { useLinkComponent } from "./hooks";
-import { LinkComponentProps } from "./LinkComponentProvider";
+import styled from "@emotion/styled";
+import { AnchorHTMLAttributes, ReactNode, Ref } from "react";
+import { ButtonLink, ButtonLinkProps } from "./ButtonLink";
+import { variant } from "./system";
+import { SystemColor, SystemColorNames } from "./system/types";
 
 export type ButtonOutlineLinkProps = {
-  children?: ReactNode;
-} & LinkComponentProps &
-  Omit<ButtonOutlineProps, "ref">;
+  children: ReactNode;
+  tone?: SystemColorNames;
+  ref?: Ref<HTMLAnchorElement>;
+} & AnchorHTMLAttributes<HTMLAnchorElement> &
+  Pick<
+    ButtonLinkProps,
+    | "iconLeft"
+    | "iconRight"
+    | "size"
+    | "disabled"
+    | "type"
+    | "fullWidth"
+    | "loading"
+  >;
 
-export const ButtonOutlineLink = forwardRef<
-  HTMLAnchorElement,
-  ButtonOutlineLinkProps
->(
-  (
+const StyledButtonOutlineLink: React.FunctionComponent<ButtonOutlineLinkProps> = styled(
+  ButtonLink
+)<ButtonOutlineLinkProps>(
+  ({ theme }) => {
+    return {
+      borderStyle: "solid",
+      borderColor: theme.colors.neutral["200"],
+      backgroundColor: "none",
+    };
+  },
+  variant<
     {
-      children,
-      tone,
-      iconLeft,
-      iconRight,
-      size,
-      disabled,
-      type,
-      fullWidth,
-      loading,
-      ...props
+      color: SystemColor;
     },
-    ref
-  ) => {
-    const LinkComponent = useLinkComponent(ref);
-    return (
-      <ButtonOutline
-        tone={tone}
-        iconLeft={iconLeft}
-        iconRight={iconRight}
-        size={size}
-        disabled={disabled}
-        type={type}
-        fullWidth={fullWidth}
-        loading={loading}
-      >
-        <LinkComponent
-          css={css`
-            &,
-            &:visited,
-            &:hover,
-            &:active {
-              font-style: inherit;
-              color: inherit;
-              background-color: transparent;
-              font-size: inherit;
-              text-decoration: none;
-              font-variant: inherit;
-              font-weight: inherit;
-              line-height: inherit;
-              font-family: inherit;
-            }
-          `}
-          ref={ref}
-          {...props}
-        >
-          {children}
-        </LinkComponent>
-      </ButtonOutline>
-    );
-  }
+    SystemColorNames,
+    string
+  >({
+    scale: "buttonsOutline",
+    prop: "tone",
+    variants: {
+      primary: {
+        color: "primary.800",
+      },
+      accent: {
+        color: "accent.800",
+      },
+      neutral: {
+        color: "neutral.800",
+      },
+      success: {
+        color: "success.800",
+      },
+      warning: {
+        color: "warning.800",
+      },
+      error: {
+        color: "error.800",
+      },
+      info: {
+        color: "info.800",
+      },
+    },
+  })
 );
+
+export const ButtonOutlineLink = StyledButtonOutlineLink;
+ButtonOutlineLink.defaultProps = {
+  tone: "primary",
+};

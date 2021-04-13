@@ -1,6 +1,6 @@
 // see: https://github.com/seek-oss/braid-design-system/blob/master/lib/components/BraidProvider/BraidProvider.tsx
 import { Ref, useContext } from "react";
-import { LinkComponentContext } from "..";
+import { LinkComponentContext } from "../LinkComponentProvider";
 
 export type useLinkComponentProps = {};
 
