@@ -1,3 +1,28 @@
+# v1.8.2 (Tue Apr 13 2021)
+
+#### 🐛 Bug Fix
+
+- fix(buttonlink): use a tag instead of button [#410](https://github.com/openpatch/patches/pull/410) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🔩 Dependency Updates
+
+- chore(deps): update dependency webpack to v5.32.0 [#409](https://github.com/openpatch/patches/pull/409) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency concurrently to v6.0.2 [#408](https://github.com/openpatch/patches/pull/408) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update storybook monorepo to v6.2.7 [#407](https://github.com/openpatch/patches/pull/407) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.31.2 [#406](https://github.com/openpatch/patches/pull/406) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency fork-ts-checker-webpack-plugin to v6.2.1 [#405](https://github.com/openpatch/patches/pull/405) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency auto to v10.24.3 [#404](https://github.com/openpatch/patches/pull/404) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/user-event to v13.1.2 [#353](https://github.com/openpatch/patches/pull/353) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/first-time-contributor to v10.24.3 [#344](https://github.com/openpatch/patches/pull/344) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @auto-it/conventional-commits to v10.24.3 [#343](https://github.com/openpatch/patches/pull/343) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.8.1 (Fri Apr 09 2021)
 
 #### 🐛 Bug Fix
