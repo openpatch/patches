@@ -18,6 +18,34 @@
     ".": {
       "require": "./dist/cjs/index.js",
       "default": "./dist/esm/index.js"
+    },
+    "./themes": {
+      "require": "./dist/cjs/themes/index.js",
+      "default": "./dist/esm/themes/index.js"
+    },
+    "./hooks": {
+      "require": "./dist/cjs/hooks/index.js",
+      "default": "./dist/esm/hooks/index.js"
+    },
+    "./icons": {
+      "require": "./dist/cjs/icons/shade/index.js",
+      "default": "./dist/esm/icons/shade/index.js"
+    },
+    "./icons/outline": {
+      "require": "./dist/cjs/icons/outline/index.js",
+      "default": "./dist/esm/icons/outline/index.js"
+    },
+    "./icons/shade": {
+      "require": "./dist/cjs/icons/shade/index.js",
+      "default": "./dist/esm/icons/shade/index.js"
+    },
+    "./icons/solid": {
+      "require": "./dist/cjs/icons/solid/index.js",
+      "default": "./dist/esm/icons/solid/index.js"
+    },
+    "./system": {
+      "require": "./dist/cjs/system/index.js",
+      "default": "./dist/esm/system/index.js"
     }
   },
   "files": [
