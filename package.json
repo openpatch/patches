@@ -48,6 +48,34 @@
       "default": "./dist/esm/system/index.js"
     }
   },
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./dist/types/index.d.ts"
+      ],
+      "themes": [
+        "./dist/types/themes/index.d.ts"
+      ],
+      "hooks": [
+        "./dist/types/hooks/index.d.ts"
+      ],
+      "icons": [
+        "./dist/types/icons/shade/index.d.ts"
+      ],
+      "icons/outline": [
+        "./dist/types/icons/outline/index.d.ts"
+      ],
+      "icons/shade": [
+        "./dist/types/icons/shade/index.d.ts"
+      ],
+      "icons/solid": [
+        "./dist/types/icons/solid/index.d.ts"
+      ],
+      "system": [
+        "./dist/types/system/index.d.ts"
+      ]
+    }
+  },
   "files": [
     "dist",
     "README.md"
