@@ -1,3 +1,36 @@
+# v1.8.4 (Thu May 20 2021)
+
+#### 🐛 Bug Fix
+
+- chore: use typesVersions workaround for exports in package.json [#503](https://github.com/openpatch/patches/pull/503) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🔩 Dependency Updates
+
+- chore(deps): update dependency @auto-it/all-contributors to v10.28.0 [#507](https://github.com/openpatch/patches/pull/507) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency webpack to v5.37.1 [#506](https://github.com/openpatch/patches/pull/506) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency type-fest to v1.1.3 [#505](https://github.com/openpatch/patches/pull/505) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency chromatic to v5.8.2 [#504](https://github.com/openpatch/patches/pull/504) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/node to v14.17.0 [#501](https://github.com/openpatch/patches/pull/501) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency type-fest to v1.1.2 [#500](https://github.com/openpatch/patches/pull/500) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency fork-ts-checker-webpack-plugin to v6.2.10 [#499](https://github.com/openpatch/patches/pull/499) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency chromatic to v5.8.1 [#498](https://github.com/openpatch/patches/pull/498) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/react to v17.0.6 [#497](https://github.com/openpatch/patches/pull/497) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/react-hooks to v5.1.3 [#496](https://github.com/openpatch/patches/pull/496) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency fork-ts-checker-webpack-plugin to v6.2.9 [#495](https://github.com/openpatch/patches/pull/495) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/react to v11.2.7 [#494](https://github.com/openpatch/patches/pull/494) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency fork-ts-checker-webpack-plugin to v6.2.8 [#493](https://github.com/openpatch/patches/pull/493) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/react-dom to v17.0.5 [#492](https://github.com/openpatch/patches/pull/492) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/node to v14.14.45 [#491](https://github.com/openpatch/patches/pull/491) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/lodash to v4.14.169 [#490](https://github.com/openpatch/patches/pull/490) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @testing-library/user-event to v13.1.9 [#489](https://github.com/openpatch/patches/pull/489) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 2
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v1.8.3 (Wed May 12 2021)
 
 #### 🐛 Bug Fix
