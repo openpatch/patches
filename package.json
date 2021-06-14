@@ -155,7 +155,7 @@
     "@emotion/jest": "11.3.0",
     "@emotion/react": "11.4.0",
     "@emotion/styled": "11.3.0",
-    "@octokit/core": "3.5.0",
+    "@octokit/core": "3.5.1",
     "@storybook/addon-a11y": "6.2.9",
     "@storybook/addon-actions": "6.2.9",
     "@storybook/addon-controls": "6.2.9",
