@@ -30,7 +30,6 @@ module.exports = {
           "@emotion/core": toPath("node_modules/@emotion/react"),
           "@emotion/styled": toPath("node_modules/@emotion/styled"),
           "emotion-theming": toPath("node_modules/@emotion/react"),
-          "@babel/preset-react": toPath("node_modules/@babel/preset-react"),
         },
       },
     };
