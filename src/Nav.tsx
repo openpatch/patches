@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { Fragment, ReactNode, useRef, useState } from "react";
+import { Fragment, ReactNode, useEffect, useRef, useState } from "react";
 import { Avatar } from "./Avatar";
 import { Box } from "./Box";
 import { Button, ButtonProps } from "./Button";
@@ -108,6 +108,7 @@ export const NavItem = ({
           border-radius: ${theme.radii.medium};
           padding: ${theme.space.xsmall} ${theme.space.small};
           user-select: none;
+          min-inline-size: max-content;
           cursor: pointer;
           display: inline-block;
           color: ${textColor};
@@ -192,8 +193,29 @@ export const Nav = ({ logo, tray, profile, links, profileLinks }: NavProps) => {
   const [open, setOpen] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
   const profileMenuRef = useRef<HTMLDivElement>(null);
+  const navItemsRef = useRef<HTMLDivElement>(null);
+  const [isOverflown, setIsOverflown] = useState<boolean>(false);
 
   useClickOutsideListener(profileMenuRef, () => setProfileOpen(false));
+
+  function checkOverflow() {
+    if (navItemsRef.current && navItemsRef.current.parentElement) {
+      navItemsRef.current.parentElement.style.display = "block";
+      const isOverflown =
+        navItemsRef.current.offsetWidth < navItemsRef.current.scrollWidth;
+      setIsOverflown(isOverflown);
+      navItemsRef.current.parentElement.style.display = isOverflown
+        ? "none"
+        : "block";
+    }
+  }
+
+  useEffect(() => {
+    checkOverflow();
+    window.addEventListener("resize", checkOverflow);
+
+    return () => window.removeEventListener("resize", checkOverflow);
+  }, []);
 
   function toggleOpen() {
     setOpen((o) => !o);
@@ -227,8 +249,10 @@ export const Nav = ({ logo, tray, profile, links, profileLinks }: NavProps) => {
                   <Logo color="currentColor" height="40px" width="40px" />
                 )}
               </Box>
-              <Box display={responsiveDisplay}>
+              <Box display={isOverflown ? "none" : "block"}>
                 <Box
+                  ref={navItemsRef}
+                  overflow="hidden"
                   marginLeft={logo ? ["none", "large", "xlarge"] : "none"}
                   display="flex"
                   alignItems="baseline"
@@ -278,7 +302,10 @@ export const Nav = ({ logo, tray, profile, links, profileLinks }: NavProps) => {
                   />
                 ))}
                 {profile && (
-                  <Box position="relative" display={responsiveDisplay}>
+                  <Box
+                    position="relative"
+                    display={isOverflown ? "none" : "block"}
+                  >
                     <Box
                       display="flex"
                       alignItems="center"
@@ -339,12 +366,12 @@ export const Nav = ({ logo, tray, profile, links, profileLinks }: NavProps) => {
                 )}
               </Box>
             </Box>
-            <Box display={["block", "none"]}>
+            <Box display={isOverflown ? "block" : "none"}>
               <NavMenuButton open={open} onClick={toggleOpen} />
             </Box>
           </Box>
           <Box
-            display={[open ? "block" : "none", "none"]}
+            display={open && isOverflown ? "block" : "none"}
             position="absolute"
             top="64px"
             right="0"
