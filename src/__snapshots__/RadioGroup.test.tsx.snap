@@ -84,26 +84,30 @@ exports[`should match snapshot 1`] = `
 
 <div>
   <div
-    aria-disabled="false"
-    aria-invalid="false"
-    aria-required="false"
-    class="emotion-0 emotion-1"
-    role="radiogroup"
+    id="patches-root"
   >
     <div
-      aria-checked="false"
       aria-disabled="false"
-      class="emotion-2 emotion-1"
-      role="radio"
-      tabindex="0"
+      aria-invalid="false"
+      aria-required="false"
+      class="emotion-0 emotion-1"
+      role="radiogroup"
     >
       <div
-        class="emotion-4 emotion-1"
-        font-weight="medium"
-      />
-      <div
-        class="emotion-6 emotion-1"
-      />
+        aria-checked="false"
+        aria-disabled="false"
+        class="emotion-2 emotion-1"
+        role="radio"
+        tabindex="0"
+      >
+        <p
+          class="emotion-4 emotion-1"
+          font-weight="medium"
+        />
+        <p
+          class="emotion-6 emotion-1"
+        />
+      </div>
     </div>
   </div>
 </div>

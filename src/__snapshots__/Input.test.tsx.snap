@@ -40,11 +40,15 @@ exports[`should match snapshot 1`] = `
 }
 
 <div>
-  <input
-    aria-invalid="false"
-    class="emotion-0 emotion-1"
-    type="text"
-    value=""
-  />
+  <div
+    id="patches-root"
+  >
+    <input
+      aria-invalid="false"
+      class="emotion-0 emotion-1"
+      type="text"
+      value=""
+    />
+  </div>
 </div>
 `;

@@ -6,6 +6,9 @@ exports[`should match snapshot 1`] = `
   min-width: 0;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .emotion-2 {
@@ -36,12 +39,16 @@ exports[`should match snapshot 1`] = `
 }
 
 <div>
-  <main
-    class="emotion-0 emotion-1"
+  <div
+    id="patches-root"
   >
-    <div
-      class="emotion-2 emotion-3"
-    />
-  </main>
+    <main
+      class="emotion-0 emotion-1"
+    >
+      <div
+        class="emotion-2 emotion-3"
+      />
+    </main>
+  </div>
 </div>
 `;

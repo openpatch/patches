@@ -34,10 +34,14 @@ exports[`should match snapshot 1`] = `
 
 <div>
   <div
-    class="emotion-0 emotion-1"
-    display="inline-flex"
-    font-size="xsmall"
-    font-weight="semibold"
-  />
+    id="patches-root"
+  >
+    <div
+      class="emotion-0 emotion-1"
+      display="inline-flex"
+      font-size="xsmall"
+      font-weight="semibold"
+    />
+  </div>
 </div>
 `;

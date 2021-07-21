@@ -18,11 +18,13 @@ export type TextProps = {
   SpaceProps &
   Pick<ColorProps, "textColor">;
 
-export const Text = ({ truncate, ...props }: TextProps) => {
+export const Text = ({ truncate, as = "p", ...props }: TextProps) => {
   return (
     <Box
       p="none"
       m="none"
+      display={as == "span" ? "inline" : undefined}
+      as={as}
       css={[
         truncate &&
           css`

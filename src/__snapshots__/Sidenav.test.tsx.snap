@@ -70,57 +70,61 @@ exports[`should match snapshot 1`] = `
 }
 
 <div>
-  <nav
-    aria-label="page-menu"
-    class="emotion-0 emotion-1"
+  <div
+    id="patches-root"
   >
-    <ul
-      class="top"
+    <nav
+      aria-label="page-menu"
+      class="emotion-0 emotion-1"
     >
-      <li
-        class="active"
+      <ul
+        class="top"
       >
-        <a
-          href="#"
+        <li
+          class="active"
         >
-          Section 1
-        </a>
-        <ul>
-          <li
-            class="current"
+          <a
+            href="#"
           >
-            <a
-              href="#"
+            Section 1
+          </a>
+          <ul>
+            <li
+              class="current"
             >
-              bal1
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-            >
-              bal
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a
-          href="#"
-        >
-          Section 2
-        </a>
-        <ul />
-      </li>
-      <li>
-        <a
-          href="#"
-        >
-          Link 1
-        </a>
-        <ul />
-      </li>
-    </ul>
-  </nav>
+              <a
+                href="#"
+              >
+                bal1
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+              >
+                bal
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a
+            href="#"
+          >
+            Section 2
+          </a>
+          <ul />
+        </li>
+        <li>
+          <a
+            href="#"
+          >
+            Link 1
+          </a>
+          <ul />
+        </li>
+      </ul>
+    </nav>
+  </div>
 </div>
 `;

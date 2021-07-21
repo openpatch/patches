@@ -1,9 +1,9 @@
-import { Story, Meta } from "@storybook/react/types-6-0";
-
+import { Meta, Story } from "@storybook/react/types-6-0";
+import { Fragment } from "react";
 import { Text, TextProps } from "./Text";
 
 export default {
-  title: "Components/Text",
+  title: "Typography/Text",
   component: Text,
   argTypes: {},
 } as Meta;
@@ -28,3 +28,17 @@ export const Truncate = Template.bind({});
 Truncate.args = {
   truncate: "200px",
 };
+
+export const Paragraph = () => (
+  <Fragment>
+    <Text as="p">Hello this is a block</Text>
+    <Text as="p">Hi this is a second block</Text>
+  </Fragment>
+);
+
+export const Span = () => (
+  <Fragment>
+    <Text as="span">Hello this is a block</Text>
+    <Text as="span">Hi this is a second block</Text>
+  </Fragment>
+);

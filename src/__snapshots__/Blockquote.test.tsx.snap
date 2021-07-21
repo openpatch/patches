@@ -35,27 +35,31 @@ exports[`should match snapshot 1`] = `
 }
 
 <div>
-  <blockquote
-    class="emotion-0 emotion-1"
-    font-style="italic"
+  <div
+    id="patches-root"
   >
-    <div
-      class="emotion-2 emotion-1"
+    <blockquote
+      class="emotion-0 emotion-1"
+      font-style="italic"
     >
-      <svg
-        class="emotion-4"
-        fill="none"
-        viewBox="0 0 30 30"
-        xmlns="http://www.w3.org/2000/svg"
+      <div
+        class="emotion-2 emotion-1"
       >
-        <path
-          d="M15.264 19.552c0 3.648 2.4 5.568 5.088 5.568 2.976 0 5.76-2.496 5.76-5.664 0-2.592-1.824-4.32-4.032-4.32h-.768c1.056-3.072 4.512-6.336 8.064-8.064L26.4 4c-5.952 2.976-11.136 9.504-11.136 15.552zM0 19.552C0 23.2 2.304 25.12 5.088 25.12c2.976 0 5.76-2.496 5.76-5.664 0-2.592-1.92-4.32-4.128-4.32h-.768c1.056-3.072 4.608-6.336 8.064-8.064L11.136 4C5.184 6.976 0 13.504 0 19.552z"
-        />
-      </svg>
-    </div>
-    <div
-      class="emotion-5 emotion-1"
-    />
-  </blockquote>
+        <svg
+          class="emotion-4"
+          fill="none"
+          viewBox="0 0 30 30"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M15.264 19.552c0 3.648 2.4 5.568 5.088 5.568 2.976 0 5.76-2.496 5.76-5.664 0-2.592-1.824-4.32-4.032-4.32h-.768c1.056-3.072 4.512-6.336 8.064-8.064L26.4 4c-5.952 2.976-11.136 9.504-11.136 15.552zM0 19.552C0 23.2 2.304 25.12 5.088 25.12c2.976 0 5.76-2.496 5.76-5.664 0-2.592-1.92-4.32-4.128-4.32h-.768c1.056-3.072 4.608-6.336 8.064-8.064L11.136 4C5.184 6.976 0 13.504 0 19.552z"
+          />
+        </svg>
+      </div>
+      <div
+        class="emotion-5 emotion-1"
+      />
+    </blockquote>
+  </div>
 </div>
 `;

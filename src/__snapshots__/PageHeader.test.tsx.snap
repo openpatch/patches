@@ -95,27 +95,31 @@ exports[`should match snapshot 1`] = `
 }
 
 <div>
-  <header
-    class="emotion-0 emotion-1"
+  <div
+    id="patches-root"
   >
-    <div
-      class="emotion-2 emotion-3"
-      display="flex"
+    <header
+      class="emotion-0 emotion-1"
     >
       <div
-        class="emotion-4 emotion-3"
+        class="emotion-2 emotion-3"
         display="flex"
       >
         <div
-          class="emotion-6 emotion-3"
+          class="emotion-4 emotion-3"
+          display="flex"
         >
-          <h1
-            class="emotion-8 emotion-3"
-            font-size="xlarge"
-          />
+          <div
+            class="emotion-6 emotion-3"
+          >
+            <h1
+              class="emotion-8 emotion-3"
+              font-size="xlarge"
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
+  </div>
 </div>
 `;

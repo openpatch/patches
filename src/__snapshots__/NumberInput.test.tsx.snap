@@ -106,64 +106,68 @@ exports[`should match snapshot 1`] = `
 
 <div>
   <div
-    class="emotion-0 emotion-1"
+    id="patches-root"
   >
-    <input
-      class="emotion-2 emotion-3"
-      inputmode="decimal"
-      pattern="[0-9]*(.[0-9]+)?"
-      role="spinbutton"
-      type="text"
-      value="0"
-    />
     <div
-      class="emotion-4 emotion-1"
-      cursor="pointer"
-      width="24px"
+      class="emotion-0 emotion-1"
     >
+      <input
+        class="emotion-2 emotion-3"
+        inputmode="decimal"
+        pattern="[0-9]*(.[0-9]+)?"
+        role="spinbutton"
+        type="text"
+        value="0"
+      />
       <div
-        aria-label="+1"
-        class="emotion-6 emotion-1"
-        height="50%"
-        role="button"
-        tabindex="-1"
+        class="emotion-4 emotion-1"
+        cursor="pointer"
         width="24px"
       >
-        <svg
-          fill="none"
-          height="1em"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
+        <div
+          aria-label="+1"
+          class="emotion-6 emotion-1"
+          height="50%"
+          role="button"
+          tabindex="-1"
+          width="24px"
         >
-          <path
-            d="M5 15l7-7 7 7"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-          />
-        </svg>
-      </div>
-      <div
-        aria-label="-1"
-        class="emotion-8 emotion-1"
-        height="50%"
-        role="button"
-        tabindex="-1"
-        width="24px"
-      >
-        <svg
-          fill="none"
-          height="1em"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
+          <svg
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M5 15l7-7 7 7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </div>
+        <div
+          aria-label="-1"
+          class="emotion-8 emotion-1"
+          height="50%"
+          role="button"
+          tabindex="-1"
+          width="24px"
         >
-          <path
-            d="M19 9l-7 7-7-7"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-          />
-        </svg>
+          <svg
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            />
+          </svg>
+        </div>
       </div>
     </div>
   </div>

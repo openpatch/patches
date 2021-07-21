@@ -88,38 +88,42 @@ exports[`should match snapshot 1`] = `
 
 <div>
   <div
-    class="emotion-0 emotion-1"
-    display="grid"
+    id="patches-root"
   >
     <div
-      class="emotion-2 emotion-1"
-      display="flex"
+      class="emotion-0 emotion-1"
+      display="grid"
     >
-      <h3
-        class="emotion-4 emotion-1"
-      >
-        Interactive Tasks
-      </h3>
       <div
-        class="emotion-6 emotion-1"
+        class="emotion-2 emotion-1"
+        display="flex"
       >
-        Highlighting, Puzzles and Coding to name a few. Interactive tasks are a great way to make use of the digital format. Each tasks can automatically be evaluated.
+        <h3
+          class="emotion-4 emotion-1"
+        >
+          Interactive Tasks
+        </h3>
+        <p
+          class="emotion-6 emotion-1"
+        >
+          Highlighting, Puzzles and Coding to name a few. Interactive tasks are a great way to make use of the digital format. Each tasks can automatically be evaluated.
+        </p>
       </div>
-    </div>
-    <div
-      class="emotion-8 emotion-1"
-      display="flex"
-    >
-      <video
-        autoplay=""
-        class="emotion-10 emotion-11"
-        loop=""
-        style="width: 100%; max-width: 500px;"
+      <div
+        class="emotion-8 emotion-1"
+        display="flex"
       >
-        <source
-          src="https://f002.backblazeb2.com/file/openpatch-static/interactive.mp4"
-        />
-      </video>
+        <video
+          autoplay=""
+          class="emotion-10 emotion-11"
+          loop=""
+          style="width: 100%; max-width: 500px;"
+        >
+          <source
+            src="https://f002.backblazeb2.com/file/openpatch-static/interactive.mp4"
+          />
+        </video>
+      </div>
     </div>
   </div>
 </div>
