@@ -77,8 +77,6 @@ export type NavItemProps = {
   href: string;
 };
 
-const responsiveDisplay = ["none", "block"];
-
 export const NavItem = ({
   active,
   children,
