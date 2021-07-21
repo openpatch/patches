@@ -1,6 +1,6 @@
 import { ClassNames } from "@emotion/react";
 import { darken, transparentize } from "polished";
-import { KeyboardEvent, MouseEvent, ReactNode } from "react";
+import { KeyboardEvent, MouseEvent, ReactNode, useEffect } from "react";
 import ReactModal, { Props } from "react-modal";
 import { Card } from "./Card";
 import { useTheme } from "./hooks";
@@ -44,16 +44,18 @@ export const Modal = ({
   open = true,
   onClose = () => {},
   contentLabel = "Modal",
-  appElement = "#root",
+  appElement = "#patches-root",
   children,
   ...props
 }: ModalProps) => {
   const [theme] = useTheme();
 
-  // in testing there is not appElement. Therefore, this would throw an error.
-  if (process.env.NODE_ENV !== "test") {
-    ReactModal.setAppElement(appElement);
-  }
+  useEffect(() => {
+    // in testing there is not appElement. Therefore, this would throw an error.
+    if (process.env.NODE_ENV !== "test") {
+      ReactModal.setAppElement(appElement);
+    }
+  }, [appElement]);
 
   return (
     <ClassNames>

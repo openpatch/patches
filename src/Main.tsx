@@ -1,6 +1,6 @@
+import styled from "@emotion/styled";
 import { ReactNode } from "react";
 import { Box } from "./Box";
-import styled from "@emotion/styled";
 import { variant } from "./system";
 
 export type MainProps = {
@@ -35,7 +35,7 @@ const StyledMain = styled(Box)(
 
 export const Main = ({ children, variant = "stack" }: MainProps) => {
   return (
-    <StyledMain as="main" variant={variant}>
+    <StyledMain as="main" variant={variant} flex={1}>
       <Box
         maxWidth="large"
         margin="auto"

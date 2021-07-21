@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { ButtonPrimary } from "../../ButtonPrimary";
 import { Card } from "../../Card";
 import { CardContent } from "../../CardContent";
@@ -9,7 +10,7 @@ import { PageHeader } from "../../PageHeader";
 import { Placeholder } from "../Placeholder";
 
 export const Layout = ({ children }) => (
-  <div>
+  <Fragment>
     <Nav
       tray={[
         {
@@ -89,11 +90,11 @@ export const Layout = ({ children }) => (
         },
       ]}
     />
-  </div>
+  </Fragment>
 );
 
 export const Landing = ({ children }) => (
-  <div>
+  <Fragment>
     <Nav
       links={[
         {
@@ -128,5 +129,5 @@ export const Landing = ({ children }) => (
         },
       ]}
     />
-  </div>
+  </Fragment>
 );
