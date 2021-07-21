@@ -1,5 +1,4 @@
-import { Story, Meta } from "@storybook/react/types-6-0";
-
+import { Meta, Story } from "@storybook/react/types-6-0";
 import { AutoGrid, AutoGridProps } from "./AutoGrid";
 import { Placeholder } from "./private/Placeholder";
 
@@ -45,4 +44,21 @@ export const MinChildWidth = Template.bind({});
 MinChildWidth.args = {
   gap: "standard",
   minChildWidth: "100px",
+};
+
+export const LessThanDefinedInColumnOneChild = () => {
+  return (
+    <AutoGrid columns={3}>
+      <Placeholder height="40px" />
+    </AutoGrid>
+  );
+};
+
+export const LessThanDefinedInColumnManyChildren = () => {
+  return (
+    <AutoGrid columns={3}>
+      <Placeholder height="40px" />
+      <Placeholder height="40px" />
+    </AutoGrid>
+  );
 };

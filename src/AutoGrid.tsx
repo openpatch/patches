@@ -32,7 +32,13 @@ export const AutoGrid = ({
   }
 
   if (Array.isArray(columns)) {
-    templateColumns = columns.map((c) => `repeat(${c}, 1fr)`);
+    if (Array.isArray(children)) {
+      templateColumns = columns.map(
+        (c) => `repeat(${Math.min(c, children.length)}, 1fr)`
+      );
+    } else {
+      templateColumns = columns.map(() => `repeat(${1}, 1fr)`);
+    }
   }
 
   return (
