@@ -20,7 +20,7 @@ export const TextLink = forwardRef<HTMLAnchorElement, TextLinkProps>(
           align-items: center;
           color: inherit;
           svg {
-            margin-left: ${theme.space.xsmall};
+            margin-left: ${theme.space.xxsmall};
             width: auto;
             height: 90%;
           }

@@ -3,7 +3,7 @@ import { Text } from "./Text";
 import { TextLink, TextLinkProps } from "./TextLink";
 
 export default {
-  title: "Components/TextLink",
+  title: "Typography/TextLink",
   component: TextLink,
   argTypes: {},
 } as Meta;
