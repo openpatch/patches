@@ -39,6 +39,12 @@ export const ThemeProvider = ({
             display: block;
           }
 
+          #patches-root {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+          }
+
           h1 {
             font-size: ${theme.fontSizes.xxlarge};
             margin: 0.67em 0;
@@ -218,7 +224,7 @@ export const ThemeProvider = ({
           }
         `}
       />
-      {children}
+      <div id="patches-root">{children}</div>
     </ETP>
   );
 };

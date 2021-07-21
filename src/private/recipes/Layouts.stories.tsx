@@ -1,37 +1,45 @@
 import { useRef } from "react";
 import { FormProvider, useForm } from "react-hook-form";
-import { HookFormController } from "../../HookFormController";
-import { Input } from "../../Input";
-import { PasswordInput } from "../../PasswordInput";
-import { Form } from "../../Form";
-import { Link } from "../../Link";
+import { Box } from "../../Box";
+import { ButtonGroup } from "../../ButtonGroup";
+import { ButtonPrimary } from "../../ButtonPrimary";
+import { ButtonSecondary } from "../../ButtonSecondary";
 import { Card } from "../../Card";
-import { Flex } from "../../Flex";
 import { CardContent } from "../../CardContent";
 import { CardFooter } from "../../CardFooter";
-import { Placeholder } from "../Placeholder";
-import { Sidenav } from "../../Sidenav";
-import { Grid } from "../../Grid";
-import { Box } from "../../Box";
-import { Layout, Landing } from "./Layout";
-import { ButtonPrimary } from "../../ButtonPrimary";
-import { Heading } from "../../Heading";
-import { Text } from "../../Text";
-import { ButtonSecondary } from "../../ButtonSecondary";
-import { ButtonGroup } from "../../ButtonGroup";
 import { Center } from "../../Center";
-import { Pattern } from "../../Pattern";
-import { Main } from "../../Main";
-import { FeaturePreview } from "../../FeaturePreview";
-import { FormHeader } from "../../FormHeader";
 import { Container } from "../../Container";
-import { PatternCenter } from "../../PatternCenter";
-import { FormFooter } from "../../FormFooter";
+import { FeaturePreview } from "../../FeaturePreview";
+import { Flex } from "../../Flex";
+import { Form } from "../../Form";
 import { FormDescription } from "../../FormDescription";
+import { FormFooter } from "../../FormFooter";
+import { FormHeader } from "../../FormHeader";
+import { Grid } from "../../Grid";
+import { Heading } from "../../Heading";
+import { HookFormController } from "../../HookFormController";
+import { Input } from "../../Input";
+import { Link } from "../../Link";
+import { Main } from "../../Main";
+import { PasswordInput } from "../../PasswordInput";
+import { Pattern } from "../../Pattern";
+import { PatternCenter } from "../../PatternCenter";
+import { Sidenav } from "../../Sidenav";
+import { Text } from "../../Text";
+import { Placeholder } from "../Placeholder";
+import { Landing, Layout } from "./Layout";
 
 export default {
   title: "Recipes/Layouts",
 };
+
+export const BlankNavLayout = () => (
+  <Layout>
+    <Card>
+      <CardContent>Main</CardContent>
+    </Card>
+  </Layout>
+);
 
 export const SidenavLayout = () => (
   <Layout>
