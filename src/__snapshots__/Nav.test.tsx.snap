@@ -99,13 +99,7 @@ exports[`should match snapshot 1`] = `
   min-width: 0;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-12 {
-    display: block;
-  }
+  display: block;
 }
 
 .emotion-14 {
@@ -113,6 +107,7 @@ exports[`should match snapshot 1`] = `
   min-width: 0;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  overflow: hidden;
   margin-left: 0px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -151,6 +146,9 @@ exports[`should match snapshot 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  min-inline-size: -webkit-max-content;
+  min-inline-size: -moz-max-content;
+  min-inline-size: max-content;
   cursor: pointer;
   display: inline-block;
   color: #EFFCF6;
@@ -159,7 +157,7 @@ exports[`should match snapshot 1`] = `
 }
 
 .emotion-16 svg {
-  margin-left: 8px;
+  margin-left: 4px;
   width: auto;
   height: 90%;
 }
@@ -245,7 +243,7 @@ exports[`should match snapshot 1`] = `
 }
 
 .emotion-22 svg {
-  margin-left: 8px;
+  margin-left: 4px;
   width: auto;
   height: 90%;
 }
@@ -316,13 +314,7 @@ exports[`should match snapshot 1`] = `
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   position: relative;
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-26 {
-    display: block;
-  }
+  display: block;
 }
 
 .emotion-28 {
@@ -351,13 +343,7 @@ exports[`should match snapshot 1`] = `
   min-width: 0;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  display: block;
-}
-
-@media screen and (min-width: 768px) {
-  .emotion-32 {
-    display: none;
-  }
+  display: none;
 }
 
 .emotion-34 {
@@ -526,7 +512,6 @@ exports[`should match snapshot 1`] = `
 
 @media screen and (min-width: 768px) {
   .emotion-38 {
-    display: none;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     padding-left: 24px;
@@ -640,6 +625,9 @@ exports[`should match snapshot 1`] = `
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  min-inline-size: -webkit-max-content;
+  min-inline-size: -moz-max-content;
+  min-inline-size: max-content;
   cursor: pointer;
   display: inline-block;
   color: #8EEDC7;
@@ -648,7 +636,7 @@ exports[`should match snapshot 1`] = `
 }
 
 .emotion-60 svg {
-  margin-left: 8px;
+  margin-left: 4px;
   width: auto;
   height: 90%;
 }
@@ -664,130 +652,203 @@ exports[`should match snapshot 1`] = `
 }
 
 <div>
-  <nav
-    aria-label="top-menu"
-    class="emotion-0 emotion-1"
+  <div
+    id="patches-root"
   >
-    <div
-      class="emotion-2 emotion-1"
+    <nav
+      aria-label="top-menu"
+      class="emotion-0 emotion-1"
     >
       <div
-        class="emotion-4 emotion-1"
-        display="flex"
-        height="4rem"
+        class="emotion-2 emotion-1"
       >
         <div
-          class="emotion-6 emotion-1"
+          class="emotion-4 emotion-1"
           display="flex"
+          height="4rem"
         >
           <div
-            class="emotion-8 emotion-1"
+            class="emotion-6 emotion-1"
             display="flex"
           >
-            <svg
-              height="40px"
-              version="1.1"
-              viewBox="0 0 82.442 82.442"
-              width="40px"
-              xmlns="http://www.w3.org/2000/svg"
+            <div
+              class="emotion-8 emotion-1"
+              display="flex"
             >
-              <defs>
-                <clippath
-                  clipPathUnits="userSpaceOnUse"
+              <svg
+                height="40px"
+                version="1.1"
+                viewBox="0 0 82.442 82.442"
+                width="40px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs>
+                  <clippath
+                    clipPathUnits="userSpaceOnUse"
+                  >
+                    <path
+                      d="M0 400h550V0H0z"
+                    />
+                  </clippath>
+                </defs>
+                <path
+                  class="emotion-10"
+                  d="M3.21 1.77h76.023c.797 0 1.439.642 1.439 1.44v76.023c0 .797-.642 1.439-1.44 1.439H3.21a1.436 1.436 0 01-1.439-1.44V3.21c0-.797.642-1.439 1.44-1.439z"
+                  fill-opacity="0"
+                  opacity="1"
+                  stroke-dasharray="none"
+                  stroke-linejoin="miter"
+                  stroke-miterlimit="4"
+                  stroke-opacity="1"
+                  stroke-width="3.54"
+                />
+                <path
+                  class="emotion-11"
+                  d="M27.908 53.561c.25.216.374.557.374 1.023v9.654c0 .864-.436 1.3-1.31 1.31l-8.219-.013c-.864 0-1.297-.433-1.297-1.297v-5.239c0-.066.017-.133.05-.2l-.012-.037-.038-.012v-4.166c-.008-.873.424-1.306 1.297-1.297l8.22-.013c.407.008.719.104.935.287m37.343-29.535c.017.881-.416 1.33-1.297 1.347l-8.207-.025c-.898 0-1.355-.44-1.372-1.322l-.013-5.251c.017-.881.474-1.322 1.372-1.322l8.257.025c.848.016 1.264.449 1.248 1.297l.012 5.251m-23.199 0l.012-5.251c.017-.881.474-1.322 1.372-1.322l8.17-.013c.898 0 1.343.445 1.335 1.335l-.013 5.251c.017.881-.424 1.322-1.322 1.322h-8.182c-.898 0-1.355-.44-1.372-1.322m-1.472 0c.008.89-.424 1.33-1.297 1.322h-8.207c-.873.009-1.314-.432-1.322-1.322l-.012-5.251c.016-.881.457-1.322 1.322-1.322h8.232c.864 0 1.288.44 1.272 1.322l.012 5.251M18.753 17.44l8.22.013c.873-.009 1.297.432 1.272 1.322l.012 5.251c.017.881-.407 1.322-1.272 1.322h-8.232c-.864 0-1.305-.44-1.322-1.322l-.012-5.251c.016-.881.461-1.326 1.334-1.335m46.51 28.126l.013 5.251c0 .865-.44 1.305-1.322 1.322l-45.2-.025c-.865 0-1.298-.432-1.298-1.297v-5.263c0-.084.017-.158.05-.225a6.681 6.681 0 01-.075-.524l.025-11c0-.15.013-.304.038-.462a1.085 1.085 0 01-.038-.287v-5.238c-.017-.882.408-1.322 1.272-1.322h8.232c.865 0 1.306.44 1.322 1.322v5.238c0 .1-.004.195-.012.287.008.158.012.312.012.461l-.025 10.428h26.118l.012-9.866H31.064c-.865 0-1.297-.433-1.297-1.297v-5.264c-.017-.881.407-1.322 1.272-1.322l32.877.025c.882-.017 1.33.416 1.347 1.297v5.264a.623.623 0 010 .174v.374l.013 11.388c-.009.125-.009.25 0 .374-.025.041-.03.104-.013.187m4.678 25.581c.798 0 1.201-.403 1.21-1.21l-.013-57.436c0-.715-.328-1.11-.985-1.185-.067 0-.142-.008-.225-.025l-57.399-.025c-.823.025-1.234.437-1.234 1.235v57.674c.091.64.503.952 1.234.935l57.412.037"
+                  fill-opacity="1"
+                  fill-rule="nonzero"
+                  opacity="1"
+                  stroke="none"
+                  stroke-width="0.353"
+                />
+              </svg>
+            </div>
+            <div
+              class="emotion-12 emotion-1"
+              display="block"
+              style="display: block;"
+            >
+              <div
+                class="emotion-14 emotion-1"
+                display="flex"
+                overflow="hidden"
+              >
+                <a
+                  class="emotion-16"
+                  href="#"
                 >
-                  <path
-                    d="M0 400h550V0H0z"
-                  />
-                </clippath>
-              </defs>
-              <path
-                class="emotion-10"
-                d="M3.21 1.77h76.023c.797 0 1.439.642 1.439 1.44v76.023c0 .797-.642 1.439-1.44 1.439H3.21a1.436 1.436 0 01-1.439-1.44V3.21c0-.797.642-1.439 1.44-1.439z"
-                fill-opacity="0"
-                opacity="1"
-                stroke-dasharray="none"
-                stroke-linejoin="miter"
-                stroke-miterlimit="4"
-                stroke-opacity="1"
-                stroke-width="3.54"
-              />
-              <path
-                class="emotion-11"
-                d="M27.908 53.561c.25.216.374.557.374 1.023v9.654c0 .864-.436 1.3-1.31 1.31l-8.219-.013c-.864 0-1.297-.433-1.297-1.297v-5.239c0-.066.017-.133.05-.2l-.012-.037-.038-.012v-4.166c-.008-.873.424-1.306 1.297-1.297l8.22-.013c.407.008.719.104.935.287m37.343-29.535c.017.881-.416 1.33-1.297 1.347l-8.207-.025c-.898 0-1.355-.44-1.372-1.322l-.013-5.251c.017-.881.474-1.322 1.372-1.322l8.257.025c.848.016 1.264.449 1.248 1.297l.012 5.251m-23.199 0l.012-5.251c.017-.881.474-1.322 1.372-1.322l8.17-.013c.898 0 1.343.445 1.335 1.335l-.013 5.251c.017.881-.424 1.322-1.322 1.322h-8.182c-.898 0-1.355-.44-1.372-1.322m-1.472 0c.008.89-.424 1.33-1.297 1.322h-8.207c-.873.009-1.314-.432-1.322-1.322l-.012-5.251c.016-.881.457-1.322 1.322-1.322h8.232c.864 0 1.288.44 1.272 1.322l.012 5.251M18.753 17.44l8.22.013c.873-.009 1.297.432 1.272 1.322l.012 5.251c.017.881-.407 1.322-1.272 1.322h-8.232c-.864 0-1.305-.44-1.322-1.322l-.012-5.251c.016-.881.461-1.326 1.334-1.335m46.51 28.126l.013 5.251c0 .865-.44 1.305-1.322 1.322l-45.2-.025c-.865 0-1.298-.432-1.298-1.297v-5.263c0-.084.017-.158.05-.225a6.681 6.681 0 01-.075-.524l.025-11c0-.15.013-.304.038-.462a1.085 1.085 0 01-.038-.287v-5.238c-.017-.882.408-1.322 1.272-1.322h8.232c.865 0 1.306.44 1.322 1.322v5.238c0 .1-.004.195-.012.287.008.158.012.312.012.461l-.025 10.428h26.118l.012-9.866H31.064c-.865 0-1.297-.433-1.297-1.297v-5.264c-.017-.881.407-1.322 1.272-1.322l32.877.025c.882-.017 1.33.416 1.347 1.297v5.264a.623.623 0 010 .174v.374l.013 11.388c-.009.125-.009.25 0 .374-.025.041-.03.104-.013.187m4.678 25.581c.798 0 1.201-.403 1.21-1.21l-.013-57.436c0-.715-.328-1.11-.985-1.185-.067 0-.142-.008-.225-.025l-57.399-.025c-.823.025-1.234.437-1.234 1.235v57.674c.091.64.503.952 1.234.935l57.412.037"
-                fill-opacity="1"
-                fill-rule="nonzero"
-                opacity="1"
-                stroke="none"
-                stroke-width="0.353"
-              />
-            </svg>
+                  Home
+                </a>
+                <a
+                  class="emotion-16"
+                  href="#"
+                >
+                  Page 1
+                </a>
+              </div>
+            </div>
           </div>
           <div
-            class="emotion-12 emotion-1"
-            display="none,block"
+            class="emotion-18 emotion-1"
           >
             <div
-              class="emotion-14 emotion-1"
+              class="emotion-20 emotion-1"
               display="flex"
             >
               <a
-                class="emotion-16"
+                aria-label="Notifications"
+                class="emotion-22"
                 href="#"
+                title="Notifications"
               >
-                Home
+                <span
+                  class="emotion-23"
+                >
+                  <div
+                    class="emotion-24 emotion-25"
+                    font-weight="semibold"
+                  >
+                    99+
+                  </div>
+                  <svg
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"
+                    />
+                  </svg>
+                </span>
               </a>
-              <a
-                class="emotion-16"
-                href="#"
+              <div
+                class="emotion-26 emotion-1"
+                display="block"
               >
-                Page 1
-              </a>
+                <div
+                  aria-haspopup="true"
+                  aria-label="Profile Menu"
+                  class="emotion-28 emotion-1"
+                  cursor="pointer"
+                  display="flex"
+                  id="profile-menu"
+                >
+                  <img
+                    alt="undefined avatar"
+                    class="emotion-30 emotion-31"
+                    height="40px"
+                    src="https://vignette.wikia.nocookie.net/avatar/images/1/16/Young_Katara_worried.png/revision/latest/scale-to-width-down/200?cb=20090405200515"
+                    title="undefined avatar"
+                    width="40px"
+                  />
+                </div>
+              </div>
             </div>
+          </div>
+          <div
+            class="emotion-32 emotion-1"
+            display="none"
+          >
+            <button
+              class="emotion-34 emotion-35"
+            >
+              <div
+                class="emotion-36 emotion-1"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M4 6h16M4 12h16M4 18h16"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+            </button>
           </div>
         </div>
         <div
-          class="emotion-18 emotion-1"
+          class="emotion-38 emotion-1"
+          display="none"
         >
           <div
-            class="emotion-20 emotion-1"
-            display="flex"
+            class="emotion-40 emotion-1"
           >
             <a
-              aria-label="Notifications"
-              class="emotion-22"
+              class="emotion-16"
               href="#"
-              title="Notifications"
             >
-              <span
-                class="emotion-23"
-              >
-                <div
-                  class="emotion-24 emotion-25"
-                  font-weight="semibold"
-                >
-                  99+
-                </div>
-                <svg
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"
-                  />
-                </svg>
-              </span>
+              Home
             </a>
+            <a
+              class="emotion-16"
+              href="#"
+            >
+              Page 1
+            </a>
+          </div>
+          <div
+            class="emotion-44 emotion-1"
+          >
             <div
-              class="emotion-26 emotion-1"
-              display="none,block"
+              class="emotion-46 emotion-1"
+              display="flex"
             >
               <div
-                aria-haspopup="true"
-                aria-label="Profile Menu"
-                class="emotion-28 emotion-1"
-                cursor="pointer"
-                display="flex"
-                id="profile-menu"
+                class="emotion-48 emotion-1"
               >
                 <img
                   alt="undefined avatar"
@@ -798,109 +859,42 @@ exports[`should match snapshot 1`] = `
                   width="40px"
                 />
               </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="emotion-32 emotion-1"
-          display="block,none"
-        >
-          <button
-            class="emotion-34 emotion-35"
-          >
-            <div
-              class="emotion-36 emotion-1"
-            >
-              <svg
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M4 6h16M4 12h16M4 18h16"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                />
-              </svg>
-            </div>
-          </button>
-        </div>
-      </div>
-      <div
-        class="emotion-38 emotion-1"
-        display="none,none"
-      >
-        <div
-          class="emotion-40 emotion-1"
-        >
-          <a
-            class="emotion-16"
-            href="#"
-          >
-            Home
-          </a>
-          <a
-            class="emotion-16"
-            href="#"
-          >
-            Page 1
-          </a>
-        </div>
-        <div
-          class="emotion-44 emotion-1"
-        >
-          <div
-            class="emotion-46 emotion-1"
-            display="flex"
-          >
-            <div
-              class="emotion-48 emotion-1"
-            >
-              <img
-                alt="undefined avatar"
-                class="emotion-30 emotion-31"
-                height="40px"
-                src="https://vignette.wikia.nocookie.net/avatar/images/1/16/Young_Katara_worried.png/revision/latest/scale-to-width-down/200?cb=20090405200515"
-                title="undefined avatar"
-                width="40px"
-              />
-            </div>
-            <div
-              class="emotion-18 emotion-1"
-            >
               <div
-                class="emotion-54 emotion-1"
+                class="emotion-18 emotion-1"
               >
-                Mike Barkmin
-              </div>
-              <div
-                class="emotion-56 emotion-1"
-                font-size="xsmall"
-              >
-                mike@openpatch.org
+                <p
+                  class="emotion-54 emotion-1"
+                >
+                  Mike Barkmin
+                </p>
+                <p
+                  class="emotion-56 emotion-1"
+                  font-size="xsmall"
+                >
+                  mike@openpatch.org
+                </p>
               </div>
             </div>
-          </div>
-          <div
-            class="emotion-58 emotion-1"
-          >
-            <a
-              class="emotion-60"
-              href="#"
+            <div
+              class="emotion-58 emotion-1"
             >
-              Profile
-            </a>
-            <a
-              class="emotion-60"
-              href="#"
-            >
-              Log out
-            </a>
+              <a
+                class="emotion-60"
+                href="#"
+              >
+                Profile
+              </a>
+              <a
+                class="emotion-60"
+                href="#"
+              >
+                Log out
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </div>
 `;

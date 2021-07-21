@@ -3,8 +3,12 @@
 exports[`should match snapshot 1`] = `
 <div>
   <div
-    class="react-tabs"
-    data-tabs="true"
-  />
+    id="patches-root"
+  >
+    <div
+      class="react-tabs"
+      data-tabs="true"
+    />
+  </div>
 </div>
 `;

@@ -41,8 +41,12 @@ exports[`should match snapshot 1`] = `
 }
 
 <div>
-  <textarea
-    class="emotion-0 emotion-1"
-  />
+  <div
+    id="patches-root"
+  >
+    <textarea
+      class="emotion-0 emotion-1"
+    />
+  </div>
 </div>
 `;

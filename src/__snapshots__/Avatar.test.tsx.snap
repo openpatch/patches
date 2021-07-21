@@ -6,12 +6,16 @@ exports[`should match snapshot 1`] = `
 }
 
 <div>
-  <img
-    alt="undefined avatar"
-    class="emotion-0 emotion-1"
-    height="60px"
-    title="undefined avatar"
-    width="60px"
-  />
+  <div
+    id="patches-root"
+  >
+    <img
+      alt="undefined avatar"
+      class="emotion-0 emotion-1"
+      height="60px"
+      title="undefined avatar"
+      width="60px"
+    />
+  </div>
 </div>
 `;

@@ -65,32 +65,36 @@ exports[`should match snapshot 1`] = `
 
 <div>
   <div
-    class="emotion-0 emotion-1"
-    display="flex"
+    id="patches-root"
   >
-    <span
-      class="emotion-2"
-    >
-      <svg
-        class="icon-check"
-        viewBox="0 0 24 24"
-      >
-        <circle
-          class="primary"
-          cx="12"
-          cy="12"
-          r="10"
-        />
-        <path
-          class="secondary"
-          d="M10 14.59l6.3-6.3a1 1 0 011.4 1.42l-7 7a1 1 0 01-1.4 0l-3-3a1 1 0 011.4-1.42l2.3 2.3z"
-        />
-      </svg>
-    </span>
     <div
-      class="emotion-3 emotion-1"
-      role="alert"
-    />
+      class="emotion-0 emotion-1"
+      display="flex"
+    >
+      <span
+        class="emotion-2"
+      >
+        <svg
+          class="icon-check"
+          viewBox="0 0 24 24"
+        >
+          <circle
+            class="primary"
+            cx="12"
+            cy="12"
+            r="10"
+          />
+          <path
+            class="secondary"
+            d="M10 14.59l6.3-6.3a1 1 0 011.4 1.42l-7 7a1 1 0 01-1.4 0l-3-3a1 1 0 011.4-1.42l2.3 2.3z"
+          />
+        </svg>
+      </span>
+      <p
+        class="emotion-3 emotion-1"
+        role="alert"
+      />
+    </div>
   </div>
 </div>
 `;

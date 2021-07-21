@@ -14,15 +14,19 @@ exports[`should match snapshot 1`] = `
 }
 
 .emotion-0 svg {
-  margin-left: 8px;
+  margin-left: 4px;
   width: auto;
   height: 90%;
 }
 
 <div>
-  <a
-    class="emotion-0"
-    href="/"
-  />
+  <div
+    id="patches-root"
+  >
+    <a
+      class="emotion-0"
+      href="/"
+    />
+  </div>
 </div>
 `;

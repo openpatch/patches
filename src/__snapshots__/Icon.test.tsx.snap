@@ -36,9 +36,13 @@ exports[`should match snapshot when large 1`] = `
 }
 
 <div>
-  <span
-    class="emotion-0"
-  />
+  <div
+    id="patches-root"
+  >
+    <span
+      class="emotion-0"
+    />
+  </div>
 </div>
 `;
 
@@ -77,8 +81,12 @@ exports[`should match snapshot when small 1`] = `
 }
 
 <div>
-  <span
-    class="emotion-0"
-  />
+  <div
+    id="patches-root"
+  >
+    <span
+      class="emotion-0"
+    />
+  </div>
 </div>
 `;

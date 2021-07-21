@@ -11,7 +11,11 @@ exports[`should match snapshot 1`] = `
 
 <div>
   <div
-    class="emotion-0 emotion-1"
-  />
+    id="patches-root"
+  >
+    <div
+      class="emotion-0 emotion-1"
+    />
+  </div>
 </div>
 `;

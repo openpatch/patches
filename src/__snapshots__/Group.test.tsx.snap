@@ -37,16 +37,20 @@ exports[`should match snapshot 1`] = `
 
 <div>
   <div
-    class="emotion-0 emotion-1"
-    font-weight="medium"
-    id="group-1610568607249"
-  />
-  <div
-    aria-labelledby="group-1610568607249"
-    class="emotion-2 emotion-1"
-    role="group"
+    id="patches-root"
   >
-    <ul />
+    <p
+      class="emotion-0 emotion-1"
+      font-weight="medium"
+      id="group-1610568607249"
+    />
+    <div
+      aria-labelledby="group-1610568607249"
+      class="emotion-2 emotion-1"
+      role="group"
+    >
+      <ul />
+    </div>
   </div>
 </div>
 `;

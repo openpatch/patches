@@ -42,18 +42,22 @@ exports[`should match snapshot 1`] = `
 
 <div>
   <div
-    class="emotion-0 emotion-1"
-    display="flex"
+    id="patches-root"
   >
     <div
-      class="emotion-2 emotion-1"
+      class="emotion-0 emotion-1"
+      display="flex"
     >
-      <h1
-        class="emotion-4 emotion-1"
-        font-size="large"
+      <div
+        class="emotion-2 emotion-1"
       >
-        Card Header
-      </h1>
+        <h1
+          class="emotion-4 emotion-1"
+          font-size="large"
+        >
+          Card Header
+        </h1>
+      </div>
     </div>
   </div>
 </div>
