@@ -7,6 +7,7 @@ on:
   push:
     branches-ignore:
       - "renovate/**"
+      - "main"
 
 # what the action will do
 jobs:
