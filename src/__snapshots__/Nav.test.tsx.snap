@@ -129,14 +129,7 @@ exports[`should match snapshot 1`] = `
 }
 
 .emotion-16 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  display: inline;
   color: inherit;
   font-size: 16px;
   font-weight: 600;
@@ -215,14 +208,7 @@ exports[`should match snapshot 1`] = `
 }
 
 .emotion-22 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  display: inline;
   color: inherit;
   position: relative;
   padding: 4px;
@@ -608,14 +594,7 @@ exports[`should match snapshot 1`] = `
 }
 
 .emotion-60 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  display: inline;
   color: inherit;
   font-size: 16px;
   font-weight: 600;
