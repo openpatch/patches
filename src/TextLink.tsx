@@ -16,8 +16,7 @@ export const TextLink = forwardRef<HTMLAnchorElement, TextLinkProps>(
     return (
       <LinkComponent
         css={(theme) => css`
-          display: inline-flex;
-          align-items: center;
+          display: inline;
           color: inherit;
           svg {
             margin-left: ${theme.space.xxsmall};
