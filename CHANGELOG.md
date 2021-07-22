@@ -1,3 +1,16 @@
+# v1.9.1 (Thu Jul 22 2021)
+
+#### 🐛 Bug Fix
+
+- fix(textlink): make textlink inline to improve line breaks [#595](https://github.com/openpatch/patches/pull/595) ([@mikebarkmin](https://github.com/mikebarkmin))
+- chore(storybook): revert to 6.2.9 [#595](https://github.com/openpatch/patches/pull/595) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v1.9.0 (Wed Jul 21 2021)
 
 #### 🚀 Enhancement
