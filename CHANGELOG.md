@@ -1,3 +1,15 @@
+# v1.9.2 (Thu Jul 22 2021)
+
+#### ⚠️ Pushed to `main`
+
+- Update chromatic.yml ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v1.9.1 (Thu Jul 22 2021)
 
 #### 🐛 Bug Fix
