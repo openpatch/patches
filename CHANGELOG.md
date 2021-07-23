@@ -1,3 +1,16 @@
+# v1.10.0 (Fri Jul 23 2021)
+
+#### 🚀 Enhancement
+
+- fix(pageheader): clamp header if too long [#603](https://github.com/openpatch/patches/pull/603) ([@mikebarkmin](https://github.com/mikebarkmin))
+- feat(text): add lineClamp to text [#603](https://github.com/openpatch/patches/pull/603) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v1.9.2 (Thu Jul 22 2021)
 
 #### ⚠️ Pushed to `main`
