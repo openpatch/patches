@@ -29,6 +29,11 @@ Truncate.args = {
   truncate: "200px",
 };
 
+export const LineClamp = Template.bind({});
+LineClamp.args = {
+  lineClamp: 2,
+};
+
 export const Paragraph = () => (
   <Fragment>
     <Text as="p">Hello this is a block</Text>
