@@ -5,7 +5,7 @@ import { ButtonGroup } from "./ButtonGroup";
 import { ButtonOutlineProps } from "./ButtonOutline";
 import { ButtonPrimaryProps } from "./ButtonPrimary";
 import { ButtonSecondaryProps } from "./ButtonSecondary";
-import { Heading } from "./Heading";
+import { Heading, HeadingProps } from "./Heading";
 import { variant } from "./system";
 import { SystemColor, SystemShadows, SystemSizes } from "./system/types";
 
@@ -17,6 +17,7 @@ type ActionProps =
 export type PageHeaderProps = {
   children?: ReactNode | string;
   variant?: "stack" | "overlap";
+  lineClamp?: HeadingProps["lineClamp"];
   actions?: ReactElement<ActionProps> | ReactElement<ActionProps>[];
   meta?: ReactNode;
 };
@@ -56,6 +57,7 @@ const StyledHeader = styled(Box)(
 
 export const PageHeader = ({
   children,
+  lineClamp = 2,
   variant = "stack",
   actions,
   meta,
@@ -73,12 +75,17 @@ export const PageHeader = ({
       >
         <Box display="flex" flexDirection="column">
           <Box mr={["small", "medium", "medium"]}>
-            {children instanceof String ? (
-              children
-            ) : (
-              <Heading as="h1" fontSize="xlarge">
+            {typeof children === "string" ? (
+              <Heading
+                title={children}
+                lineClamp={lineClamp}
+                as="h1"
+                fontSize="xlarge"
+              >
                 {children}
               </Heading>
+            ) : (
+              children
             )}
           </Box>
           {meta && <Box>{meta}</Box>}

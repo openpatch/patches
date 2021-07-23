@@ -1,9 +1,8 @@
-import { Story, Meta } from "@storybook/react/types-6-0";
-
-import { PageHeader, PageHeaderProps } from "./PageHeader";
-import { Pencil, Trash } from "./icons/solid";
-import { ButtonSecondary } from "./ButtonSecondary";
+import { Meta, Story } from "@storybook/react/types-6-0";
 import { ButtonPrimary } from "./ButtonPrimary";
+import { ButtonSecondary } from "./ButtonSecondary";
+import { Pencil, Trash } from "./icons/solid";
+import { PageHeader, PageHeaderProps } from "./PageHeader";
 
 export default {
   title: "Components/PageHeader",
@@ -16,6 +15,14 @@ const Template: Story<PageHeaderProps> = (args) => (
 );
 
 export const Default = Template.bind({});
+
+export const LongPageHeader = () => (
+  <PageHeader lineClamp={[1, 2, 0]}>
+    This is a long page header and it might take up three or even more lines,
+    but only two should be shown. The others ones should be replace with three
+    dots.
+  </PageHeader>
+);
 
 export const WithActions = () => (
   <PageHeader
@@ -35,4 +42,8 @@ export const WithActions = () => (
   >
     Page Header
   </PageHeader>
+);
+
+export const WithMeta = () => (
+  <PageHeader meta="Mike Barkmin">Page Header</PageHeader>
 );
