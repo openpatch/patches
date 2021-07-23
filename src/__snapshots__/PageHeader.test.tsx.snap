@@ -84,16 +84,6 @@ exports[`should match snapshot 1`] = `
   }
 }
 
-.emotion-8 {
-  box-sizing: border-box;
-  min-width: 0;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  padding: 0px;
-  margin: 0px;
-  font-size: 24px;
-}
-
 <div>
   <div
     id="patches-root"
@@ -111,12 +101,7 @@ exports[`should match snapshot 1`] = `
         >
           <div
             class="emotion-6 emotion-3"
-          >
-            <h1
-              class="emotion-8 emotion-3"
-              font-size="xlarge"
-            />
-          </div>
+          />
         </div>
       </div>
     </header>
