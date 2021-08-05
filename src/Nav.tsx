@@ -21,6 +21,12 @@ type ProfileLinkProps = {
   href: string;
 };
 
+type ActionLinkProps = {
+  label?: string;
+  href: string;
+  variant?: NavItemProps["variant"];
+};
+
 type TrayIconProps = {
   icon: ReactNode;
   badge?: IconProps["badge"];
@@ -62,6 +68,7 @@ export type NavProps = {
   logo?: ReactNode;
   tray?: TrayIconProps[];
   links?: NavLinkProps[];
+  actionLinks?: ActionLinkProps[];
   profileLinks?: ProfileLinkProps[];
   profile?: {
     image?: string;
@@ -73,7 +80,7 @@ export type NavProps = {
 export type NavItemProps = {
   children?: string;
   active?: boolean;
-  variant?: "primary" | "secondary" | "menu";
+  variant?: "primary" | "secondary" | "menu" | "accent";
   href: string;
 };
 
@@ -85,12 +92,17 @@ export const NavItem = ({
 }: NavItemProps) => {
   const [theme] = useTheme();
   let textColor: string = theme.colors.primary["50"];
+  let focusBackgroundColor: string = theme.colors.primary["700"];
   switch (variant) {
     case "primary":
       textColor = theme.colors.primary["50"];
       break;
     case "secondary":
       textColor = theme.colors.primary["200"];
+      break;
+    case "accent":
+      textColor = theme.colors.accent["100"];
+      focusBackgroundColor = theme.colors.accent["600"];
       break;
     case "menu":
       textColor = theme.colors.primary["600"];
@@ -122,12 +134,12 @@ export const NavItem = ({
 
             :focus {
               outline: none;
-              color: white;
-              background-color: ${theme.colors.primary["700"]};
+              color: ${textColor};
+              background-color: ${focusBackgroundColor};
             }
 
             :hover {
-              background-color: ${theme.colors.primary["700"]};
+              background-color: ${focusBackgroundColor};
             }
           `,
 
@@ -187,7 +199,14 @@ const NavMenuButton = ({ open, onClick }: NavMenuButtonProps) => {
   );
 };
 
-export const Nav = ({ logo, tray, profile, links, profileLinks }: NavProps) => {
+export const Nav = ({
+  logo,
+  tray,
+  profile,
+  links,
+  profileLinks,
+  actionLinks,
+}: NavProps) => {
   const [open, setOpen] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
   const profileMenuRef = useRef<HTMLDivElement>(null);
@@ -299,6 +318,22 @@ export const Nav = ({ logo, tray, profile, links, profileLinks }: NavProps) => {
                     label={label}
                   />
                 ))}
+                {actionLinks && (
+                  <Box
+                    position="relative"
+                    display={isOverflown ? "none" : "block"}
+                  >
+                    {actionLinks.map((a) => (
+                      <NavItem
+                        variant={a.variant || "secondary"}
+                        key={a.href}
+                        href={a.href}
+                      >
+                        {a.label}
+                      </NavItem>
+                    ))}
+                  </Box>
+                )}
                 {profile && (
                   <Box
                     position="relative"
@@ -401,6 +436,24 @@ export const Nav = ({ logo, tray, profile, links, profileLinks }: NavProps) => {
                 </NavItem>
               ))}
             </Box>
+            {actionLinks && (
+              <Box
+                paddingY="small"
+                borderTopColor="primary.600"
+                borderTopStyle="solid"
+                borderTopWidth="light"
+              >
+                {actionLinks?.map((a) => (
+                  <NavItem
+                    key={a.href}
+                    href={a.href}
+                    variant={a.variant || "secondary"}
+                  >
+                    {a.label}
+                  </NavItem>
+                ))}
+              </Box>
+            )}
             {profile && (
               <Box
                 borderTopColor="primary.600"
