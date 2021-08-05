@@ -119,3 +119,53 @@ export const ManyItems = () => (
     }}
   ></Nav>
 );
+
+export const ActionLinks = () => (
+  <Nav
+    actionLinks={[
+      {
+        label: "Sign Up",
+        href: "#",
+        variant: "accent",
+      },
+    ]}
+    links={[
+      {
+        label: "Home",
+        href: "#",
+      },
+      {
+        label: "Page 1",
+        href: "#",
+      },
+      {
+        label: "Page 2",
+        href: "#",
+      },
+      {
+        label: "Page 3",
+        href: "#",
+      },
+      {
+        label: "Page 4",
+        href: "#",
+      },
+      {
+        label: "Page 5",
+        href: "#",
+      },
+      {
+        label: "Page 6",
+        href: "#",
+      },
+      {
+        label: "Page 7",
+        href: "#",
+      },
+      {
+        label: "Page 8",
+        href: "#",
+      },
+    ]}
+  ></Nav>
+);

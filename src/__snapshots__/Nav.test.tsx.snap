@@ -157,7 +157,7 @@ exports[`should match snapshot 1`] = `
 
 .emotion-16:focus {
   outline: none;
-  color: white;
+  color: #EFFCF6;
   background-color: #147D64;
 }
 
@@ -622,7 +622,7 @@ exports[`should match snapshot 1`] = `
 
 .emotion-60:focus {
   outline: none;
-  color: white;
+  color: #8EEDC7;
   background-color: #147D64;
 }
 
