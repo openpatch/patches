@@ -1,3 +1,15 @@
+# v1.11.0 (Thu Aug 05 2021)
+
+#### 🚀 Enhancement
+
+- feat(nav): add optional action links to the right side [#611](https://github.com/openpatch/patches/pull/611) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v1.10.0 (Fri Jul 23 2021)
 
 #### 🚀 Enhancement
