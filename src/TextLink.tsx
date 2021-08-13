@@ -21,7 +21,7 @@ export const TextLink = forwardRef<HTMLAnchorElement, TextLinkProps>(
           svg {
             margin-left: ${theme.space.xxsmall};
             width: auto;
-            height: 90%;
+            height: 70%;
           }
         `}
         href={href}

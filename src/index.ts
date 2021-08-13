@@ -40,6 +40,7 @@ export { FormWarningText, FormWarningTextProps } from "./FormWarningText";
 export { Grid, GridProps } from "./Grid";
 export { Group, GroupProps } from "./Group";
 export { Heading, HeadingProps } from "./Heading";
+export { HeadingLink, HeadingLinkProps } from "./HeadingLink";
 export { HookFormController, HookFormControllerProps } from "./HookFormController";
 export { Icon, IconProps } from "./Icon";
 export { Image, ImageProps } from "./Image";

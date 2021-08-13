@@ -96,13 +96,13 @@
     "react-hook-form": "^6.14.1"
   },
   "dependencies": {
-    "codemirror": "^5.60.0",
+    "codemirror": "^5.62.2",
     "lodash": "^4.17.21",
     "polished": "^4.1.1",
     "react-codemirror2": "^7.2.1",
     "react-markdown": "^5.0.3",
     "react-modal": "^3.12.1",
-    "react-syntax-highlighter": "^15.4.3",
+    "react-syntax-highlighter": "^15.4.4",
     "react-tabs": "^3.2.1",
     "remark-gfm": "^1.0.0",
     "styled-system": "^5.1.5"

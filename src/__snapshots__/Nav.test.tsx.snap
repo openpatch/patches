@@ -152,7 +152,7 @@ exports[`should match snapshot 1`] = `
 .emotion-16 svg {
   margin-left: 4px;
   width: auto;
-  height: 90%;
+  height: 70%;
 }
 
 .emotion-16:focus {
@@ -231,7 +231,7 @@ exports[`should match snapshot 1`] = `
 .emotion-22 svg {
   margin-left: 4px;
   width: auto;
-  height: 90%;
+  height: 70%;
 }
 
 .emotion-22:hover {
@@ -617,7 +617,7 @@ exports[`should match snapshot 1`] = `
 .emotion-60 svg {
   margin-left: 4px;
   width: auto;
-  height: 90%;
+  height: 70%;
 }
 
 .emotion-60:focus {

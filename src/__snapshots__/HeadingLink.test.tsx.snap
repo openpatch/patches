@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+.emotion-0 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  padding: 0px;
+  margin: 0px;
+}
+
+.emotion-2 {
+  display: inline;
+  color: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.emotion-2 svg {
+  margin-left: 4px;
+  width: auto;
+  height: 70%;
+}
+
+.emotion-2:hover {
+  color: #0C6B58;
+}
+
+<div>
+  <div
+    id="patches-root"
+  >
+    <h1
+      class="emotion-0 emotion-1"
+    >
+      <a
+        class="emotion-2"
+        href="#"
+      />
+    </h1>
+  </div>
+</div>
+`;
