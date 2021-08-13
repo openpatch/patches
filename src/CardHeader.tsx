@@ -1,21 +1,25 @@
 import { ReactNode } from "react";
 import { Box } from "./Box";
+import { Heading, HeadingProps } from "./Heading";
+import { HeadingLink } from "./HeadingLink";
 
 export type CardHeaderProps = {
-  as?: "h1" | "h2" | "h3" | "h4";
   action?: ReactNode;
   avatar?: ReactNode;
-  children: string;
   subtitle?: string;
-};
+} & HeadingProps;
 
 export const CardHeader = ({
-  as = "h1",
   action,
   avatar,
   children,
   subtitle,
+  ...headingProps
 }: CardHeaderProps) => {
+  let HeadingComp: any = Heading;
+  if (headingProps.href) {
+    HeadingComp = HeadingLink;
+  }
   return (
     <Box
       display="flex"
@@ -29,9 +33,9 @@ export const CardHeader = ({
         </Box>
       )}
       <Box flex="1" ml={avatar ? "standard" : "none"}>
-        <Box margin="none" fontSize="large" as={as}>
+        <HeadingComp margin="none" fontSize="large" {...headingProps}>
           {children}
-        </Box>
+        </HeadingComp>
         {subtitle && (
           <Box fontSize="small" as="span">
             {subtitle}

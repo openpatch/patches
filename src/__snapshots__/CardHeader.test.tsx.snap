@@ -36,6 +36,7 @@ exports[`should match snapshot 1`] = `
   min-width: 0;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  padding: 0px;
   margin: 0px;
   font-size: 20px;
 }
