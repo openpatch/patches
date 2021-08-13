@@ -1,3 +1,15 @@
+# v1.12.0 (Fri Aug 13 2021)
+
+#### 🚀 Enhancement
+
+- feat(headinglink): add heading link component [#615](https://github.com/openpatch/patches/pull/615) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v1.11.1 (Sat Aug 07 2021)
 
 #### 🐛 Bug Fix
