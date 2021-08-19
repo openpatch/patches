@@ -35,24 +35,27 @@ const StyledMain = styled(Box)(
 
 export const Main = ({ children, variant = "stack" }: MainProps) => {
   const contentRef = useRef<HTMLDivElement>(null);
-  const [stackHeight, setStackHeight] = useState(210);
+  const [stackHeight, setStackHeight] = useState(215);
 
   const onResize = () => {
     if (contentRef.current) {
       const offset =
         contentRef.current.getBoundingClientRect().top + window.pageYOffset;
       const height = contentRef.current.clientHeight;
-      setStackHeight(Math.min(200, height / 2) + offset);
+      setStackHeight(Math.min(65, height / 2) + offset);
     }
   };
 
   useEffect(() => {
     if (variant === "overlap") {
+      onResize();
+      // sometimes new content comes in. It would be better to listen to changes
+      // to the page header component, but this will do.
+      setTimeout(() => onResize(), 5000);
       window.addEventListener("resize", onResize);
 
       return () => window.removeEventListener("resize", onResize);
     }
-    onResize();
 
     return;
   }, []);
