@@ -1,5 +1,15 @@
-export { space } from "styled-system";
+import { compose, space as styledSpace, system } from "styled-system";
 import { ResponsiveProp, SystemSpace } from "./types";
+
+export const space = compose(
+  styledSpace,
+  system({
+    gap: {
+      property: "gap",
+      scale: "space",
+    },
+  })
+);
 
 export type SpaceProps = {
   m?: ResponsiveProp<SystemSpace>;
@@ -30,4 +40,5 @@ export type SpaceProps = {
   paddingLeft?: ResponsiveProp<SystemSpace>;
   paddingX?: ResponsiveProp<SystemSpace>;
   paddingY?: ResponsiveProp<SystemSpace>;
+  gap?: ResponsiveProp<SystemSpace>;
 };

@@ -1,5 +1,6 @@
+import { css } from "@emotion/react";
 import styled from "@emotion/styled";
-import { ReactNode } from "react";
+import { ReactNode, useEffect, useRef, useState } from "react";
 import { Box } from "./Box";
 import { variant } from "./system";
 
@@ -21,7 +22,6 @@ const StyledMain = styled(Box)(
           backgroundColor: "primary.900",
           content: "''",
           display: "block",
-          height: ["190px", "210px"],
           left: 0,
           position: "absolute",
           top: 0,
@@ -34,9 +34,46 @@ const StyledMain = styled(Box)(
 );
 
 export const Main = ({ children, variant = "stack" }: MainProps) => {
+  const contentRef = useRef<HTMLDivElement>(null);
+  const [stackHeight, setStackHeight] = useState(210);
+
+  const onResize = () => {
+    if (contentRef.current) {
+      const offset =
+        contentRef.current.getBoundingClientRect().top + window.pageYOffset;
+      const height = contentRef.current.clientHeight;
+      setStackHeight(Math.min(200, height / 2) + offset);
+    }
+  };
+
+  useEffect(() => {
+    if (variant === "overlap") {
+      window.addEventListener("resize", onResize);
+
+      return () => window.removeEventListener("resize", onResize);
+    }
+    onResize();
+
+    return;
+  }, []);
+
   return (
-    <StyledMain as="main" variant={variant} flex={1}>
+    <StyledMain
+      as="main"
+      variant={variant}
+      flex={1}
+      css={
+        variant === "overlap"
+          ? css`
+              ::before {
+                height: ${stackHeight}px;
+              }
+            `
+          : undefined
+      }
+    >
       <Box
+        ref={contentRef}
         maxWidth="large"
         margin="auto"
         px={["small", "medium", "medium"]}
