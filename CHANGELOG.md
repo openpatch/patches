@@ -1,3 +1,15 @@
+# v1.12.2 (Thu Aug 19 2021)
+
+#### 🐛 Bug Fix
+
+- fix(main): improve overlap height [#617](https://github.com/openpatch/patches/pull/617) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v1.12.1 (Thu Aug 19 2021)
 
 #### 🐛 Bug Fix
