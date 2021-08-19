@@ -32,6 +32,11 @@ exports[`should match snapshot 1`] = `
   padding-bottom: 4px;
   padding-left: 16px;
   padding-right: 16px;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 @media screen and (min-width: 768px) {

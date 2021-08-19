@@ -72,6 +72,8 @@ export const PageHeader = ({
         justifyContent="space-between"
         paddingY={["xxsmall", "small"]}
         px={["small", "medium", "medium"]}
+        flexWrap="wrap"
+        gap="standard"
       >
         <Box display="flex" flexDirection="column">
           <Box mr={["small", "medium", "medium"]}>

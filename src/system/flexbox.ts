@@ -1,6 +1,6 @@
 import * as CSS from "csstype";
-export { flexbox } from "styled-system";
 import { ResponsiveProp } from "./types";
+export { flexbox } from "styled-system";
 
 export type FlexboxProps = {
   alignItems?: ResponsiveProp<CSS.Properties["alignItems"]>;
