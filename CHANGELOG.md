@@ -1,3 +1,15 @@
+# v1.12.1 (Thu Aug 19 2021)
+
+#### 🐛 Bug Fix
+
+- fix(pageheader): adjust overlap height based on distance to top [#616](https://github.com/openpatch/patches/pull/616) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v1.12.0 (Fri Aug 13 2021)
 
 #### 🚀 Enhancement
