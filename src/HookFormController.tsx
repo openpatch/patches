@@ -21,10 +21,7 @@ export type HookFormControllerRenderProps = {
   required: boolean;
 };
 
-export type HookFormControllerProps = Omit<
-  ControllerProps<"input">,
-  "render" | "as"
-> & {
+export type HookFormControllerProps = Omit<ControllerProps, "render" | "as"> & {
   label?: ReactNode;
   helperText?: ReactNode;
   render: (props: HookFormControllerRenderProps) => React.ReactElement;
@@ -49,7 +46,7 @@ export const HookFormController = ({
 }: HookFormControllerProps) => {
   const methods = useFormContext();
   const required = props.rules?.required ? true : false;
-  const errors: FieldError = get(methods.errors, name);
+  const errors: FieldError = get(methods.formState.errors, name);
   return (
     <Fragment>
       {label && (
@@ -62,7 +59,7 @@ export const HookFormController = ({
         name={name}
         defaultValue={defaultValue}
         {...props}
-        render={({ onChange, onBlur, value, name }) => {
+        render={({ field: { onChange, onBlur, value, name } }) => {
           return render({
             id: name,
             onChange,
