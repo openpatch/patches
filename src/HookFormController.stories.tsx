@@ -1,22 +1,14 @@
-import { Story, Meta } from "@storybook/react/types-6-0";
-import {
-  useForm,
-  Controller,
-  FormProvider,
-  useFieldArray,
-} from "react-hook-form";
+import { Meta, Story } from "@storybook/react/types-6-0";
+import { FormProvider, useFieldArray, useForm } from "react-hook-form";
+import { ButtonPrimary } from "./ButtonPrimary";
+import { CodeEditor } from "./CodeEditor";
 import { Form } from "./Form";
 import { FormFooter } from "./FormFooter";
 import { FormHeader } from "./FormHeader";
-import {
-  HookFormController,
-  HookFormControllerProps,
-} from "./HookFormController";
+import { HookFormController } from "./HookFormController";
 import { Input } from "./Input";
-import { Slider } from "./Slider";
 import { MarkdownEditor } from "./MarkdownEditor";
-import { CodeEditor } from "./CodeEditor";
-import { ButtonPrimary } from "./ButtonPrimary";
+import { Slider } from "./Slider";
 
 export default {
   title: "Form/HookFormController",
@@ -37,22 +29,22 @@ type FormData = {
   markdown: string;
   fields: {
     name: string;
-  };
+  }[];
 };
 
-const Template: Story<HookFormControllerProps> = ({ onSubmit, onError }) => {
+const Template: Story = ({ onSubmit, onError }) => {
   const methods = useForm<FormData>({
     mode: "onSubmit",
     reValidateMode: "onBlur",
   });
 
   function handleError(errors) {
-    onError(errors);
+    onError?.(errors);
   }
 
   const { append, fields } = useFieldArray({
-    control: methods.control,
     name: "fields",
+    control: methods.control,
   });
 
   return (
@@ -61,7 +53,6 @@ const Template: Story<HookFormControllerProps> = ({ onSubmit, onError }) => {
         <FormHeader>React Hook Form Example with Custom Provider</FormHeader>
         <HookFormController
           name="name"
-          control={methods.control}
           label="I am joking"
           helperText="This is a joke. You need to insert only a and only b at the same time."
           render={Input}
@@ -76,7 +67,6 @@ const Template: Story<HookFormControllerProps> = ({ onSubmit, onError }) => {
         />
         <HookFormController
           name="slider"
-          control={methods.control}
           label="Slide me!"
           defaultValue={4}
           helperText="But not under 5"
@@ -89,7 +79,6 @@ const Template: Story<HookFormControllerProps> = ({ onSubmit, onError }) => {
         />
         <HookFormController
           name="markdown"
-          control={methods.control}
           label="Markdown with Preview"
           defaultValue=""
           rules={{
@@ -114,7 +103,6 @@ const Template: Story<HookFormControllerProps> = ({ onSubmit, onError }) => {
         <HookFormController
           name="code"
           defaultValue=""
-          control={methods.control}
           label="Code Editor"
           render={({ value, onChange, onBlur }) => (
             <CodeEditor

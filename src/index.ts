@@ -24,6 +24,7 @@ export { Code, CodeProps } from "./Code";
 export { CodeEditor, CodeEditorProps } from "./CodeEditor";
 export { Container, ContainerProps } from "./Container";
 export { Divider, DividerProps } from "./Divider";
+export { EmailInput, EmailInputProps } from "./EmailInput";
 export { FeaturePreview, FeaturePreviewProps } from "./FeaturePreview";
 export { Flex, FlexProps } from "./Flex";
 export { Footer, FooterProps } from "./Footer";
