@@ -1,3 +1,20 @@
+# v2.0.0 (Fri Oct 01 2021)
+
+#### 💥 Breaking Change
+
+- feat(emailinput): add Email Input [#643](https://github.com/openpatch/patches/pull/643) ([@mikebarkmin](https://github.com/mikebarkmin))
+- refactor(react-hook-form): upgrade to version 7 [#643](https://github.com/openpatch/patches/pull/643) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### 🐛 Bug Fix
+
+- chore: update Storybook to 6.3.8 [#642](https://github.com/openpatch/patches/pull/642) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v1.12.2 (Thu Aug 19 2021)
 
 #### 🐛 Bug Fix
