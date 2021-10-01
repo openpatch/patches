@@ -1,4 +1,6 @@
-# v2.0.0 (Fri Oct 01 2021)
+# v4.0.0 (Fri Oct 01 2021)
+
+Due to some unpublished versions, which were created in an earlier state of the development, we need to bump the version to v4.0.0
 
 #### 💥 Breaking Change
 
@@ -147,7 +149,7 @@
 - chore(deps): update dependency @types/lodash to v4.14.171 [#579](https://github.com/openpatch/patches/pull/579) ([@renovate-bot](https://github.com/renovate-bot))
 - chore(deps): update dependency @types/jest to v26.0.24 [#577](https://github.com/openpatch/patches/pull/577) ([@renovate-bot](https://github.com/renovate-bot))
 - chore(deps): update dependency webpack to v5.42.1 [#576](https://github.com/openpatch/patches/pull/576) ([@renovate-bot](https://github.com/renovate-bot))
-- chore(deps): update dependency @types/styled-system__css to v5.0.16 [#575](https://github.com/openpatch/patches/pull/575) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/styled-system\_\_css to v5.0.16 [#575](https://github.com/openpatch/patches/pull/575) ([@renovate-bot](https://github.com/renovate-bot))
 - chore(deps): update dependency @types/styled-system to v5.1.12 [#574](https://github.com/openpatch/patches/pull/574) ([@renovate-bot](https://github.com/renovate-bot))
 - chore(deps): update dependency webpack to v5.42.0 [#573](https://github.com/openpatch/patches/pull/573) ([@renovate-bot](https://github.com/renovate-bot))
 - chore(deps): update dependency @types/react to v17.0.13 [#571](https://github.com/openpatch/patches/pull/571) ([@renovate-bot](https://github.com/renovate-bot))
@@ -437,7 +439,7 @@
 
 #### 🐛 Bug Fix
 
-- fix(nav): replace * selector with concrete ones [#382](https://github.com/openpatch/patches/pull/382) ([@mikebarkmin](https://github.com/mikebarkmin))
+- fix(nav): replace \* selector with concrete ones [#382](https://github.com/openpatch/patches/pull/382) ([@mikebarkmin](https://github.com/mikebarkmin))
 
 #### 🔩 Dependency Updates
 
@@ -499,7 +501,7 @@
 - chore(deps): update dependency webpack to v5.26.2 [#352](https://github.com/openpatch/patches/pull/352) ([@renovate-bot](https://github.com/renovate-bot))
 - chore(deps): update codecov/codecov-action action to v1.3.1 [#351](https://github.com/openpatch/patches/pull/351) ([@renovate-bot](https://github.com/renovate-bot))
 - chore(deps): update dependency webpack to v5.26.0 [#350](https://github.com/openpatch/patches/pull/350) ([@renovate-bot](https://github.com/renovate-bot))
-- chore(deps): update dependency @types/styled-system__css to v5.0.15 [#349](https://github.com/openpatch/patches/pull/349) ([@renovate-bot](https://github.com/renovate-bot))
+- chore(deps): update dependency @types/styled-system\_\_css to v5.0.15 [#349](https://github.com/openpatch/patches/pull/349) ([@renovate-bot](https://github.com/renovate-bot))
 - chore(deps): update dependency @types/node to v14.14.35 [#348](https://github.com/openpatch/patches/pull/348) ([@renovate-bot](https://github.com/renovate-bot))
 - chore(deps): update dependency @octokit/core to v3.3.1 [#347](https://github.com/openpatch/patches/pull/347) ([@renovate-bot](https://github.com/renovate-bot))
 - chore(deps): update dependency webpack to v5.25.1 [#346](https://github.com/openpatch/patches/pull/346) ([@renovate-bot](https://github.com/renovate-bot))
