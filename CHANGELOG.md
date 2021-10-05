@@ -1,3 +1,15 @@
+# v4.0.1 (Tue Oct 05 2021)
+
+#### 🐛 Bug Fix
+
+- fix(peerdependencies): update version of react-hook-form [#644](https://github.com/openpatch/patches/pull/644) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v4.0.0 (Fri Oct 01 2021)
 
 Due to some unpublished versions, which were created in an earlier state of the development, we need to bump the version to v4.0.0
