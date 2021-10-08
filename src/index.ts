@@ -58,7 +58,7 @@ export { Markdown, MarkdownProps } from "./Markdown";
 export { MarkdownEditor, MarkdownEditorProps } from "./MarkdownEditor";
 export { Modal, ModalProps } from "./Modal";
 export { Nav, NavProps } from "./Nav";
-export { NotificationsProvider, NotificationsProviderProps } from "./NotificationsProvider";
+export { notify, NotificationsProvider, NotificationsProviderProps } from "./NotificationsProvider";
 export { NumberInput, NumberInputProps } from "./NumberInput";
 export { PageHeader, PageHeaderProps } from "./PageHeader";
 export { PasswordInput, PasswordInputProps } from "./PasswordInput";
