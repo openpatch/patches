@@ -7,7 +7,11 @@ exports[`should match snapshot 1`] = `
   >
     <div
       id="patches-root"
-    />
+    >
+      <div
+        class="Toastify"
+      />
+    </div>
   </div>
 </div>
 `;

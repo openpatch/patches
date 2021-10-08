@@ -4,6 +4,7 @@ import {
   LinkComponentProvider,
   LinkComponentProviderProps,
 } from "./LinkComponentProvider";
+import { NotificationsProvider } from "./NotificationsProvider";
 import { ThemeProvider, ThemeProviderProps } from "./ThemeProvider";
 
 export type PatchesProviderProps = {
@@ -19,11 +20,13 @@ export const PatchesProvider = ({
   const linkComponentFromContext = useContext(LinkComponentContext);
   return (
     <ThemeProvider theme={theme}>
-      <LinkComponentProvider
-        linkComponent={linkComponent || linkComponentFromContext}
-      >
-        {children}
-      </LinkComponentProvider>
+      <NotificationsProvider>
+        <LinkComponentProvider
+          linkComponent={linkComponent || linkComponentFromContext}
+        >
+          {children}
+        </LinkComponentProvider>
+      </NotificationsProvider>
     </ThemeProvider>
   );
 };
