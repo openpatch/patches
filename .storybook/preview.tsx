@@ -11,6 +11,7 @@ const SORT_ORDER = {
     "Getting Started",
     "Design System",
     "Responsive Design",
+    "Notifications",
     "Contributing",
   ],
   Recipes: [],

@@ -1,0 +1,26 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Introduction/Notifications" />
+
+# Notifications
+
+Notifications are an integral part of any application. Patches uses
+[react-toastify](https://github.com/fkhadra/react-toastify) under the hood. We
+reexport some parts of react-toastify and apply our own styling.
+
+You need to wrap your application in a PatchesProvider, which you already should
+have. Then you can use the `notify` object and dispatch notifications like so:
+
+```
+import { notify } from "@openpatch/patches"
+
+notify.info("Info")
+notify.warn("Warn")
+notify.error("Error")
+notify.success("Success")
+```
+
+If you want to overwrite the default behaviour of the Notifications, you can
+pass an option object to the different functions. Take a look at the
+[react-toastify Repository](https://fkhadra.github.io/react-toastify/api/toast)
+for more information about that.
