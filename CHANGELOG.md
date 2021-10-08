@@ -1,3 +1,15 @@
+# v4.1.0 (Fri Oct 08 2021)
+
+#### 🚀 Enhancement
+
+- feat(notifications): add notify and NotificationsProvider [#645](https://github.com/openpatch/patches/pull/645) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v4.0.1 (Tue Oct 05 2021)
 
 #### 🐛 Bug Fix
