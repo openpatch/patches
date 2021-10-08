@@ -1,3 +1,15 @@
+# v4.1.1 (Fri Oct 08 2021)
+
+#### 🐛 Bug Fix
+
+- fix(index): add missing export [#646](https://github.com/openpatch/patches/pull/646) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v4.1.0 (Fri Oct 08 2021)
 
 #### 🚀 Enhancement
