@@ -1,12 +1,13 @@
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 import { ReactNode, useEffect, useRef, useState } from "react";
-import { Box } from "./Box";
+import { Box, BoxProps } from "./Box";
 import { variant } from "./system";
 
 export type MainProps = {
   children?: ReactNode;
   variant?: "stack" | "overlap";
+  maxWidth?: BoxProps["maxWidth"];
 };
 
 const StyledMain = styled(Box)(
@@ -33,7 +34,11 @@ const StyledMain = styled(Box)(
   })
 );
 
-export const Main = ({ children, variant = "stack" }: MainProps) => {
+export const Main = ({
+  children,
+  variant = "stack",
+  maxWidth = "large",
+}: MainProps) => {
   const contentRef = useRef<HTMLDivElement>(null);
   const [stackHeight, setStackHeight] = useState(215);
 
@@ -77,7 +82,7 @@ export const Main = ({ children, variant = "stack" }: MainProps) => {
     >
       <Box
         ref={contentRef}
-        maxWidth="large"
+        maxWidth={maxWidth}
         margin="auto"
         px={["small", "medium", "medium"]}
         py="medium"

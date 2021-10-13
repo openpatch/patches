@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { ReactElement, ReactNode } from "react";
-import { Box } from "./Box";
+import { Box, BoxProps } from "./Box";
 import { ButtonGroup } from "./ButtonGroup";
 import { ButtonOutlineProps } from "./ButtonOutline";
 import { ButtonPrimaryProps } from "./ButtonPrimary";
@@ -20,6 +20,7 @@ export type PageHeaderProps = {
   lineClamp?: HeadingProps["lineClamp"];
   actions?: ReactElement<ActionProps> | ReactElement<ActionProps>[];
   meta?: ReactNode;
+  maxWidth?: BoxProps["maxWidth"];
 };
 
 const StyledHeader = styled(Box)(
@@ -61,11 +62,12 @@ export const PageHeader = ({
   variant = "stack",
   actions,
   meta,
+  maxWidth = "large",
 }: PageHeaderProps) => {
   return (
     <StyledHeader as="header" variant={variant}>
       <Box
-        maxWidth="large"
+        maxWidth={maxWidth}
         margin="auto"
         display="flex"
         alignItems="center"
