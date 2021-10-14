@@ -1,3 +1,15 @@
+# v4.2.1 (Thu Oct 14 2021)
+
+#### 🐛 Bug Fix
+
+- fix(avatar): improve title [#648](https://github.com/openpatch/patches/pull/648) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v4.2.0 (Wed Oct 13 2021)
 
 #### 🚀 Enhancement
