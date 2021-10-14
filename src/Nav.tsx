@@ -72,8 +72,8 @@ export type NavProps = {
   profileLinks?: ProfileLinkProps[];
   profile?: {
     image?: string;
-    name: string;
-    email: string;
+    username?: string;
+    email?: string;
   };
 };
 
@@ -352,6 +352,7 @@ export const Nav = ({
                       <Avatar
                         src={profile?.image}
                         placeholder={profile?.image === undefined}
+                        username={profile?.username}
                         size="40px"
                       />
                     </Box>
@@ -470,7 +471,7 @@ export const Nav = ({
                     />
                   </Box>
                   <Box>
-                    <Text>{profile.name}</Text>
+                    <Text>{profile.username}</Text>
                     <Text fontSize="xsmall" textColor="primary.200">
                       {profile.email}
                     </Text>

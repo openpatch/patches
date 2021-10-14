@@ -45,8 +45,8 @@ export const Avatar = ({
           src={src}
           width={width}
           height={width}
-          alt={`${username} avatar`}
-          title={`${username} avatar`}
+          alt={username}
+          title={username}
         />
       ) : (
         <Box
