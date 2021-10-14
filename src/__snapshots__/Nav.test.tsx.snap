@@ -762,11 +762,9 @@ exports[`should match snapshot 1`] = `
                   id="profile-menu"
                 >
                   <img
-                    alt="undefined avatar"
                     class="emotion-30 emotion-31"
                     height="40px"
                     src="https://vignette.wikia.nocookie.net/avatar/images/1/16/Young_Katara_worried.png/revision/latest/scale-to-width-down/200?cb=20090405200515"
-                    title="undefined avatar"
                     width="40px"
                   />
                 </div>
@@ -830,11 +828,9 @@ exports[`should match snapshot 1`] = `
                 class="emotion-48 emotion-1"
               >
                 <img
-                  alt="undefined avatar"
                   class="emotion-30 emotion-31"
                   height="40px"
                   src="https://vignette.wikia.nocookie.net/avatar/images/1/16/Young_Katara_worried.png/revision/latest/scale-to-width-down/200?cb=20090405200515"
-                  title="undefined avatar"
                   width="40px"
                 />
               </div>
@@ -843,9 +839,7 @@ exports[`should match snapshot 1`] = `
               >
                 <p
                   class="emotion-54 emotion-1"
-                >
-                  Mike Barkmin
-                </p>
+                />
                 <p
                   class="emotion-56 emotion-1"
                   font-size="xsmall"
