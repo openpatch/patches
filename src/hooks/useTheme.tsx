@@ -1,18 +1,11 @@
-import _merge from "lodash/merge";
-import { useState } from "react";
+import { useTheme as useThemeEmotion } from "@emotion/react";
 import { PartialDeep } from "type-fest";
-import { baseTheme, Theme } from "../themes";
+import { Theme } from "../themes";
 
-export const useTheme = (
-  defaultTheme: PartialDeep<Theme> = {}
-): [Theme, (theme: PartialDeep<Theme>) => void] => {
-  const [theme, setTheme] = useState<Theme>(
-    _merge({} as Theme, baseTheme, defaultTheme) as Theme
-  );
+export const useTheme = (): [Theme, (theme: PartialDeep<Theme>) => void] => {
+  const theme = useThemeEmotion();
 
-  function mergeWithBase(theme: PartialDeep<Theme>) {
-    setTheme(_merge({} as Theme, baseTheme, theme) as Theme);
-  }
+  function setTheme() {}
 
-  return [theme, mergeWithBase];
+  return [theme, setTheme];
 };
