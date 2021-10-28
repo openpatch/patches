@@ -1,3 +1,15 @@
+# v4.2.2 (Thu Oct 28 2021)
+
+#### 🐛 Bug Fix
+
+- fix(use-theme): use theme not returning the correct theme [#649](https://github.com/openpatch/patches/pull/649) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v4.2.1 (Thu Oct 14 2021)
 
 #### 🐛 Bug Fix
