@@ -1,3 +1,15 @@
+# v4.2.3 (Thu Nov 11 2021)
+
+#### 🐛 Bug Fix
+
+- fix(themeprovider): fix type of theme prop [#651](https://github.com/openpatch/patches/pull/651) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v4.2.2 (Thu Oct 28 2021)
 
 #### 🐛 Bug Fix
