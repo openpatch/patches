@@ -1,18 +1,19 @@
 import { css, Global, Theme, ThemeProvider as ETP } from "@emotion/react";
 import _merge from "lodash/merge";
 import { ReactNode } from "react";
+import { PartialDeep } from "type-fest";
 import { baseTheme } from "./themes";
 
 export type ThemeProviderProps = {
   children?: ReactNode;
-  theme?: Theme;
+  theme?: PartialDeep<Theme>;
 };
 
 export const ThemeProvider = ({
   theme: defaultTheme,
   children,
 }: ThemeProviderProps) => {
-  const theme = _merge({} as Theme, baseTheme, defaultTheme) as Theme;
+  const theme = _merge({} as Theme, baseTheme, defaultTheme);
 
   return (
     <ETP theme={theme}>
