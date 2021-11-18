@@ -1,3 +1,16 @@
+# v5.0.0 (Thu Nov 18 2021)
+
+#### 💥 Breaking Change
+
+- feat(texteditor): add TextEditor component based on CodeEditor [#652](https://github.com/openpatch/patches/pull/652) ([@mikebarkmin](https://github.com/mikebarkmin))
+- feat(codeeditor): upgrade codemirror to version 6 [#652](https://github.com/openpatch/patches/pull/652) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v4.2.3 (Thu Nov 11 2021)
 
 #### 🐛 Bug Fix
