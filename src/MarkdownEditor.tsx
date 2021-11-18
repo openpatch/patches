@@ -1,13 +1,11 @@
-import { css, Global } from "@emotion/react";
-import { EditorChange } from "codemirror";
-import { useEffect, useState } from "react";
+import { css } from "@emotion/react";
+import { useRef, useState } from "react";
 import { Box } from "./Box";
 import { ButtonSecondary } from "./ButtonSecondary";
-import { CodeEditor, CodeEditorProps } from "./CodeEditor";
+import { CodeEditor, CodeEditorProps, CodeEditorRef } from "./CodeEditor";
 import { Markdown } from "./Markdown";
 
 export type MarkdownEditorProps = {
-  onBlur?: (value: string) => void;
   allowPreview?: boolean;
   locale?: {
     preview: string;
@@ -24,26 +22,52 @@ export const MarkdownEditor = ({
   lineNumbers = false,
   value = "",
   onChange = () => {},
-  onBlur = () => {},
-  height = "auto",
+  variant,
   allowPreview = false,
   locale = defaultLocale,
+  height,
   ...props
 }: MarkdownEditorProps) => {
+  const editor = useRef<CodeEditorRef>();
   const [isPreview, setIsPreview] = useState(false);
-  const [innerValue, setInnerValue] = useState(value);
 
-  useEffect(() => {
-    setInnerValue(value);
-  }, [value]);
-
-  function onInnerChange(change: EditorChange, value: string) {
-    setInnerValue(value);
-    onChange(change, value);
+  function getContent() {
+    return editor.current?.state.doc.toString() || "";
   }
 
   return (
-    <Box position="relative">
+    <Box
+      position="relative"
+      minHeight="80px"
+      height={height}
+      overflowY="auto"
+      css={(theme) => [
+        variant === "outlined" &&
+          css`
+            border-style: solid;
+            border-radius: ${theme.radii.small};
+            border-width: ${theme.borderWidths.standard};
+            border-color: ${theme.colors.neutral["200"]};
+
+            > div,
+            > div > div {
+              border-radius: ${theme.radii.small};
+            }
+          `,
+        variant === "input" &&
+          css`
+            border-radius: ${theme.radii.small};
+            border-color: ${theme.colors.neutral["100"]};
+            border-style: solid;
+            border-width: ${theme.borderWidths.standard};
+
+            > div,
+            > div > div {
+              border-radius: ${theme.radii.small};
+            }
+          `,
+      ]}
+    >
       {allowPreview && (
         <ButtonSecondary
           tone="accent"
@@ -60,52 +84,18 @@ export const MarkdownEditor = ({
           {isPreview ? locale.edit : locale.preview}
         </ButtonSecondary>
       )}
-      <Global
-        styles={css`
-          .cm-header-1 {
-            font-size: 150%;
-          }
-          .cm-header-2 {
-            font-size: 130%;
-          }
-          .cm-header-3 {
-            font-size: 120%;
-          }
-          .cm-header-4 {
-            font-size: 110%;
-          }
-          .cm-header-5 {
-            font-size: 100%;
-          }
-          .cm-header-6 {
-            font-size: 90%;
-          }
-          .cm-strong {
-            font-size: 100%;
-          }
-        `}
-      />
       {isPreview ? (
-        <Box
-          css={css`
-            height: ${height};
-          `}
-          overflowY="auto"
-        >
-          <Markdown markdown={innerValue} />
+        <Box p="xxsmall">
+          <Markdown markdown={getContent()} />
         </Box>
       ) : (
         <CodeEditor
+          ref={editor}
           variant="normal"
-          height={height}
           language="markdown"
           lineNumbers={lineNumbers}
-          value={innerValue}
-          onChange={onInnerChange}
-          onBlur={onBlur}
-          config={{
-            lineWrapping: true,
-          }}
+          value={value}
+          onChange={onChange}
           {...props}
         />
       )}

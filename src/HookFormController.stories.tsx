@@ -92,11 +92,12 @@ const Template: Story = ({ onSubmit, onError }) => {
               },
             },
           }}
-          render={({ value, onChange, onBlur }) => (
+          render={({ value, onChange }) => (
             <MarkdownEditor
               value={value}
-              onChange={(_, v) => onChange(v)}
-              onBlur={onBlur}
+              allowPreview
+              variant="outlined"
+              onChange={(v) => onChange(v)}
             />
           )}
         />
@@ -104,16 +105,15 @@ const Template: Story = ({ onSubmit, onError }) => {
           name="code"
           defaultValue=""
           label="Code Editor"
-          render={({ value, onChange, onBlur }) => (
+          render={({ value, onChange }) => (
             <CodeEditor
               variant="input"
               value={value}
-              onChange={(_, v) => onChange(v)}
-              onBlur={onBlur}
+              onChange={(v) => onChange(v)}
             />
           )}
         />
-        {fields.map((field, index) => (
+        {fields.map((_, index) => (
           <HookFormController
             name={`fields[${index}].name`}
             label={`Field ${index}`}
