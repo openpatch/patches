@@ -1,7 +1,4 @@
 import { Story, Meta } from "@storybook/react/types-6-0";
-import { useState } from "react";
-
-import { AutoGrid } from "./AutoGrid";
 import { MarkdownEditor, MarkdownEditorProps } from "./MarkdownEditor";
 
 export default {
@@ -11,15 +8,13 @@ export default {
 } as Meta;
 
 const Template: Story<MarkdownEditorProps> = (args) => {
-  const [value, setValue] = useState(args.value || "");
-  return (
-    <MarkdownEditor {...args} value={value} onChange={(_, v) => setValue(v)} />
-  );
+  return <MarkdownEditor {...args} />;
 };
 
 export const Default = Template.bind({});
 Default.args = {
-  height: "auto",
+  height: "200px",
+  allowPreview: true,
   value: `# Heading 1
 This is a normal text.
 
@@ -42,11 +37,3 @@ def test():
   pass
 \`\`\``,
 };
-
-export const MultipleEditorsWithDifferentHeights = () => (
-  <AutoGrid gap="standard">
-    <MarkdownEditor variant="outlined" height="100px" />
-    <MarkdownEditor variant="outlined" height="500px" />
-    <MarkdownEditor variant="outlined" height="auto" />
-  </AutoGrid>
-);

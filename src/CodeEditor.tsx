@@ -1,143 +1,159 @@
-import { Controlled as CodeMirror } from "react-codemirror2";
+import CodeMirror, { CodeMirrorProps } from "rodemirror";
+import { closeBrackets } from "@codemirror/closebrackets";
+import { sql } from "@codemirror/lang-sql";
+import { java } from "@codemirror/lang-java";
+import { javascript } from "@codemirror/lang-javascript";
+import { markdown } from "@codemirror/lang-markdown";
 import { css } from "@emotion/react";
-import { Box } from "./Box";
-import { CodeEditorStyles } from "./CodeEditorStyles";
-
+import { Box, BoxProps } from "./Box";
+import { CodeEditorStyles, CodeEditorStylesProps } from "./CodeEditorStyles";
+import { forwardRef, useImperativeHandle, useMemo, useState } from "react";
+import { Extension, Transaction } from "@codemirror/state";
+import { python } from "@codemirror/lang-python";
 import {
-  Editor,
-  EditorChange,
-  EditorConfiguration,
-  EditorSelectionChange,
-} from "codemirror";
-import { CSSObject } from "@emotion/react";
-
-const languages = {
-  markdown: "markdown",
-  java: "text/x-java",
-  c: "clike",
-  python: "python",
-  sql: "sql",
-  javascript: "javascript",
-  typescript: "text/typescript",
-} as const;
-
-let modeLoaded = false;
-if (typeof window !== "undefined" && typeof window.navigator !== "undefined") {
-  require("codemirror/addon/edit/closebrackets.js");
-  // require("codemirror/keymap/emacs.js");
-  // require("codemirror/keymap/vim.js");
-
-  require("codemirror/mode/markdown/markdown.js");
-  require("codemirror/mode/clike/clike.js");
-  require("codemirror/mode/sql/sql.js");
-  require("codemirror/mode/python/python.js");
-  require("codemirror/mode/javascript/javascript.js");
-  modeLoaded = true;
-}
+  drawSelection,
+  EditorView,
+  highlightActiveLine,
+  highlightSpecialChars,
+} from "@codemirror/view";
+import {
+  highlightActiveLineGutter,
+  lineNumbers as lineNumbersEx,
+} from "@codemirror/gutter";
+import { indentOnInput } from "@codemirror/language";
+import { defaultHighlightStyle } from "@codemirror/highlight";
 
 export type CodeEditorProps = {
-  language?: keyof typeof languages;
+  language?:
+    | "sql"
+    | "java"
+    | "python"
+    | "javascript"
+    | "markdown"
+    | "typescript";
+  height?: BoxProps["height"];
   value?: string;
-  height?: CSSObject["height"];
-  disabled?: boolean;
-  config?: EditorConfiguration;
-  autoCloseBrackets?: boolean;
   lineNumbers?: boolean;
-  keyMap?: "default";
-  theme?: "light" | "dark";
+  disabled?: boolean;
+  fontFamily?: CodeEditorStylesProps["fontFamily"];
+  selection?: CodeMirrorProps["selection"];
   variant?: "outlined" | "normal" | "input";
-  selection?: {
-    ranges: Array<{ anchor: CodeMirror.Position; head: CodeMirror.Position }>;
-  };
-  onChange?: (change: EditorChange, value: string) => void;
-  onBlur?: () => void;
-  onSelection?: (selection: EditorSelectionChange) => void;
-  onGutterClick?: (lineNumber: number, gutter: string) => void;
-  editorDidMount?: (editor: Editor, value: string, cb: () => void) => void;
+  onChange?: (value: string, changes: readonly Transaction[]) => void;
 };
 
-export const CodeEditor = ({
-  language = "markdown",
-  value = "",
-  config = {},
-  height,
-  theme = "light",
-  disabled = false,
-  keyMap = "default",
-  autoCloseBrackets = true,
-  lineNumbers = true,
-  onChange = () => {},
-  onSelection = () => {},
-  onGutterClick = () => {},
-  onBlur = () => {},
-  editorDidMount,
-  selection,
-  variant = "normal",
-}: CodeEditorProps) => {
-  let options = {};
-  if (modeLoaded) {
-    options = {
-      ...config,
-      theme: theme === "light" ? "default" : "vscode-dark",
-      autoCloseBrackets,
-      readOnly: disabled ? "nocursor" : false,
-      keyMap,
-      lineNumbers,
-      mode: languages[language],
-    } as any;
+export type CodeEditorRef = EditorView | null;
+
+export const CodeEditor = forwardRef<unknown, CodeEditorProps>(
+  (
+    {
+      language = "markdown",
+      value = "",
+      onChange = () => {},
+      selection,
+      disabled,
+      height = "auto",
+      fontFamily,
+      lineNumbers = false,
+      variant = "normal",
+    },
+    ref
+  ) => {
+    const [editorView, setEditorView] = useState<EditorView | null>(null);
+
+    useImperativeHandle(ref, () => editorView);
+
+    const extensions = useMemo<Extension[]>(() => {
+      const e: Extension[] = [
+        highlightActiveLineGutter(),
+        highlightSpecialChars(),
+        defaultHighlightStyle.fallback,
+        drawSelection(),
+        closeBrackets(),
+        indentOnInput(),
+        highlightActiveLine(),
+      ];
+
+      if (lineNumbers) {
+        e.push(lineNumbersEx());
+      }
+
+      if (disabled) {
+        e.push(
+          EditorView.contentAttributes.of({ contenteditable: false } as any)
+        );
+      }
+      switch (language) {
+        case "typescript":
+        case "javascript": {
+          e.push(javascript());
+          break;
+        }
+        case "python": {
+          e.push(python());
+          break;
+        }
+        case "java": {
+          e.push(java());
+          break;
+        }
+        case "sql": {
+          e.push(sql());
+          break;
+        }
+        default: {
+          e.push(markdown());
+        }
+      }
+      return e;
+    }, [lineNumbers, disabled, language]);
+
+    return (
+      <Box
+        height={height}
+        onClick={() => {
+          editorView?.focus();
+        }}
+        overflowY="auto"
+        css={(theme) => [
+          variant === "outlined" &&
+            css`
+              border-style: solid;
+              border-radius: ${theme.radii.small};
+              border-width: ${theme.borderWidths.standard};
+              border-color: ${theme.colors.neutral["200"]};
+
+              > div,
+              > div > div {
+                border-radius: ${theme.radii.small};
+              }
+            `,
+          variant === "input" &&
+            css`
+              border-radius: ${theme.radii.small};
+              border-color: ${theme.colors.neutral["100"]};
+              border-style: solid;
+              border-width: ${theme.borderWidths.standard};
+
+              > div,
+              > div > div {
+                border-radius: ${theme.radii.small};
+              }
+            `,
+        ]}
+      >
+        <CodeEditorStyles fontFamily={fontFamily} />
+        <CodeMirror
+          value={value}
+          extensions={extensions}
+          selection={selection}
+          onEditorViewChange={setEditorView}
+          onUpdate={(v) => {
+            if (v.docChanged) {
+              onChange(v.state.doc.toString(), v.transactions);
+            }
+          }}
+        />
+      </Box>
+    );
   }
-  return (
-    <Box
-      css={(theme) => [
-        css`
-          .CodeMirror {
-            height: ${height};
-            min-height: 60px;
-          }
-        `,
-        variant === "outlined" &&
-          css`
-            border-style: solid;
-            border-radius: ${theme.radii.small};
-            border-width: ${theme.borderWidths.standard};
-            border-color: ${theme.colors.neutral["200"]};
-
-            > div,
-            > div > div {
-              border-radius: ${theme.radii.small};
-            }
-          `,
-        variant === "input" &&
-          css`
-            border-radius: ${theme.radii.small};
-            border-color: ${theme.colors.neutral["100"]};
-            border-style: solid;
-            border-width: ${theme.borderWidths.standard};
-
-            > div,
-            > div > div {
-              border-radius: ${theme.radii.small};
-            }
-          `,
-      ]}
-    >
-      <CodeEditorStyles />
-      <CodeMirror
-        value={value}
-        selection={selection}
-        editorDidMount={editorDidMount}
-        options={options}
-        onGutterClick={(_, lineNumber, gutter) => {
-          onGutterClick(lineNumber, gutter);
-        }}
-        onBlur={onBlur}
-        onSelection={(_, data) => {
-          onSelection(data);
-        }}
-        onBeforeChange={(_, data, value) => {
-          onChange(data, value);
-        }}
-      />
-    </Box>
-  );
-};
+);
