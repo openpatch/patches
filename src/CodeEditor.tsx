@@ -13,7 +13,6 @@ import { python } from "@codemirror/lang-python";
 import {
   drawSelection,
   EditorView,
-  highlightActiveLine,
   highlightSpecialChars,
 } from "@codemirror/view";
 import {
