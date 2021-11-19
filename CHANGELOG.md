@@ -1,3 +1,18 @@
+# v5.1.0 (Fri Nov 19 2021)
+
+#### 🚀 Enhancement
+
+- chore(husky): add yarn test and lint to husky [#653](https://github.com/openpatch/patches/pull/653) ([@mikebarkmin](https://github.com/mikebarkmin))
+- fix(patterncenter): add z-index [#653](https://github.com/openpatch/patches/pull/653) ([@mikebarkmin](https://github.com/mikebarkmin))
+- fix(footer): move new Date to useEffect [#653](https://github.com/openpatch/patches/pull/653) ([@mikebarkmin](https://github.com/mikebarkmin))
+- feat(codeeditor): add wrapLines [#653](https://github.com/openpatch/patches/pull/653) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v5.0.0 (Thu Nov 18 2021)
 
 #### 💥 Breaking Change
