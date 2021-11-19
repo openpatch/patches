@@ -36,6 +36,7 @@ export type CodeEditorProps = {
   lineNumbers?: boolean;
   disabled?: boolean;
   fontFamily?: CodeEditorStylesProps["fontFamily"];
+  wrapLines?: boolean;
   selection?: CodeMirrorProps["selection"];
   variant?: "outlined" | "normal" | "input";
   onChange?: (value: string, changes: readonly Transaction[]) => void;
@@ -51,6 +52,7 @@ export const CodeEditor = forwardRef<unknown, CodeEditorProps>(
       onChange = () => {},
       selection,
       disabled,
+      wrapLines = false,
       height = "auto",
       fontFamily,
       lineNumbers = false,
@@ -70,7 +72,6 @@ export const CodeEditor = forwardRef<unknown, CodeEditorProps>(
         drawSelection(),
         closeBrackets(),
         indentOnInput(),
-        highlightActiveLine(),
       ];
 
       if (lineNumbers) {
@@ -82,6 +83,11 @@ export const CodeEditor = forwardRef<unknown, CodeEditorProps>(
           EditorView.contentAttributes.of({ contenteditable: false } as any)
         );
       }
+
+      if (wrapLines) {
+        e.push(EditorView.lineWrapping);
+      }
+
       switch (language) {
         case "typescript":
         case "javascript": {

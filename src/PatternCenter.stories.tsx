@@ -1,4 +1,5 @@
 import { Story, Meta } from "@storybook/react/types-6-0";
+import { Box } from "./Box";
 import { Card } from "./Card";
 import { CardContent } from "./CardContent";
 
@@ -19,3 +20,9 @@ const Template: Story<PatternCenterProps> = (args) => (
 );
 
 export const Default = Template.bind({});
+
+export const DarkCard: Story<PatternCenterProps> = (args) => (
+  <PatternCenter {...args}>
+    <Box width="300px" height="300px" background="black"></Box>
+  </PatternCenter>
+);
