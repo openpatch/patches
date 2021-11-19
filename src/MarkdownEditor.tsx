@@ -93,6 +93,7 @@ export const MarkdownEditor = ({
           ref={editor}
           variant="normal"
           language="markdown"
+          wrapLines
           lineNumbers={lineNumbers}
           value={value}
           onChange={onChange}

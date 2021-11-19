@@ -42,7 +42,7 @@ exports[`should match snapshot 1`] = `
               translate="no"
             >
               <div
-                class="cm-activeLine cm-line"
+                class="cm-line"
               >
                 <br />
               </div>

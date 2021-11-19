@@ -34,7 +34,7 @@ exports[`should match snapshot 1`] = `
               aria-multiline="true"
               autocapitalize="off"
               autocorrect="off"
-              class="cm-content"
+              class="cm-content cm-lineWrapping"
               contenteditable="true"
               role="textbox"
               spellcheck="false"
@@ -42,7 +42,7 @@ exports[`should match snapshot 1`] = `
               translate="no"
             >
               <div
-                class="cm-activeLine cm-line"
+                class="cm-line"
               >
                 <br />
               </div>

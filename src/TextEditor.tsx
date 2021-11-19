@@ -11,6 +11,7 @@ export const TextEditor = forwardRef<TextEditorRef, TextEditorProps>(
         <CodeEditor
           ref={ref}
           fontFamily="body"
+          wrapLines
           lineNumbers={false}
           {...props}
         />
