@@ -29,6 +29,7 @@ export const PatternCenter = ({
     >
       <Pattern
         position="fixed"
+        zIndex="0"
         backgroundColor="transparent"
         foregroundColor={foregroundColor}
         opacity={0.05}
@@ -37,7 +38,8 @@ export const PatternCenter = ({
         right="0"
         left="0"
       />
-      {children}
+
+      <Box zIndex="10">{children}</Box>
     </Box>
   );
 };
