@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { ReactNode } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { Box } from "./Box";
 
 export type FooterProps = {
@@ -11,6 +11,10 @@ export type FooterProps = {
 };
 
 export const Footer = ({ links, copyright = "OpenPatch" }: FooterProps) => {
+  const [year, setYear] = useState<number | null>(null);
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
   return (
     <Box as="footer" backgroundColor="primary.900">
       <Box
@@ -66,7 +70,7 @@ export const Footer = ({ links, copyright = "OpenPatch" }: FooterProps) => {
         )}
         {copyright && (
           <Box fontSize="small" textColor="primary.300" fontWeight="semibold">
-            &copy; {new Date().getFullYear()} {copyright}
+            &copy; {year} {copyright}
           </Box>
         )}
       </Box>
