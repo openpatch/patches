@@ -45,7 +45,7 @@ exports[`should match snapshot 1`] = `
   >
     <input
       aria-invalid="false"
-      class="emotion-0 emotion-1"
+      class="emotion-0"
       type="text"
       value=""
     />

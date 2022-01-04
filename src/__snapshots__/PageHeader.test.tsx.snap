@@ -10,7 +10,7 @@ exports[`should match snapshot 1`] = `
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
-.emotion-2 {
+.emotion-1 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -40,7 +40,7 @@ exports[`should match snapshot 1`] = `
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-2 {
+  .emotion-1 {
     padding-top: 16px;
     padding-bottom: 16px;
     padding-left: 24px;
@@ -49,13 +49,13 @@ exports[`should match snapshot 1`] = `
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-2 {
+  .emotion-1 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
-.emotion-4 {
+.emotion-2 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -69,7 +69,7 @@ exports[`should match snapshot 1`] = `
   flex-direction: column;
 }
 
-.emotion-6 {
+.emotion-3 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -78,13 +78,13 @@ exports[`should match snapshot 1`] = `
 }
 
 @media screen and (min-width: 768px) {
-  .emotion-6 {
+  .emotion-3 {
     margin-right: 24px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .emotion-6 {
+  .emotion-3 {
     margin-right: 24px;
   }
 }
@@ -94,18 +94,18 @@ exports[`should match snapshot 1`] = `
     id="patches-root"
   >
     <header
-      class="emotion-0 emotion-1"
+      class="emotion-0"
     >
       <div
-        class="emotion-2 emotion-3"
+        class="emotion-1"
         display="flex"
       >
         <div
-          class="emotion-4 emotion-3"
+          class="emotion-2"
           display="flex"
         >
           <div
-            class="emotion-6 emotion-3"
+            class="emotion-3"
           />
         </div>
       </div>

@@ -1,4 +1,3 @@
-import styled from "@emotion/styled";
 import { ReactElement, ReactNode } from "react";
 import { Box, BoxProps } from "./Box";
 import { ButtonGroup } from "./ButtonGroup";
@@ -6,7 +5,7 @@ import { ButtonOutlineProps } from "./ButtonOutline";
 import { ButtonPrimaryProps } from "./ButtonPrimary";
 import { ButtonSecondaryProps } from "./ButtonSecondary";
 import { Heading, HeadingProps } from "./Heading";
-import { variant } from "./system";
+import { variant, styled } from "./system";
 import { SystemColor, SystemShadows, SystemSizes } from "./system/types";
 
 type ActionProps =

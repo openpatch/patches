@@ -9,70 +9,70 @@
   },
   "license": "MIT",
   "private": false,
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/types/index.d.ts",
-  "typings": "dist/types/index.d.ts",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.mjs",
+  "types": "dist/index.d.ts",
   "sideEffects": false,
   "exports": {
+    "./package.json": "./package.json",
     ".": {
-      "require": "./dist/cjs/index.js",
-      "default": "./dist/esm/index.js"
+      "require": "./dist/index.cjs.js",
+      "import": "./dist/index.esm.mjs"
     },
     "./themes": {
-      "require": "./dist/cjs/themes/index.js",
-      "default": "./dist/esm/themes/index.js"
+      "require": "./dist/themes/index.cjs.js",
+      "import": "./dist/themes/index.esm.mjs"
     },
     "./hooks": {
-      "require": "./dist/cjs/hooks/index.js",
-      "default": "./dist/esm/hooks/index.js"
+      "require": "./dist/hooks/index.cjs.js",
+      "import": "./dist/hooks/index.esm.mjs"
     },
     "./icons": {
-      "require": "./dist/cjs/icons/shade/index.js",
-      "default": "./dist/esm/icons/shade/index.js"
+      "require": "./dist/icons/shade/index.cjs.js",
+      "import": "./dist/icons/shade/index.esm.mjs"
     },
     "./icons/outline": {
-      "require": "./dist/cjs/icons/outline/index.js",
-      "default": "./dist/esm/icons/outline/index.js"
+      "require": "./dist/icons/outline/index.cjs.js",
+      "import": "./dist/icons/outline/index.esm.mjs"
     },
     "./icons/shade": {
-      "require": "./dist/cjs/icons/shade/index.js",
-      "default": "./dist/esm/icons/shade/index.js"
+      "require": "./dist/icons/shade/index.cjs.js",
+      "import": "./dist/icons/shade/index.esm.mjs"
     },
     "./icons/solid": {
-      "require": "./dist/cjs/icons/solid/index.js",
-      "default": "./dist/esm/icons/solid/index.js"
+      "require": "./dist/icons/solid/index.cjs.js",
+      "import": "./dist/icons/solid/index.esm.mjs"
     },
     "./system": {
-      "require": "./dist/cjs/system/index.js",
-      "default": "./dist/esm/system/index.js"
+      "require": "./dist/system/index.cjs.js",
+      "import": "./dist/system/index.esm.mjs"
     }
   },
   "typesVersions": {
     "*": {
       ".": [
-        "./dist/types/index.d.ts"
+        "./dist/index.d.ts"
       ],
       "themes": [
-        "./dist/types/themes/index.d.ts"
+        "./dist/themes/index.d.ts"
       ],
       "hooks": [
-        "./dist/types/hooks/index.d.ts"
+        "./dist/hooks/index.d.ts"
       ],
       "icons": [
-        "./dist/types/icons/shade/index.d.ts"
+        "./dist/icons/shade/index.d.ts"
       ],
       "icons/outline": [
-        "./dist/types/icons/outline/index.d.ts"
+        "./dist/icons/outline/index.d.ts"
       ],
       "icons/shade": [
-        "./dist/types/icons/shade/index.d.ts"
+        "./dist/icons/shade/index.d.ts"
       ],
       "icons/solid": [
-        "./dist/types/icons/solid/index.d.ts"
+        "./dist/icons/solid/index.d.ts"
       ],
       "system": [
-        "./dist/types/system/index.d.ts"
+        "./dist/system/index.d.ts"
       ]
     }
   },
@@ -98,17 +98,17 @@
   "dependencies": {
     "@codemirror/closebrackets": "^0.19.0",
     "@codemirror/comment": "^0.19.0",
-    "@codemirror/gutter": "^0.19.5",
-    "@codemirror/highlight": "^0.19.6",
+    "@codemirror/gutter": "^0.19.9",
+    "@codemirror/highlight": "^0.19.7",
     "@codemirror/lang-java": "^0.19.1",
-    "@codemirror/lang-javascript": "^0.19.3",
-    "@codemirror/lang-markdown": "^0.19.2",
+    "@codemirror/lang-javascript": "^0.19.4",
+    "@codemirror/lang-markdown": "^0.19.4",
     "@codemirror/lang-python": "^0.19.2",
     "@codemirror/lang-sql": "^0.19.4",
-    "@codemirror/language": "^0.19.5",
+    "@codemirror/language": "^0.19.7",
     "@codemirror/matchbrackets": "^0.19.3",
-    "@codemirror/state": "^0.19.5",
-    "@codemirror/view": "^0.19.19",
+    "@codemirror/state": "^0.19.6",
+    "@codemirror/view": "^0.19.37",
     "lodash": "^4.17.21",
     "polished": "^4.1.1",
     "react-markdown": "^5.0.3",
@@ -117,25 +117,25 @@
     "react-tabs": "^3.2.1",
     "react-toastify": "^8.0.3",
     "remark-gfm": "^1.0.0",
-    "rodemirror": "^1.6.5",
+    "rodemirror": "^1.6.6",
     "styled-system": "^5.1.5"
   },
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "concurrently yarn:build:*",
-    "build:esm": "tsc --project tsconfig.json --declaration --declarationDir dist/esm --module esnext --target es2015 --outDir dist/esm",
-    "build:cjs": "tsc --project tsconfig.json --declaration --declarationDir dist/cjs --module commonjs --target es5 --outDir dist/cjs",
-    "build:types": "tsc --emitDeclarationOnly --declaration --declarationDir dist/types",
-    "test": "jest",
+    "prepublishOnly": "yarn && yarn lint && yarn test && yarn build",
+    "build": "yarn build:types && yarn build:esbuild",
+    "build:esbuild": "node esbuild.js",
+    "build:types": "tsc --declaration --emitDeclarationOnly",
+    "test": "jest --passWithNoTests",
     "test:watch": "jest --watch",
     "test:ci": "jest --ci",
     "test:coverage": "jest --collect-coverage",
-    "lint": "tsc",
+    "lint": "tsc --noEmit",
     "release": "auto shipit --base-branch main",
     "docs:build": "yarn storybook:build:docs && yarn playroom:build",
-    "storybook": "start-storybook -s .storybook/public",
-    "storybook:build": "build-storybook -s .storybook/public",
-    "storybook:build:docs": "build-storybook -s .storybook/public --docs"
+    "storybook": "start-storybook",
+    "storybook:build": "build-storybook",
+    "storybook:build:docs": "build-storybook --docs"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -159,28 +159,23 @@
     "@auto-it/all-contributors": "10.29.3",
     "@auto-it/conventional-commits": "10.29.3",
     "@auto-it/first-time-contributor": "10.29.3",
-    "@babel/core": "7.13.14",
-    "@babel/plugin-transform-runtime": "7.13.10",
-    "@babel/preset-env": "7.13.12",
-    "@babel/preset-react": "7.13.13",
-    "@babel/preset-typescript": "7.13.0",
     "@emotion/babel-preset-css-prop": "11.2.0",
-    "@emotion/cache": "11.4.0",
-    "@emotion/jest": "11.3.0",
-    "@emotion/react": "11.4.0",
-    "@emotion/styled": "11.3.0",
+    "@emotion/cache": "11.7.1",
+    "@emotion/jest": "11.7.1",
+    "@emotion/react": "11.7.1",
+    "@emotion/styled": "11.6.0",
     "@octokit/core": "3.5.1",
-    "@storybook/addon-a11y": "6.3.8",
-    "@storybook/addon-actions": "6.3.8",
-    "@storybook/addon-controls": "6.3.8",
-    "@storybook/addon-docs": "6.3.8",
-    "@storybook/addon-links": "6.3.8",
-    "@storybook/addon-storysource": "6.3.8",
-    "@storybook/addon-toolbars": "6.3.8",
-    "@storybook/addon-viewport": "6.3.8",
-    "@storybook/node-logger": "6.3.8",
-    "@storybook/react": "6.3.8",
-    "@storybook/source-loader": "6.3.8",
+    "@storybook/addon-a11y": "6.4.9",
+    "@storybook/addon-actions": "6.4.9",
+    "@storybook/addon-controls": "6.4.9",
+    "@storybook/addon-docs": "6.4.9",
+    "@storybook/addon-links": "6.4.9",
+    "@storybook/addon-storysource": "6.4.9",
+    "@storybook/addon-toolbars": "6.4.9",
+    "@storybook/addon-viewport": "6.4.9",
+    "@storybook/node-logger": "6.4.9",
+    "@storybook/react": "6.4.9",
+    "@storybook/source-loader": "6.4.9",
     "@styled-system/css": "5.1.5",
     "@testing-library/dom": "7.31.2",
     "@testing-library/jest-dom": "5.14.1",
@@ -200,12 +195,12 @@
     "@types/styled-system__css": "5.0.15",
     "auto": "10.29.3",
     "babel-jest": "26.6.3",
-    "babel-loader": "8.2.2",
+    "babel-loader": "^8.2.3",
     "chromatic": "5.9.2",
     "concurrently": "6.2.0",
     "csstype": "3.0.8",
     "cz-conventional-changelog": "3.3.0",
-    "fork-ts-checker-webpack-plugin": "6.2.12",
+    "esbuild": "^0.14.10",
     "husky": "4.3.8",
     "jest": "26.6.3",
     "jest-cli": "26.6.3",
@@ -215,24 +210,24 @@
     "pretty-quick": "3.1.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-hook-form": "7.16.2",
+    "react-hook-form": "7.22.5",
     "react-is": "17.0.2",
     "react-test-renderer": "17.0.2",
     "rimraf": "3.0.2",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.1",
     "type-fest": "1.2.1",
-    "typescript": "4.2.4",
-    "webpack": "5.40.0"
+    "typescript": "4.2.4"
   },
   "husky": {
     "hooks": {
       "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
-      "pre-commit": "lint-staged"
+      "pre-commit": "yarn lint && lint-staged"
     }
   },
   "lint-staged": {
     "**/*.ts": [
       "prettier --write",
-      "yarn lint",
       "yarn test"
     ]
   },

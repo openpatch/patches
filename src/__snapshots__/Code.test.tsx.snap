@@ -6,10 +6,10 @@ exports[`should match snapshot 1`] = `
     id="patches-root"
   >
     <pre
-      style="color: rgb(197, 200, 198); text-shadow: 0 1px rgba(0, 0, 0, 0.3); font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none; padding: 1em; margin: .5em 0px; overflow: auto; border-radius: 0.3em; background: rgb(29, 31, 33);"
+      style="color: black; background: rgb(245, 242, 240); text-shadow: 0 1px white; font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; font-size: 1em; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none; padding: 1em; margin: .5em 0px; overflow: auto;"
     >
       <code
-        style="color: rgb(197, 200, 198); text-shadow: 0 1px rgba(0, 0, 0, 0.3); font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace; direction: ltr; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; line-height: 1.5; tab-size: 4; hyphens: none;"
+        style="color: black; background: none; text-shadow: 0 1px white; font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; font-size: 1em; text-align: left; white-space: pre; word-spacing: normal; word-break: normal; word-wrap: normal; line-height: 1.5; tab-size: 4; hyphens: none;"
       >
         <span>
           public static void;

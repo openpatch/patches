@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should match snapshot 1`] = `
-.emotion-1 {
+.emotion-0 {
   line-height: 1.15;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -35,22 +35,22 @@ exports[`should match snapshot 1`] = `
   color: #0C6B58;
 }
 
-.emotion-1:hover:enabled {
+.emotion-0:hover:enabled {
   opacity: 0.8;
 }
 
-.emotion-1:active:enabled {
+.emotion-0:active:enabled {
   -webkit-filter: brightness(80%);
   filter: brightness(80%);
 }
 
-.emotion-1:focus {
+.emotion-0:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
 }
 
-.emotion-1 span.icon-left,
-.emotion-1 span.icon-right {
+.emotion-0 span.icon-left,
+.emotion-0 span.icon-right {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -66,20 +66,20 @@ exports[`should match snapshot 1`] = `
   justify-content: center;
 }
 
-.emotion-1 span.icon-left,
-.emotion-1 span.icon-right {
+.emotion-0 span.icon-left,
+.emotion-0 span.icon-right {
   width: 14px;
 }
 
-.emotion-1 span.icon-left {
+.emotion-0 span.icon-left {
   margin-right: 8px;
 }
 
-.emotion-1 span.icon-right {
+.emotion-0 span.icon-right {
   margin-left: 8px;
 }
 
-.emotion-2 {
+.emotion-1 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -104,13 +104,13 @@ exports[`should match snapshot 1`] = `
   transition: all 0.1s ease-out;
 }
 
-.emotion-2:focus {
+.emotion-1:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
 }
 
-.emotion-2 span.icon-left,
-.emotion-2 span.icon-right {
+.emotion-1 span.icon-left,
+.emotion-1 span.icon-right {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -134,12 +134,12 @@ exports[`should match snapshot 1`] = `
       class="Toastify"
     />
     <a
-      class="emotion-0 emotion-1"
+      class="emotion-0"
       href="#"
       tone="primary"
     >
       <div
-        class="emotion-2 emotion-3"
+        class="emotion-1"
       >
         Link
       </div>

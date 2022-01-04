@@ -9,7 +9,7 @@ exports[`should match snapshot 1`] = `
   position: relative;
 }
 
-.emotion-2 {
+.emotion-1 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -25,10 +25,10 @@ exports[`should match snapshot 1`] = `
     id="patches-root"
   >
     <div
-      class="emotion-0 emotion-1"
+      class="emotion-0"
     >
       <div
-        class="emotion-2 emotion-1"
+        class="emotion-1"
         height="1px"
         width="100%"
       />

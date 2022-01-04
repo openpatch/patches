@@ -1,7 +1,6 @@
 import { ReactNode } from "react";
-import styled from "@emotion/styled";
 import { Box } from "./Box";
-import { variant } from "./system";
+import { variant, styled } from "./system";
 import { SystemColor, SystemColorNames } from "./system/types";
 
 export type BadgeProps = {

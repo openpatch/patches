@@ -1,6 +1,5 @@
 import { ChangeEvent, InputHTMLAttributes } from "react";
 import { css } from "@emotion/react";
-import styled from "@emotion/styled";
 import {
   color,
   compose,
@@ -17,6 +16,7 @@ import {
   BackgroundProps,
   BorderProps,
   ShadowProps,
+  styled
 } from "./system";
 
 export type StyledInputProps = {

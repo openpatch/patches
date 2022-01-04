@@ -1,4 +1,3 @@
-import styled from "@emotion/styled";
 import { HTMLAttributes, Ref } from "react";
 import {
   background,
@@ -24,6 +23,7 @@ import {
   SpaceProps,
   typography,
   TypographyProps,
+  styled
 } from "./system";
 import { SystemElements } from "./system/types";
 

@@ -58,7 +58,7 @@ exports[`should match snapshot 1`] = `
       aria-checked="false"
       aria-disabled="false"
       aria-required="false"
-      class="emotion-0 emotion-1"
+      class="emotion-0"
       role="checkbox"
       tabindex="0"
     />

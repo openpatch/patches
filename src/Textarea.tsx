@@ -1,6 +1,5 @@
 import { ChangeEvent, forwardRef, InputHTMLAttributes, RefObject } from "react";
 import { css } from "@emotion/react";
-import styled from "@emotion/styled";
 import {
   color,
   compose,
@@ -17,6 +16,7 @@ import {
   BackgroundProps,
   BorderProps,
   ShadowProps,
+  styled
 } from "./system";
 
 export type StyledTextareaProps = {
@@ -31,7 +31,7 @@ export type StyledTextareaProps = {
   BorderProps &
   ShadowProps;
 
-export const StyledTextarea = styled.textarea<StyledTextareaProps>(
+export const StyledTextarea = styled("textarea")<StyledTextareaProps>(
   ({ theme, resize, error }) => [
     css`
       border-radius: ${theme.radii.small};

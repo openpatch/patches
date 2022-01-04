@@ -20,7 +20,7 @@ exports[`should match snapshot 1`] = `
   justify-content: center;
 }
 
-.emotion-2 {
+.emotion-1 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -28,7 +28,7 @@ exports[`should match snapshot 1`] = `
   margin-right: 8px;
 }
 
-.emotion-4 {
+.emotion-2 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -47,7 +47,7 @@ exports[`should match snapshot 1`] = `
   align-items: center;
 }
 
-.emotion-6 {
+.emotion-3 {
   width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -60,8 +60,8 @@ exports[`should match snapshot 1`] = `
   background-color: #CBD2D9;
 }
 
-.emotion-6::-moz-range-thumb,
-.emotion-6::-webkit-slider-thumb {
+.emotion-3::-moz-range-thumb,
+.emotion-3::-webkit-slider-thumb {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -73,7 +73,7 @@ exports[`should match snapshot 1`] = `
   background-color: #0C6B58;
 }
 
-.emotion-7 {
+.emotion-4 {
   position: absolute;
   top: -36px;
   margin-left: -17px;
@@ -90,7 +90,7 @@ exports[`should match snapshot 1`] = `
   transition: visibility 0.33s linear,opacity 0.33s linear;
 }
 
-.emotion-8 {
+.emotion-5 {
   width: 32px;
   height: 32px;
   display: -webkit-box;
@@ -113,7 +113,7 @@ exports[`should match snapshot 1`] = `
   background-color: #0C6B58;
 }
 
-.emotion-9 {
+.emotion-6 {
   color: #EFFCF6;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -121,7 +121,7 @@ exports[`should match snapshot 1`] = `
   transform: rotate(45deg);
 }
 
-.emotion-10 {
+.emotion-7 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -134,20 +134,20 @@ exports[`should match snapshot 1`] = `
     id="patches-root"
   >
     <div
-      class="emotion-0 emotion-1"
+      class="emotion-0"
       display="flex"
     >
       <div
-        class="emotion-2 emotion-1"
+        class="emotion-1"
       >
         0
       </div>
       <div
-        class="emotion-4 emotion-1"
+        class="emotion-2"
         display="flex"
       >
         <input
-          class="emotion-6"
+          class="emotion-3"
           max="100"
           min="0"
           step="1"
@@ -155,13 +155,13 @@ exports[`should match snapshot 1`] = `
           value="0"
         />
         <output
-          class="emotion-7"
+          class="emotion-4"
         >
           <span
-            class="emotion-8"
+            class="emotion-5"
           >
             <span
-              class="emotion-9"
+              class="emotion-6"
             >
               0
             </span>
@@ -169,7 +169,7 @@ exports[`should match snapshot 1`] = `
         </output>
       </div>
       <div
-        class="emotion-10 emotion-1"
+        class="emotion-7"
       >
         100
       </div>

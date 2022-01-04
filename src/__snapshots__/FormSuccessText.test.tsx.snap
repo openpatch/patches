@@ -20,7 +20,7 @@ exports[`should match snapshot 1`] = `
   margin-right: 4px;
 }
 
-.emotion-2 {
+.emotion-1 {
   position: relative;
   border-radius: 9999px;
   display: -webkit-inline-box;
@@ -40,20 +40,20 @@ exports[`should match snapshot 1`] = `
   height: 24px;
 }
 
-.emotion-2 svg {
+.emotion-1 svg {
   width: 24px;
   height: 24px;
 }
 
-.emotion-2 svg .primary {
+.emotion-1 svg .primary {
   fill: #65D6AD;
 }
 
-.emotion-2 svg .secondary {
+.emotion-1 svg .secondary {
   fill: #199473;
 }
 
-.emotion-3 {
+.emotion-2 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -68,11 +68,11 @@ exports[`should match snapshot 1`] = `
     id="patches-root"
   >
     <div
-      class="emotion-0 emotion-1"
+      class="emotion-0"
       display="flex"
     >
       <span
-        class="emotion-2"
+        class="emotion-1"
       >
         <svg
           class="icon-check"
@@ -91,7 +91,7 @@ exports[`should match snapshot 1`] = `
         </svg>
       </span>
       <p
-        class="emotion-3 emotion-1"
+        class="emotion-2"
         role="alert"
       />
     </div>

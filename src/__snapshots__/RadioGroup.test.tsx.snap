@@ -22,7 +22,7 @@ exports[`should match snapshot 1`] = `
   border: none;
 }
 
-.emotion-2 {
+.emotion-1 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -42,15 +42,15 @@ exports[`should match snapshot 1`] = `
   outline: none;
 }
 
-.emotion-2::before,
-.emotion-2::after {
+.emotion-1::before,
+.emotion-1::after {
   display: block;
   position: absolute;
   border-radius: 50%;
   content: "";
 }
 
-.emotion-2::before {
+.emotion-1::before {
   top: calc(16px + 3px);
   left: 16px;
   width: 14px;
@@ -58,11 +58,11 @@ exports[`should match snapshot 1`] = `
   border: 1px solid #0C6B58;
 }
 
-.emotion-2:focus {
+.emotion-1:focus {
   box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
 }
 
-.emotion-4 {
+.emotion-2 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -72,7 +72,7 @@ exports[`should match snapshot 1`] = `
   font-weight: 500;
 }
 
-.emotion-6 {
+.emotion-3 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -90,22 +90,22 @@ exports[`should match snapshot 1`] = `
       aria-disabled="false"
       aria-invalid="false"
       aria-required="false"
-      class="emotion-0 emotion-1"
+      class="emotion-0"
       role="radiogroup"
     >
       <div
         aria-checked="false"
         aria-disabled="false"
-        class="emotion-2 emotion-1"
+        class="emotion-1"
         role="radio"
         tabindex="0"
       >
         <p
-          class="emotion-4 emotion-1"
+          class="emotion-2"
           font-weight="medium"
         />
         <p
-          class="emotion-6 emotion-1"
+          class="emotion-3"
         />
       </div>
     </div>

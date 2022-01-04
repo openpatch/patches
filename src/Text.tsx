@@ -2,7 +2,7 @@ import { css } from "@emotion/react";
 import { Properties } from "csstype";
 import { ReactNode } from "react";
 import { Box } from "./Box";
-import { useBreakpoints } from "./hooks";
+import { useBreakpoints } from "./hooks/useBreakpoints";
 import { ColorProps, SpaceProps, TypographyProps } from "./system";
 import { ResponsiveProp, SystemElements } from "./system/types";
 

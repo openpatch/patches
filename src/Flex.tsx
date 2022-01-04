@@ -1,5 +1,4 @@
-import styled from "@emotion/styled";
-import { flexbox, FlexboxProps } from "./system";
+import { flexbox, FlexboxProps, styled } from "./system";
 
 export type FlexProps = FlexboxProps;
 

@@ -1,5 +1,4 @@
 import { css } from "@emotion/react";
-import styled from "@emotion/styled";
 import { ReactNode } from "react";
 import {
   resetIdCounter,
@@ -14,6 +13,7 @@ import {
 } from "react-tabs";
 import { variant } from "styled-system";
 import { Box, BoxProps } from "./Box";
+import { styled } from "./system";
 import { SystemColor, SystemColorNames } from "./system/types";
 
 export const tabResetIdCounter = resetIdCounter;
