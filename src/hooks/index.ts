@@ -1,9 +1,11 @@
 export { useBreakpoints } from "./useBreakpoints";
 export { useClickOutsideListener } from "./useClickOutsideListener";
 export { useConfirm } from "./useConfirm";
+export { useFirstRender } from "./useFirstRender";
 export { useFlipList } from "./useFlipList";
 export { useLinkComponent } from "./useLinkComponent";
 export { useMedia } from "./useMedia";
+export { useMergeRefs } from "./useMergeRefs";
 export { usePrefersDarkMode } from "./usePrefersDarkMode";
 export { useTheme } from "./useTheme";
 export { useTimeout } from "./useTimeout";

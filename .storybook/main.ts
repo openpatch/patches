@@ -1,4 +1,10 @@
+const path = require("path");
+const toPath = (_path: string) => path.join(process.cwd(), _path);
+
 module.exports = {
+  core: {
+    builder: "webpack5",
+  },
   framework: "@storybook/react",
   features: {
     emotionAlias: false,
@@ -19,4 +25,17 @@ module.exports = {
     "@storybook/addon-toolbars",
     "@storybook/addon-viewport",
   ],
+  webpackFinal: async (config: any) => {
+    return {
+      ...config,
+      resolve: {
+        ...config.resolve,
+        alias: {
+          ...config.resolve.alias,
+          "@codemirror/state": toPath("node_modules/@codemirror/state"),
+          "@codemirror/view": toPath("node_modules/@codemirror/view"),
+        },
+      },
+    };
+  },
 };
