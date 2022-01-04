@@ -12,6 +12,7 @@
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.mjs",
   "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
   "sideEffects": false,
   "exports": {
     "./package.json": "./package.json",
