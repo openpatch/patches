@@ -1,4 +1,3 @@
-import CodeMirror, { CodeMirrorProps } from "rodemirror";
 import { closeBrackets } from "@codemirror/closebrackets";
 import { sql } from "@codemirror/lang-sql";
 import { java } from "@codemirror/lang-java";
@@ -6,6 +5,7 @@ import { javascript } from "@codemirror/lang-javascript";
 import { markdown } from "@codemirror/lang-markdown";
 import { css } from "@emotion/react";
 import { Box, BoxProps } from "./Box";
+import { CodeMirror, CodeMirrorProps } from "./CodeMirror";
 import { CodeEditorStyles, CodeEditorStylesProps } from "./CodeEditorStyles";
 import { forwardRef, useImperativeHandle, useMemo, useState } from "react";
 import { Extension, Transaction } from "@codemirror/state";
