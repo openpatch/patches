@@ -1,8 +1,7 @@
 import { css, Theme } from "@emotion/react";
-import styled from "@emotion/styled";
 import { ReactNode } from "react";
 import { Box } from "./Box";
-import { variant } from "./system";
+import { variant, styled } from "./system";
 import { SystemColor, SystemColorNames } from "./system/types";
 
 export type IconProps = {

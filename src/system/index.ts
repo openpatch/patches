@@ -21,3 +21,4 @@ export { space } from "./space";
 export type { SpaceProps } from "./space";
 export { typography } from "./typography";
 export type { TypographyProps } from "./typography";
+export { styled } from "./styled";

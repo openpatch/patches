@@ -10,7 +10,7 @@ exports[`should match snapshot 1`] = `
     id="patches-root"
   >
     <img
-      class="emotion-0 emotion-1"
+      class="emotion-0"
       height="60px"
       width="60px"
     />

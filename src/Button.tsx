@@ -1,5 +1,4 @@
 import { css, Theme } from "@emotion/react";
-import styled from "@emotion/styled";
 import { ButtonHTMLAttributes, forwardRef, ReactNode } from "react";
 import { Box } from "./Box";
 import { useBreakpoints } from "./hooks/useBreakpoints";
@@ -12,6 +11,7 @@ import {
   ShadowProps,
   typography,
   TypographyProps,
+  styled
 } from "./system";
 import { ResponsiveProp } from "./system/types";
 

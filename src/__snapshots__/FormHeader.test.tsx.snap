@@ -16,7 +16,7 @@ exports[`should match snapshot 1`] = `
   margin: -100px 0 0;
 }
 
-.emotion-2 {
+.emotion-1 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -34,7 +34,7 @@ exports[`should match snapshot 1`] = `
   align-items: center;
 }
 
-.emotion-4 {
+.emotion-2 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -42,7 +42,7 @@ exports[`should match snapshot 1`] = `
   position: relative;
 }
 
-.emotion-6 {
+.emotion-3 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -58,16 +58,16 @@ exports[`should match snapshot 1`] = `
     id="patches-root"
   >
     <div
-      class="emotion-0 emotion-1"
+      class="emotion-0"
     >
       <h3
-        class="emotion-2 emotion-1"
+        class="emotion-1"
       />
       <div
-        class="emotion-4 emotion-1"
+        class="emotion-2"
       >
         <div
-          class="emotion-6 emotion-1"
+          class="emotion-3"
           height="1px"
           width="100%"
         />

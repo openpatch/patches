@@ -1,8 +1,7 @@
 import { css } from "@emotion/react";
-import styled from "@emotion/styled";
 import { ReactNode, useEffect, useRef, useState } from "react";
 import { Box, BoxProps } from "./Box";
-import { variant } from "./system";
+import { variant, styled } from "./system";
 
 export type MainProps = {
   children?: ReactNode;

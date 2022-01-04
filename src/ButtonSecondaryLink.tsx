@@ -1,7 +1,6 @@
-import styled from "@emotion/styled";
 import { AnchorHTMLAttributes, ReactNode, Ref } from "react";
 import { ButtonLink, ButtonLinkProps } from "./ButtonLink";
-import { variant } from "./system";
+import { variant, styled } from "./system";
 import { SystemColor, SystemColorNames } from "./system/types";
 
 export type ButtonSecondaryLinkProps = {

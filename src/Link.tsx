@@ -1,5 +1,4 @@
 import { css, Theme } from "@emotion/react";
-import styled from "@emotion/styled";
 import { forwardRef, HTMLAttributes, ReactNode } from "react";
 import { Icon } from "./Icon";
 import { ExternalWindow } from "./icons/shade";
@@ -27,6 +26,7 @@ import {
   SpaceProps,
   typography,
   TypographyProps,
+  styled
 } from "./system";
 
 export type StyledLinkProps = ColorProps &

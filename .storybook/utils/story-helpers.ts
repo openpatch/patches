@@ -1,4 +1,4 @@
-import { some, startsWith } from "lodash/fp";
+import { some, startsWith } from "lodash/fp.js";
 
 function position(item, array = []) {
   const index = array.indexOf(item);

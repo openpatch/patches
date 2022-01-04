@@ -19,7 +19,7 @@ exports[`should match snapshot 1`] = `
     id="patches-root"
   >
     <label
-      class="emotion-0 emotion-1"
+      class="emotion-0"
       font-weight="medium"
     >
        

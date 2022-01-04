@@ -1,5 +1,5 @@
 import { css, Global, Theme, ThemeProvider as ETP } from "@emotion/react";
-import _merge from "lodash/merge";
+import _merge from "lodash/merge.js";
 import { ReactNode } from "react";
 import { PartialDeep } from "type-fest";
 import { baseTheme } from "./themes";

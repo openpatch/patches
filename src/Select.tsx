@@ -6,7 +6,6 @@ import {
   SelectHTMLAttributes,
 } from "react";
 import { css } from "@emotion/react";
-import styled from "@emotion/styled";
 
 import { Box } from "./Box";
 import { CheveronDown } from "./icons/shade";
@@ -26,6 +25,7 @@ import {
   BackgroundProps,
   BorderProps,
   ShadowProps,
+  styled
 } from "./system";
 
 export type SelectProps = {

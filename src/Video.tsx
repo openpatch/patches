@@ -1,4 +1,3 @@
-import styled from "@emotion/styled";
 import { HTMLAttributes } from "react";
 import {
   border,
@@ -7,6 +6,7 @@ import {
   ShadowProps,
   space,
   SpaceProps,
+  styled
 } from "./system";
 
 export type VideoProps = {

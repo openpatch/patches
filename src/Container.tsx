@@ -1,5 +1,5 @@
-import styled from "@emotion/styled";
 import { maxWidth, MaxWidthProps } from "styled-system";
+import { styled } from "./system";
 
 export type ContainerProps = MaxWidthProps;
 

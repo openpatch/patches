@@ -20,14 +20,6 @@ exports[`should match snapshot 1`] = `
   -ms-flex-pack: end;
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
-  -webkit-box-pack: ;
-  -ms-flex-pack: ;
-  -webkit-justify-content: ;
-  justify-content: ;
-  -webkit-box-pack: ;
-  -ms-flex-pack: ;
-  -webkit-justify-content: ;
-  justify-content: ;
 }
 
 .emotion-0>:not(:first-of-type) {
@@ -39,7 +31,7 @@ exports[`should match snapshot 1`] = `
     id="patches-root"
   >
     <div
-      class="emotion-0 emotion-1"
+      class="emotion-0"
       display="flex"
     />
   </div>

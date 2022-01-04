@@ -10,7 +10,7 @@ exports[`should match snapshot 1`] = `
   position: relative;
 }
 
-.emotion-2 {
+.emotion-1 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -20,13 +20,13 @@ exports[`should match snapshot 1`] = `
   margin-top: -0.5rem;
 }
 
-.emotion-4 {
+.emotion-2 {
   fill: #E4E7EB;
   width: 2rem;
   height: 2rem;
 }
 
-.emotion-5 {
+.emotion-3 {
   box-sizing: border-box;
   min-width: 0;
   -webkit-transition: all 0.2s ease;
@@ -39,14 +39,14 @@ exports[`should match snapshot 1`] = `
     id="patches-root"
   >
     <blockquote
-      class="emotion-0 emotion-1"
+      class="emotion-0"
       font-style="italic"
     >
       <div
-        class="emotion-2 emotion-1"
+        class="emotion-1"
       >
         <svg
-          class="emotion-4"
+          class="emotion-2"
           fill="none"
           viewBox="0 0 30 30"
           xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +57,7 @@ exports[`should match snapshot 1`] = `
         </svg>
       </div>
       <div
-        class="emotion-5 emotion-1"
+        class="emotion-3"
       />
     </blockquote>
   </div>

@@ -154,7 +154,7 @@ export const CodeEditor = forwardRef<unknown, CodeEditorProps>(
           onEditorViewChange={setEditorView}
           onUpdate={(v) => {
             if (v.docChanged) {
-              onChange(v.state.doc.toString(), v.transactions);
+              onChange(v.state.doc.toString(), v.transactions as any);
             }
           }}
         />

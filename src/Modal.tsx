@@ -3,7 +3,7 @@ import { darken, transparentize } from "polished";
 import { KeyboardEvent, MouseEvent, ReactNode, useEffect } from "react";
 import ReactModal, { Props } from "react-modal";
 import { Card } from "./Card";
-import { useTheme } from "./hooks";
+import { useTheme } from "./hooks/useTheme";
 
 export type ModalProps = {
   /**
