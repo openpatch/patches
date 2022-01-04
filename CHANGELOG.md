@@ -2,6 +2,24 @@
 
 #### 🐛 Bug Fix
 
+- fix: bump version ([@mikebarkmin](https://github.com/mikebarkmin))
+- chore(codemirror): replace rodemirror package with CodeMirror component [#655](https://github.com/openpatch/patches/pull/655) ([@mikebarkmin](https://github.com/mikebarkmin))
+- fix: add mjs extensions to files [#655](https://github.com/openpatch/patches/pull/655) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### ⚠️ Pushed to `main`
+
+- chore: bump version ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
+# v5.1.1 (Tue Jan 04 2022)
+
+#### 🐛 Bug Fix
+
 - chore(codemirror): replace rodemirror package with CodeMirror component [#655](https://github.com/openpatch/patches/pull/655) ([@mikebarkmin](https://github.com/mikebarkmin))
 - fix: add mjs extensions to files [#655](https://github.com/openpatch/patches/pull/655) ([@mikebarkmin](https://github.com/mikebarkmin))
 
