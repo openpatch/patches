@@ -115,7 +115,7 @@
     "@codemirror/view": "^0.19.37",
     "lodash": "^4.17.21",
     "polished": "^4.1.1",
-    "react-markdown": "^5.0.3",
+    "react-markdown": "^7.0.0",
     "react-modal": "^3.12.1",
     "react-syntax-highlighter": "^15.4.4",
     "react-tabs": "^3.2.1",
