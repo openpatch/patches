@@ -1,35 +1,46 @@
 {
   "compilerOptions": {
     "target": "es2015",
+    "module": "esnext",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "rootDir": "./src",
+    "noEmitOnError": true,
     "declaration": true,
     "declarationDir": "./dist",
-    "outDir": "./dist",
-    "module": "esnext",
-    "sourceMap": true,
-    "typeRoots": ["./types", "./node_modules/@types"],
+    "baseUrl": "./src",
+
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "downlevelIteration": true,
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "suppressImplicitAnyIndexErrors": true,
     "jsx": "react-jsx",
     "jsxImportSource": "@emotion/react",
-    "allowJs": true,
-    "moduleResolution": "node",
-    "noFallthroughCasesInSwitch": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "strictNullChecks": true,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "strict": true
+    "typeRoots": ["node_modules/@types", "types"],
+
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin"
+      }
+    ]
   },
   "include": ["src/**/*", "types/**/*"],
   "exclude": [
     "src/private",
-    "src/**/*.stories.tsx",
+    ".storybook",
     "src/**/*.test.tsx",
     "src/**/*.test.ts",
-    "src/setupTests.ts",
-    ".storybook",
+    "src/**/*.stories.tsx",
     "dist",
     "node_modules"
   ]
