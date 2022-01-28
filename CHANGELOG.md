@@ -1,3 +1,19 @@
+# v5.1.3 (Fri Jan 28 2022)
+
+#### 🐛 Bug Fix
+
+- feat(markdown): upgrade to react-markdown 8 and add new props [#656](https://github.com/openpatch/patches/pull/656) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### ⚠️ Pushed to `main`
+
+- chore: add seo ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v5.1.1 (Tue Jan 04 2022)
 
 #### 🐛 Bug Fix
