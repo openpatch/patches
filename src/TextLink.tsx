@@ -9,10 +9,37 @@ export type TextLinkProps = {
   children?: ReactNode;
 } & LinkComponentProps;
 
+
+// https://stackoverflow.com/a/6238456
+function isExternal(url: string): boolean {
+  var match = url.match(
+    /^([^:\/?#]+:)?(?:\/\/([^\/?#]*))?([^?#]+)?(\?[^#]*)?(#.*)?/
+  );
+  if (match) {
+    if (
+      typeof match[1] === "string" &&
+      match[1].length > 0 &&
+      match[1].toLowerCase() !== location.protocol
+    )
+      return true;
+    if (
+      typeof match[2] === "string" &&
+      match[2].length > 0 &&
+      match[2].replace(
+        new RegExp(
+          ":(" + { "http:": 80, "https:": 443 }[location.protocol] + ")?$"
+        ),
+        ""
+      ) !== location.host
+    )
+      return true;
+  }
+  return false;
+}
+
 export const TextLink = forwardRef<HTMLAnchorElement, TextLinkProps>(
   ({ children, href, color, ...props }, ref) => {
     const LinkComponent = useLinkComponent(ref);
-    const external = href[0] !== "/" && href[0] !== "#";
     return (
       <LinkComponent
         css={(theme) => css`
@@ -29,7 +56,7 @@ export const TextLink = forwardRef<HTMLAnchorElement, TextLinkProps>(
         {...props}
       >
         {children}
-        {external && (
+        {isExternal(href) && (
           <Icon size="auto" color="currentColor">
             <ExternalWindow />
           </Icon>

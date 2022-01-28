@@ -32,7 +32,25 @@ Default.args = {
       System.out.println(value);
     }
   }
- \`\`\` 
+ \`\`\`
+
+ ---
+
+ <span>HTML in Markdown</span>
+
+ ---
+
+ \`\`\`
+  class Car {
+    public static void main(String[] args) {
+      int value = 0;
+      System.out.println(value);
+    }
+  }
+ \`\`\`
+
+[Internal](#)
+[External](http://google.de)
 
  | Hi | Table |
  |:-|:-|
