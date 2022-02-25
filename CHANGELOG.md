@@ -1,3 +1,15 @@
+# v5.1.4 (Fri Feb 25 2022)
+
+#### 🐛 Bug Fix
+
+- fix(textlink): make detection of external link work with ssr ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v5.1.3 (Fri Jan 28 2022)
 
 #### 🐛 Bug Fix
