@@ -1,3 +1,15 @@
+# v5.2.0 (Fri Mar 11 2022)
+
+#### 🚀 Enhancement
+
+- feat(themeprovider): add prop standalone ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v5.1.4 (Fri Feb 25 2022)
 
 #### 🐛 Bug Fix
