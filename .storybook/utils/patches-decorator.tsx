@@ -1,6 +1,6 @@
 import { css, Global, Theme } from "@emotion/react";
 import { Story, StoryContext } from "@storybook/react";
-import React from "react";
+import React, { Fragment } from "react";
 import { Box } from "../../src/Box";
 import { Card } from "../../src/Card";
 import { CardContent } from "../../src/CardContent";

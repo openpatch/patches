@@ -52,7 +52,7 @@ export const Layout = ({ children }) => (
       profile={{
         image:
           "https://vignette.wikia.nocookie.net/avatar/images/1/16/Young_Katara_worried.png/revision/latest/scale-to-width-down/200?cb=20090405200515",
-        name: "Mike Barkmin",
+        username: "Mike Barkmin",
         email: "mike@openpatch.org",
       }}
     ></Nav>

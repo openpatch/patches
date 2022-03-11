@@ -3,48 +3,54 @@ import _merge from "lodash/merge.js";
 import { ReactNode } from "react";
 import { PartialDeep } from "type-fest";
 import { baseTheme } from "./themes";
+import { Box } from "./Box";
 
 export type ThemeProviderProps = {
   children?: ReactNode;
   theme?: PartialDeep<Theme>;
+  standalone?: boolean;
 };
 
 export const ThemeProvider = ({
   theme: defaultTheme,
   children,
+  standalone = true,
 }: ThemeProviderProps) => {
   const theme = _merge({} as Theme, baseTheme, defaultTheme);
 
   return (
     <ETP theme={theme}>
-      <Global
-        styles={css`
-          html {
-            scroll-behavior: smooth;
-            line-height: ${theme.lineHeights.standard};
-            -webkit-text-size-adjust: 100%; /* 2 */
-            color: ${theme.colors.text};
-            background: ${theme.colors.background};
-            letter-spacing: ${theme.letterSpacings.standard};
-            font-size: ${theme.fontSizes.standard};
-            font-family: ${theme.fonts["body"]};
-          }
+      {standalone && (
+        <Global
+          styles={css`
+            html {
+              background-color: ${theme.colors.background};
+            }
 
-          body {
-            margin: 0;
-            padding: 0;
-            position: relative;
-          }
+            body {
+              margin: 0;
+              padding: 0;
+              position: relative;
+            }
 
-          main {
-            display: block;
-          }
-
-          #patches-root {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-          }
+            #patches-root {
+              min-height: 100vh;
+            }
+          `}
+        />
+      )}
+      <Box
+        id="patches-root"
+        css={css`
+          display: flex;
+          flex-direction: column;
+          scroll-behavior: smooth;
+          line-height: ${theme.lineHeights.standard};
+          -webkit-text-size-adjust: 100%; /* 2 */
+          color: ${theme.colors.text};
+          letter-spacing: ${theme.letterSpacings.standard};
+          font-size: ${theme.fontSizes.standard};
+          font-family: ${theme.fonts["body"]};
 
           h1 {
             font-size: ${theme.fontSizes.xxlarge};
@@ -224,8 +230,9 @@ export const ThemeProvider = ({
             display: none;
           }
         `}
-      />
-      <div id="patches-root">{children}</div>
+      >
+        {children}
+      </Box>
     </ETP>
   );
 };

@@ -22,7 +22,7 @@ export type ModalProps = {
    * http://reactcommunity.org/react-modal/accessibility/#app-element
    */
   appElement?: string | HTMLElement;
-} & Partial<Props>;
+} & Partial<Omit<Props, "appElement">>;
 
 export const TRANSITION_DURATION = 200;
 const TOP_MARGIN = "10vh";

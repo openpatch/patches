@@ -10,6 +10,209 @@ exports[`should match snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  color: #1F2933;
+  letter-spacing: 0;
+  font-size: 16px;
+  font-family: Rubik,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+}
+
+.emotion-0 h1 {
+  font-size: 32px;
+  margin: 0.67em 0;
+}
+
+.emotion-0 h1,
+.emotion-0 h2,
+.emotion-0 h3,
+.emotion-0 h4,
+.emotion-0 h5,
+.emotion-0 h6 {
+  font-family: Rubik,system-ui;
+}
+
+.emotion-0 hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.emotion-0 pre {
+  font-family: "Ubuntu Mono",Menlo,monospace;
+  font-size: 1em;
+}
+
+.emotion-0 a {
+  background-color: transparent;
+}
+
+.emotion-0 abbr[title] {
+  border-bottom: none;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+.emotion-0 b,
+.emotion-0 strong {
+  font-weight: bolder;
+}
+
+.emotion-0 code,
+.emotion-0 kbd,
+.emotion-0 samp {
+  font-family: "Ubuntu Mono",Menlo,monospace;
+  font-size: 1em;
+}
+
+.emotion-0 small {
+  font-size: 80%;
+}
+
+.emotion-0 sub,
+.emotion-0 sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.emotion-0 sub {
+  bottom: -0.25em;
+}
+
+.emotion-0 sup {
+  top: -0.5em;
+}
+
+.emotion-0 img {
+  max-width: 100%;
+  border-style: none;
+}
+
+.emotion-0 button,
+.emotion-0 input,
+.emotion-0 optgroup,
+.emotion-0 select,
+.emotion-0 textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.emotion-0 button,
+.emotion-0 input {
+  overflow: visible;
+}
+
+.emotion-0 button,
+.emotion-0 select {
+  text-transform: none;
+}
+
+.emotion-0 button,
+.emotion-0 [type="button"],
+.emotion-0 [type="reset"],
+.emotion-0 [type="submit"] {
+  -webkit-appearance: button;
+}
+
+.emotion-0 button::-moz-focus-inner,
+.emotion-0 [type="button"]::-moz-focus-inner,
+.emotion-0 [type="reset"]::-moz-focus-inner,
+.emotion-0 [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.emotion-0 button:-moz-focusring,
+.emotion-0 [type="button"]:-moz-focusring,
+.emotion-0 [type="reset"]:-moz-focusring,
+.emotion-0 [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.emotion-0 fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+.emotion-0 legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+.emotion-0 progress {
+  vertical-align: baseline;
+}
+
+.emotion-0 textarea {
+  overflow: auto;
+}
+
+.emotion-0 [type="checkbox"],
+.emotion-0 [type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.emotion-0 [type="number"]::-webkit-inner-spin-button,
+.emotion-0 [type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+.emotion-0 [type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+.emotion-0 [type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.emotion-0::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+.emotion-0 details {
+  display: block;
+}
+
+.emotion-0 summary {
+  display: -webkit-box;
+  display: -webkit-list-item;
+  display: -ms-list-itembox;
+  display: list-item;
+}
+
+.emotion-0 template {
+  display: none;
+}
+
+.emotion-0 [hidden] {
+  display: none;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  min-width: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -22,16 +225,17 @@ exports[`should match snapshot 1`] = `
   justify-content: flex-end;
 }
 
-.emotion-0>:not(:first-of-type) {
+.emotion-1>:not(:first-of-type) {
   margin-left: 16px;
 }
 
 <div>
   <div
+    class="emotion-0"
     id="patches-root"
   >
     <div
-      class="emotion-0"
+      class="emotion-1"
       display="flex"
     />
   </div>

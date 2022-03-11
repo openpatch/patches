@@ -16,10 +16,11 @@ export const PatchesProvider = ({
   children,
   theme,
   linkComponent,
+  standalone
 }: PatchesProviderProps) => {
   const linkComponentFromContext = useContext(LinkComponentContext);
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme} standalone={standalone}>
       <NotificationsProvider>
         <LinkComponentProvider
           linkComponent={linkComponent || linkComponentFromContext}
