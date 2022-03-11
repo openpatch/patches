@@ -199,7 +199,7 @@
     "@types/styled-system__css": "5.0.16",
     "auto": "10.34.1",
     "babel-jest": "^27.5.1",
-    "chromatic": "5.9.2",
+    "chromatic": "5.10.2",
     "concurrently": "6.2.0",
     "csstype": "3.0.11",
     "cz-conventional-changelog": "3.3.0",
