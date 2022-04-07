@@ -1,4 +1,6 @@
 import { css } from "@emotion/react";
+import { useLinkComponent } from "./hooks";
+import { forwardRef } from "react";
 import { Box, BoxProps } from "./Box";
 
 type SectionProps = {
@@ -19,19 +21,23 @@ export type SidenavProps = {
   position?: BoxProps["position"];
 };
 
-const Link = ({ href, label, active }: LinkProps) => {
-  return (
-    <li className={active ? "current" : undefined}>
-      <a href={href}>{label}</a>
-    </li>
-  );
-};
+const Link = forwardRef<HTMLAnchorElement, LinkProps>(
+  ({ href, label, active }, ref) => {
+    const LinkComponent = useLinkComponent(ref);
+    return (
+      <li className={active ? "current" : undefined}>
+        <LinkComponent href={href}>{label}</LinkComponent>
+      </li>
+    );
+  }
+);
 
-const Section = (props: SectionProps) => {
+const Section = forwardRef<HTMLAnchorElement, SectionProps>((props, ref) => {
   const { label, links, href, active } = props;
+  const LinkComponent = useLinkComponent(ref);
   return (
     <li className={active ? "active" : undefined}>
-      <a href={href}>{label}</a>
+      <LinkComponent href={href}>{label}</LinkComponent>
       <ul>
         {links?.map((l) => (
           <Link key={l.label} {...l} />
@@ -39,7 +45,7 @@ const Section = (props: SectionProps) => {
       </ul>
     </li>
   );
-};
+});
 
 export const Sidenav = ({ sections, position = "initial" }: SidenavProps) => {
   return (
