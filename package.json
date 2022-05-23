@@ -200,7 +200,7 @@
     "auto": "10.34.1",
     "babel-jest": "^27.5.1",
     "chromatic": "5.9.2",
-    "concurrently": "6.2.0",
+    "concurrently": "7.2.1",
     "csstype": "3.0.11",
     "cz-conventional-changelog": "3.3.0",
     "esbuild": "^0.14.25",
