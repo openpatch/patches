@@ -1,3 +1,17 @@
+# v6.0.0 (Fri May 27 2022)
+
+#### 💥 Breaking Change
+
+- chore(jest): fix jest testing setup [#664](https://github.com/openpatch/patches/pull/664) ([@mikebarkmin](https://github.com/mikebarkmin))
+- feat(deps): update major dependencies [#664](https://github.com/openpatch/patches/pull/664) ([@mikebarkmin](https://github.com/mikebarkmin))
+- chore(deps): update minors [#664](https://github.com/openpatch/patches/pull/664) ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v5.2.1 (Thu Apr 07 2022)
 
 #### 🐛 Bug Fix
