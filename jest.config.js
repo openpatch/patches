@@ -2,7 +2,7 @@ module.exports = {
   testEnvironment: "jsdom",
   snapshotSerializers: ["@emotion/jest/serializer"],
   testPathIgnorePatterns: ["<rootDir>/dist/", "<rootDir>/node_modules/"],
-  setupFilesAfterEnv: ["@testing-library/jest-dom/extend-expect"],
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   collectCoverageFrom: [
     "src/**/*.{tsx, ts, js, jsx}",
     "!src/private/**/*",
