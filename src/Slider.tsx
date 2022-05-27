@@ -43,7 +43,7 @@ export const Slider = forwardRef<HTMLInputElement, SliderProps>(
     },
     ref
   ) => {
-    const bubbleRef = useRef<HTMLDivElement>(null);
+    const bubbleRef = useRef<HTMLOutputElement>(null);
 
     function showBubble() {
       if (bubbleRef.current) {

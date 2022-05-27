@@ -1,4 +1,4 @@
-import { closeBrackets } from "@codemirror/closebrackets";
+import { closeBrackets } from "@codemirror/autocomplete";
 import { sql } from "@codemirror/lang-sql";
 import { java } from "@codemirror/lang-java";
 import { javascript } from "@codemirror/lang-javascript";
@@ -14,13 +14,14 @@ import {
   drawSelection,
   EditorView,
   highlightSpecialChars,
-} from "@codemirror/view";
-import {
   highlightActiveLineGutter,
   lineNumbers as lineNumbersEx,
-} from "@codemirror/gutter";
-import { indentOnInput } from "@codemirror/language";
-import { defaultHighlightStyle } from "@codemirror/highlight";
+} from "@codemirror/view";
+import {
+  indentOnInput,
+  defaultHighlightStyle,
+  syntaxHighlighting,
+} from "@codemirror/language";
 
 export type CodeEditorProps = {
   language?:
@@ -67,7 +68,7 @@ export const CodeEditor = forwardRef<unknown, CodeEditorProps>(
       const e: Extension[] = [
         highlightActiveLineGutter(),
         highlightSpecialChars(),
-        defaultHighlightStyle.fallback,
+        syntaxHighlighting(defaultHighlightStyle),
         drawSelection(),
         closeBrackets(),
         indentOnInput(),
