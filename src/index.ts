@@ -157,7 +157,7 @@ export { TableBody } from "./TableBody";
 export { TableCell } from "./TableCell";
 export { TableHead } from "./TableHead";
 export { TableRow } from "./TableRow";
-export { Tabs, Tab, TabList, TabPanel, tabResetIdCounter } from "./Tabs";
+export { Tabs, Tab, TabList, TabPanel } from "./Tabs";
 export { Text } from "./Text";
 export { TextEditor } from "./TextEditor";
 export { TextLink } from "./TextLink";

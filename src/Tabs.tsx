@@ -1,7 +1,6 @@
 import { css } from "@emotion/react";
 import { ReactNode } from "react";
 import {
-  resetIdCounter,
   Tab as RTab,
   TabList as RTabList,
   TabListProps as RTabListProps,
@@ -15,8 +14,6 @@ import { variant } from "styled-system";
 import { Box, BoxProps } from "./Box";
 import { styled } from "./system";
 import { SystemColor, SystemColorNames } from "./system/types";
-
-export const tabResetIdCounter = resetIdCounter;
 
 export type TabProps = {
   children: ReactNode;

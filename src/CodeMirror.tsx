@@ -75,7 +75,7 @@ export const CodeMirror = forwardRef<HTMLDivElement, CodeMirrorProps>(
 
       const view = new EditorView({
         parent: innerRef.current,
-        state: state as any // TODO version mismatch in codemirror
+        state: state
       });
 
       setEditorView(view);
@@ -99,7 +99,7 @@ export const CodeMirror = forwardRef<HTMLDivElement, CodeMirrorProps>(
       if (isFirstRender || !editorView) return;
 
       const transaction = editorView.state.update({
-        selection: selection as any // TODO version mismatch in codemirror
+        selection: selection
       });
 
       editorView.dispatch(transaction);

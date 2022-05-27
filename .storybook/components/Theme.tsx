@@ -1,5 +1,5 @@
 import { Global, jsx, css } from "@emotion/react";
-import { Heading } from "@storybook/addon-docs/blocks";
+import { Heading } from "@storybook/addon-docs";
 import _merge from "lodash/merge";
 import { Colors } from "./Colors";
 import { Fonts } from "./Fonts";
