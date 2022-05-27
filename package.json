@@ -159,7 +159,7 @@
   },
   "devDependencies": {
     "@auto-it/all-contributors": "10.34.1",
-    "@auto-it/conventional-commits": "10.34.1",
+    "@auto-it/conventional-commits": "10.37.1",
     "@auto-it/first-time-contributor": "10.34.1",
     "@emotion/babel-preset-css-prop": "11.2.0",
     "@emotion/cache": "11.7.1",
