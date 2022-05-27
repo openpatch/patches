@@ -185,6 +185,7 @@
     "husky": "4.3.8",
     "jest": "28.1.0",
     "jest-cli": "28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
     "jest-node-exports-resolver": "^1.1.6",
     "lint-staged": "^12.4.2",
     "plop": "3.1.0",

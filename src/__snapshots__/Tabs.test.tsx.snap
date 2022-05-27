@@ -211,7 +211,7 @@ exports[`should match snapshot 1`] = `
   >
     <div
       class="react-tabs"
-      data-tabs="true"
+      data-rttabs="true"
     />
   </div>
 </div>
