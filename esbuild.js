@@ -13,7 +13,7 @@ const entryPoints = [
 ];
 
 const external = [
-  ...Object.keys(pkg.dependencies || {}),
+  ...Object.keys(pkg.dependencies || {}).filter(d => d != "react-toastify"),
   ...Object.keys(pkg.peerDependencies || {}),
 ];
 
