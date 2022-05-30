@@ -1,3 +1,15 @@
+# v6.0.1 (Mon May 30 2022)
+
+#### 🐛 Bug Fix
+
+- fix(deps): bundle react-toastify ([@mikebarkmin](https://github.com/mikebarkmin))
+
+#### Authors: 1
+
+- Mike Barkmin ([@mikebarkmin](https://github.com/mikebarkmin))
+
+---
+
 # v6.0.0 (Fri May 27 2022)
 
 #### 💥 Breaking Change
