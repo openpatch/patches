@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     # the list of steps that the action will go through
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0 # Required to retrieve git history
       - run: yarn --pure-lockfile
