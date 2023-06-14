@@ -3260,6 +3260,116 @@
     ts-node "^9"
     tslib "^2"
 
+"@esbuild/android-arm64@0.18.2":
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/@esbuild/android-arm64/-/android-arm64-0.18.2.tgz#899c6c66aa2c591af86decc553cd80cfe24e116e"
+  integrity sha512-1Y2pb0hLdmji8I0zBwNsYSDN7zJSQqufgLOuOsrrod00WEAgKywQR5MB/E046Is/YTP4bgcPS4BioaSDBaLaTg==
+
+"@esbuild/android-arm@0.18.2":
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/@esbuild/android-arm/-/android-arm-0.18.2.tgz#3882a9b68807c5f62fe310e37c7c22fa93c46ec6"
+  integrity sha512-YAnQBHlY0IvYtvY0avnXjI8ywW23emEjk5XExqbFmypath+Snq9MgY1IS47rnqBKVSqnl0ElDt221ZgaeRrkXg==
+
+"@esbuild/android-x64@0.18.2":
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/@esbuild/android-x64/-/android-x64-0.18.2.tgz#a2117d1c4484c02071ebcd9580f216fc4519198d"
+  integrity sha512-P047Mh3pj8uYVE3A/B3QDX6nG8dKbHLJ+48R6Y0CRXCJ5PkXJxdHOTaS8SYs6eSR3FFU6/YQ5TishQXVHX7F5A==
+
+"@esbuild/darwin-arm64@0.18.2":
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/@esbuild/darwin-arm64/-/darwin-arm64-0.18.2.tgz#78d8b30f70517b59d7f4857776c8e1ba5bfaa494"
+  integrity sha512-a3Rkqd0tGVYMEKNy9SstWEdeBmM60l8FVD5o4rmwHr3xO1LbLqtCJSrWGbnf37hevo6m437mURVmpEHOmkXeTA==
+
+"@esbuild/darwin-x64@0.18.2":
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/@esbuild/darwin-x64/-/darwin-x64-0.18.2.tgz#194e9e907d9487325ba9e629644f9448c18764d0"
+  integrity sha512-cvH58adz9L10JNsIcgtkWNS/1eutjRTi3rtWz1s3ZhR64BpdmkxJBAXE/UjqybyNAWLhaN8mPJdlYI2f+tQA7g==
+
+"@esbuild/freebsd-arm64@0.18.2":
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/@esbuild/freebsd-arm64/-/freebsd-arm64-0.18.2.tgz#64775742b7669623de3a87980f325f39aff235c0"
+  integrity sha512-68rGMGUdgmq+c5IvseCMqY4yaa2CAY/DIILMBA6bEU1caISF7fXnV69B1uU4s3ERuVDcasVVwiAFyNxCtkS6Zg==
+
+"@esbuild/freebsd-x64@0.18.2":
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/@esbuild/freebsd-x64/-/freebsd-x64-0.18.2.tgz#dce7efd96172d8a2e728296b041a04be7f44f26e"
+  integrity sha512-ZSR9On/rXoYuAtrXo5hYKy7OuZwKZyFh2rr6L3TX4UeR1tWLf84aLyAFt7e0tlRbh4zNgqFx+ePWmsSHw7L9Bw==
+
+"@esbuild/linux-arm64@0.18.2":
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-arm64/-/linux-arm64-0.18.2.tgz#d63d536401fa60e6e20f0f02094955d24b844fbd"
+  integrity sha512-DFKavAzbu/n9HXWuetxmYN10XnfzW7FgOgpcrGD8eXaiu77KdgB+OVWA83x9FtDYtsoFpfdlDuVFAQFfrhu77A==
+
+"@esbuild/linux-arm@0.18.2":
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-arm/-/linux-arm-0.18.2.tgz#3ffd593d687338669f05356e98faa40802a3d4ec"
+  integrity sha512-jAbA75qJ70T5AOdmw9X8675ppeRfj7j57sOypoZ4mQlfQ/LKF8eoeLzTYVo8+aqLKqeIIl0vQ4hKOB0FyG98Zg==
+
+"@esbuild/linux-ia32@0.18.2":
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-ia32/-/linux-ia32-0.18.2.tgz#6b9bef1ea1a8c4dc6562182abe7d45e34824a440"
+  integrity sha512-VEaK3Z+vJyDwwPsP0sovaEw1foDzrMs7XQNYEIFkOwMjSe2BipKRKUUyrznil0p8qqsK7U8W+T7oNqZpgdnD2Q==
+
+"@esbuild/linux-loong64@0.18.2":
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-loong64/-/linux-loong64-0.18.2.tgz#32a17c3df64787f81d633a2c8ebcefb7c4167657"
+  integrity sha512-Af1uZdB0oeJo4PW67l9aw94oakSamFxhC6ltC2eDkndozd9QygVNMTF7s7uxTLjo+BJqyVqG9wjmLCYF1o4NmA==
+
+"@esbuild/linux-mips64el@0.18.2":
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-mips64el/-/linux-mips64el-0.18.2.tgz#09034b507c0625d5dfc4026183ac8d3b3d62c0ff"
+  integrity sha512-WcTbt61+9dREuOFKXac4Qg+3OuRhLxPL9lmkI2P7fGuq/fWS2qq+AvGGVLMyk+OtXGDjyQolcEDeYlRoOmjRYQ==
+
+"@esbuild/linux-ppc64@0.18.2":
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-ppc64/-/linux-ppc64-0.18.2.tgz#6c842f1cbb0062369bc0403fff79f6a50dcdc472"
+  integrity sha512-Ov+VHayvCPb52axma6+xm8QDawRjwHscPXedHg4U92DxlhKQ0H+6onRiC3J9kKI50p8pKKypprpCWrRrXjZN7Q==
+
+"@esbuild/linux-riscv64@0.18.2":
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-riscv64/-/linux-riscv64-0.18.2.tgz#eedb918f2c18e0e4156941a1fdd19052df85c3d0"
+  integrity sha512-qW37zzKKN9C5l5LnVDriOK0eZRzQeixhtrfd5C78PAsTE15GeHU9G0oyT/u/IkNjEBjXWpTZOOHKNbjhrvuL9g==
+
+"@esbuild/linux-s390x@0.18.2":
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-s390x/-/linux-s390x-0.18.2.tgz#e88269b0b4924d2b239f5e6da3493d1cbb71b2a0"
+  integrity sha512-izzEFMRO8LaQIlX22+fTgP5I7Os3T51mtAWsRNpZ5pMfQIa9PqtgFAoRcb10DV+/YkH/TMMxQIlevUvDS6E4vw==
+
+"@esbuild/linux-x64@0.18.2":
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/@esbuild/linux-x64/-/linux-x64-0.18.2.tgz#8123a11954f6bbb943a6be69222fa307332c1c18"
+  integrity sha512-y5yqQ1ww4FfI9bQ1ZP/0k1rcgA6Ql2/AgzvqpowN0Q5tXDZkCavPdJbFXKrqA43vd1UTXt+AutTHYJ7km6e2Eg==
+
+"@esbuild/netbsd-x64@0.18.2":
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/@esbuild/netbsd-x64/-/netbsd-x64-0.18.2.tgz#e26afa20e65c0c1dd7215caf03368c88881f8eef"
+  integrity sha512-usNjpKFf83X4o60gdMD47NCblaSZ6DARf31/FyCzxOgnF80mJ+RhDs9RTqgyfH8KyduO5mjgInw9+ct286ayYA==
+
+"@esbuild/openbsd-x64@0.18.2":
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/@esbuild/openbsd-x64/-/openbsd-x64-0.18.2.tgz#f41389134062bb68b38e59446208cc6786b39eb6"
+  integrity sha512-6urzy1+VwcPuhG+5jwHA8lD9E87E5+ey3qKw2EhRS+qUmMxLvfwP8szWC2JHVGZDPEDge6fgn0pBj+y9rxDLwQ==
+
+"@esbuild/sunos-x64@0.18.2":
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/@esbuild/sunos-x64/-/sunos-x64-0.18.2.tgz#7c2d98f4d23d251a02ad01f6e2fe887c899ac8c6"
+  integrity sha512-SMZPTACsvpKYAIl9o8nhnmMn6/lp62iMeV/2EBMtj+sW6dXwW9b0cLjihkBv4PG1CCRlwWKPZo43imqZxC95ZA==
+
+"@esbuild/win32-arm64@0.18.2":
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/@esbuild/win32-arm64/-/win32-arm64-0.18.2.tgz#3ede172caacdec56bce206bfc118ffddaf638f49"
+  integrity sha512-H2zzjPdzSDNwUnZdZf9/xfm0CYqHFXuenCMAx+tRzIRqWUT6MmZ9/q7722KnAZ6uPpq0RLs7EjCIIfmt6CaRGg==
+
+"@esbuild/win32-ia32@0.18.2":
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/@esbuild/win32-ia32/-/win32-ia32-0.18.2.tgz#9bf4bb575281adf0a9efceeb05b1e2916e38a9f7"
+  integrity sha512-lfyjTN+FrKgvNvrH7nOLtaz58J/8coZOo4LQwgBMP4D7ZOurhvluXS3GjePLzq9GbWnJDZdKCKbMKhZPPcdJJA==
+
+"@esbuild/win32-x64@0.18.2":
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.18.2.tgz#0a7dd4329dacf6f63147e68b390f25ad9fe55aa0"
+  integrity sha512-Q4nIjqWXjxkELwd7kVepsJxbQ/6ERNsHpjz1j+IKjwSYw+g06U0RQOy5xh848AHvgr9itnGLa3cT2G5t0dBFsw==
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"
@@ -9289,131 +9399,33 @@ es6-shim@^0.35.5:
   resolved "https://registry.yarnpkg.com/es6-shim/-/es6-shim-0.35.6.tgz#d10578301a83af2de58b9eadb7c2c9945f7388a0"
   integrity sha512-EmTr31wppcaIAgblChZiuN/l9Y7DPyw8Xtbg7fIVngn6zMW+IEBJDJngeKC3x6wr0V/vcA2wqeFnaw1bFJbDdA==
 
-esbuild-android-64@0.14.40:
-  version "0.14.40"
-  resolved "https://registry.yarnpkg.com/esbuild-android-64/-/esbuild-android-64-0.14.40.tgz#3973c2289512d42b30a1ff4f3d221865808c88f0"
-  integrity sha512-+69t+bmJWWhTyG8waJZcu4UGzM4NbDXAwssTEDYwonyz6L/Is11Y3csJhE16RM0a1GeDin0n810vNP+NVjttKA==
-
-esbuild-android-arm64@0.14.40:
-  version "0.14.40"
-  resolved "https://registry.yarnpkg.com/esbuild-android-arm64/-/esbuild-android-arm64-0.14.40.tgz#fb7b358c1f6bc2aec8eba55cd4a41cf79163a40f"
-  integrity sha512-lVDn4d7/NL5Svrxuskmd/YcluI6uI4Ebp7A1/tWyLJJYbvfIy5l4Vy8GMhErGLePbRyJJiuBP9xusapK4u+6bg==
-
-esbuild-darwin-64@0.14.40:
-  version "0.14.40"
-  resolved "https://registry.yarnpkg.com/esbuild-darwin-64/-/esbuild-darwin-64-0.14.40.tgz#2a6121b82a4b47b84319ab9fc527d749119f9721"
-  integrity sha512-b5u3IXCHhOjkRHIQTSxCN7ObUR5NTyJCP9LrnJ69dEEi1w1usI40T/VNyTTCs7n0UgEH7/zi27vBxbZU+sU4Ew==
-
-esbuild-darwin-arm64@0.14.40:
-  version "0.14.40"
-  resolved "https://registry.yarnpkg.com/esbuild-darwin-arm64/-/esbuild-darwin-arm64-0.14.40.tgz#05e861994e3e9d2bcb694402773d04a313795410"
-  integrity sha512-Wn0C2nrZSANvzK9efcxjKpv9l8yUC4PtYMmnf775gUNwak7sqecuoelhbUTshhrwsfjCNfjsrUhsHY2OHUiEdw==
-
-esbuild-freebsd-64@0.14.40:
-  version "0.14.40"
-  resolved "https://registry.yarnpkg.com/esbuild-freebsd-64/-/esbuild-freebsd-64-0.14.40.tgz#c663153facba055b6dc9e91be1383b49c713c7ac"
-  integrity sha512-B9WZNUn7Y9f97xrQGBAQPKsebeFZzAd+JCdsLCexrVfTjB24b+/Iuq5O2z/q5Meg7Yz0S+j8AO6ncpvNkK2u0w==
-
-esbuild-freebsd-arm64@0.14.40:
-  version "0.14.40"
-  resolved "https://registry.yarnpkg.com/esbuild-freebsd-arm64/-/esbuild-freebsd-arm64-0.14.40.tgz#b4253e9635305fb4bf7fc37b2e577164d19074d6"
-  integrity sha512-3aB9uJv2/lmQNzwmieNyyOdxKi+3ERwrqf3snBu/oEng8b7nMBNrEN+p7jjkTYNYmo291KiH/5EIAXwpsZndFw==
-
-esbuild-linux-32@0.14.40:
-  version "0.14.40"
-  resolved "https://registry.yarnpkg.com/esbuild-linux-32/-/esbuild-linux-32-0.14.40.tgz#50be3e21eec24ec6b7883bb683b0f49b2f31b9e4"
-  integrity sha512-LMI9BMeuGf6NRS23LbyVarN3nf+JyNcfiVEnR9M8691kL5Ffp3e7oTYRH65XdTUirM9D6e5cppfWLjvrRbGnRw==
-
-esbuild-linux-64@0.14.40:
-  version "0.14.40"
-  resolved "https://registry.yarnpkg.com/esbuild-linux-64/-/esbuild-linux-64-0.14.40.tgz#803dc0ec48a616ccad7335f094629a9c94253461"
-  integrity sha512-D/NkZ9QR2KShJXNuRWANxJzPCrwJoAoWVetQiGIAepzXbNh+dBo5ZLmlh8Txs6tE600N67MF/ScHP1S4FxLaJg==
-
-esbuild-linux-arm64@0.14.40:
-  version "0.14.40"
-  resolved "https://registry.yarnpkg.com/esbuild-linux-arm64/-/esbuild-linux-arm64-0.14.40.tgz#f308815ae2eae0136ef9d6c5249ed6183e2cee10"
-  integrity sha512-TIoZWKjrMJxZujh2nSsrrLkLDLzD/oBpSiobdUGe2bqKZpT4m7fkR0tEDNyM6Xvzj9uTQ4iTfJr2ekmpg3DyTQ==
-
-esbuild-linux-arm@0.14.40:
-  version "0.14.40"
-  resolved "https://registry.yarnpkg.com/esbuild-linux-arm/-/esbuild-linux-arm-0.14.40.tgz#0ef81d9a251f94b4202ade0cf9321fe7f481d39e"
-  integrity sha512-2a0yZXbzr/s3iCgZ84jFTHf+NyyXQ/7/Sd28oQq5iyy7TbJNS973XUOwgdlHdRqBxvw0nIWTw2FuwyUJAFa6Qg==
-
-esbuild-linux-mips64le@0.14.40:
-  version "0.14.40"
-  resolved "https://registry.yarnpkg.com/esbuild-linux-mips64le/-/esbuild-linux-mips64le-0.14.40.tgz#f78c9a9044b15080d1b1d6191e576971312b746d"
-  integrity sha512-SP30CYYSDMwr6mPUbjvD4K2R03GQHIQGrkrbXt5NM6mFqzR+S+JKVv9juq/CjlM9V7iIPPPqe4mb4DWC3b8pBw==
-
-esbuild-linux-ppc64le@0.14.40:
-  version "0.14.40"
-  resolved "https://registry.yarnpkg.com/esbuild-linux-ppc64le/-/esbuild-linux-ppc64le-0.14.40.tgz#58c18b78693d6930c652ff8454641959c17e3c34"
-  integrity sha512-HlU3dfIdwzm/zhbXvMa5yWIafBeI7v6BDaEuApAww5Av8ht7lXgD1fZ11iJVPjRWNLcCZUgZaJKFrosSPQO/Bw==
-
-esbuild-linux-riscv64@0.14.40:
-  version "0.14.40"
-  resolved "https://registry.yarnpkg.com/esbuild-linux-riscv64/-/esbuild-linux-riscv64-0.14.40.tgz#a8f391d74ed27cb8a13aeebe0ed78b4abf6f4bb2"
-  integrity sha512-4ImTBEUykhIcIq3c97dIXnsmAHb//cjHh4nxttLhwpTZ+b/KdM1IpttqFhB0AFLUsrjP4WOCMxAm5FOL7FC2uw==
-
-esbuild-linux-s390x@0.14.40:
-  version "0.14.40"
-  resolved "https://registry.yarnpkg.com/esbuild-linux-s390x/-/esbuild-linux-s390x-0.14.40.tgz#5d45c04e226fe738beb5441b95f360309e1c50cb"
-  integrity sha512-kFCPKictYjpt5rt0bFdbSmb8AWut75sIh1fZUTCVkujWMcpdL8ADuYMfVrN7R0CSQvkF1nQtrIBfp+ZU7R7KNQ==
-
-esbuild-netbsd-64@0.14.40:
-  version "0.14.40"
-  resolved "https://registry.yarnpkg.com/esbuild-netbsd-64/-/esbuild-netbsd-64-0.14.40.tgz#0fe303453338685a6748facca8b5fb95d0e75a3c"
-  integrity sha512-Hwzw2cSI6+p03TUjugzec54W6uW4tA1J/WovmlHl96Icjy73eWnAyCQwgG6ZLirXpt2aDfTEVShNaC2fE4KVhQ==
-
-esbuild-openbsd-64@0.14.40:
-  version "0.14.40"
-  resolved "https://registry.yarnpkg.com/esbuild-openbsd-64/-/esbuild-openbsd-64-0.14.40.tgz#53e088375516b2cb3ddbec1bccffe3e7a5e64459"
-  integrity sha512-L4Pix+N2Sb0HvLl8zyn1Aq2aYD5Jt8rk9zwW3NUx19yafJqAFsnUN7L/XbbWSv5/XMqnY4hpAvIP2pyeV9+Bjw==
-
-esbuild-sunos-64@0.14.40:
-  version "0.14.40"
-  resolved "https://registry.yarnpkg.com/esbuild-sunos-64/-/esbuild-sunos-64-0.14.40.tgz#a33f5362b8f2e10b2e0020ea3fca05c7d9d60134"
-  integrity sha512-iEITaelmmCO43ewk0bOYRGrewu2i2h2V0gKHQ/rz1MRqif8ohY/FNLn4WnThGUlrEgA1nTL1tc57PL12QbOo2Q==
-
-esbuild-windows-32@0.14.40:
-  version "0.14.40"
-  resolved "https://registry.yarnpkg.com/esbuild-windows-32/-/esbuild-windows-32-0.14.40.tgz#1c367a85bde66eb8f5998f87b248f9b5b2b24522"
-  integrity sha512-uXHmKl4RtCkK1v6QQK4hsP8Xiku6CwUM/W7Yv2rGtfylSOrrWKcpqwlDWx6bIm1Hav1uBC8hbgJ1hY6pWFNhNA==
-
-esbuild-windows-64@0.14.40:
-  version "0.14.40"
-  resolved "https://registry.yarnpkg.com/esbuild-windows-64/-/esbuild-windows-64-0.14.40.tgz#b76cefd4287660c151132e5d0026a0f02c3a732c"
-  integrity sha512-dvgQLVYnJzqce97AeHvxWtV9lHRDxIPatOikmrh1vt/SCE4tyVo5nAT/2SiZBJ6DzYmZT3BcJTV24bBLyu4ZUA==
-
-esbuild-windows-arm64@0.14.40:
-  version "0.14.40"
-  resolved "https://registry.yarnpkg.com/esbuild-windows-arm64/-/esbuild-windows-arm64-0.14.40.tgz#5cc40498aba3f16fa2106845910f53d04824cea8"
-  integrity sha512-c8ohQSFtRq78pZ/LQcpMft2xuR2IEitQkW07f9K7iN4EBdJMrCpOoXrZCfmX9lAC8yYOU7xHoLFYVln3n6fK1Q==
-
-esbuild@^0.14.40:
-  version "0.14.40"
-  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.14.40.tgz#736008e6416b73d46e53130a830b451bd8c1698e"
-  integrity sha512-toIoQk3ODEEIudsN74wXGdw1eiUN4aKRijOqiwEAqfUFlhORPYFJtACzRdRRlpUysRUUlvIUoGE1aw/MIVCWnA==
+esbuild@^0.18.0:
+  version "0.18.2"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.18.2.tgz#e17305c67b79a7f80d8fda15f73f3b94339339b4"
+  integrity sha512-1P4sK9gXVcjvrrUjE94Hbo9goU+T6U1sdzLf+JJ+3uI6GEb4e4n3Wrqto9hZHUWabblpT2ifmC61LhZnLyTNFw==
   optionalDependencies:
-    esbuild-android-64 "0.14.40"
-    esbuild-android-arm64 "0.14.40"
-    esbuild-darwin-64 "0.14.40"
-    esbuild-darwin-arm64 "0.14.40"
-    esbuild-freebsd-64 "0.14.40"
-    esbuild-freebsd-arm64 "0.14.40"
-    esbuild-linux-32 "0.14.40"
-    esbuild-linux-64 "0.14.40"
-    esbuild-linux-arm "0.14.40"
-    esbuild-linux-arm64 "0.14.40"
-    esbuild-linux-mips64le "0.14.40"
-    esbuild-linux-ppc64le "0.14.40"
-    esbuild-linux-riscv64 "0.14.40"
-    esbuild-linux-s390x "0.14.40"
-    esbuild-netbsd-64 "0.14.40"
-    esbuild-openbsd-64 "0.14.40"
-    esbuild-sunos-64 "0.14.40"
-    esbuild-windows-32 "0.14.40"
-    esbuild-windows-64 "0.14.40"
-    esbuild-windows-arm64 "0.14.40"
+    "@esbuild/android-arm" "0.18.2"
+    "@esbuild/android-arm64" "0.18.2"
+    "@esbuild/android-x64" "0.18.2"
+    "@esbuild/darwin-arm64" "0.18.2"
+    "@esbuild/darwin-x64" "0.18.2"
+    "@esbuild/freebsd-arm64" "0.18.2"
+    "@esbuild/freebsd-x64" "0.18.2"
+    "@esbuild/linux-arm" "0.18.2"
+    "@esbuild/linux-arm64" "0.18.2"
+    "@esbuild/linux-ia32" "0.18.2"
+    "@esbuild/linux-loong64" "0.18.2"
+    "@esbuild/linux-mips64el" "0.18.2"
+    "@esbuild/linux-ppc64" "0.18.2"
+    "@esbuild/linux-riscv64" "0.18.2"
+    "@esbuild/linux-s390x" "0.18.2"
+    "@esbuild/linux-x64" "0.18.2"
+    "@esbuild/netbsd-x64" "0.18.2"
+    "@esbuild/openbsd-x64" "0.18.2"
+    "@esbuild/sunos-x64" "0.18.2"
+    "@esbuild/win32-arm64" "0.18.2"
+    "@esbuild/win32-ia32" "0.18.2"
+    "@esbuild/win32-x64" "0.18.2"
 
 escalade@^3.1.1:
   version "3.1.1"
