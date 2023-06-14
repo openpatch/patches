@@ -177,7 +177,7 @@
     "@types/styled-system__css": "5.0.16",
     "auto": "10.37.1",
     "babel-jest": "^28.1.0",
-    "chromatic": "6.5.4",
+    "chromatic": "6.19.5",
     "concurrently": "7.2.1",
     "csstype": "3.1.0",
     "cz-conventional-changelog": "3.3.0",
